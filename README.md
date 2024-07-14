@@ -1,2 +1,5 @@
-# modlitbazapardubice
-Web application for project `Modlitba za Pardubice`
+# Modlitba za Pardubice
+
+Web application for project `Modlitba za Pardubice`.
+
+
