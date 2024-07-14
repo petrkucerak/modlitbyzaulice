@@ -17,5 +17,14 @@ export const conf = {
     // { src: "/icon-192.png", type: "image/png", sizes: "192x192" },
     // { src: "/icon-512.png", type: "image/png", sizes: "512x512" },
   ],
-  // the end of manifest
+  // end of manifest
+  // start of meta
+  keywords: [
+    "Modlitba",
+    "Pardubice",
+    "Modlitba za Pardubice",
+    "Modlitba v Pardubicích",
+    "Pardubice se modlí",
+    // TODO
+  ],
 };
