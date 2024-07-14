@@ -1,5 +1,10 @@
 export const conf = {
+  // start of dev
+  MAPY_API_KEY: "PdNRjVdq8YVAgaBNnxiTAsfhy-qbG6lMxuQKg3W02gk",
+  // end of dev
+
   url: "https://modlitbazapardubice.cz",
+
   // start of the manifest
   name: "Modlitba za Pardubice",
   short_name: "Modlitba za Pardubice",
@@ -18,6 +23,7 @@ export const conf = {
     // { src: "/icon-512.png", type: "image/png", sizes: "512x512" },
   ],
   // end of manifest
+
   // start of meta
   keywords: [
     "Modlitba",
