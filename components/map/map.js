@@ -5,6 +5,7 @@ import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import "leaflet/dist/leaflet.css";
 import { conf } from "../conf";
 import { isMobile } from "react-device-detect";
+import Locale from "./locale";
 
 export default function Map({ className }) {
   const position = [50.0385619, 15.778475];
@@ -22,6 +23,7 @@ export default function Map({ className }) {
         url={`https://api.mapy.cz/v1/maptiles/basic/${tileSize}/{z}/{x}/{y}?apikey=${conf.MAPY_API_KEY}`}
         attribution='<a href="https://api.mapy.cz/copyright" target="_blank" rel="noreferrer">&copy; Seznam.cz a.s. a další</a>'
       />
+      <Locale />
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.0/dist/L.Control.Locate.min.css"
