@@ -13,5 +13,6 @@ export default function manifest() {
     lang: conf.lang,
     theme_color: conf.theme_color,
     categories: conf.categories,
+    icons: conf.icons,
   };
 }

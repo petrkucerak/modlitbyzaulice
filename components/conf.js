@@ -12,5 +12,10 @@ export const conf = {
   lang: "cs",
   theme_color: "#000",
   categories: ["entertainment", "lifestyle"],
+  icons: [
+    // TODO
+    // { src: "/icon-192.png", type: "image/png", sizes: "192x192" },
+    // { src: "/icon-512.png", type: "image/png", sizes: "512x512" },
+  ],
   // the end of manifest
 };
