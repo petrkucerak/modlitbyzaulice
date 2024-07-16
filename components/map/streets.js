@@ -7,7 +7,7 @@ export default function Streets() {
     const map = useMap();
     // options: https://leafletjs.com/reference.html#polyline
     const polyline = L.polyline(coords, {
-      color: "red",
+      color: "yellow",
       opacity: 0.5,
       weight: 5,
       smoothFactor: 0.1, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
