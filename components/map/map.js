@@ -1,11 +1,12 @@
 "use client";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet/dist/leaflet.css";
 import { conf } from "../conf";
 import { isMobile } from "react-device-detect";
 import Locale from "./locale";
+import Streets from "./streets";
 
 export default function Map({ className }) {
   const position = [50.0385619, 15.778475];
@@ -16,7 +17,7 @@ export default function Map({ className }) {
     <MapContainer
       center={position}
       zoom={17}
-      scrollWheelZoom={false}
+      scrollWheelZoom={true}
       className="h-[80vh]"
     >
       <TileLayer
@@ -24,6 +25,7 @@ export default function Map({ className }) {
         attribution='<a href="https://api.mapy.cz/copyright" target="_blank" rel="noreferrer">&copy; Seznam.cz a.s. a další</a>'
       />
       <Locale />
+      <Streets />
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.76.0/dist/L.Control.Locate.min.css"
