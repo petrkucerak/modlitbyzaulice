@@ -1,0 +1,516 @@
+street_name,city_name,district_name,borough_name
+17. listopadu,Pardubice,Zelené Předměstí,Pardubice I
+Anenská,Pardubice,Zelené Předměstí,Pardubice I
+Arnošta z Pardubic,Pardubice,Zelené Předměstí,Pardubice I
+Bartolomějská,Pardubice,Pardubice-Staré Město,Pardubice I
+Bělobranské náměstí,Pardubice,Bílé Předměstí,Pardubice I
+Benedettiho,Pardubice,Bílé Předměstí,Pardubice I
+Bezdíčkova,Pardubice,Bílé Předměstí,Pardubice I
+Bratranců Veverkových,Pardubice,Zelené Předměstí,Pardubice I
+Bubeníkova,Pardubice,Bílé Předměstí,Pardubice I
+Bubeníkovy sady,Pardubice,Bílé Předměstí,Pardubice I
+Bulharská,Pardubice,Bílé Předměstí,Pardubice I
+Čechovo nábřeží,Pardubice,Bílé Předměstí,Pardubice I
+Dašická,Pardubice,Bílé Předměstí,Pardubice I
+Do Nového,Pardubice,Bílé Předměstí,Pardubice I
+Gebauerova,Pardubice,Bílé Předměstí,Pardubice I
+Havlíčkova,Pardubice,Zelené Předměstí,Pardubice I
+Hlaváčova,Pardubice,Zelené Předměstí,Pardubice I
+Holubova,Pardubice,Bílé Předměstí,Pardubice I
+Hronovická,Pardubice,Zelené Předměstí,Pardubice I
+Husova,Pardubice,Bílé Předměstí,Pardubice I
+Jahnova,Pardubice,Pardubice-Staré Město,Pardubice I
+Jahnova,Pardubice,Zelené Předměstí,Pardubice I
+Jindřišská,Pardubice,Zelené Předměstí,Pardubice I
+Jiráskova,Pardubice,Zelené Předměstí,Pardubice I
+Jiřího z Poděbrad,Pardubice,Zelené Předměstí,Pardubice I
+JUDr. Krpaty,Pardubice,Bílé Předměstí,Pardubice I
+Jungmannova,Pardubice,Zelené Předměstí,Pardubice I
+K Polabinám,Pardubice,Zelené Předměstí,Pardubice I
+K Vápence,Pardubice,Zelené Předměstí,Pardubice I
+Karla IV.,Pardubice,Zelené Předměstí,Pardubice I
+Ke Kamenci,Pardubice,Bílé Předměstí,Pardubice I
+Ke Tvrzi,Pardubice,Bílé Předměstí,Pardubice I
+Klášterní,Pardubice,Pardubice-Staré Město,Pardubice I
+Komenského náměstí,Pardubice,Pardubice-Staré Město,Pardubice I
+Kostelní,Pardubice,Pardubice-Staré Město,Pardubice I
+Kotkova,Pardubice,Bílé Předměstí,Pardubice I
+kpt. Bartoše,Pardubice,Zelené Předměstí,Pardubice I
+kpt. Jaroše,Pardubice,Zelené Předměstí,Pardubice I
+Kyjevská,Pardubice,Bílé Předměstí,Pardubice I
+Labská,Pardubice,Bílé Předměstí,Pardubice I
+Labská,Pardubice,Zelené Předměstí,Pardubice I
+Macanova,Pardubice,Zelené Předměstí,Pardubice I
+Malá,Pardubice,Zelené Předměstí,Pardubice I
+Masarykovo náměstí,Pardubice,Zelené Předměstí,Pardubice I
+Mezi Mosty,Pardubice,Bílé Předměstí,Pardubice I
+Na Bukovině,Pardubice,Bílé Předměstí,Pardubice I
+Na Haldě,Pardubice,Bílé Předměstí,Pardubice I
+Na Hrádku,Pardubice,Zelené Předměstí,Pardubice I
+Na Ležánkách,Pardubice,Bílé Předměstí,Pardubice I
+Na Okrouhlíku,Pardubice,Bílé Předměstí,Pardubice I
+Na Sádkách,Pardubice,Bílé Předměstí,Pardubice I
+Na Třísle,Pardubice,Bílé Předměstí,Pardubice I
+Na Třísle,Pardubice,Pardubice-Staré Město,Pardubice I
+Na Vrtálně,Pardubice,Bílé Předměstí,Pardubice I
+nábřeží Závodu míru,Pardubice,Zelené Předměstí,Pardubice I
+náměstí Čs. legií,Pardubice,Zelené Předměstí,Pardubice I
+náměstí Jana Pernera,Pardubice,Zelené Předměstí,Pardubice I
+náměstí Republiky,Pardubice,Pardubice-Staré Město,Pardubice I
+náměstí Republiky,Pardubice,Zelené Předměstí,Pardubice I
+Nerudova,Pardubice,Zelené Předměstí,Pardubice I
+Okružní,Pardubice,Bílé Předměstí,Pardubice I
+Palackého třída,Pardubice,Zelené Předměstí,Pardubice I
+Pernerova,Pardubice,Zelené Předměstí,Pardubice I
+Pernštýnská,Pardubice,Pardubice-Staré Město,Pardubice I
+Pernštýnské náměstí,Pardubice,Pardubice-Staré Město,Pardubice I
+Počápelská,Pardubice,Bílé Předměstí,Pardubice I
+Pod Sklípky,Pardubice,Pardubice-Staré Město,Pardubice I
+Pod Zámkem,Pardubice, ,Pardubice I
+Polská,Pardubice,Bílé Předměstí,Pardubice I
+Pospíšilovo náměstí,Pardubice,Bílé Předměstí,Pardubice I
+Příhrádek,Pardubice,Zámek,Pardubice I
+Sakařova,Pardubice,Bílé Předměstí,Pardubice I
+Sezemická,Pardubice,Bílé Předměstí,Pardubice I
+Schulhoffova,Pardubice,Bílé Předměstí,Pardubice I
+Schwarzovo náměstí,Pardubice,Bílé Předměstí,Pardubice I
+Sladkovského,Pardubice,Zelené Předměstí,Pardubice I
+Smetanovo náměstí,Pardubice,Zelené Předměstí,Pardubice I
+Smilova,Pardubice,Zelené Předměstí,Pardubice I
+Spořilov,Pardubice,Bílé Předměstí,Pardubice I
+Studánecká,Pardubice,Bílé Předměstí,Pardubice I
+Sukova třída,Pardubice,Zelené Předměstí,Pardubice I
+Svaté Anežky České,Pardubice,Pardubice-Staré Město,Pardubice I
+Škroupova,Pardubice,Bílé Předměstí,Pardubice I
+Štefánikova,Pardubice,Zelené Předměstí,Pardubice I
+Štolbova,Pardubice,Zelené Předměstí,Pardubice I
+Štrossova,Pardubice,Bílé Předměstí,Pardubice I
+třída Míru,Pardubice,Zelené Předměstí,Pardubice I
+Tylova,Pardubice,Zelené Předměstí,Pardubice I
+Tyršovo nábřeží,Pardubice,Zelené Předměstí,Pardubice I
+Tyršovy sady,Pardubice, ,Pardubice I
+U Divadla,Pardubice,Zelené Předměstí,Pardubice I
+U Husova sboru,Pardubice,Zelené Předměstí,Pardubice I
+U Kamenné vily,Pardubice,Bílé Předměstí,Pardubice I
+U Kostelíčka,Pardubice,Bílé Předměstí,Pardubice I
+U Marka,Pardubice,Zelené Předměstí,Pardubice I
+U Mlýnů,Pardubice,Bílé Předměstí,Pardubice I
+U Stadionu,Pardubice,Zámek,Pardubice I
+U Stadionu,Pardubice,Zelené Předměstí,Pardubice I
+U Trojice,Pardubice,Zelené Předměstí,Pardubice I
+Ve Lhotkách,Pardubice,Bílé Předměstí,Pardubice I
+Věry Junkové,Pardubice,Bílé Předměstí,Pardubice I
+Vrchlického nábřeží,Pardubice, ,Pardubice I
+Wernerovo nábřeží,Pardubice,Pardubice-Staré Město,Pardubice I
+Winternitzova,Pardubice,Bílé Předměstí,Pardubice I
+Wintrova I,Pardubice,Bílé Předměstí,Pardubice I
+Wintrova II,Pardubice,Bílé Předměstí,Pardubice I
+Za Pasáží,Pardubice,Zelené Předměstí,Pardubice I
+Zámecká,Pardubice,Pardubice-Staré Město,Pardubice I
+Zámek,Pardubice,Zámek,Pardubice I
+Zelenobranská,Pardubice,Pardubice-Staré Město,Pardubice I
+Žitná,Pardubice,Zelené Předměstí,Pardubice I
+Areál vodních sportů,Pardubice,Cihelna,Pardubice II
+Bělehradská,Pardubice,Polabiny,Pardubice II
+Brozanská,Pardubice,Cihelna,Pardubice II
+Brožíkova,Pardubice,Polabiny,Pardubice II
+Družby,Pardubice,Polabiny,Pardubice II
+Družstevní,Pardubice,Polabiny,Pardubice II
+Fáblovka,Pardubice,Polabiny,Pardubice II
+Gagarinova,Pardubice,Polabiny,Pardubice II
+Grusova,Pardubice,Polabiny,Pardubice II
+Hradecká,Pardubice,Cihelna,Pardubice II
+Hradecká,Pardubice,Polabiny,Pardubice II
+Hradišťská,Pardubice,Polabiny,Pardubice II
+Chemiků,Pardubice,Polabiny,Pardubice II
+Javorová,Pardubice,Cihelna,Pardubice II
+Jiřího Tomana,Pardubice,Polabiny,Pardubice II
+K Cihelně,Pardubice,Cihelna,Pardubice II
+K Rozvodně,Pardubice,Cihelna,Pardubice II
+Karla Šípka,Pardubice,Polabiny,Pardubice II
+Ke Koupališti,Pardubice,Cihelna,Pardubice II
+Kosmonautů,Pardubice,Polabiny,Pardubice II
+kpt. Bartoše,Pardubice,Polabiny,Pardubice II
+Křičkova,Pardubice,Polabiny,Pardubice II
+Kunětická,Pardubice,Cihelna,Pardubice II
+Kunětická,Pardubice,Polabiny,Pardubice II
+Labský Palouk,Pardubice,Polabiny,Pardubice II
+Ležáků,Pardubice,Polabiny,Pardubice II
+Lidická,Pardubice,Polabiny,Pardubice II
+Lonkova,Pardubice,Polabiny,Pardubice II
+Mezi Zahradami,Pardubice,Cihelna,Pardubice II
+Mladých,Pardubice,Polabiny,Pardubice II
+Mozartova,Pardubice,Polabiny,Pardubice II
+Na Labišti,Pardubice,Polabiny,Pardubice II
+Nová,Pardubice,Polabiny,Pardubice II
+npor. Eliáše,Pardubice,Polabiny,Pardubice II
+Odborářů,Pardubice,Polabiny,Pardubice II
+Ohrazenická,Pardubice,Polabiny,Pardubice II
+Okrajová,Pardubice,Polabiny,Pardubice II
+Partyzánů,Pardubice,Polabiny,Pardubice II
+Poděbradská,Pardubice,Polabiny,Pardubice II
+Prodloužená,Pardubice,Polabiny,Pardubice II
+Rosická,Pardubice,Polabiny,Pardubice II
+Sedláčkova,Pardubice,Polabiny,Pardubice II
+Sluneční,Pardubice,Polabiny,Pardubice II
+Stavařov,Pardubice,Polabiny,Pardubice II
+Stavbařů,Pardubice,Polabiny,Pardubice II
+Stromová,Pardubice,Cihelna,Pardubice II
+Studentská,Pardubice,Polabiny,Pardubice II
+U Josefa,Pardubice,Cihelna,Pardubice II
+Valčíkova,Pardubice,Polabiny,Pardubice II
+Varšavská,Pardubice,Polabiny,Pardubice II
+22. července,Pardubice,Studánka,Pardubice III
+Bartoňova,Pardubice,Studánka,Pardubice III
+Bělobranská dubina,Pardubice,Bílé Předměstí,Pardubice III
+Bezdíčkova,Pardubice,Bílé Předměstí,Pardubice III
+Blahoutova,Pardubice,Studánka,Pardubice III
+Boční,Pardubice,Bílé Předměstí,Pardubice III
+Brigádníků,Pardubice,Studánka,Pardubice III
+Dašická,Pardubice,Bílé Předměstí,Pardubice III
+Divišova,Pardubice,Bílé Předměstí,Pardubice III
+Divišova,Pardubice,Studánka,Pardubice III
+Dubinská,Pardubice,Studánka,Pardubice III
+Dubové návrší,Pardubice,Studánka,Pardubice III
+Erno Košťála,Pardubice,Studánka,Pardubice III
+Hraniční,Pardubice,Bílé Předměstí,Pardubice III
+Hraniční,Pardubice,Studánka,Pardubice III
+Hůrka,Pardubice,Bílé Předměstí,Pardubice III
+Husova,Pardubice,Bílé Předměstí,Pardubice III
+Jana Zajíce,Pardubice,Studánka,Pardubice III
+Josefa Janáčka,Pardubice,Studánka,Pardubice III
+K Lesu,Pardubice,Studánka,Pardubice III
+K Pardubičkám,Pardubice,Bílé Předměstí,Pardubice III
+Krátká,Pardubice,Bílé Předměstí,Pardubice III
+Lánská,Pardubice,Bílé Předměstí,Pardubice III
+Lánská,Pardubice,Studánka,Pardubice III
+Lesní,Pardubice,Studánka,Pardubice III
+Lidmily Malé,Pardubice,Studánka,Pardubice III
+Luční,Pardubice,Bílé Předměstí,Pardubice III
+Luční,Pardubice,Studánka,Pardubice III
+Luďka Matury,Pardubice,Studánka,Pardubice III
+Mandysova,Pardubice,Bílé Předměstí,Pardubice III
+Mandysova,Pardubice,Studánka,Pardubice III
+Musílkova,Pardubice,Studánka,Pardubice III
+Na Babce,Pardubice,Studánka,Pardubice III
+Na Drážce,Pardubice,Bílé Předměstí,Pardubice III
+Na Drážce,Pardubice,Studánka,Pardubice III
+Na Hrázi,Pardubice,Studánka,Pardubice III
+Na Kopci,Pardubice,Bílé Předměstí,Pardubice III
+Na Okrouhlíku,Pardubice,Bílé Předměstí,Pardubice III
+Okružní,Pardubice,Bílé Předměstí,Pardubice III
+Pod Lipami,Pardubice,Bílé Předměstí,Pardubice III
+Pod Lipami,Pardubice,Studánka,Pardubice III
+Pod Studánkou,Pardubice,Studánka,Pardubice III
+Pod Zahradami,Pardubice,Studánka,Pardubice III
+Potěšilova,Pardubice,Studánka,Pardubice III
+Raabova,Pardubice,Bílé Předměstí,Pardubice III
+Radiomechaniků,Pardubice,Bílé Předměstí,Pardubice III
+Radiomechaniků,Pardubice,Studánka,Pardubice III
+Rumunská,Pardubice,Studánka,Pardubice III
+Růženy Vojtěchové,Pardubice,Studánka,Pardubice III
+Sezemická,Pardubice,Bílé Předměstí,Pardubice III
+Skrbkova,Pardubice,Studánka,Pardubice III
+Spojilská,Pardubice,Bílé Předměstí,Pardubice III
+Spojilská,Pardubice,Studánka,Pardubice III
+Staročernská,Pardubice,Bílé Předměstí,Pardubice III
+Staročernská,Pardubice,Studánka,Pardubice III
+Tichá,Pardubice,Studánka,Pardubice III
+U Háje,Pardubice,Bílé Předměstí,Pardubice III
+U Školy,Pardubice,Studánka,Pardubice III
+U Zábran,Pardubice,Studánka,Pardubice III
+Úzká,Pardubice,Bílé Předměstí,Pardubice III
+V Lipinách,Pardubice,Bílé Předměstí,Pardubice III
+V Zahrádkách,Pardubice,Studánka,Pardubice III
+V Zátiší,Pardubice,Studánka,Pardubice III
+Ve Stezkách,Pardubice,Studánka,Pardubice III
+Věry Junkové,Pardubice,Bílé Předměstí,Pardubice III
+Věry Junkové,Pardubice,Studánka,Pardubice III
+Zahradní,Pardubice,Studánka,Pardubice III
+Zajíčkova,Pardubice,Bílé Předměstí,Pardubice III
+28. října,Pardubice,Nemošice,Pardubice IV
+5. května,Pardubice,Nemošice,Pardubice IV
+Akátová,Pardubice,Černá za Bory,Pardubice IV
+Boháčova,Pardubice,Bílé Předměstí,Pardubice IV
+Boháčova,Pardubice,Studánka,Pardubice IV
+Bokova,Pardubice,Pardubičky,Pardubice IV
+Borská,Pardubice,Staročernsko,Pardubice IV
+Černoborská,Pardubice,Mnětice,Pardubice IV
+Dašická,Pardubice,Bílé Předměstí,Pardubice IV
+Dašická,Pardubice,Studánka,Pardubice IV
+Dělnická,Pardubice,Drozdice,Pardubice IV
+Dělnická,Pardubice,Pardubičky,Pardubice IV
+Drozdická,Pardubice,Bílé Předměstí,Pardubice IV
+Dubská,Pardubice,Staročernsko,Pardubice IV
+Fibichova,Pardubice,Bílé Předměstí,Pardubice IV
+Fibichova,Pardubice,Studánka,Pardubice IV
+Fidrova,Pardubice,Bílé Předměstí,Pardubice IV
+Fučíkova,Pardubice,Nemošice,Pardubice IV
+Holandská,Pardubice,Černá za Bory,Pardubice IV
+Holandská,Pardubice,Drozdice,Pardubice IV
+Holandská,Pardubice,Pardubičky,Pardubice IV
+Hostovická,Pardubice,Černá za Bory,Pardubice IV
+Hromádkova,Pardubice,Bílé Předměstí,Pardubice IV
+Jabloňová,Pardubice,Černá za Bory,Pardubice IV
+K Hřebčinci,Pardubice,Nemošice,Pardubice IV
+K Přejezdu,Pardubice,Bílé Předměstí,Pardubice IV
+K Pustinám,Pardubice,Staročernsko,Pardubice IV
+K Silu,Pardubice,Studánka,Pardubice IV
+K Zámečku,Pardubice,Pardubičky,Pardubice IV
+Ke Hrázi,Pardubice,Mnětice,Pardubice IV
+Ke Hřbitovu,Pardubice,Mnětice,Pardubice IV
+Ke Hřišti,Pardubice,Pardubičky,Pardubice IV
+Ke Kobelnici,Pardubice,Černá za Bory,Pardubice IV
+Ke Trati,Pardubice,Bílé Předměstí,Pardubice IV
+Komenského,Pardubice,Pardubičky,Pardubice IV
+Kovárenská,Pardubice,Mnětice,Pardubice IV
+Kyjevská,Pardubice,Pardubičky,Pardubice IV
+Mírová,Pardubice, ,Pardubice IV
+Mnětická,Pardubice,Nemošice,Pardubice IV
+MUDr. Ducháčkové,Pardubice,Pardubičky,Pardubice IV
+Na Benátkách,Pardubice,Černá za Bory,Pardubice IV
+Na Brázdách,Pardubice,Staročernsko,Pardubice IV
+Na Klárce,Pardubice,Nemošice,Pardubice IV
+Na Rybníčkách,Pardubice,Černá za Bory,Pardubice IV
+Na Rybníku,Pardubice,Nemošice,Pardubice IV
+Na Vsi,Pardubice,Černá za Bory,Pardubice IV
+Nábřežní,Pardubice,Nemošice,Pardubice IV
+Nad Metelkou,Pardubice,Nemošice,Pardubice IV
+Národních hrdinů,Pardubice,Pardubičky,Pardubice IV
+Odbojářů,Pardubice,Bílé Předměstí,Pardubice IV
+Ostřešanská,Pardubice,Nemošice,Pardubice IV
+Plemenářský podnik,Pardubice,Nemošice,Pardubice IV
+Pod Hřbitovem,Pardubice,Pardubičky,Pardubice IV
+Pod Kopečkem,Pardubice,Pardubičky,Pardubice IV
+Podhumenská,Pardubice,Staročernsko,Pardubice IV
+Polní,Pardubice,Nemošice,Pardubice IV
+Průmyslová,Pardubice,Pardubičky,Pardubice IV
+Průmyslová,Pardubice,Studánka,Pardubice IV
+Příčná,Pardubice,Nemošice,Pardubice IV
+Revoluční,Pardubice,Pardubičky,Pardubice IV
+Rosůlkova,Pardubice,Pardubičky,Pardubice IV
+Sadová,Pardubice,Nemošice,Pardubice IV
+Spodní,Pardubice,Nemošice,Pardubice IV
+Sportovní,Pardubice,Nemošice,Pardubice IV
+Staré náměstí,Pardubice,Nemošice,Pardubice IV
+Staročernská,Pardubice,Černá za Bory,Pardubice IV
+Světlá,Pardubice,Černá za Bory,Pardubice IV
+Topolová,Pardubice,Černá za Bory,Pardubice IV
+Tuněchodská,Pardubice,Mnětice,Pardubice IV
+U Borku,Pardubice,Pardubičky,Pardubice IV
+U Kapličky,Pardubice,Mnětice,Pardubice IV
+U Štítu,Pardubice,Nemošice,Pardubice IV
+U Zámečku,Pardubice,Bílé Předměstí,Pardubice IV
+U Zámečku,Pardubice,Pardubičky,Pardubice IV
+U Zámečku,Pardubice,Studánka,Pardubice IV
+V Zákoutí,Pardubice,Pardubičky,Pardubice IV
+Vodárenská,Pardubice,Nemošice,Pardubice IV
+Východní,Pardubice,Pardubičky,Pardubice IV
+Za Kopečkem,Pardubice,Pardubičky,Pardubice IV
+Zelená,Pardubice,Pardubičky,Pardubice IV
+Zemědělská,Pardubice,Mnětice,Pardubice IV
+Zminská,Pardubice,Černá za Bory,Pardubice IV
+Artura Krause,Pardubice,Zelené Předměstí,Pardubice V
+Bacháčkova,Pardubice,Zelené Předměstí,Pardubice V
+Benešovo náměstí,Pardubice,Zelené Předměstí,Pardubice V
+Boženy Němcové,Pardubice,Zelené Předměstí,Pardubice V
+Boženy Vikové-Kunětické,Pardubice,Zelené Předměstí,Pardubice V
+Čacké,Pardubice,Nové Jesenčany,Pardubice V
+Čacké,Pardubice,Zelené Předměstí,Pardubice V
+Češkova,Pardubice,Zelené Předměstí,Pardubice V
+Čihákova,Pardubice,Zelené Předměstí,Pardubice V
+Čs. armády,Pardubice,Zelené Předměstí,Pardubice V
+Demokratické mládeže,Pardubice,Zelené Předměstí,Pardubice V
+Devotyho,Pardubice,Zelené Předměstí,Pardubice V
+Do Zahrádek,Pardubice,Nové Jesenčany,Pardubice V
+Dražkovická,Pardubice,Zelené Předměstí,Pardubice V
+Gorkého,Pardubice,Zelené Předměstí,Pardubice V
+Holcova,Pardubice,Zelené Předměstí,Pardubice V
+Chrudimská,Pardubice,Zelené Předměstí,Pardubice V
+Jana Palacha,Pardubice,Zelené Předměstí,Pardubice V
+Jilemnického,Pardubice,Zelené Předměstí,Pardubice V
+Jiránkova,Pardubice,Zelené Předměstí,Pardubice V
+Josefa Ressla,Pardubice,Zelené Předměstí,Pardubice V
+K Barvírně,Pardubice,Nové Jesenčany,Pardubice V
+K Barvírně,Pardubice,Zelené Předměstí,Pardubice V
+K Blahobytu,Pardubice,Zelené Předměstí,Pardubice V
+K Dolíčku,Pardubice,Dražkovice,Pardubice V
+K Dolíčku,Pardubice,Nové Jesenčany,Pardubice V
+K Vápence,Pardubice,Zelené Předměstí,Pardubice V
+K Vinici,Pardubice,Zelené Předměstí,Pardubice V
+K Višňovce,Pardubice,Zelené Předměstí,Pardubice V
+K Židovskému hřbitovu,Pardubice, ,Pardubice V
+Kašparova,Pardubice,Zelené Předměstí,Pardubice V
+Konečná,Pardubice,Zelené Předměstí,Pardubice V
+kpt. Nálepky,Pardubice,Nové Jesenčany,Pardubice V
+kpt. Nálepky,Pardubice,Zelené Předměstí,Pardubice V
+Letecká,Pardubice,Zelené Předměstí,Pardubice V
+Lexova,Pardubice,Zelené Předměstí,Pardubice V
+Máchova,Pardubice,Nové Jesenčany,Pardubice V
+Marty Exnarové,Pardubice,Zelené Předměstí,Pardubice V
+Mikulovická,Pardubice,Zelené Předměstí,Pardubice V
+Milheimova,Pardubice,Zelené Předměstí,Pardubice V
+Na Spravedlnosti,Pardubice,Zelené Předměstí,Pardubice V
+Na Staré poště,Pardubice,Zelené Předměstí,Pardubice V
+Na Záboří,Pardubice,Nové Jesenčany,Pardubice V
+Na Záboří,Pardubice,Zelené Předměstí,Pardubice V
+náměstí Dukelských hrdinů,Pardubice,Zelené Předměstí,Pardubice V
+Nemošická,Pardubice,Zelené Předměstí,Pardubice V
+Obětí 24. srpna,Pardubice,Nové Jesenčany,Pardubice V
+Pichlova,Pardubice,Zelené Předměstí,Pardubice V
+Pod Břízkami,Pardubice,Zelené Předměstí,Pardubice V
+Pod Vinicí,Pardubice,Zelené Předměstí,Pardubice V
+Pražská,Pardubice,Zelené Předměstí,Pardubice V
+Raisova,Pardubice,Nové Jesenčany,Pardubice V
+Raisova,Pardubice,Zelené Předměstí,Pardubice V
+Rokycanova,Pardubice,Zelené Předměstí,Pardubice V
+Rožkova,Pardubice,Zelené Předměstí,Pardubice V
+S. K. Neumanna,Pardubice,Zelené Předměstí,Pardubice V
+Sokolovská,Pardubice,Zelené Předměstí,Pardubice V
+Staňkova,Pardubice,Zelené Předměstí,Pardubice V
+Svobody,Pardubice,Zelené Předměstí,Pardubice V
+Široká,Pardubice,Zelené Předměstí,Pardubice V
+Teplého,Pardubice,Zelené Předměstí,Pardubice V
+Terezy Novákové,Pardubice,Zelené Předměstí,Pardubice V
+U Krematoria,Pardubice,Zelené Předměstí,Pardubice V
+U Suchého dubu,Pardubice,Zelené Předměstí,Pardubice V
+V Ráji,Pardubice,Zelené Předměstí,Pardubice V
+Wolkerova,Pardubice,Zelené Předměstí,Pardubice V
+Zborovské náměstí,Pardubice,Zelené Předměstí,Pardubice V
+Železničního pluku,Pardubice,Zelené Předměstí,Pardubice V
+8. května,Pardubice,Popkovice,Pardubice VI
+8. května,Pardubice,Svítkov,Pardubice VI
+Branecká,Pardubice,Svítkov,Pardubice VI
+Březová,Pardubice, ,Pardubice VI
+Dlouhá,Pardubice,Svítkov,Pardubice VI
+Do Polí,Pardubice,Svítkov,Pardubice VI
+Dostihová,Pardubice,Svítkov,Pardubice VI
+Dr. Matouška,Pardubice,Svítkov,Pardubice VI
+Dubánkova,Pardubice,Staré Čívice,Pardubice VI
+Dubová,Pardubice,Svítkov,Pardubice VI
+Františka Ventury,Pardubice, ,Pardubice VI
+Habřinská,Pardubice,Svítkov,Pardubice VI
+Hradčanská,Pardubice,Svítkov,Pardubice VI
+Husitská,Pardubice,Svítkov,Pardubice VI
+Chotkova,Pardubice,Staré Čívice,Pardubice VI
+Josefa Poppera,Pardubice,Svítkov,Pardubice VI
+K Besedě,Pardubice,Svítkov,Pardubice VI
+K Dubině,Pardubice,Svítkov,Pardubice VI
+K Hladíkovu,Pardubice,Staré Čívice,Pardubice VI
+K Pašti,Pardubice,Svítkov,Pardubice VI
+K Pišici,Pardubice,Staré Čívice,Pardubice VI
+K Rybníčku,Pardubice,Svítkov,Pardubice VI
+Ke Mlýnu,Pardubice,Staré Čívice,Pardubice VI
+Ke Splávku,Pardubice,Popkovice,Pardubice VI
+Ke Stájím,Pardubice,Svítkov,Pardubice VI
+Kokešova,Pardubice,Staré Čívice,Pardubice VI
+Kolonie,Pardubice,Svítkov,Pardubice VI
+Kostnická,Pardubice,Svítkov,Pardubice VI
+kpt. Poplera,Pardubice,Svítkov,Pardubice VI
+Křemenská,Pardubice,Svítkov,Pardubice VI
+Laty Brandisové,Pardubice,Svítkov,Pardubice VI
+Motoristů,Pardubice,Svítkov,Pardubice VI
+Na Humenském,Pardubice,Svítkov,Pardubice VI
+Na Klínku,Pardubice,Svítkov,Pardubice VI
+Na Návsi,Pardubice,Staré Čívice,Pardubice VI
+Na Parohách,Pardubice,Svítkov,Pardubice VI
+Na Štěpnici,Pardubice,Staré Čívice,Pardubice VI
+Olšová,Pardubice,Staré Čívice,Pardubice VI
+Orebská,Pardubice,Svítkov,Pardubice VI
+Popkovická,Pardubice,Svítkov,Pardubice VI
+Pražská,Pardubice,Popkovice,Pardubice VI
+Pražská,Pardubice,Svítkov,Pardubice VI
+Pražská,Pardubice,Zelené Předměstí,Pardubice VI
+Přeloučská,Pardubice,Staré Čívice,Pardubice VI
+Přerovská,Pardubice,Svítkov,Pardubice VI
+Sjezdová,Pardubice,Popkovice,Pardubice VI
+Sportovců,Pardubice,Svítkov,Pardubice VI
+Srnojedská,Pardubice,Svítkov,Pardubice VI
+Školní,Pardubice,Svítkov,Pardubice VI
+Táborská,Pardubice,Popkovice,Pardubice VI
+U Bylanky,Pardubice,Popkovice,Pardubice VI
+U Bylanky,Pardubice,Svítkov,Pardubice VI
+U Moruší,Pardubice,Popkovice,Pardubice VI
+U Moruší,Pardubice,Svítkov,Pardubice VI
+U Panasonicu,Pardubice,Staré Čívice,Pardubice VI
+U Parku,Pardubice,Svítkov,Pardubice VI
+U Trojice,Pardubice,Svítkov,Pardubice VI
+U Zastávky,Pardubice,Svítkov,Pardubice VI
+V Chaloupkách,Pardubice,Staré Čívice,Pardubice VI
+V Oklikách,Pardubice,Svítkov,Pardubice VI
+V Uličce,Pardubice,Popkovice,Pardubice VI
+Vašákova,Pardubice,Staré Čívice,Pardubice VI
+Za Oborou,Pardubice,Staré Čívice,Pardubice VI
+Žižkova,Pardubice,Popkovice,Pardubice VI
+Žižkova,Pardubice,Svítkov,Pardubice VI
+Adolfa Opálky,Pardubice,Trnová,Pardubice VII
+Alešova,Pardubice,Rosice,Pardubice VII
+Arbesova,Pardubice,Ohrazenice,Pardubice VII
+Bělehradská,Pardubice,Rosice,Pardubice VII
+Bohdanečská,Pardubice,Trnová,Pardubice VII
+Borová,Pardubice,Rosice,Pardubice VII
+Čapkova,Pardubice,Rosice,Pardubice VII
+Čechova,Pardubice,Ohrazenice,Pardubice VII
+Danihelkova,Pardubice,Rosice,Pardubice VII
+Doubravická,Pardubice,,Pardubice VII
+Dukelská,Pardubice,Rosice,Pardubice VII
+Duškova,Pardubice,Rosice,Pardubice VII
+Dvořákova,Pardubice,Ohrazenice,Pardubice VII
+Foersterova,Pardubice,Rosice,Pardubice VII
+Fričova,Pardubice,Ohrazenice,Pardubice VII
+Fügnerova,Pardubice,Rosice,Pardubice VII
+generála Svobody,Pardubice,Rosice,Pardubice VII
+Heyrovského,Pardubice,Rosice,Pardubice VII
+Hrabalova,Pardubice,Ohrazenice,Pardubice VII
+Hradišťská,Pardubice,Ohrazenice,Pardubice VII
+Chelčického,Pardubice,Rosice,Pardubice VII
+J. K. Tyla,Pardubice,Rosice,Pardubice VII
+Jana Hrubého,Pardubice, ,Pardubice VII
+Jana Kubiše,Pardubice, ,Pardubice VII
+Jiřího Potůčka,Pardubice,Trnová,Pardubice VII
+Josefa Bublíka,Pardubice,Trnová,Pardubice VII
+Jozefa Gabčíka,Pardubice,Trnová,Pardubice VII
+Jožky Jabůrkové,Pardubice,Trnová,Pardubice VII
+K Olšině,Pardubice,Trnová,Pardubice VII
+K Potoku,Pardubice,Ohrazenice,Pardubice VII
+Karla Šípka,Pardubice,Trnová,Pardubice VII
+Kavanova,Pardubice,Rosice,Pardubice VII
+Kollárova,Pardubice,Ohrazenice,Pardubice VII
+Kosmonautů,Pardubice,Trnová,Pardubice VII
+Legionářská,Pardubice,Rosice,Pardubice VII
+Mánesova,Pardubice,Rosice,Pardubice VII
+Marie Majerové,Pardubice,Ohrazenice,Pardubice VII
+Marie Pujmanové,Pardubice,Rosice,Pardubice VII
+Mrštíků,Pardubice,Ohrazenice,Pardubice VII
+Na Vrškách,Pardubice,Trnová,Pardubice VII
+Nádražní,Pardubice,Rosice,Pardubice VII
+náměstí 9. května,Pardubice,Rosice,Pardubice VII
+Ortenova,Pardubice,Ohrazenice,Pardubice VII
+Oskara Brázdy,Pardubice,Rosice,Pardubice VII
+Pavlova,Pardubice,Trnová,Pardubice VII
+Pejchlova,Pardubice,Rosice,Pardubice VII
+Písková,Pardubice,Rosice,Pardubice VII
+Pištorova,Pardubice,Ohrazenice,Pardubice VII
+Poděbradská,Pardubice,Trnová,Pardubice VII
+Pohránovská,Pardubice,Ohrazenice,Pardubice VII
+Poláčkova,Pardubice,Ohrazenice,Pardubice VII
+Prokopa Holého,Pardubice,Rosice,Pardubice VII
+Riegrova,Pardubice,Rosice,Pardubice VII
+Růžová,Pardubice,Trnová,Pardubice VII
+Rybitevská,Pardubice,Rosice,Pardubice VII
+Salavcova,Pardubice,Rosice,Pardubice VII
+Seifertova,Pardubice,Ohrazenice,Pardubice VII
+Semtínská,Pardubice,Ohrazenice,Pardubice VII
+Severní,Pardubice,Rosice,Pardubice VII
+Slepá,Pardubice,Trnová,Pardubice VII
+Smetanova,Pardubice,Ohrazenice,Pardubice VII
+Spojovací,Pardubice,Rosice,Pardubice VII
+Šafaříkova,Pardubice,Rosice,Pardubice VII
+Školní náměstí,Pardubice,Rosice,Pardubice VII
+Školská,Pardubice,Ohrazenice,Pardubice VII
+Tolarova,Pardubice,Rosice,Pardubice VII
+Trnovská,Pardubice,Ohrazenice,Pardubice VII
+U Prefy,Pardubice,Rosice,Pardubice VII
+Vrchlického,Pardubice,Ohrazenice,Pardubice VII
+Výzkumná,Pardubice,Rosice,Pardubice VII
+Za Hřištěm,Pardubice,Rosice,Pardubice VII
