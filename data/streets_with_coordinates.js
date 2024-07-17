@@ -2,6 +2,7 @@ export const streets = [
   {
     status: "2024-07-02",
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "17. listopadu",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -62,6 +63,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Anenská",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -257,6 +259,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Arnošta z Pardubic",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -386,6 +389,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Bartolomějská",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
@@ -421,6 +425,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Bělobranské náměstí",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -463,6 +468,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Benedettiho",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -479,6 +485,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Bezdíčkova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -521,6 +528,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Bratranců Veverkových",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -621,6 +629,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Bubeníkova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -649,6 +658,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Bubeníkovy sady",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -693,6 +703,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Bulharská",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -745,6 +756,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Čechovo nábřeží",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -801,6 +813,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Dašická",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -1195,6 +1208,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Do Nového",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -1255,6 +1269,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Gebauerova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -1290,6 +1305,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Havlíčkova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -1329,6 +1345,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Hlaváčova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -1521,6 +1538,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Holubova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -1550,6 +1568,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Hronovická",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -1597,6 +1616,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Husova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -1830,6 +1850,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Jahnova",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
@@ -1888,6 +1909,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Jahnova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -1946,6 +1968,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Jindřišská",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -1989,6 +2012,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Jiráskova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -2043,6 +2067,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Jiřího z Poděbrad",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -2067,6 +2092,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "JUDr. Krpaty",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -2102,6 +2128,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Jungmannova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -2133,6 +2160,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "K Polabinám",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -2289,6 +2317,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "K Vápence",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -2360,6 +2389,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Karla IV.",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
@@ -2567,6 +2597,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Ke Kamenci",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -2633,6 +2664,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Ke Tvrzi",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
@@ -2654,6 +2686,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Klášterní",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
@@ -2675,6 +2708,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Komenského náměstí",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
@@ -2707,7 +2741,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Kostelní",
     city_name: "Pardubice",
@@ -2779,7 +2813,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Kotkova",
     city_name: "Pardubice",
@@ -2803,7 +2837,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "kpt. Bartoše",
     city_name: "Pardubice",
@@ -2817,7 +2851,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "kpt. Jaroše",
     city_name: "Pardubice",
@@ -2844,7 +2878,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Kyjevská",
     city_name: "Pardubice",
@@ -2952,7 +2986,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Labská",
     city_name: "Pardubice",
@@ -3075,7 +3109,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Labská",
     city_name: "Pardubice",
@@ -3198,7 +3232,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Macanova",
     city_name: "Pardubice",
@@ -3235,7 +3269,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Malá",
     city_name: "Pardubice",
@@ -3258,7 +3292,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Masarykovo náměstí",
     city_name: "Pardubice",
@@ -3382,7 +3416,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Mezi Mosty",
     city_name: "Pardubice",
@@ -3432,7 +3466,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Bukovině",
     city_name: "Pardubice",
@@ -3461,7 +3495,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Haldě",
     city_name: "Pardubice",
@@ -3538,7 +3572,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Hrádku",
     city_name: "Pardubice",
@@ -3605,7 +3639,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Ležánkách",
     city_name: "Pardubice",
@@ -3680,7 +3714,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Okrouhlíku",
     city_name: "Pardubice",
@@ -3753,7 +3787,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Sádkách",
     city_name: "Pardubice",
@@ -3809,7 +3843,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Třísle",
     city_name: "Pardubice",
@@ -16766,7 +16800,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Mírová",
     city_name: "Pardubice",
@@ -16781,7 +16815,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Mnětická",
     city_name: "Pardubice",
@@ -16838,7 +16872,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "MUDr. Ducháčkové",
     city_name: "Pardubice",
@@ -16876,7 +16910,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Benátkách",
     city_name: "Pardubice",
@@ -16895,7 +16929,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Brázdách",
     city_name: "Pardubice",
@@ -16916,7 +16950,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Klárce",
     city_name: "Pardubice",
@@ -16956,7 +16990,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Rybníčkách",
     city_name: "Pardubice",
@@ -16990,7 +17024,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Rybníku",
     city_name: "Pardubice",
@@ -17011,7 +17045,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Na Vsi",
     city_name: "Pardubice",
@@ -17050,7 +17084,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Nábřežní",
     city_name: "Pardubice",
@@ -17086,7 +17120,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Nad Metelkou",
     city_name: "Pardubice",
@@ -17106,7 +17140,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Národních hrdinů",
     city_name: "Pardubice",
@@ -17186,7 +17220,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Odbojářů",
     city_name: "Pardubice",
@@ -17217,7 +17251,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Ostřešanská",
     city_name: "Pardubice",
@@ -17251,7 +17285,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Plemenářský podnik",
     city_name: "Pardubice",
@@ -17267,7 +17301,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Pod Hřbitovem",
     city_name: "Pardubice",
@@ -17282,7 +17316,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Pod Kopečkem",
     city_name: "Pardubice",
@@ -17309,7 +17343,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Podhumenská",
     city_name: "Pardubice",
@@ -17373,7 +17407,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Polní",
     city_name: "Pardubice",
@@ -17388,7 +17422,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Průmyslová",
     city_name: "Pardubice",
@@ -17835,7 +17869,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Průmyslová",
     city_name: "Pardubice",
@@ -18282,7 +18316,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Příčná",
     city_name: "Pardubice",
@@ -18297,7 +18331,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Revoluční",
     city_name: "Pardubice",
@@ -18333,7 +18367,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Rosůlkova",
     city_name: "Pardubice",
@@ -18349,7 +18383,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Sadová",
     city_name: "Pardubice",
@@ -18387,7 +18421,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Spodní",
     city_name: "Pardubice",
@@ -18406,7 +18440,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Sportovní",
     city_name: "Pardubice",
@@ -18431,7 +18465,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Staré náměstí",
     city_name: "Pardubice",
@@ -18570,7 +18604,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Staročernská",
     city_name: "Pardubice",
@@ -18675,7 +18709,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Světlá",
     city_name: "Pardubice",
@@ -18710,7 +18744,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Topolová",
     city_name: "Pardubice",
@@ -18759,7 +18793,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Tuněchodská",
     city_name: "Pardubice",
@@ -18781,7 +18815,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Borku",
     city_name: "Pardubice",
@@ -18816,7 +18850,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Kapličky",
     city_name: "Pardubice",
@@ -18839,7 +18873,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Štítu",
     city_name: "Pardubice",
@@ -18883,7 +18917,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Zámečku",
     city_name: "Pardubice",
@@ -18916,7 +18950,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Zámečku",
     city_name: "Pardubice",
@@ -18949,7 +18983,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Zámečku",
     city_name: "Pardubice",
@@ -18982,7 +19016,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "V Zákoutí",
     city_name: "Pardubice",
@@ -19001,7 +19035,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Vodárenská",
     city_name: "Pardubice",
@@ -24004,7 +24038,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Pražská",
     city_name: "Pardubice",
@@ -24265,7 +24299,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Pražská",
     city_name: "Pardubice",
@@ -24526,7 +24560,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Pražská",
     city_name: "Pardubice",
@@ -24787,7 +24821,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Přeloučská",
     city_name: "Pardubice",
@@ -24931,7 +24965,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Přerovská",
     city_name: "Pardubice",
@@ -25035,7 +25069,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Sjezdová",
     city_name: "Pardubice",
@@ -25055,7 +25089,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Sportovců",
     city_name: "Pardubice",
@@ -25086,7 +25120,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Srnojedská",
     city_name: "Pardubice",
@@ -25122,7 +25156,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Školní",
     city_name: "Pardubice",
@@ -25166,7 +25200,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Táborská",
     city_name: "Pardubice",
@@ -25189,7 +25223,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Bylanky",
     city_name: "Pardubice",
@@ -25222,7 +25256,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Bylanky",
     city_name: "Pardubice",
@@ -25255,7 +25289,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Moruší",
     city_name: "Pardubice",
@@ -25290,7 +25324,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Moruší",
     city_name: "Pardubice",
@@ -25325,7 +25359,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Panasonicu",
     city_name: "Pardubice",
@@ -25408,7 +25442,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Parku",
     city_name: "Pardubice",
@@ -25426,7 +25460,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Trojice",
     city_name: "Pardubice",
@@ -25469,7 +25503,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "U Zastávky",
     city_name: "Pardubice",
@@ -25483,7 +25517,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "V Chaloupkách",
     city_name: "Pardubice",
@@ -25525,7 +25559,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "V Oklikách",
     city_name: "Pardubice",
@@ -25558,7 +25592,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "V Uličce",
     city_name: "Pardubice",
@@ -25582,7 +25616,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Vašákova",
     city_name: "Pardubice",
@@ -25596,7 +25630,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Za Oborou",
     city_name: "Pardubice",
@@ -25618,7 +25652,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Žižkova",
     city_name: "Pardubice",
@@ -25695,7 +25729,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Žižkova",
     city_name: "Pardubice",
@@ -25772,7 +25806,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Adolfa Opálky",
     city_name: "Pardubice",
@@ -29088,7 +29122,7 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    status: "",
     name: "Kamil",
     street_name: "Vrchlického",
     city_name: "Pardubice",
@@ -29107,6 +29141,7 @@ export const streets = [
   },
   {
     status: "",
+    name: "Kamil",
     street_name: "Výzkumná",
     city_name: "Pardubice",
     district_name: "Rosice",
@@ -29125,6 +29160,7 @@ export const streets = [
   },
   {
     status: "2024-07-02",
+    name: "Kamil",
     street_name: "Za Hřištěm",
     city_name: "Pardubice",
     district_name: "Rosice",
