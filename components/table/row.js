@@ -27,16 +27,14 @@ export default function Row({ newData, street }) {
   const [name, setName] = useState(street.name);
   const [date, setDate] = useState(street.status);
   return (
-    <tr
-      key={`${street.street_name}-${street.borough_name}-${street.district_name}`}
-    >
+    <tr>
       <td>{street.street_name}</td>
       <td>{street.district_name}</td>
       <td>{street.borough_name}</td>
       <td>
         <input
           type="date"
-          className="border-2 rounded-lg"
+          className="border-2 rounded-lg px-2"
           value={date}
           onChange={(e) => (
             setDate(e.target.value),
@@ -54,7 +52,7 @@ export default function Row({ newData, street }) {
       <td>
         <input
           type="text"
-          className="border-2 rounded-lg"
+          className="border-2 rounded-lg px-2"
           value={name}
           onChange={(e) => (
             setName(e.target.value),

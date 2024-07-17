@@ -7,7 +7,7 @@ export default function Footer() {
       <p className="text-sm mb-4">
         Tento projekt je vytvořený jako open-source. Pro více informací mrkni do{" "}
         <Link
-          href={"https://github.com/petrkucerak/modlitbazapardubice"}
+          href={"https://github.com/petrkucerak/modlitbyzapardubice"}
           target="_blank"
           className="underline"
         >

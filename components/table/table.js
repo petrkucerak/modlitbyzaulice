@@ -18,7 +18,7 @@ export default function Table() {
   }
   return (
     <div className="flex flex-col items-center justify-between w-full">
-      <table className="w-full">
+      <table className="w-full mt-8">
         <thead>
           <tr className="text-left">
             <th>Ulice</th>
