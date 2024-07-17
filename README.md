@@ -1,5 +1,5 @@
-# Modlitba za Pardubice
+# Modlitby za Pardubice
 
-Web application for project `Modlitba za Pardubice`.
+Web application for project `Modlitby za Pardubice`.
 
 

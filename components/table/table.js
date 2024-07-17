@@ -39,8 +39,8 @@ export default function Table() {
     downloadAnchorNode.remove();
   }
   return (
-    <div className="flex flex-col items-center justify-between">
-      <table>
+    <div className="flex flex-col items-center justify-between w-full">
+      <table className="w-full">
         <thead>
           <tr className="text-left">
             <th>Ulice</th>

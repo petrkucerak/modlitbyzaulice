@@ -6,8 +6,8 @@ export const conf = {
   url: "https://modlitbazapardubice.cz",
 
   // start of the manifest
-  name: "Modlitba za Pardubice",
-  short_name: "Modlitba za Pardubice",
+  name: "Modlitby za Pardubice",
+  short_name: "Modlitby za Pardubice",
   description: "TODO",
   start_url: "/",
   display: "standalone",
@@ -28,7 +28,7 @@ export const conf = {
   keywords: [
     "Modlitba",
     "Pardubice",
-    "Modlitba za Pardubice",
+    "Modlitby za Pardubice",
     "Modlitba v Pardubicích",
     "Pardubice se modlí",
     // TODO
