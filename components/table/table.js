@@ -42,7 +42,7 @@ export default function Table() {
     <div className="flex flex-col items-center justify-between">
       <table>
         <thead>
-          <tr>
+          <tr className="text-left">
             <th>Ulice</th>
             <th>Část obce</th>
             <th>Městský obvod</th>
