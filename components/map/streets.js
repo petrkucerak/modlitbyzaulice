@@ -44,17 +44,20 @@ export default function Streets() {
           color: "yellow",
           opacity: 0.4,
           weight: 10,
-          smoothFactor: 0.95, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+          interactive: true,
+          smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+          className: "map-select",
         })
           .addTo(map)
           .bindPopup(streetPopup);
-      }, Math.floor(Math.random() * 3000));
+      }, Math.floor(Math.random() * 4000));
     } else {
       const polyline = L.polyline(coords, {
         color: "grey",
-        opacity: 0.2,
+        opacity: 0.3,
         weight: 10,
-        smoothFactor: 0.95, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+        interactive: false,
+        smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
       }).addTo(map);
     }
   });
