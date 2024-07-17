@@ -1,26 +1,60 @@
 import { streets } from "@/data/streets_with_coordinates";
 import { useMap } from "react-leaflet";
 
+const moths = [
+  "ledena",
+  "únoru",
+  "březena",
+  "dubena",
+  "květena",
+  "červena",
+  "červenece",
+  "srpena",
+  "září",
+  "říjena",
+  "listopadu",
+  "prosinece",
+];
+
+function getDate(date) {
+  return `${date.getDate()}. ${moths[date.getMonth()]} ${date.getFullYear()}.`;
+}
+
 export default function Streets() {
   const map = useMap();
   streets.map((street) => {
     const coords = street.coordinates;
     // options: https://leafletjs.com/reference.html#polyline
 
+    const date = new Date(street.status);
+
     const streetPopup = L.popup({
       keepInView: true,
       closeButton: false,
       className: "",
-    }).setContent(street.street_name);
+    }).setContent(
+      `<h3 class="text-xl">${
+        street.street_name
+      }</h3><p>Za tuto ulici se modlil ${street.name} ${getDate(date)}</p>`
+    );
 
-    const polyline = L.polyline(coords, {
-      color: "yellow",
-      opacity: 0.5,
-      weight: 20,
-      smoothFactor: 0.95, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
-    })
-      .addTo(map)
-      .bindPopup(streetPopup);
+    if (street.status !== "") {
+      const polyline = L.polyline(coords, {
+        color: "yellow",
+        opacity: 0.4,
+        weight: 20,
+        smoothFactor: 0.95, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+      })
+        .addTo(map)
+        .bindPopup(streetPopup);
+    } else {
+      const polyline = L.polyline(coords, {
+        color: "grey",
+        opacity: 0.2,
+        weight: 20,
+        smoothFactor: 0.95, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+      }).addTo(map);
+    }
   });
   return null;
 }
