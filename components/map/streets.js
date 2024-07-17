@@ -39,19 +39,21 @@ export default function Streets() {
     );
 
     if (street.status !== "") {
-      const polyline = L.polyline(coords, {
-        color: "yellow",
-        opacity: 0.4,
-        weight: 20,
-        smoothFactor: 0.95, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
-      })
-        .addTo(map)
-        .bindPopup(streetPopup);
+      setTimeout(() => {
+        const polyline = L.polyline(coords, {
+          color: "yellow",
+          opacity: 0.4,
+          weight: 10,
+          smoothFactor: 0.95, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+        })
+          .addTo(map)
+          .bindPopup(streetPopup);
+      }, Math.floor(Math.random() * 3000));
     } else {
       const polyline = L.polyline(coords, {
         color: "grey",
         opacity: 0.2,
-        weight: 20,
+        weight: 10,
         smoothFactor: 0.95, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
       }).addTo(map);
     }

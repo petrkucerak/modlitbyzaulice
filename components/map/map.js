@@ -16,7 +16,7 @@ export default function Map({ className }) {
   return (
     <MapContainer
       center={position}
-      zoom={17}
+      zoom={13}
       scrollWheelZoom={true}
       className="h-[80vh]"
     >
