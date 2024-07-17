@@ -2,6 +2,28 @@ import csv
 import requests
 import json
 
+# Function to find a node by its ID
+def find_node_by_id(node_id):
+    overpass_url = "http://overpass-api.de/api/interpreter"
+    overpass_query = f"""
+    [out:json];
+    node({node_id});
+    out body;
+    """
+    response = requests.get(overpass_url, params={'data': overpass_query})
+    data = response.json()
+    
+    if data['elements']:
+        node = data['elements'][0]
+        return {
+            'id': node['id'],
+            'lat': node['lat'],
+            'lon': node['lon'],
+            'tags': node.get('tags', {})
+        }
+    else:
+        return None
+
 # Function to get the coordinates of a given street, city, district, and borough
 def get_coordinates(street_name, city_name, district_name, borough_name):
     overpass_url = "http://overpass-api.de/api/interpreter"
@@ -17,11 +39,19 @@ def get_coordinates(street_name, city_name, district_name, borough_name):
     response = requests.get(overpass_url, params={'data': overpass_query})
     data = response.json()
     
+    # print(data)
+
     coordinates = []
     for element in data['elements']:
-        if element['type'] == 'node':
-            coordinates.append((element['lat'], element['lon']))
+        if element['type'] == 'way':
+            way = []
+            for node_id in element['nodes']:
+                node = find_node_by_id(node_id)
+                # print(node)
+                way.append((node['lat'], node['lon']))
+            coordinates.append(way)
     
+
     return coordinates
 
 # Load street, city, district, and borough names from the CSV file
@@ -43,7 +73,7 @@ streets_with_coordinates = []
 
 for street in streets:
     coordinates = get_coordinates(street['street_name'], street['city_name'], street['district_name'], street['borough_name'])
-    print(f"found street: {street['street_name']}")
+    print(f"Found street: {street['street_name']}")
     streets_with_coordinates.append({
         'street_name': street['street_name'],
         'city_name': street['city_name'],
@@ -52,10 +82,14 @@ for street in streets:
         'coordinates': coordinates
     })
 
-# Save the results to a JSON file
-output_json = 'streets_with_coordinates.json'
+# Save the results to a JS file
+output_json = 'streets_with_coordinates.js'
 
 with open(output_json, mode='w', encoding='utf-8') as file:
     json.dump(streets_with_coordinates, file, ensure_ascii=False, indent=4)
+with open(output_json, mode='r+', encoding='utf-8') as file:
+    content = file.read()
+    file.seek(0,0)
+    file.write("export const streets = " + content)
 
 print(f"Data has been successfully saved to {output_json}")
