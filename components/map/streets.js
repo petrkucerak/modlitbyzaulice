@@ -2,9 +2,9 @@ import { streets } from "@/data/streets_with_coordinates";
 import { useMap } from "react-leaflet";
 
 export default function Streets() {
+  const map = useMap();
   streets.map((street) => {
     const coords = street.coordinates;
-    const map = useMap();
     // options: https://leafletjs.com/reference.html#polyline
     const polyline = L.polyline(coords, {
       color: "yellow",

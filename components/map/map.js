@@ -5,8 +5,8 @@ import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import "leaflet/dist/leaflet.css";
 import { conf } from "../conf";
 import { isMobile } from "react-device-detect";
-import Locale from "./locale";
-import Streets from "./streets";
+import { Locale } from "./locale";
+import { Streets } from "./streets";
 
 export default function Map({ className }) {
   const position = [50.0385619, 15.778475];
