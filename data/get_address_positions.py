@@ -71,9 +71,13 @@ with open(input_csv, mode='r', encoding='utf-8') as file:
 # Get coordinates for each street, city, district, and borough and save them to a list
 streets_with_coordinates = []
 
+street_num = 0
+street_sum = len(streets)
+
 for street in streets:
+    street_num +=1
     coordinates = get_coordinates(street['street_name'], street['city_name'], street['district_name'], street['borough_name'])
-    print(f"Found street: {street['street_name']}")
+    print(f"Found street: {street['street_name']}\t\t({street_num}/{street_sum})")
     streets_with_coordinates.append({
         'street_name': street['street_name'],
         'city_name': street['city_name'],
