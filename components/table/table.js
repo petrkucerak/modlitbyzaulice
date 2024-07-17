@@ -30,7 +30,13 @@ export default function Table() {
         </thead>
         <tbody>
           {streets.map((street) => {
-            return <Row newData={newData} street={street} />;
+            return (
+              <Row
+                key={`${street.street_name}-${street.borough_name}-${street.district_name}`}
+                newData={newData}
+                street={street}
+              />
+            );
           })}{" "}
         </tbody>
       </table>
