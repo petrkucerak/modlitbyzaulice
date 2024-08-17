@@ -15,6 +15,11 @@ export default function Footer() {
         </Link>
         .
       </p>
+      <p className="mb-4 text-xs">
+        <Link className="underline" href="mailto:info@modlitbyzapardubice.cz">
+          info@modlitbyzapardubice.cz
+        </Link>
+      </p>
     </footer>
   );
 }
