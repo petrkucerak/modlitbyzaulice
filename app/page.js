@@ -8,7 +8,7 @@ export default function Home() {
     <Main>
       <Header />
       <div className="flex flex-col w-[90vw] max-w-[900px]">
-        <p className="text-2xl font-mono bg-yellow-300 absolute top-20 max-w-[90vw]">
+        <p className="text-2xl font-mono bg-yellow-300 absolute top-20 max-w-[90vw] opacity-70">
           <strong>Upozornění:</strong> Web je stále ve vývoji, tato stránka
           slouží pouze jako DEMO!
         </p>
