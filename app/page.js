@@ -8,6 +8,10 @@ export default function Home() {
     <Main>
       <Header />
       <div className="flex flex-col w-[90vw] max-w-[900px]">
+        <p className="text-2xl font-mono bg-yellow-300 absolute top-20 max-w-[90vw]">
+          <strong>Upozornění:</strong> Web je stále ve vývoji, tato stránka
+          slouží pouze jako DEMO!
+        </p>
         <h1 className="font-bold text-3xl">Modlitby za Pardubice</h1>
         <p className="mb-6">Proměňme město Pardubice skrze modlitbu.</p>
         <Button target={"_self"} href={"/mapa"}>
