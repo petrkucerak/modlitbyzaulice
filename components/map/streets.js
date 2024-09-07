@@ -19,7 +19,7 @@ const moths = [
 const GREY_COLOR = "#808080";
 
 function getDate(date) {
-  return `${date.getDate()}. ${moths[date.getMonth()]} ${date.getFullYear()}.`;
+  return `${date.getDate()}. ${moths[date.getMonth()]} ${date.getFullYear()}`;
 }
 
 export default function Streets() {
@@ -37,7 +37,7 @@ export default function Streets() {
     }).setContent(
       `<h3 class="text-xl">${
         street.street_name
-      }</h3><p>Za tuto ulici se modlil ${street.name} ${getDate(date)}</p>`
+      }</h3><p>Za tuto ulici se ${getDate(date)} modlil ${street.name}.</p>`
     );
 
     if (street.date !== "") {
