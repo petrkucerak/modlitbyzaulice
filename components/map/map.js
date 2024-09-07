@@ -23,7 +23,7 @@ export default function Map({ className }) {
       <TileLayer
         url={`https://api.mapy.cz/v1/maptiles/basic/${tileSize}/{z}/{x}/{y}?apikey=${conf.MAPY_API_KEY}`}
         attribution='<a href="https://api.mapy.cz/copyright" target="_blank" rel="noreferrer">&copy; Seznam.cz a.s. a další</a>'
-        className="grayscale"
+        className="grayscale-[90%]"
       />
       <Locale />
       <Streets />
