@@ -2,6 +2,34 @@ import csv
 import requests
 import json
 
+colors = {
+    "yellow": "#ffff00",
+    "green": "#00ff00",
+    "blue": "#00bfff",
+    "pink": "#ff00ff",
+    "orange": "#ffa500",
+    "cyan": "#00ffff",
+    "purple": "#800080"
+}
+
+def get_color(name):
+    if name == "Pardubice I":
+        return colors["yellow"]
+    elif name == "Pardubice II":
+        return colors["green"]
+    elif name == "Pardubice III":
+        return colors["blue"]
+    elif name == "Pardubice IV":
+        return colors["pink"]
+    elif name == "Pardubice V":
+        return colors["orange"]
+    elif name == "Pardubice VI":
+        return colors["cyan"]
+    elif name == "Pardubice VII":
+        return colors["purple"]
+    else:
+        return colors["yellow"]
+
 # Function to find a node by its ID
 def find_node_by_id(node_id):
     overpass_url = "http://overpass-api.de/api/interpreter"
@@ -81,7 +109,7 @@ for street in streets:
     streets_with_coordinates.append({
         'date': "",
         'name': "",
-        'color': "#ffff00",
+        'color': get_color(street['borough_name']),
         'street_name': street['street_name'],
         'city_name': street['city_name'],
         'district_name': street['district_name'],
