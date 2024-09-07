@@ -1,11 +1,12 @@
 export const streets = [
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "17. listopadu",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0361655, 15.7699678],
@@ -61,12 +62,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Anenská",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0334321, 15.7795407],
@@ -257,12 +259,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Arnošta z Pardubic",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0339631, 15.7787442],
@@ -387,12 +390,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bartolomějská",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0392222, 15.7780354],
@@ -423,12 +427,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bělobranské náměstí",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0405481, 15.7810825],
@@ -466,12 +471,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Benedettiho",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0334431, 15.787057],
@@ -483,12 +489,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bezdíčkova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0388597, 15.799248],
@@ -526,12 +533,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bratranců Veverkových",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0342949, 15.7719738],
@@ -627,12 +635,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bubeníkova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0384454, 15.7857383],
@@ -656,12 +665,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bubeníkovy sady",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.037972, 15.7831719],
@@ -701,12 +711,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bulharská",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0316871, 15.7875905],
@@ -754,12 +765,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Čechovo nábřeží",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0382596, 15.783313],
@@ -811,12 +823,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Dašická",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0338854, 15.7965094],
@@ -1206,12 +1219,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Do Nového",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0441622, 15.7952985],
@@ -1267,12 +1281,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Gebauerova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0374905, 15.7906726],
@@ -1303,12 +1318,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Havlíčkova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0343275, 15.766587],
@@ -1343,12 +1359,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Hlaváčova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0339103, 15.7608605],
@@ -1536,12 +1553,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Holubova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0426433, 15.7891688],
@@ -1566,12 +1584,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Hronovická",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0333926, 15.7724591],
@@ -1614,12 +1633,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Husova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0441888, 15.7930586],
@@ -1848,12 +1868,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Jahnova",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0381193, 15.7819125],
@@ -1907,12 +1928,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Jahnova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0381193, 15.7819125],
@@ -1966,12 +1988,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Jindřišská",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0339279, 15.778663],
@@ -2010,12 +2033,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Jiráskova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0357488, 15.7809774],
@@ -2065,12 +2089,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Jiřího z Poděbrad",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0355507, 15.7788947],
@@ -2090,12 +2115,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "JUDr. Krpaty",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0429451, 15.7956504],
@@ -2126,12 +2152,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Jungmannova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0339698, 15.7647556],
@@ -2158,12 +2185,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Polabinám",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.03571, 15.7667078],
@@ -2315,12 +2343,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Vápence",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0288072, 15.7559392],
@@ -2387,12 +2416,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Karla IV.",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0342925, 15.7795994],
@@ -2595,12 +2625,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Ke Kamenci",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0357259, 15.7934645],
@@ -2662,12 +2693,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Ke Tvrzi",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0353168, 15.7854044],
@@ -2684,12 +2716,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Klášterní",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0384222, 15.7803067],
@@ -2706,12 +2739,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Komenského náměstí",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0385629, 15.7811002],
@@ -2740,12 +2774,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Kostelní",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0393126, 15.7781518],
@@ -2812,12 +2847,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Kotkova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0378925, 15.7921386],
@@ -2836,12 +2872,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "kpt. Bartoše",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0388899, 15.7534345],
@@ -2850,12 +2887,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "kpt. Jaroše",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.031959, 15.7833196],
@@ -2877,12 +2915,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Kyjevská",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0280486, 15.7906602],
@@ -2985,12 +3024,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Labská",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0405481, 15.7810825],
@@ -3108,12 +3148,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Labská",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0405481, 15.7810825],
@@ -3231,12 +3272,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Macanova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.034518, 15.7629657],
@@ -3268,12 +3310,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Malá",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0349479, 15.7685054],
@@ -3291,12 +3334,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Masarykovo náměstí",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0385389, 15.7663802],
@@ -3415,12 +3459,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Mezi Mosty",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0407671, 15.7818197],
@@ -3465,12 +3510,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Bukovině",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0405394, 15.7929143],
@@ -3494,12 +3540,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Haldě",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0442535, 15.7930404],
@@ -3571,12 +3618,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Hrádku",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0370289, 15.7739592],
@@ -3638,12 +3686,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Ležánkách",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0406868, 15.7827702],
@@ -3713,12 +3762,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Okrouhlíku",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0348566, 15.7949022],
@@ -3786,12 +3836,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Sádkách",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0457562, 15.7916617],
@@ -3842,12 +3893,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Třísle",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0381613, 15.7820522],
@@ -3924,12 +3976,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Na Třísle",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0381613, 15.7820522],
@@ -4006,12 +4059,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Na Vrtálně",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0415935, 15.7846471],
@@ -4048,12 +4102,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "nábřeží Závodu míru",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0386311, 15.7661489],
@@ -4203,12 +4258,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "náměstí Čs. legií",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0343049, 15.7684469],
@@ -4239,12 +4295,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "náměstí Jana Pernera",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0329223, 15.7576321],
@@ -4346,12 +4403,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "náměstí Republiky",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0376751, 15.7770888],
@@ -4524,12 +4582,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "náměstí Republiky",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0376751, 15.7770888],
@@ -4702,12 +4761,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Nerudova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.034024, 15.7631142],
@@ -4727,12 +4787,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Okružní",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0338519, 15.79595],
@@ -4777,12 +4838,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Palackého třída",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0339103, 15.7608605],
@@ -4945,12 +5007,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pernerova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0391026, 15.7710475],
@@ -4981,12 +5044,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pernštýnská",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0390193, 15.7797626],
@@ -5001,12 +5065,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pernštýnské náměstí",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.038538, 15.7782422],
@@ -5035,12 +5100,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Počápelská",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0389423, 15.793954],
@@ -5056,12 +5122,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pod Sklípky",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0393937, 15.7794149],
@@ -5090,12 +5157,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pod Zámkem",
     city_name: "Pardubice",
     district_name: " ",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0410404, 15.7776656],
@@ -5124,12 +5192,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Polská",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.037311, 15.7852865],
@@ -5181,12 +5250,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pospíšilovo náměstí",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0396526, 15.7943811],
@@ -5221,12 +5291,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Příhrádek",
     city_name: "Pardubice",
     district_name: "Zámek",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0401601, 15.778725],
@@ -5262,12 +5333,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Sakařova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0420679, 15.7983581],
@@ -5309,12 +5381,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Sezemická",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0379549, 15.7882806],
@@ -5365,12 +5438,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Schulhoffova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0329669, 15.7945222],
@@ -5380,12 +5454,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Schwarzovo náměstí",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0374905, 15.7906726],
@@ -5405,12 +5480,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Sladkovského",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0366701, 15.7730454],
@@ -5471,12 +5547,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Smetanovo náměstí",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0369547, 15.7792437],
@@ -5490,12 +5567,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Smilova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.033918, 15.7701348],
@@ -5551,12 +5629,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Spořilov",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0389423, 15.793954],
@@ -5589,12 +5668,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Studánecká",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0378925, 15.7921386],
@@ -5626,12 +5706,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Sukova třída",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0392708, 15.7731143],
@@ -5766,12 +5847,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Svaté Anežky České",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0402068, 15.7801068],
@@ -5786,12 +5868,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Škroupova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0347113, 15.788247],
@@ -5805,12 +5888,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Štefánikova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0343049, 15.7684469],
@@ -5846,12 +5930,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Štolbova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0329584, 15.7813044],
@@ -5866,12 +5951,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Štrossova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.038512, 15.7857544],
@@ -6043,12 +6129,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "třída Míru",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0366455, 15.7717251],
@@ -6114,12 +6201,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Tylova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0365079, 15.7775977],
@@ -6129,12 +6217,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Tyršovo nábřeží",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.038193, 15.7822911],
@@ -6190,12 +6279,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Tyršovy sady",
     city_name: "Pardubice",
     district_name: " ",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0394786, 15.773689],
@@ -6326,12 +6416,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Divadla",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.036741, 15.7784552],
@@ -6346,12 +6437,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Husova sboru",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0344361, 15.7807214],
@@ -6389,12 +6481,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Kamenné vily",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0326685, 15.7891688],
@@ -6421,12 +6514,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Kostelíčka",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0365326, 15.7860645],
@@ -6465,12 +6559,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Marka",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0326768, 15.7647126],
@@ -6483,12 +6578,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Mlýnů",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0407814, 15.7818671],
@@ -6515,12 +6611,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Stadionu",
     city_name: "Pardubice",
     district_name: "Zámek",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0395423, 15.7722285],
@@ -6612,12 +6709,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Stadionu",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0395423, 15.7722285],
@@ -6709,12 +6807,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Trojice",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0333473, 15.7447256],
@@ -6752,12 +6851,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Ve Lhotkách",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0441458, 15.7926992],
@@ -6782,12 +6882,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Věry Junkové",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0381436, 15.8036891],
@@ -6829,12 +6930,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Vrchlického nábřeží",
     city_name: "Pardubice",
     district_name: " ",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.04004, 15.7814784],
@@ -6852,12 +6954,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Wernerovo nábřeží",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.039288, 15.7789124],
@@ -6868,12 +6971,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Winternitzova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0455412, 15.7927839],
@@ -6919,12 +7023,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Wintrova I",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0408902, 15.7862069],
@@ -6957,12 +7062,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Wintrova II",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0344571, 15.7906896],
@@ -6984,12 +7090,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Za Pasáží",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0362749, 15.7768287],
@@ -7007,12 +7114,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Zámecká",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0397195, 15.7790821],
@@ -7028,12 +7136,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Zámek",
     city_name: "Pardubice",
     district_name: "Zámek",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0410404, 15.7776656],
@@ -7046,12 +7155,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Zelenobranská",
     city_name: "Pardubice",
     district_name: "Pardubice-Staré Město",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0378458, 15.7772134],
@@ -7083,12 +7193,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Žitná",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice I",
+    color: "#00ff00",
     coordinates: [
       [
         [50.0338311, 15.7772682],
@@ -7145,12 +7256,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Areál vodních sportů",
     city_name: "Pardubice",
     district_name: "Cihelna",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0479219, 15.7844204],
@@ -7170,12 +7282,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Bělehradská",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0466502, 15.7529949],
@@ -7356,12 +7469,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Brozanská",
     city_name: "Pardubice",
     district_name: "Cihelna",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0496162, 15.7736656],
@@ -7399,12 +7513,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Brožíkova",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0419632, 15.7539475],
@@ -7459,12 +7574,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Družby",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0473238, 15.7587918],
@@ -7526,12 +7642,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Družstevní",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0523975, 15.7635721],
@@ -7573,12 +7690,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Fáblovka",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0610128, 15.7752072],
@@ -7667,12 +7785,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Gagarinova",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0442512, 15.7591582],
@@ -7696,12 +7815,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Grusova",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0463049, 15.749262],
@@ -7733,12 +7853,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Hradecká",
     city_name: "Pardubice",
     district_name: "Cihelna",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0497914, 15.7655668],
@@ -7886,12 +8007,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Hradecká",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0497914, 15.7655668],
@@ -8039,12 +8161,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Hradišťská",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0626386, 15.7635956],
@@ -8086,12 +8209,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Chemiků",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0515346, 15.7607157],
@@ -8103,12 +8227,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Javorová",
     city_name: "Pardubice",
     district_name: "Cihelna",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0541686, 15.7723936],
@@ -8159,12 +8284,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Jiřího Tomana",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0481684, 15.758793],
@@ -8201,30 +8327,33 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Cihelně",
     city_name: "Pardubice",
     district_name: "Cihelna",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Rozvodně",
     city_name: "Pardubice",
     district_name: "Cihelna",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Karla Šípka",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0523872, 15.7601006],
@@ -8261,12 +8390,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Ke Koupališti",
     city_name: "Pardubice",
     district_name: "Cihelna",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0485782, 15.7717894],
@@ -8301,12 +8431,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Kosmonautů",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0475091, 15.7605568],
@@ -8412,12 +8543,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "kpt. Bartoše",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0388899, 15.7534345],
@@ -8426,12 +8558,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Křičkova",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0456915, 15.7494211],
@@ -8442,12 +8575,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Kunětická",
     city_name: "Pardubice",
     district_name: "Cihelna",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0453427, 15.7742127],
@@ -8661,12 +8795,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Kunětická",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0453427, 15.7742127],
@@ -8880,12 +9015,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Labský Palouk",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.041115, 15.7513955],
@@ -8909,12 +9045,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Ležáků",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0427461, 15.7553519],
@@ -8928,12 +9065,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Lidická",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0434365, 15.7577975],
@@ -8978,12 +9116,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Lonkova",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0407843, 15.7541608],
@@ -9090,12 +9229,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Mezi Zahradami",
     city_name: "Pardubice",
     district_name: "Cihelna",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0503764, 15.7714495],
@@ -9123,12 +9263,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Mladých",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0479321, 15.7644185],
@@ -9159,12 +9300,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Mozartova",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0441354, 15.7490764],
@@ -9187,12 +9329,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Labišti",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0419925, 15.7601576],
@@ -9235,12 +9378,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Nová",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0505007, 15.7586495],
@@ -9256,21 +9400,23 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "npor. Eliáše",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Odborářů",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0444668, 15.7612023],
@@ -9302,12 +9448,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Ohrazenická",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0494792, 15.763998],
@@ -9337,12 +9484,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Okrajová",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0473003, 15.7526287],
@@ -9385,12 +9533,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Partyzánů",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0420579, 15.7555324],
@@ -9410,12 +9559,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Poděbradská",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0588801, 15.7538898],
@@ -9939,12 +10089,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Prodloužená",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0481429, 15.7553822],
@@ -10013,12 +10164,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Rosická",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0509351, 15.7627456],
@@ -10034,12 +10186,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Sedláčkova",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0422652, 15.7499255],
@@ -10072,12 +10225,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Sluneční",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0481376, 15.7524209],
@@ -10104,12 +10258,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Stavařov",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0461113, 15.7672436],
@@ -10174,12 +10329,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Stavbařů",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0507821, 15.7613278],
@@ -10201,12 +10357,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Stromová",
     city_name: "Pardubice",
     district_name: "Cihelna",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0549381, 15.7728516],
@@ -10226,12 +10383,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Studentská",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0481059, 15.7660342],
@@ -10276,12 +10434,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Josefa",
     city_name: "Pardubice",
     district_name: "Cihelna",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0519169, 15.7712724],
@@ -10321,12 +10480,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Valčíkova",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0468572, 15.7543689],
@@ -10346,12 +10506,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Varšavská",
     city_name: "Pardubice",
     district_name: "Polabiny",
     borough_name: "Pardubice II",
+    color: "#ff00ff",
     coordinates: [
       [
         [50.0506166, 15.7597546],
@@ -10366,12 +10527,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "22. července",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0340252, 15.8085486],
@@ -10384,12 +10546,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bartoňova",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0397314, 15.8078126],
@@ -10567,12 +10730,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bělobranská dubina",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0506827, 15.8244795],
@@ -10587,12 +10751,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bezdíčkova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0388597, 15.799248],
@@ -10630,12 +10795,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Blahoutova",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0389571, 15.8061662],
@@ -10662,12 +10828,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Boční",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0334346, 15.7996474],
@@ -10693,12 +10860,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Brigádníků",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0395166, 15.8001157],
@@ -10712,12 +10880,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Dašická",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0338854, 15.7965094],
@@ -11107,12 +11276,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Divišova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.033077, 15.8143369],
@@ -11127,12 +11297,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Divišova",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.033077, 15.8143369],
@@ -11147,12 +11318,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Dubinská",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0419606, 15.8138351],
@@ -11248,12 +11420,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Dubové návrší",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0469287, 15.8122813],
@@ -11285,12 +11458,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Erno Košťála",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0411305, 15.8146733],
@@ -11421,12 +11595,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Hraniční",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0350128, 15.8038446],
@@ -11466,12 +11641,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Hraniční",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0350128, 15.8038446],
@@ -11511,12 +11687,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Hůrka",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0442394, 15.8050205],
@@ -11687,12 +11864,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Husova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0441888, 15.7930586],
@@ -11921,12 +12099,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Jana Zajíce",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0414817, 15.8029842],
@@ -12053,12 +12232,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Josefa Janáčka",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0473161, 15.810295],
@@ -12223,12 +12403,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Lesu",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0370487, 15.8052607],
@@ -12253,12 +12434,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Pardubičkám",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0311314, 15.8023834],
@@ -12270,12 +12452,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Krátká",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0316746, 15.8050834],
@@ -12291,12 +12474,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Lánská",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.032344, 15.8102448],
@@ -12307,12 +12491,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Lánská",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.032344, 15.8102448],
@@ -12323,12 +12508,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Lesní",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0358779, 15.8102627],
@@ -12359,12 +12545,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Lidmily Malé",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0397816, 15.8079494],
@@ -12430,12 +12617,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Luční",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0357297, 15.8013346],
@@ -12510,12 +12698,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Luční",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0357297, 15.8013346],
@@ -12590,12 +12779,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Luďka Matury",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0431725, 15.8044286],
@@ -12677,12 +12867,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Mandysova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.034571, 15.8077791],
@@ -12717,12 +12908,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Mandysova",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.034571, 15.8077791],
@@ -12757,12 +12949,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Musílkova",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0316797, 15.8133572],
@@ -12773,12 +12966,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Babce",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0422433, 15.8165317],
@@ -12837,12 +13031,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Drážce",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0365634, 15.7983997],
@@ -13034,12 +13229,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Drážce",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0365634, 15.7983997],
@@ -13231,12 +13427,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Hrázi",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0375012, 15.806131],
@@ -13266,12 +13463,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Kopci",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0353902, 15.8067719],
@@ -13283,12 +13481,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Okrouhlíku",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0348566, 15.7949022],
@@ -13356,12 +13555,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Okružní",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0338519, 15.79595],
@@ -13406,12 +13606,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Pod Lipami",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.034658, 15.8079032],
@@ -13434,12 +13635,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Pod Lipami",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.034658, 15.8079032],
@@ -13462,12 +13664,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Pod Studánkou",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0483097, 15.8129897],
@@ -13509,12 +13712,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Pod Zahradami",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0340264, 15.8027749],
@@ -13536,12 +13740,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Potěšilova",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0316106, 15.81634],
@@ -13557,12 +13762,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Raabova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0318994, 15.8097249],
@@ -13577,12 +13783,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Radiomechaniků",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0356283, 15.7990078],
@@ -13594,12 +13801,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Radiomechaniků",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0356283, 15.7990078],
@@ -13611,12 +13819,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Rumunská",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0405306, 15.8036038],
@@ -13651,12 +13860,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Růženy Vojtěchové",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0393423, 15.8069853],
@@ -13698,12 +13908,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Sezemická",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0379549, 15.7882806],
@@ -13754,12 +13965,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Skrbkova",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0327738, 15.8114848],
@@ -13772,12 +13984,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Spojilská",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0358779, 15.8102627],
@@ -13825,12 +14038,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Spojilská",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0358779, 15.8102627],
@@ -13878,12 +14092,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Staročernská",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0311688, 15.8087129],
@@ -13983,12 +14198,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Staročernská",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0311688, 15.8087129],
@@ -14088,12 +14304,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Tichá",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0332718, 15.8103194],
@@ -14107,12 +14324,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Háje",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0394315, 15.7979734],
@@ -14124,12 +14342,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Školy",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0382609, 15.8009028],
@@ -14139,12 +14358,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Zábran",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0321945, 15.815556],
@@ -14160,12 +14380,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Úzká",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0344727, 15.8004717],
@@ -14175,12 +14396,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "V Lipinách",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0311497, 15.808891],
@@ -14200,12 +14422,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "V Zahrádkách",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0373572, 15.8070736],
@@ -14280,12 +14503,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "V Zátiší",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0409472, 15.8143136],
@@ -14331,12 +14555,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Ve Stezkách",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0350128, 15.8038446],
@@ -14360,12 +14585,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Věry Junkové",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0381436, 15.8036891],
@@ -14407,12 +14633,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Věry Junkové",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0381436, 15.8036891],
@@ -14454,12 +14681,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Zahradní",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0366149, 15.8019414],
@@ -14470,12 +14698,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
-    name: "",
+    date: "2024-09-07",
+    name: "Some",
     street_name: "Zajíčkova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice III",
+    color: "#00bfff",
     coordinates: [
       [
         [50.0315753, 15.8058038],
@@ -14494,12 +14723,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "28. října",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0068333, 15.798444],
@@ -14514,12 +14744,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "5. května",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0103375, 15.7964824],
@@ -14558,12 +14789,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Akátová",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0270252, 15.830019],
@@ -14584,12 +14816,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Boháčova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0288762, 15.8123083],
@@ -14634,12 +14867,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Boháčova",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0288762, 15.8123083],
@@ -14684,12 +14918,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Bokova",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0277698, 15.7970671],
@@ -14725,12 +14960,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Borská",
     city_name: "Pardubice",
     district_name: "Staročernsko",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0348242, 15.8382568],
@@ -14758,12 +14994,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Černoborská",
     city_name: "Pardubice",
     district_name: "Mnětice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.012657, 15.8331248],
@@ -14814,12 +15051,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Dašická",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0338854, 15.7965094],
@@ -15209,12 +15447,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Dašická",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0338854, 15.7965094],
@@ -15604,12 +15843,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Dělnická",
     city_name: "Pardubice",
     district_name: "Drozdice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0224122, 15.8269031],
@@ -15668,12 +15908,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Dělnická",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0224122, 15.8269031],
@@ -15732,12 +15973,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Drozdická",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0307619, 15.8039704],
@@ -15754,12 +15996,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Dubská",
     city_name: "Pardubice",
     district_name: "Staročernsko",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0369105, 15.8380833],
@@ -15785,12 +16028,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Fibichova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0279315, 15.809383],
@@ -15804,12 +16048,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Fibichova",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0279315, 15.809383],
@@ -15823,12 +16068,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Fidrova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0307899, 15.8023079],
@@ -15841,12 +16087,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Fučíkova",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0093377, 15.8053642],
@@ -15856,12 +16103,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Holandská",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0202056, 15.824945],
@@ -15942,12 +16190,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Holandská",
     city_name: "Pardubice",
     district_name: "Drozdice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0202056, 15.824945],
@@ -16028,12 +16277,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Holandská",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0202056, 15.824945],
@@ -16114,12 +16364,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Hostovická",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0245724, 15.8309632],
@@ -16304,12 +16555,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Hromádkova",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0291991, 15.8092166],
@@ -16321,12 +16573,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Jabloňová",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0252923, 15.8305173],
@@ -16346,12 +16599,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Hřebčinci",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0076021, 15.806464],
@@ -16374,12 +16628,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Přejezdu",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0306909, 15.8088875],
@@ -16395,12 +16650,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Pustinám",
     city_name: "Pardubice",
     district_name: "Staročernsko",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0311359, 15.8421028],
@@ -16431,12 +16687,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Silu",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.028698, 15.8126766],
@@ -16460,12 +16717,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Zámečku",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0297122, 15.80016],
@@ -16491,12 +16749,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Ke Hrázi",
     city_name: "Pardubice",
     district_name: "Mnětice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0125195, 15.8334767],
@@ -16519,12 +16778,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Ke Hřbitovu",
     city_name: "Pardubice",
     district_name: "Mnětice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0130673, 15.8299475],
@@ -16541,12 +16801,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Ke Hřišti",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0272237, 15.799602],
@@ -16561,12 +16822,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Ke Kobelnici",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.023269, 15.8303153],
@@ -16604,12 +16866,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Ke Trati",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0296831, 15.8062754],
@@ -16620,12 +16883,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Komenského",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0272225, 15.7883705],
@@ -16672,12 +16936,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Kovárenská",
     city_name: "Pardubice",
     district_name: "Mnětice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0095611, 15.8331715],
@@ -16691,12 +16956,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Kyjevská",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0280486, 15.7906602],
@@ -16799,12 +17065,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Mírová",
     city_name: "Pardubice",
     district_name: " ",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0081077, 15.8024609],
@@ -16814,12 +17081,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Mnětická",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0119188, 15.7958385],
@@ -16871,12 +17139,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "MUDr. Ducháčkové",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0289362, 15.7904045],
@@ -16909,12 +17178,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Benátkách",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.02534, 15.8313981],
@@ -16928,12 +17198,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Brázdách",
     city_name: "Pardubice",
     district_name: "Staročernsko",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0333581, 15.8398972],
@@ -16949,12 +17220,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Klárce",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0076021, 15.806464],
@@ -16989,12 +17261,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Rybníčkách",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0242327, 15.8286389],
@@ -17023,12 +17296,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Rybníku",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0081814, 15.7968207],
@@ -17044,12 +17318,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Vsi",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0231806, 15.8331022],
@@ -17083,12 +17358,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Nábřežní",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0102696, 15.7997118],
@@ -17119,12 +17395,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Nad Metelkou",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0120629, 15.7997975],
@@ -17139,12 +17416,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Národních hrdinů",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0270253, 15.7957524],
@@ -17219,12 +17497,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Odbojářů",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0296831, 15.8062754],
@@ -17250,12 +17529,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Ostřešanská",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0119188, 15.7958385],
@@ -17284,12 +17564,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Plemenářský podnik",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0086194, 15.8089073],
@@ -17300,12 +17581,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Pod Hřbitovem",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0223053, 15.7924196],
@@ -17315,12 +17597,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Pod Kopečkem",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0233463, 15.7941244],
@@ -17342,12 +17625,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Podhumenská",
     city_name: "Pardubice",
     district_name: "Staročernsko",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0337156, 15.8448711],
@@ -17406,12 +17690,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Polní",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0092501, 15.7996952],
@@ -17421,12 +17706,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Průmyslová",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0261742, 15.8208455],
@@ -17868,12 +18154,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Průmyslová",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0261742, 15.8208455],
@@ -18315,12 +18602,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Příčná",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0102484, 15.800515],
@@ -18330,12 +18618,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Revoluční",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0271697, 15.795793],
@@ -18366,12 +18655,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Rosůlkova",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0291126, 15.7948636],
@@ -18382,12 +18672,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Sadová",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0079481, 15.8083531],
@@ -18420,12 +18711,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Spodní",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0089055, 15.8074326],
@@ -18439,12 +18731,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Sportovní",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0092017, 15.8010848],
@@ -18464,12 +18757,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Staré náměstí",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0147796, 15.7963172],
@@ -18603,12 +18897,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Staročernská",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0311688, 15.8087129],
@@ -18708,12 +19003,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Světlá",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0245009, 15.8349283],
@@ -18743,12 +19039,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Topolová",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0270252, 15.830019],
@@ -18792,12 +19089,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Tuněchodská",
     city_name: "Pardubice",
     district_name: "Mnětice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0066678, 15.8364269],
@@ -18814,12 +19112,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Borku",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0299092, 15.8018761],
@@ -18849,12 +19148,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Kapličky",
     city_name: "Pardubice",
     district_name: "Mnětice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0143626, 15.8355089],
@@ -18872,12 +19172,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Štítu",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0086093, 15.8101336],
@@ -18916,12 +19217,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Zámečku",
     city_name: "Pardubice",
     district_name: "Bílé Předměstí",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0279933, 15.8121726],
@@ -18949,12 +19251,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Zámečku",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0279933, 15.8121726],
@@ -18982,12 +19285,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Zámečku",
     city_name: "Pardubice",
     district_name: "Studánka",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0279933, 15.8121726],
@@ -19015,12 +19319,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "V Zákoutí",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0276173, 15.7989297],
@@ -19034,12 +19339,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Vodárenská",
     city_name: "Pardubice",
     district_name: "Nemošice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0123061, 15.7949655],
@@ -19100,12 +19406,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Východní",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0309169, 15.793446],
@@ -19165,12 +19472,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Za Kopečkem",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0223309, 15.7941224],
@@ -19216,12 +19524,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Zelená",
     city_name: "Pardubice",
     district_name: "Pardubičky",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0258745, 15.7929131],
@@ -19253,12 +19562,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Zemědělská",
     city_name: "Pardubice",
     district_name: "Mnětice",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0127406, 15.837465],
@@ -19271,12 +19581,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Zminská",
     city_name: "Pardubice",
     district_name: "Černá za Bory",
     borough_name: "Pardubice IV",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0244381, 15.8348037],
@@ -19307,12 +19618,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Artura Krause",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0221221, 15.7633937],
@@ -19333,12 +19645,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Bacháčkova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0262922, 15.7689849],
@@ -19349,12 +19662,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Benešovo náměstí",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0261586, 15.7772518],
@@ -19392,12 +19706,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Boženy Němcové",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.026944, 15.76322],
@@ -19428,12 +19743,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Boženy Vikové-Kunětické",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0291103, 15.7770589],
@@ -19445,12 +19761,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Čacké",
     city_name: "Pardubice",
     district_name: "Nové Jesenčany",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0164597, 15.7662121],
@@ -19519,12 +19836,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Čacké",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0164597, 15.7662121],
@@ -19593,12 +19911,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Češkova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0195899, 15.7694882],
@@ -19659,12 +19978,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Čihákova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0280494, 15.7730246],
@@ -19681,12 +20001,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Čs. armády",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0207366, 15.7635502],
@@ -19771,12 +20092,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Demokratické mládeže",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0210032, 15.771319],
@@ -19800,12 +20122,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Devotyho",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0254597, 15.7709182],
@@ -19849,12 +20172,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Do Zahrádek",
     city_name: "Pardubice",
     district_name: "Nové Jesenčany",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0196556, 15.7638839],
@@ -19864,12 +20188,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Dražkovická",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0162129, 15.7726147],
@@ -19892,12 +20217,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Gorkého",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.024975, 15.758458],
@@ -20027,12 +20353,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Holcova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0171854, 15.7772908],
@@ -20082,12 +20409,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Chrudimská",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0210032, 15.771319],
@@ -20139,12 +20467,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Jana Palacha",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0317279, 15.7703322],
@@ -20180,12 +20509,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Jilemnického",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0229344, 15.758661],
@@ -20209,12 +20539,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Jiránkova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0220563, 15.7569969],
@@ -20249,12 +20580,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Josefa Ressla",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0240769, 15.7551538],
@@ -20276,12 +20608,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Barvírně",
     city_name: "Pardubice",
     district_name: "Nové Jesenčany",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0198492, 15.7663844],
@@ -20324,12 +20657,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Barvírně",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0198492, 15.7663844],
@@ -20372,12 +20706,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Blahobytu",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0241684, 15.7710387],
@@ -20474,12 +20809,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Dolíčku",
     city_name: "Pardubice",
     district_name: "Dražkovice",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0146319, 15.7652543],
@@ -20540,12 +20876,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Dolíčku",
     city_name: "Pardubice",
     district_name: "Nové Jesenčany",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0146319, 15.7652543],
@@ -20606,12 +20943,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Vápence",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0288072, 15.7559392],
@@ -20678,12 +21016,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Vinici",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0294377, 15.78405],
@@ -20741,12 +21080,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Višňovce",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0263436, 15.7708357],
@@ -20805,12 +21145,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Židovskému hřbitovu",
     city_name: "Pardubice",
     district_name: " ",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0211212, 15.7783098],
@@ -20838,12 +21179,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Kašparova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0220171, 15.7682257],
@@ -20871,12 +21213,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Konečná",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0151154, 15.7699441],
@@ -20891,12 +21234,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "kpt. Nálepky",
     city_name: "Pardubice",
     district_name: "Nové Jesenčany",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0207366, 15.7635502],
@@ -20920,12 +21264,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "kpt. Nálepky",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0207366, 15.7635502],
@@ -20949,12 +21294,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Letecká",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0282782, 15.7525419],
@@ -20968,12 +21314,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Lexova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0268062, 15.7586714],
@@ -21018,12 +21365,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Máchova",
     city_name: "Pardubice",
     district_name: "Nové Jesenčany",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0198186, 15.7612665],
@@ -21037,12 +21385,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Marty Exnarové",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0244818, 15.7757172],
@@ -21061,12 +21410,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Mikulovická",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0150324, 15.7748642],
@@ -21094,12 +21444,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Milheimova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0292398, 15.7705656],
@@ -21149,12 +21500,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Na Spravedlnosti",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0292423, 15.7707535],
@@ -21183,12 +21535,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Na Staré poště",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.03075, 15.7668848],
@@ -21209,12 +21562,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Na Záboří",
     city_name: "Pardubice",
     district_name: "Nové Jesenčany",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0205481, 15.7590789],
@@ -21290,12 +21644,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Na Záboří",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0205481, 15.7590789],
@@ -21371,12 +21726,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "náměstí Dukelských hrdinů",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.02444, 15.7585006],
@@ -21422,12 +21778,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Nemošická",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0170921, 15.777596],
@@ -21477,12 +21834,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Obětí 24. srpna",
     city_name: "Pardubice",
     district_name: "Nové Jesenčany",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0195434, 15.7656845],
@@ -21494,12 +21852,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pichlova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0271027, 15.7788534],
@@ -21541,12 +21900,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pod Břízkami",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.02102, 15.7715596],
@@ -21651,12 +22011,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pod Vinicí",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0290322, 15.7799739],
@@ -21681,12 +22042,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pražská",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0288072, 15.7559392],
@@ -21942,12 +22304,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Raisova",
     city_name: "Pardubice",
     district_name: "Nové Jesenčany",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0179553, 15.771607],
@@ -21972,12 +22335,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Raisova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0179553, 15.771607],
@@ -22002,12 +22366,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Rokycanova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0308256, 15.7752828],
@@ -22065,12 +22430,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Rožkova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0298758, 15.7654619],
@@ -22116,12 +22482,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "S. K. Neumanna",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0297342, 15.7792107],
@@ -22305,12 +22672,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Sokolovská",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0203123, 15.756192],
@@ -22344,12 +22712,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Staňkova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0231279, 15.7632913],
@@ -22382,12 +22751,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Svobody",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0235102, 15.7783577],
@@ -22446,12 +22816,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Široká",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0191284, 15.7688152],
@@ -22472,12 +22843,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Teplého",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0270749, 15.7551413],
@@ -22542,12 +22914,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Terezy Novákové",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0163306, 15.7699496],
@@ -22565,12 +22938,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Krematoria",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0150324, 15.7748642],
@@ -22589,12 +22963,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Suchého dubu",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0180971, 15.7743907],
@@ -22614,12 +22989,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "V Ráji",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0271254, 15.767239],
@@ -22693,12 +23069,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Wolkerova",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0263432, 15.754534],
@@ -22741,12 +23118,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Zborovské náměstí",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0231873, 15.7711282],
@@ -22766,12 +23144,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Železničního pluku",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice V",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0232497, 15.7733808],
@@ -22821,12 +23200,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "8. května",
     city_name: "Pardubice",
     district_name: "Popkovice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0243454, 15.7285876],
@@ -22841,12 +23221,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "8. května",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0243454, 15.7285876],
@@ -22861,12 +23242,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Branecká",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0274986, 15.7312127],
@@ -22901,12 +23283,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Březová",
     city_name: "Pardubice",
     district_name: " ",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0235519, 15.7298796],
@@ -22925,12 +23308,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Dlouhá",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.029024, 15.7305402],
@@ -22951,12 +23335,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Do Polí",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.026161, 15.7238226],
@@ -22980,12 +23365,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Dostihová",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0261122, 15.7493884],
@@ -23027,12 +23413,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Dr. Matouška",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0247667, 15.7245973],
@@ -23043,12 +23430,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Dubánkova",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0188542, 15.7054961],
@@ -23058,12 +23446,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Dubová",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0222341, 15.7307063],
@@ -23087,12 +23476,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Františka Ventury",
     city_name: "Pardubice",
     district_name: " ",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0231578, 15.7282618],
@@ -23108,12 +23498,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Habřinská",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0264391, 15.7240659],
@@ -23138,12 +23529,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Hradčanská",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0311188, 15.7288467],
@@ -23178,12 +23570,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Husitská",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0266503, 15.7338644],
@@ -23202,12 +23595,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Chotkova",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0185574, 15.7020999],
@@ -23226,12 +23620,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Josefa Poppera",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0262356, 15.7270051],
@@ -23243,12 +23638,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Besedě",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0308653, 15.7304513],
@@ -23270,12 +23666,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Dubině",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0269022, 15.7373011],
@@ -23300,12 +23697,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Hladíkovu",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0182645, 15.6959806],
@@ -23323,12 +23721,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Pašti",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0310586, 15.724025],
@@ -23340,12 +23739,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Pišici",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0209313, 15.7012562],
@@ -23354,12 +23754,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "K Rybníčku",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0302666, 15.7390514],
@@ -23385,12 +23786,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Ke Mlýnu",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0178885, 15.6909927],
@@ -23426,12 +23828,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Ke Splávku",
     city_name: "Pardubice",
     district_name: "Popkovice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0188453, 15.7246899],
@@ -23440,12 +23843,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Ke Stájím",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0231249, 15.7242899],
@@ -23461,12 +23865,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Kokešova",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0198172, 15.6987391],
@@ -23517,12 +23922,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Kolonie",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0239863, 15.720864],
@@ -23555,12 +23961,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Kostnická",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0255222, 15.7210471],
@@ -23641,12 +24048,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "kpt. Poplera",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0277047, 15.7255217],
@@ -23672,12 +24080,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Křemenská",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0299912, 15.7318815],
@@ -23695,12 +24104,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Laty Brandisové",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0249384, 15.7255041],
@@ -23710,12 +24120,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Motoristů",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0248267, 15.7231076],
@@ -23783,12 +24194,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Humenském",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0240604, 15.7231769],
@@ -23804,12 +24216,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Klínku",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0269022, 15.7373011],
@@ -23837,12 +24250,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Návsi",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0166032, 15.6860855],
@@ -23871,12 +24285,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Parohách",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0286964, 15.7226645],
@@ -23887,12 +24302,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Na Štěpnici",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0171619, 15.6825283],
@@ -23912,12 +24328,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Olšová",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.020143, 15.702575],
@@ -23938,12 +24355,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Orebská",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0223927, 15.723335],
@@ -23954,12 +24372,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Popkovická",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0269022, 15.7373011],
@@ -24037,12 +24456,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Pražská",
     city_name: "Pardubice",
     district_name: "Popkovice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0288072, 15.7559392],
@@ -24298,12 +24718,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Pražská",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0288072, 15.7559392],
@@ -24559,12 +24980,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Pražská",
     city_name: "Pardubice",
     district_name: "Zelené Předměstí",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0288072, 15.7559392],
@@ -24820,12 +25242,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Přeloučská",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0189008, 15.7058332],
@@ -24964,12 +25387,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Přerovská",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0306384, 15.7349868],
@@ -25068,12 +25492,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Sjezdová",
     city_name: "Pardubice",
     district_name: "Popkovice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0195598, 15.7231155],
@@ -25088,12 +25513,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Sportovců",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0255222, 15.7210471],
@@ -25119,12 +25545,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Srnojedská",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0288732, 15.7255674],
@@ -25155,12 +25582,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Školní",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0306384, 15.7349868],
@@ -25199,12 +25627,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Táborská",
     city_name: "Pardubice",
     district_name: "Popkovice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0223058, 15.7253117],
@@ -25222,12 +25651,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Bylanky",
     city_name: "Pardubice",
     district_name: "Popkovice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0264303, 15.7276724],
@@ -25255,12 +25685,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Bylanky",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0264303, 15.7276724],
@@ -25288,12 +25719,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Moruší",
     city_name: "Pardubice",
     district_name: "Popkovice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0236719, 15.7305895],
@@ -25323,12 +25755,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Moruší",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0236719, 15.7305895],
@@ -25358,12 +25791,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Panasonicu",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0169972, 15.6874219],
@@ -25441,12 +25875,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Parku",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0254841, 15.72235],
@@ -25459,12 +25894,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Trojice",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0333473, 15.7447256],
@@ -25502,12 +25938,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "U Zastávky",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0315693, 15.7239975],
@@ -25516,12 +25953,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "V Chaloupkách",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0152913, 15.6874263],
@@ -25558,12 +25996,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "V Oklikách",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0298529, 15.7222179],
@@ -25591,12 +26030,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "V Uličce",
     city_name: "Pardubice",
     district_name: "Popkovice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0200372, 15.7231517],
@@ -25615,12 +26055,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Vašákova",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0182497, 15.6944279],
@@ -25629,12 +26070,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Za Oborou",
     city_name: "Pardubice",
     district_name: "Staré Čívice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0205797, 15.6924962],
@@ -25651,12 +26093,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Žižkova",
     city_name: "Pardubice",
     district_name: "Popkovice",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0314011, 15.7268672],
@@ -25728,12 +26171,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Žižkova",
     city_name: "Pardubice",
     district_name: "Svítkov",
     borough_name: "Pardubice VI",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0314011, 15.7268672],
@@ -25805,12 +26249,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Adolfa Opálky",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0522454, 15.7526845],
@@ -25826,12 +26271,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Alešova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.046501, 15.7368987],
@@ -25846,12 +26292,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Arbesova",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0621639, 15.7502897],
@@ -25864,12 +26311,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bělehradská",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0466502, 15.7529949],
@@ -26050,12 +26498,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Bohdanečská",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0563153, 15.7572471],
@@ -26146,12 +26595,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Borová",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0461681, 15.7321527],
@@ -26186,12 +26636,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Čapkova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0448912, 15.7385388],
@@ -26203,12 +26654,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Čechova",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0641917, 15.7591638],
@@ -26238,12 +26690,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Danihelkova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0425173, 15.7346319],
@@ -26254,12 +26707,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Doubravická",
     city_name: "Pardubice",
     district_name: " ",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.060685, 15.7533432],
@@ -26305,12 +26759,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Dukelská",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0488468, 15.7448369],
@@ -26327,12 +26782,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Duškova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0467335, 15.7470297],
@@ -26341,12 +26797,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Dvořákova",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0652905, 15.7521449],
@@ -26360,12 +26817,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Foersterova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0497506, 15.7479461],
@@ -26377,12 +26835,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Fričova",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0637079, 15.7565489],
@@ -26415,12 +26874,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Fügnerova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0432824, 15.731116],
@@ -26439,12 +26899,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "generála Svobody",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0432923, 15.7302202],
@@ -26494,12 +26955,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Heyrovského",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0496725, 15.7506998],
@@ -26514,12 +26976,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Hrabalova",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0646294, 15.7602802],
@@ -26558,12 +27021,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Hradišťská",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0626386, 15.7635956],
@@ -26605,12 +27069,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Chelčického",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0431661, 15.7327059],
@@ -26658,12 +27123,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "J. K. Tyla",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0431497, 15.7374675],
@@ -26684,12 +27150,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Jana Hrubého",
     city_name: "Pardubice",
     district_name: " ",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0517916, 15.7530924],
@@ -26698,12 +27165,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Jana Kubiše",
     city_name: "Pardubice",
     district_name: " ",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0510523, 15.7544312],
@@ -26735,12 +27203,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Jiřího Potůčka",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0491143, 15.75225],
@@ -26790,12 +27259,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Josefa Bublíka",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0528906, 15.7529254],
@@ -26811,12 +27281,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Jozefa Gabčíka",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.053227, 15.7522878],
@@ -26848,12 +27319,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Jožky Jabůrkové",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0532442, 15.7554843],
@@ -26908,12 +27380,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Olšině",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0532136, 15.7569287],
@@ -26975,12 +27448,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "K Potoku",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0640095, 15.7592255],
@@ -26997,12 +27471,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Karla Šípka",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0523872, 15.7601006],
@@ -27039,12 +27514,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Kavanova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0488468, 15.7448369],
@@ -27060,12 +27536,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Kollárova",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0655283, 15.7558091],
@@ -27074,12 +27551,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Kosmonautů",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0475091, 15.7605568],
@@ -27185,12 +27663,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Legionářská",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0441919, 15.7448117],
@@ -27272,12 +27751,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Mánesova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0431426, 15.7392692],
@@ -27302,12 +27782,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Marie Majerové",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0611075, 15.7539719],
@@ -27346,12 +27827,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Marie Pujmanové",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0425173, 15.7346319],
@@ -27376,12 +27858,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Mrštíků",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.063511, 15.7544649],
@@ -27405,12 +27888,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Na Vrškách",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0528916, 15.7616076],
@@ -27434,12 +27918,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Nádražní",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0412794, 15.744895],
@@ -27523,12 +28008,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "náměstí 9. května",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0431621, 15.7345908],
@@ -27549,12 +28035,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Ortenova",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0638014, 15.7612327],
@@ -27609,12 +28096,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Oskara Brázdy",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0462808, 15.7308161],
@@ -27643,12 +28131,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pavlova",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0540124, 15.7536635],
@@ -27664,12 +28153,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pejchlova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0436139, 15.7402201],
@@ -27688,12 +28178,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Písková",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0458303, 15.7368961],
@@ -27710,12 +28201,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pištorova",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0615096, 15.7506829],
@@ -27762,12 +28254,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Poděbradská",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0588801, 15.7538898],
@@ -28291,12 +28784,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Pohránovská",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0632553, 15.7567974],
@@ -28370,12 +28864,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Poláčkova",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0653146, 15.757147],
@@ -28402,12 +28897,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Prokopa Holého",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0441142, 15.7319394],
@@ -28456,12 +28952,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Riegrova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0495456, 15.746321],
@@ -28475,12 +28972,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Růžová",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0542803, 15.7587488],
@@ -28490,12 +28988,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Rybitevská",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.046929, 15.7286064],
@@ -28584,12 +29083,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Salavcova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0431592, 15.7352889],
@@ -28642,12 +29142,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Seifertova",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0648657, 15.7559585],
@@ -28656,12 +29157,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Semtínská",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0625437, 15.7526107],
@@ -28736,12 +29238,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Severní",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0494837, 15.749413],
@@ -28751,12 +29254,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Slepá",
     city_name: "Pardubice",
     district_name: "Trnová",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0552895, 15.757984],
@@ -28766,12 +29270,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Smetanova",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0649399, 15.7545919],
@@ -28786,12 +29291,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Spojovací",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0472328, 15.7465853],
@@ -28808,12 +29314,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Šafaříkova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0480157, 15.7448349],
@@ -28822,12 +29329,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Školní náměstí",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0410167, 15.7289014],
@@ -28905,12 +29413,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Školská",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0628469, 15.7540075],
@@ -28953,12 +29462,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Tolarova",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0476662, 15.7498091],
@@ -28995,12 +29505,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "Trnovská",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0624658, 15.7571972],
@@ -29091,12 +29602,13 @@ export const streets = [
     ],
   },
   {
-    status: "2024-07-17",
+    date: "2024-07-17",
     name: "Kamil",
     street_name: "U Prefy",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0483837, 15.7376535],
@@ -29121,12 +29633,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Vrchlického",
     city_name: "Pardubice",
     district_name: "Ohrazenice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0637131, 15.7509382],
@@ -29139,12 +29652,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Výzkumná",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.043182, 15.7417443],
@@ -29158,12 +29672,13 @@ export const streets = [
     ],
   },
   {
-    status: "",
+    date: "",
     name: "",
     street_name: "Za Hřištěm",
     city_name: "Pardubice",
     district_name: "Rosice",
     borough_name: "Pardubice VII",
+    color: "#ffff00",
     coordinates: [
       [
         [50.0478674, 15.7348592],

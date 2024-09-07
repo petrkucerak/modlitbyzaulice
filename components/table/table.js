@@ -24,6 +24,7 @@ export default function Table() {
             <th>Ulice</th>
             <th>Část obce</th>
             <th>Městský obvod</th>
+            <th>Barva</th>
             <th>Datum</th>
             <th>Jméno</th>
           </tr>
