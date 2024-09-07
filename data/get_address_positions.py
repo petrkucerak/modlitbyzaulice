@@ -79,6 +79,9 @@ for street in streets:
     coordinates = get_coordinates(street['street_name'], street['city_name'], street['district_name'], street['borough_name'])
     print(f"Found street: {street['street_name']}\t\t({street_num}/{street_sum})")
     streets_with_coordinates.append({
+        'date': "",
+        'name': "",
+        'color': "#ffff00",
         'street_name': street['street_name'],
         'city_name': street['city_name'],
         'district_name': street['district_name'],
