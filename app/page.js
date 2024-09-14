@@ -59,10 +59,10 @@ export default function Home() {
       </Section>
 
       <Section className={"bg-blue text-white"}>
-        <h2 className="text-xl uppercase font-semibold mt-[7rem] mb-10">
+        <h2 className="text-xl uppercase font-semibold mt-[7rem]">
           Jak se mohu zapojit?
         </h2>
-        <div className="w-[90vw] max-w-[1000px] flex flex-col flex-wrap sm:flex-row items-center sm:items-end justify-between mb-10">
+        <div className="w-[90vw] max-w-[1000px] mb-10 flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10">
           <Card>
             <Center>
               <IconCustomTutorial1 className={"w-[60px]"} />
