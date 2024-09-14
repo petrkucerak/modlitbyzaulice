@@ -28,7 +28,7 @@ export default function Home() {
         const rect = section.getBoundingClientRect();
         if (rect.top <= 0 && rect.bottom > 0) {
           currentSection = section.getAttribute("id");
-          console.log(rect.top, rect.bottom);
+          // console.log(rect.top, rect.bottom, currentSection);
         }
       });
 
@@ -56,10 +56,10 @@ export default function Home() {
       </Section>
       <Section id={"about"} className={"bg-yellow text-darkBlue"}>
         <IconCustomAboutTitle
-          classNameName={"w-[90vw] max-w-[450px] mt-[7rem] mb-10"}
+          classNameName={"w-[90vw] max-w-[450px] mt-[8rem] mb-10"}
         />
 
-        <div className="font-brother1816 tracking-tighter w-[90vw] max-w-[900px] mb-[7rem] flex flex-col md:flex-row">
+        <div className="font-brother1816 tracking-tighter w-[90vw] max-w-[900px] mb-[8rem] flex flex-col md:flex-row">
           <p className="my-2 md:my-0 md:mr-2">
             <strong>„Modlitby za ulice“</strong> je misijní projekt, který
             propojuje obyvatele Pardubic a okolí skrze modlitbu za své sousedy a
@@ -85,19 +85,19 @@ export default function Home() {
         </div>
       </Section>
       <Section id={"motivate"} className={"bg-red text-white"}>
-        <h2 className="text-xl w-[90vw] max-w-[500px] mb-1 mt-[7rem] font-semibold">
+        <h2 className="text-xl w-[90vw] max-w-[500px] mb-1 mt-[8rem] font-semibold">
           Slovo P. Jendy Uhlíře
         </h2>
         <YoutubeVideo
           source={
             "https://www.youtube-nocookie.com/embed/GcPbTUNziJY?si=8VdyL5FzVQrK3MkR&amp;controls=0"
           }
-          className={"mb-[7rem]"}
+          className={"mb-[8rem]"}
         />
       </Section>
 
       <Section id={"how"} className={"bg-blue text-white"}>
-        <h2 className="text-xl md:text-2xl uppercase font-semibold mt-[7rem] max-w-[90vw] text-center">
+        <h2 className="text-xl md:text-2xl uppercase font-semibold mt-[8rem] max-w-[90vw] text-center">
           Jak se mohu zapojit?
         </h2>
         <div className="w-[90vw] max-w-[1000px] mb-10 flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10">
@@ -162,7 +162,7 @@ export default function Home() {
             </p>
           </Card>
         </div>
-        <div className="w-[90vw] max-w-[1000px] flex flex-col md:flex-row items-center justify-start mb-[7rem] mt-10">
+        <div className="w-[90vw] max-w-[1000px] flex flex-col md:flex-row items-center justify-start mb-[8rem] mt-10">
           <div className="md:max-w-[500px]">
             <h3 className="uppercase font-semibold">
               Sledujte, jak modlitba proměňuje Pardubice
@@ -182,12 +182,12 @@ export default function Home() {
         </div>
       </Section>
       <Section id={"sponsors"} className={"bg-olive text-white w-[90vw]"}>
-        <TitleWithBirds className={"mt-[7rem]"}>
+        <TitleWithBirds className={"mt-[8rem]"}>
           Projekt připravili
         </TitleWithBirds>
         <p className="my-20">Someone...</p>
-        <TitleWithBirds className={"mt-[7rem]"}>Za podpory</TitleWithBirds>
-        <p className="mb-[7rem]">Somebody...</p>
+        <TitleWithBirds className={"mt-[8rem]"}>Za podpory</TitleWithBirds>
+        <p className="mb-[8rem]">Somebody...</p>
       </Section>
       <Footer />
     </Main>
