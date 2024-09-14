@@ -19,11 +19,20 @@ export default function Home() {
           <Button href={"/mapa"}>mapa</Button>
         </div>
       </Section>
-      <Section className={"bg-yellow text-blue"}>
+      <Section className={"bg-yellow text-darkBlue"}>
+        <IconCustomAboutTitle classNameName={"w-[90vw] max-w-[450px] mb-20"} />
 
-        <div className="w-[90vw] max-w-[900px]">
-          <IconCustomAboutTitle className={"w-20"}/>
-          
+        <div className="font-brother1816 tracking-tighter w-[90vw] max-w-[900px]">
+          <p>
+            „Modlitby za ulice“ je misijní projekt, který propojuje obyvatele
+            Pardubic a okolí skrze modlitbu za své sousedy a jejich ulice. Do
+            projektu se může zapojit každý, ať už chodí do kostela, nebo ne.
+            Každý týden si v kostele můžete vylosovat kartičku s názvem
+            konkrétní ulice, za kterou se budete modlit, a pokud chcete, můžete
+            ji také navštívit a poznat nová místa ve městě. Na interaktivní mapě
+            pak můžete sledovat, jak modlitby postupně pokrývají celé Pardubice.
+            Připojte se i vy – modlitbou, nápadem nebo konkrétní pomocí!
+          </p>
         </div>
       </Section>
       <Footer />

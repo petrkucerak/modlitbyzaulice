@@ -1,8 +1,8 @@
 export default function IconCustomAboutTitle({ classNameName, id }) {
   return (
     <svg
-      id="Layer_2"
-      data-name="Layer 2"
+      id={id}
+      className={`${classNameName}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 935.02 148.47"
     >
