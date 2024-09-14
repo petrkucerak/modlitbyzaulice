@@ -6,6 +6,12 @@ export default function Header() {
       <Link href={"/"} className="my-4">
         Modlitby za Pardubice
       </Link>
+      <div>
+        <Link href={"/"}>o projektu</Link>
+        <Link href={"/"}>jak se zapojit</Link>
+        <Link href={"/"}>mapa</Link>
+        <Link href={"/"}>podporují</Link>
+      </div>
     </header>
   );
 }
