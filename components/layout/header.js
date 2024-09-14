@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-[100vw] flex flex-row items-center justify-between">
+    <header className="w-[100vw] flex flex-row items-center justify-between bg-darkBlue text-wine fixed">
       <Link href={"/"} className="my-4">
         <IconCustomLogo className={"w-[2rem] ml-[1.8rem]"} />
       </Link>
@@ -27,7 +27,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="absolute top-14 text-2xl flex flex-col items-center w-full md:hidden">
+        <div className="absolute top-14 text-2xl flex flex-col bg-darkBlue items-center w-full md:hidden">
           <Link href={"/"} className="block my-4">
             o projektu
           </Link>
