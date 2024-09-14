@@ -2,6 +2,7 @@
 import Link from "next/link";
 import IconCustomLogo from "../icons/logo";
 import { useState } from "react";
+import { IconMenu, IconX } from "@tabler/icons";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,13 +16,44 @@ export default function Header() {
       <Link href={"/"} className="my-4">
         <IconCustomLogo className={"w-[2rem] ml-[1.8rem]"} />
       </Link>
-      <div className="max-w-[600px] flex flex-row items-center justify-between w-full">
+
+      {/* Desktop menu */}
+      <div className="hidden md:flex flex-row items-center justify-between max-w-[600px] w-full">
         <Link href={"/"}>o projektu</Link>
         <Link href={"/"}>jak se zapojit</Link>
         <Link href={"/"}>mapa</Link>
         <Link href={"/"}>podporují</Link>
       </div>
-      <div>burger menu</div>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <div className="absolute top-14 text-2xl flex flex-col items-center w-full md:hidden">
+          <Link href={"/"} className="block my-4">
+            o projektu
+          </Link>
+          <Link href={"/"} className="block my-4">
+            jak se zapojit
+          </Link>
+          <Link href={"/"} className="block my-4">
+            mapa
+          </Link>
+          <Link href={"/"} className="block my-4">
+            podporují
+          </Link>
+        </div>
+      )}
+      <div>
+        {/* Burger menu icon */}
+        <div className="flex items-center md:hidden">
+          <button onClick={toggleMenu}>
+            {isOpen ? (
+              <IconX className="w-7 h-7 mr-5" />
+            ) : (
+              <IconMenu className="w-7 h-7 mr-5" />
+            )}
+          </button>
+        </div>
+      </div>
     </header>
   );
 }
