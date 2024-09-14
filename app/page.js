@@ -1,3 +1,4 @@
+"use client";
 import { conf } from "@/components/conf";
 import IconCustomAboutTitle from "@/components/icons/about";
 import IconCustomTutorial1 from "@/components/icons/tutorial1";
@@ -13,11 +14,35 @@ import Main from "@/components/layout/main";
 import Section from "@/components/layout/section";
 import TitleWithBirds from "@/components/layout/title-bird";
 import YoutubeVideo from "@/components/layout/video";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      let currentSection = "home";
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 0 && rect.bottom > 0) {
+          currentSection = section.getAttribute("id");
+          console.log(rect.top, rect.bottom);
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <Main>
-      <Header />
+      <Header activeSection={activeSection} />
       <Section id={"home"} className={"bg-darkBlue text-white min-h-[80vh]"}>
         <div className="w-[90vw] max-w-[900px]">
           <h1 className="uppercase font-brother1816 font-bold text-2xl">
@@ -59,7 +84,7 @@ export default function Home() {
           </p>
         </div>
       </Section>
-      <Section className={"bg-red text-white"}>
+      <Section id={"motivate"} className={"bg-red text-white"}>
         <h2 className="text-xl w-[90vw] max-w-[500px] mb-1 mt-[7rem] font-semibold">
           Slovo P. Jendy Uhlíře
         </h2>
@@ -160,7 +185,7 @@ export default function Home() {
         <TitleWithBirds className={"mt-[7rem]"}>
           Projekt připravili
         </TitleWithBirds>
-        <p>Someone...</p>
+        <p className="my-20">Someone...</p>
         <TitleWithBirds className={"mt-[7rem]"}>Za podpory</TitleWithBirds>
         <p className="mb-[7rem]">Somebody...</p>
       </Section>

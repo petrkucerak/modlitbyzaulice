@@ -4,19 +4,37 @@ import IconCustomLogo from "../icons/logo";
 import { useState } from "react";
 import { IconMenu, IconX } from "@tabler/icons";
 
-export default function Header() {
+export default function Header({ activeSection }) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const getHeaderClassName = () => {
+    switch (activeSection) {
+      case "home":
+        return "bg-darkBlue";
+      case "about":
+        return "bg-yellow";
+      case "motivate":
+        return "bg-red";
+      case "how":
+        return "bg-blue";
+      case "sponsors":
+        return "bg-olive";
+      default:
+        return "bg-darkBlue";
+    }
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <header className="w-[100vw] flex flex-row items-center justify-between bg-darkBlue text-wine fixed">
+    <header
+      className={`w-[100vw] flex flex-row items-center justify-between ${getHeaderClassName()} text-wine fixed transition-colors duration-500`}
+    >
       <Link href={"/#home"} className="my-4">
         <IconCustomLogo className={"w-[2rem] ml-[1.8rem]"} />
       </Link>
-
       {/* Desktop menu */}
       <div className="hidden md:flex flex-row items-center justify-between max-w-[600px] w-full">
         <Link href={"/#about"}>o projektu</Link>
