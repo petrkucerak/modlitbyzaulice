@@ -21,9 +21,11 @@ export default function Home() {
         </div>
       </Section>
       <Section className={"bg-yellow text-darkBlue"}>
-        <IconCustomAboutTitle classNameName={"w-[90vw] max-w-[450px] mb-20"} />
+        <IconCustomAboutTitle
+          classNameName={"w-[90vw] max-w-[450px] mt-20 mb-10"}
+        />
 
-        <div className="font-brother1816 tracking-tighter w-[90vw] max-w-[900px]">
+        <div className="font-brother1816 tracking-tighter w-[90vw] max-w-[900px] mb-10">
           <p>
             „Modlitby za ulice“ je misijní projekt, který propojuje obyvatele
             Pardubic a okolí skrze modlitbu za své sousedy a jejich ulice. Do
@@ -37,14 +39,20 @@ export default function Home() {
         </div>
       </Section>
       <Section className={"bg-red text-white"}>
-        <h2 className="text-xl w-[90vw] max-w-[500px] mb-1">
+        <h2 className="text-xl w-[90vw] max-w-[500px] mb-1 mt-10 font-semibold">
           Slovo P. Jendy Uhlíře
         </h2>
         <YoutubeVideo
           source={
             "https://www.youtube-nocookie.com/embed/GcPbTUNziJY?si=8VdyL5FzVQrK3MkR&amp;controls=0"
           }
+          className={"mb-10"}
         />
+      </Section>
+      <Section className={"bg-blue text-white"}>
+        <h2 className="text-xl uppercase font-semibold">
+          Jak se mohu zapojit?
+        </h2>
       </Section>
       <Footer />
     </Main>
