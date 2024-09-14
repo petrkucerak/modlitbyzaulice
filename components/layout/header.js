@@ -45,7 +45,7 @@ export default function Header({ activeSection }) {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="absolute top-14 text-2xl flex flex-col bg-darkBlue items-center w-full h-[100vh] md:hidden">
+        <div className={`absolute top-14 text-2xl flex flex-col ${getHeaderClassName()} items-center w-full h-[100vh] md:hidden`}>
           <Link href={"/#about"} onClick={toggleMenu} className="block my-4">
             o projektu
           </Link>
