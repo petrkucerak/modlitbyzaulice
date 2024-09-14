@@ -59,7 +59,7 @@ export default function Home() {
       </Section>
 
       <Section className={"bg-blue text-white"}>
-        <h2 className="text-xl uppercase font-semibold mt-[7rem]">
+        <h2 className="text-xl uppercase font-semibold mt-[7rem] max-w-[90vw] text-center">
           Jak se mohu zapojit?
         </h2>
         <div className="w-[90vw] max-w-[1000px] mb-10 flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10">
@@ -127,7 +127,7 @@ export default function Home() {
         <div className="w-[90vw] max-w-[1000px] flex flex-col md:flex-row items-center justify-start mb-20 mt-10">
           <div className="md:max-w-[500px]">
             <h3 className="uppercase font-semibold">
-              Sledujte, jak modlitba proměnuje Pardubice
+              Sledujte, jak modlitba proměňuje Pardubice
             </h3>
             <p className="text-wine tracking-tighter leading-5">
               Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky

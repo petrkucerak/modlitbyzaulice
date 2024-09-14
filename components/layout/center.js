@@ -1,5 +1,5 @@
 export default function Center({ children, className }) {
   return (
-    <div className={`${className} flex justify-center w-full`}>{children}</div>
+    <div className={`${className} max-w-[90vw] flex justify-center w-full`}>{children}</div>
   );
 }
