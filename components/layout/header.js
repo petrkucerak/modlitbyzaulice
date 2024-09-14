@@ -13,31 +13,31 @@ export default function Header() {
 
   return (
     <header className="w-[100vw] flex flex-row items-center justify-between bg-darkBlue text-wine fixed">
-      <Link href={"/"} className="my-4">
+      <Link href={"/#home"} className="my-4">
         <IconCustomLogo className={"w-[2rem] ml-[1.8rem]"} />
       </Link>
 
       {/* Desktop menu */}
       <div className="hidden md:flex flex-row items-center justify-between max-w-[600px] w-full">
-        <Link href={"/"}>o projektu</Link>
-        <Link href={"/"}>jak se zapojit</Link>
-        <Link href={"/"}>mapa</Link>
-        <Link href={"/"}>podporují</Link>
+        <Link href={"/#about"}>o projektu</Link>
+        <Link href={"/#how"}>jak se zapojit</Link>
+        <Link href={"/mapa"}>mapa</Link>
+        <Link href={"/#sponsors"}>podporují</Link>
       </div>
 
       {/* Mobile menu */}
       {isOpen && (
         <div className="absolute top-14 text-2xl flex flex-col bg-darkBlue items-center w-full h-[100vh] md:hidden">
-          <Link href={"/"} className="block my-4">
+          <Link href={"/#about"} onClick={toggleMenu} className="block my-4">
             o projektu
           </Link>
-          <Link href={"/"} className="block my-4">
+          <Link href={"/#how"} onClick={toggleMenu} className="block my-4">
             jak se zapojit
           </Link>
-          <Link href={"/"} className="block my-4">
+          <Link href={"/mapa"} onClick={toggleMenu} className="block my-4">
             mapa
           </Link>
-          <Link href={"/"} className="block my-4">
+          <Link href={"/#sponsors"} onClick={toggleMenu} className="block my-4">
             podporují
           </Link>
         </div>

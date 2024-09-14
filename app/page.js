@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <Main>
       <Header />
-      <Section className={"bg-darkBlue text-white min-h-[80vh]"}>
+      <Section id={"home"} className={"bg-darkBlue text-white min-h-[80vh]"}>
         <div className="w-[90vw] max-w-[900px]">
           <h1 className="uppercase font-brother1816 font-bold text-2xl">
             Modlitby za&nbsp;Pardubice
@@ -29,13 +29,13 @@ export default function Home() {
           </Button>
         </div>
       </Section>
-      <Section className={"bg-yellow text-darkBlue"}>
+      <Section id={"about"} className={"bg-yellow text-darkBlue"}>
         <IconCustomAboutTitle
           classNameName={"w-[90vw] max-w-[450px] mt-[7rem] mb-10"}
         />
 
-        <div className="font-brother1816 tracking-tighter w-[90vw] max-w-[900px] mb-[7rem] flex">
-          <p>
+        <div className="font-brother1816 tracking-tighter w-[90vw] max-w-[900px] mb-[7rem] flex flex-col md:flex-row">
+          <p className="my-2 md:my-0 md:mr-2">
             <strong>„Modlitby za ulice“</strong> je misijní projekt, který
             propojuje obyvatele Pardubic a okolí skrze modlitbu za své sousedy a
             jejich ulice. Do projektu se může zapojit každý, ať už chodí do
@@ -46,7 +46,7 @@ export default function Home() {
             pokrývají celé Pardubice. Připojte se i vy – modlitbou, nápadem nebo
             konkrétní pomocí!
           </p>
-          <p>
+          <p className="my-2 md:my-0 md:ml-2">
             V Česku nadále vytrvale silně prší, podle Českého
             hydrometeorologického ústavu (ČHMÚ) se situace vyvíjí velmi
             dramaticky. Nejvýraznější srážky jsou i během odpoledne hlášené z
@@ -71,7 +71,7 @@ export default function Home() {
         />
       </Section>
 
-      <Section className={"bg-blue text-white"}>
+      <Section id={"how"} className={"bg-blue text-white"}>
         <h2 className="text-xl md:text-2xl uppercase font-semibold mt-[7rem] max-w-[90vw] text-center">
           Jak se mohu zapojit?
         </h2>
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <Section className={"bg-olive text-white w-[90vw]"}>
+      <Section id={"sponsors"} className={"bg-olive text-white w-[90vw]"}>
         <TitleWithBirds className={"mt-[7rem]"}>
           Projekt připravili
         </TitleWithBirds>

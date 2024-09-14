@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full flex flex-col items-center justify-between bg-teal">
-      <p className="text-sm w-[90vw] max-w-[800px] mt-[7rem]">
+      <p className="text-sm w-[90vw] max-w-[800px] mt-[2rem]">
         Pokud byste chtěli podpořit projekt svým časem nebo finančně, napiště
         nám na{" "}
         <Link href={"mailto:info@modlitbyzapardubice.cz"} className="underline">
@@ -11,7 +11,7 @@ export default function Footer() {
         </Link>
         .
       </p>
-      <p className="text-sm w-[90vw] max-w-[800px] mb-[7rem]">
+      <p className="text-sm w-[90vw] max-w-[800px] mb-[2rem]">
         Grafický návrh{" "}
         <Link href={"TODO"} className="">
           Káťa Šislerová
