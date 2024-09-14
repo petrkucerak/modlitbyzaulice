@@ -12,15 +12,14 @@ export const conf = {
   start_url: "/",
   display: "standalone",
   orientation: "portrait-primary",
-  background_color: "#FFF",
+  background_color: "#EDELC7",
   scope: "/",
   lang: "cs",
-  theme_color: "#000",
+  theme_color: "#EB8FC2",
   categories: ["entertainment", "lifestyle"],
   icons: [
-    // TODO
-    // { src: "/icon-192.png", type: "image/png", sizes: "192x192" },
-    // { src: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    { src: "/icon-192.png", type: "image/png", sizes: "192x192" },
+    { src: "/icon-512.png", type: "image/png", sizes: "512x512" },
   ],
   // end of manifest
 
@@ -31,6 +30,5 @@ export const conf = {
     "Modlitby za Pardubice",
     "Modlitba v Pardubicích",
     "Pardubice se modlí",
-    // TODO
   ],
 };
