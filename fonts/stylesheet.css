@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Brother 1816';
+    src: url('../fonts/Brother-1816-Regular.woff2') format('woff2'),
+        url('../fonts/Brother-1816-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eigerdals';
+    src: url('../fonts/EigerdalsW00-BoldItalic.woff2') format('woff2'),
+        url('../fonts/EigerdalsW00-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eigerdals Norm 2';
+    src: url('../fonts/Eigerdals-NorReg.woff2') format('woff2'),
+        url('../fonts/Eigerdals-NorReg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eigerdals';
+    src: url('../fonts/EigerdalsW00-ThinItalic.woff2') format('woff2'),
+        url('../fonts/EigerdalsW00-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eigerdals';
+    src: url('../fonts/EigerdalsW00-Light.woff2') format('woff2'),
+        url('../fonts/EigerdalsW00-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eigerdals';
+    src: url('../fonts/EigerdalsW00-Medium.woff2') format('woff2'),
+        url('../fonts/EigerdalsW00-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eigerdals';
+    src: url('../fonts/EigerdalsW00-Heavy.woff2') format('woff2'),
+        url('../fonts/EigerdalsW00-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eigerdals';
+    src: url('../fonts/EigerdalsW00-Bold.woff2') format('woff2'),
+        url('../fonts/EigerdalsW00-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eigerdals';
+    src: url('../fonts/EigerdalsW00-Thin.woff2') format('woff2'),
+        url('../fonts/EigerdalsW00-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eigerdals';
+    src: url('../fonts/EigerdalsW00-Black.woff2') format('woff2'),
+        url('../fonts/EigerdalsW00-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eigerdals';
+    src: url('../fonts/EigerdalsW00-Regular.woff2') format('woff2'),
+        url('../fonts/EigerdalsW00-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -6,7 +6,12 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        brother1816: ["Brother 1816"],
+        eigerdals: ["Eigerdals"],
+      },
+    },
   },
   plugins: [],
 };
