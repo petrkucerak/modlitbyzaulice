@@ -5,6 +5,7 @@ import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import Main from "@/components/layout/main";
 import Section from "@/components/layout/section";
+import YoutubeVideo from "@/components/layout/video";
 
 export default function Home() {
   return (
@@ -34,6 +35,16 @@ export default function Home() {
             Připojte se i vy – modlitbou, nápadem nebo konkrétní pomocí!
           </p>
         </div>
+      </Section>
+      <Section className={"bg-red text-white"}>
+        <h2 className="text-xl w-[90vw] max-w-[500px] mb-1">
+          Slovo P. Jendy Uhlíře
+        </h2>
+        <YoutubeVideo
+          source={
+            "https://www.youtube-nocookie.com/embed/GcPbTUNziJY?si=8VdyL5FzVQrK3MkR&amp;controls=0"
+          }
+        />
       </Section>
       <Footer />
     </Main>
