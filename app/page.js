@@ -22,7 +22,9 @@ export default function Home() {
             Modlitby za&nbsp;Pardubice
           </h1>
           <p className="mb-6">{conf.description}</p>
-          <Button href={"/mapa"}>mapa</Button>
+          <Button className={"bg-wine"} href={"/mapa"}>
+            mapa
+          </Button>
         </div>
       </Section>
       <Section className={"bg-yellow text-darkBlue"}>
