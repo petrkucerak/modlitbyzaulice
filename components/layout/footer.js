@@ -2,23 +2,25 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t w-[90vw] max-w-[900px] flex flex-col items-center justify-between">
-      <p className="mt-4 mb-2">Projekt Modlitby za Pardubice podporují</p>
-      <p className="text-sm mb-4">
-        Tento projekt je vytvořený jako open-source. Pro více informací mrkni do{" "}
-        <Link
-          href={"https://github.com/petrkucerak/modlitbyzapardubice"}
-          target="_blank"
-          className="underline"
-        >
-          repositáře projektu
+    <footer className="w-full flex flex-col items-center justify-between bg-teal">
+      <p className="text-sm w-[90vw] max-w-[800px] mt-[7rem]">
+        Pokud byste chtěli podpořit projekt svým časem nebo finančně, napiště
+        nám na{" "}
+        <Link href={"mailto:info@modlitbyzapardubice.cz"} className="underline">
+          info@modlitbyzapardubice.cz
         </Link>
         .
       </p>
-      <p className="mb-4 text-xs">
-        <Link className="underline" href="mailto:info@modlitbyzapardubice.cz">
-          info@modlitbyzapardubice.cz
+      <p className="text-sm w-[90vw] max-w-[800px] mb-[7rem]">
+        Grafický návrh{" "}
+        <Link href={"TODO"} className="">
+          Káťa Šislerová
         </Link>
+        , vývoj{" "}
+        <Link href={"TODO"} className="">
+          Petr Kučera
+        </Link>
+        .
       </p>
     </footer>
   );
