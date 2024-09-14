@@ -1,6 +1,11 @@
 import { conf } from "@/components/conf";
 import IconCustomAboutTitle from "@/components/icons/about";
+import IconCustomTutorial1 from "@/components/icons/tutorial1";
+import IconCustomTutorial2 from "@/components/icons/tutorial2";
+import IconCustomTutorial3 from "@/components/icons/tutorial3";
+import IconCustomTutorial4 from "@/components/icons/tutorial4";
 import Button from "@/components/layout/button";
+import Card from "@/components/layout/card";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import Main from "@/components/layout/main";
@@ -53,6 +58,60 @@ export default function Home() {
         <h2 className="text-xl uppercase font-semibold">
           Jak se mohu zapojit?
         </h2>
+        <div className="flex flex-row items-end justify-start">
+          <Card>
+            <IconCustomTutorial1 className={"w-20"} />
+            <h3 className="uppercase tracking-tight font-semibold leading-5 mb-2">
+              Vytáhněte si ulici
+            </h3>
+            <p className="text-wine tracking-tighter leading-5">
+              Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
+              náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
+              vykonávaných jim považována užitého za nesou užitých v přesahují
+              opakované výlučné přihlédnutím náhradu.
+            </p>
+          </Card>
+          <Card>
+            <IconCustomTutorial2 className={"w-30"} />
+            <h3 className="uppercase tracking-tight font-semibold leading-5 mb-2">
+              Pomodlete se za ni
+            </h3>
+            <p className="text-wine tracking-tighter leading-5">
+              Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
+              náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
+              vykonávaných jim považována užitého za nesou užitých v přesahují
+              opakované výlučné přihlédnutím náhradu.
+            </p>
+          </Card>
+          <Card>
+            <IconCustomTutorial3 className={"w-25"} />
+            <h3 className="uppercase tracking-tight font-semibold leading-5 mb-2">
+              Přineste své modlitby
+              <br />
+              do obětního průvodu
+            </h3>
+            <p className="text-wine tracking-tighter leading-5">
+              Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
+              náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
+              vykonávaných jim považována užitého za nesou užitých v přesahují
+              opakované výlučné přihlédnutím náhradu.
+            </p>
+          </Card>
+          <Card>
+            <IconCustomTutorial4 className={"w-25"} />
+            <h3 className="uppercase tracking-tight font-semibold leading-5 mb-2">
+              Uvažte pro ni
+              <br />
+              mašli
+            </h3>
+            <p className="text-wine tracking-tighter leading-5">
+              Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
+              náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
+              vykonávaných jim považována užitého za nesou užitých v přesahují
+              opakované výlučné přihlédnutím náhradu.
+            </p>
+          </Card>
+        </div>
       </Section>
       <Footer />
     </Main>
