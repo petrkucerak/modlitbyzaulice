@@ -12,7 +12,7 @@ export const conf = {
   start_url: "/",
   display: "standalone",
   orientation: "portrait-primary",
-  background_color: "#EDELC7",
+  background_color: "#EDE1C7",
   scope: "/",
   lang: "cs",
   theme_color: "#EB8FC2",
