@@ -15,6 +15,7 @@ import ProfileCard from "@/components/layout/profile-card";
 import Section from "@/components/layout/section";
 import TitleWithBirds from "@/components/layout/title-bird";
 import YoutubeVideo from "@/components/layout/video";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -182,18 +183,18 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <Section id={"sponsors"} className={"bg-olive text-white w-[90vw]"}>
+      <Section id={"staff"} className={"bg-olive text-white w-[90vw]"}>
         <TitleWithBirds className={"mt-[8rem] mb-8"}>
           Projekt připravili
         </TitleWithBirds>
-        <div className="w-[90vw] max-w-[1000px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10">
+        <div className="w-[90vw] max-w-[1000px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 mb-[4rem]">
           <ProfileCard>
             <img
               className="w-[200px] rounded-sm border-[12px] border-pink"
-              src="/assets/david.webp"
+              src="/assets/tomas.webp"
               alt="Profilová fotka Tomáše"
             />
-            <h3>Tomáš</h3>
+            <h3 className="mt-2">Tomáš</h3>
           </ProfileCard>
           <ProfileCard>
             <img
@@ -201,7 +202,7 @@ export default function Home() {
               src="/assets/iva.webp"
               alt="Profilová fotka Ivy"
             />
-            <h3>Iva</h3>
+            <h3 className="mt-2">Iva</h3>
           </ProfileCard>
           <ProfileCard>
             <img
@@ -209,7 +210,7 @@ export default function Home() {
               src="/assets/david.webp"
               alt="Profilová fotka Davida"
             />
-            <h3>David</h3>
+            <h3 className="mt-2">David</h3>
           </ProfileCard>
           <ProfileCard>
             <img
@@ -217,11 +218,72 @@ export default function Home() {
               src="/assets/jenda.webp"
               alt="Profilová fotka Jendy"
             />
-            <h3>P. Jenda</h3>
+            <h3 className="mt-2">P. Jenda</h3>
           </ProfileCard>
         </div>
-        <TitleWithBirds className={"mt-[8rem]"}>Za podpory</TitleWithBirds>
-        <p className="mb-[8rem]">Somebody...</p>
+      </Section>
+      <Section id={"sponsors"} className={"bg-white text-wine w-[90vw]"}>
+        <TitleWithBirds color={"#516ba8"} className={"mt-[4rem] mb-8"}>
+          Za podpory
+        </TitleWithBirds>
+        <div className="w-[90vw] max-w-[1000px] rounded-sm flex flex-row flex-wrap items-center justify-between px-4 mb-[4rem]">
+          <Link
+            href={"https://farnost-pardubice.cz/"}
+            target="_blank"
+            rel="noreferrer"
+            title="Farnost Pardubice"
+          >
+            <ProfileCard>
+              <img
+                className="w-[200px] h-[200px] bg-white"
+                src="/assets/logo_farnost.svg"
+                alt="Logo farnosti Pardubice"
+              />
+            </ProfileCard>
+          </Link>
+          <Link
+            href={"https://salesianipardubice.cz/"}
+            target="_blank"
+            rel="noreferrer"
+            title="Salesiáni Pardubice"
+          >
+            <ProfileCard>
+              <img
+                className="w-[200px] h-[200px]"
+                src="/assets/logo_skm.svg"
+                alt="Logo Salesiánského klubu Pardubice"
+              />
+            </ProfileCard>
+          </Link>
+          <Link
+            href={"https://pardubice.eu/"}
+            target="_blank"
+            rel="noreferrer"
+            title="Město Pardubice"
+          >
+            <ProfileCard>
+              <img
+                className="w-[200px] h-[200px]"
+                src="/assets/logo_pardubice.svg"
+                alt="Logo Pardubic"
+              />
+            </ProfileCard>
+          </Link>
+          <Link
+            href={"https://www.pardubickykraj.cz/"}
+            target="_blank"
+            rel="noreferrer"
+            title="Pardubický kraj"
+          >
+            <ProfileCard>
+              <img
+                className="w-[200px] h-[200px] bg-white"
+                src="/assets/logo_kraj.svg"
+                alt="Logo Pardubického kraje"
+              />
+            </ProfileCard>
+          </Link>
+        </div>
       </Section>
       <Footer />
     </Main>
