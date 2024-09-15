@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Main>
       <Header />
-      <div className="flex flex-col w-[90vw] max-w-[900px]">
+      <div className="flex flex-col items-center w-full bg-white">
         <MapSSR />
       </div>
       <Footer />

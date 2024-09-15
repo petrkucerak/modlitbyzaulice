@@ -18,7 +18,7 @@ export default function Map({ className }) {
       center={position}
       zoom={13}
       scrollWheelZoom={true}
-      className="h-[80vh]"
+      className="h-[100vh] md:h-[70vh] w-full md:mt-[5rem] md:w-[90vw] md:max-w-[1000px]"
     >
       <TileLayer
         url={`https://api.mapy.cz/v1/maptiles/basic/${tileSize}/{z}/{x}/{y}?apikey=${conf.MAPY_API_KEY}`}

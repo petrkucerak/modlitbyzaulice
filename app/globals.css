@@ -10,6 +10,37 @@ body {
   font-family: "Brother 1816";
 }
 
+/* Leaflet  */
+.leaflet-popup-tip {
+  background-color: #ede1c7 !important;
+}
+.leaflet-popup-content-wrapper {
+  background-color: #ede1c7 !important;
+  border-radius: 0.4px !important;
+}
+
+.leaflet-popup-content {
+  font-family: "Brother 1816";
+}
+
+.leaflet-popup-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.leaflet-popup-content .subtitle {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.leaflet-popup-content .details {
+  margin: 0;
+  font-size: .9rem;
+  margin-top: 1rem;
+}
+
 /* Fonts  */
 
 @font-face {

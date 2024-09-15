@@ -22,7 +22,7 @@ export default function Header({ activeSection }) {
       case "sponsors":
         return "bg-white";
       default:
-        return "bg-darkBlue";
+        return "bg-white";
     }
   };
 
@@ -32,7 +32,7 @@ export default function Header({ activeSection }) {
 
   return (
     <header
-      className={`w-[100vw] flex flex-row items-center justify-between ${getHeaderClassName()} text-wine fixed transition-colors duration-200`}
+      className={`z-[10000] w-[100vw] flex flex-row items-center justify-between ${getHeaderClassName()} text-wine fixed transition-colors duration-200`}
     >
       <Link href={"/#home"} className="my-4">
         <IconCustomLogo className={"w-[2rem] ml-[1.8rem]"} />
@@ -65,7 +65,7 @@ export default function Header({ activeSection }) {
             jak se zapojit
           </Link>
           <Link
-            href={"/mapa-target"}
+            href={"/mapa"}
             onClick={toggleMenu}
             className="block my-4"
           >
