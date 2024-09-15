@@ -11,6 +11,7 @@ import Center from "@/components/layout/center";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import Main from "@/components/layout/main";
+import ProfileCard from "@/components/layout/profile-card";
 import Section from "@/components/layout/section";
 import TitleWithBirds from "@/components/layout/title-bird";
 import YoutubeVideo from "@/components/layout/video";
@@ -182,10 +183,43 @@ export default function Home() {
         </div>
       </Section>
       <Section id={"sponsors"} className={"bg-olive text-white w-[90vw]"}>
-        <TitleWithBirds className={"mt-[8rem]"}>
+        <TitleWithBirds className={"mt-[8rem] mb-8"}>
           Projekt připravili
         </TitleWithBirds>
-        <p className="my-20">Someone...</p>
+        <div className="w-[90vw] max-w-[1000px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10">
+          <ProfileCard>
+            <img
+              className="w-[200px] rounded-sm border-[12px] border-pink"
+              src="/assets/david.webp"
+              alt="Profilová fotka Tomáše"
+            />
+            <h3>Tomáš</h3>
+          </ProfileCard>
+          <ProfileCard>
+            <img
+              className="w-[200px] rounded-sm border-[12px] border-pink"
+              src="/assets/iva.webp"
+              alt="Profilová fotka Ivy"
+            />
+            <h3>Iva</h3>
+          </ProfileCard>
+          <ProfileCard>
+            <img
+              className="w-[200px] rounded-sm border-[12px] border-pink"
+              src="/assets/david.webp"
+              alt="Profilová fotka Davida"
+            />
+            <h3>David</h3>
+          </ProfileCard>
+          <ProfileCard>
+            <img
+              className="w-[200px] rounded-sm border-[12px] border-pink"
+              src="/assets/jenda.webp"
+              alt="Profilová fotka Jendy"
+            />
+            <h3>P. Jenda</h3>
+          </ProfileCard>
+        </div>
         <TitleWithBirds className={"mt-[8rem]"}>Za podpory</TitleWithBirds>
         <p className="mb-[8rem]">Somebody...</p>
       </Section>
