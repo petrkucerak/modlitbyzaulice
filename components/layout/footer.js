@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full flex flex-col items-center justify-between bg-teal text-white">
-      <div className="text-sm flex md:flex-row-reverse flex-col items-center md:justify-between justify-centers w-[90vw] mt-[2rem]">
+      <div className="text-xs flex md:flex-row-reverse flex-col items-center md:justify-between justify-centers w-[90vw] max-w-[1200px] mt-[2rem]">
         <div className="flex flex-col items-center justify-between w-full md:max-w-[600px]">
           <p className="md:text-right mb-8 md:mb-0">
             Rádi byste projekt podpořit finančně nebo dobrovolickou pomocí?
@@ -68,14 +68,24 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div className="text-xs flex md:flex-row flex-col items-center md:justify-between justify-centers mb-[2rem] w-[90vw] mt-[2rem]">
+      <div className="text-xs flex md:flex-row flex-col items-center md:justify-between justify-centers mb-[2rem] w-[90vw] max-w-[1200px] mt-[1rem]">
         <p className="">
           Grafický návrh{" "}
-          <Link href={"TODO"} className="">
+          <Link
+            href={"https://www.figma.com/proto/14PCVeCuWJVd3k7DZnb43n/"}
+            target="_blank"
+            rel="nofollow noreferrer"
+            className=""
+          >
             Káťa Šislerová
           </Link>
           , vývoj{" "}
-          <Link href={"TODO"} className="">
+          <Link
+            href={"https://petrkucerak.cz/"}
+            target="_blank"
+            rel="noreferrer"
+            className=""
+          >
             Petr Kučera
           </Link>
           .
