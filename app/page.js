@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <Main>
       <Header activeSection={activeSection} />
-      <Section id={"home"} className={"bg-darkBlue text-white min-h-[80vh]"}>
+      <Section id={"home"} className={"bg-darkBlue text-white min-h-[100vh]"}>
         <div className="w-[90vw] max-w-[900px]">
           <h1 className="uppercase font-brother1816 font-bold text-2xl">
             Modlitby za&nbsp;Pardubice
