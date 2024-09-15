@@ -223,7 +223,7 @@ export default function Home() {
         </div>
       </Section>
       <Section id={"sponsors"} className={"bg-white text-wine w-[90vw]"}>
-        <TitleWithBirds color={"#516ba8"} className={"mt-[4rem] mb-8"}>
+        <TitleWithBirds color={"#516ba8"} className={"mt-[4rem] mb-8 fill-[#516ba8]"}>
           Za podpory
         </TitleWithBirds>
         <div className="w-[90vw] max-w-[1000px] rounded-sm flex flex-col md:flex-row flex-wrap items-center justify-between px-4 mb-[4rem]">

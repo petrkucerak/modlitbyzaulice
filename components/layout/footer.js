@@ -13,14 +13,14 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between w-full md:max-w-[600px]">
           <p className="md:text-right mb-8 md:mb-0">
             Rádi byste projekt podpořit finančně nebo dobrovolickou pomocí?
-            Napište nám nám{" "}
+            Napište nám na{" "}
             <Link
               href={"mailto:info@modlitbyzapardubice.cz"}
               className="underline"
             >
               info@modlitbyzapardubice.cz
-            </Link>{" "}
-            a&nbsp;rádi vás do díla zapojíme .
+            </Link>
+            , rádi vás do díla zapojíme .
           </p>
         </div>
 
