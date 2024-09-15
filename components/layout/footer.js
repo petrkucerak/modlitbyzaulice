@@ -17,17 +17,6 @@ export default function Footer() {
         </Link>
         .
       </p>
-      <p className="text-sm w-[90vw] max-w-[800px] mb-[2rem]">
-        Grafický návrh{" "}
-        <Link href={"TODO"} className="">
-          Káťa Šislerová
-        </Link>
-        , vývoj{" "}
-        <Link href={"TODO"} className="">
-          Petr Kučera
-        </Link>
-        .
-      </p>
       <p className="text-sm w-[90vw] max-w-[800px]">
         Organizátorem akce je{" "}
         <Link href={""} target="_blank">
@@ -35,6 +24,28 @@ export default function Footer() {
         </Link>
         .
       </p>
+      <div className="text-xs flex md:flex-row flex-col items-center md:justify-between justify-centers mb-[2rem] w-[90vw] mt-[2rem]">
+        <p className="">
+          Grafický návrh{" "}
+          <Link href={"TODO"} className="">
+            Káťa Šislerová
+          </Link>
+          , vývoj{" "}
+          <Link href={"TODO"} className="">
+            Petr Kučera
+          </Link>
+          .
+        </p>
+        <p>
+          <Link href={""} target="_blank" className="underline">
+            Pravidla akce
+          </Link>{" "}
+          a{" "}
+          <Link href={""} target="_blank" className="underline">
+            Zásady ochrany osobních údaju
+          </Link>
+        </p>
+      </div>
     </footer>
   );
 }
