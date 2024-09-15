@@ -17,8 +17,10 @@ export default function Header({ activeSection }) {
         return "bg-red";
       case "how":
         return "bg-blue";
-      case "sponsors":
+      case "staff":
         return "bg-olive";
+      case "sponsors":
+        return "bg-white";
       default:
         return "bg-darkBlue";
     }

@@ -226,7 +226,7 @@ export default function Home() {
         <TitleWithBirds color={"#516ba8"} className={"mt-[4rem] mb-8"}>
           Za podpory
         </TitleWithBirds>
-        <div className="w-[90vw] max-w-[1000px] rounded-sm flex flex-row flex-wrap items-center justify-between px-4 mb-[4rem]">
+        <div className="w-[90vw] max-w-[1000px] rounded-sm flex flex-col md:flex-row flex-wrap items-center justify-between px-4 mb-[4rem]">
           <Link
             href={"https://farnost-pardubice.cz/"}
             target="_blank"
