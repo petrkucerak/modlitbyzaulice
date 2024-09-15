@@ -1,29 +1,68 @@
+import {
+  IconBrandFacebook,
+  IconBrandInstagram,
+  IconBrandYoutube,
+  IconWorld,
+} from "@tabler/icons";
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="w-full flex flex-col items-center justify-between bg-teal text-white">
-      <p className="text-sm w-[90vw] max-w-[800px] mt-[2rem]">
-        Pokud byste chtěli podpořit projekt svým časem nebo finančně, napiště
-        nám na{" "}
-        <Link href={"mailto:info@modlitbyzapardubice.cz"} className="underline">
-          info@modlitbyzapardubice.cz
-        </Link>
-        .
-      </p>
-      <p className="text-sm w-[90vw] max-w-[800px]">
-        <Link href={"/"} target="_blank" className="underline">
-          Pravidla akce a zásady ochrany osobních údaju
-        </Link>
-        .
-      </p>
-      <p className="text-sm w-[90vw] max-w-[800px]">
-        Organizátorem akce je{" "}
-        <Link href={""} target="_blank">
-          Římskokatolická farnost Pardubice
-        </Link>
-        .
-      </p>
+      <div className="text-sm flex md:flex-row flex-col items-center md:justify-between justify-centers w-[90vw] mt-[2rem]">
+        <div className="flex flex-col items-center justify-between w-full md:max-w-[500px]">
+          <p className="">
+            Rádi byste náš projekt podpořit finančně nebo svým časem
+            a&nbsp;dobrovolickou pomocí? Napište nám nám{" "}
+            <Link
+              href={"mailto:info@modlitbyzapardubice.cz"}
+              className="underline"
+            >
+              info@modlitbyzapardubice.cz
+            </Link>{" "}
+            a&nbsp;rádi vás do díla zapojíme .
+          </p>
+        </div>
+
+        <ul className="flex flex-col items-end w-full md:max-w-[500px]">
+          <li className="uppercase tracking-tighter text-xs">
+            organizátor akce
+          </li>
+          <li>
+            <Link
+              href={"https://farnost-pardubice.cz/"}
+              target="_blank"
+              rel={"noreferrer"}
+            >
+              Římskokatolická farnost Pardubice
+            </Link>
+          </li>
+          <li className="flex flex-row items-end mt-1">
+            <Link
+              href={"https://www.facebook.com/farnostPardubice/"}
+              target="_blank"
+              rel="noreferrer nofollow"
+            >
+              <IconBrandFacebook className="mx-1" />
+            </Link>
+            <Link
+              href={"https://www.instagram.com/pardubicefarnost/"}
+              target="_blank"
+              rel="noreferrer nofollow"
+            >
+              <IconBrandInstagram className="mx-1" />
+            </Link>
+            <Link
+              href={"https://www.youtube.com/@farnostpardubice5403/"}
+              target="_blank"
+              rel="noreferrer nofollow"
+            >
+              <IconBrandYoutube className="mx-1" />
+            </Link>
+          </li>
+        </ul>
+      </div>
+
       <div className="text-xs flex md:flex-row flex-col items-center md:justify-between justify-centers mb-[2rem] w-[90vw] mt-[2rem]">
         <p className="">
           Grafický návrh{" "}
