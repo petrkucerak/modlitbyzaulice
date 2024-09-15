@@ -30,32 +30,50 @@ export default function Header({ activeSection }) {
 
   return (
     <header
-      className={`w-[100vw] flex flex-row items-center justify-between ${getHeaderClassName()} text-wine fixed transition-colors duration-500`}
+      className={`w-[100vw] flex flex-row items-center justify-between ${getHeaderClassName()} text-wine fixed transition-colors duration-200`}
     >
       <Link href={"/#home"} className="my-4">
         <IconCustomLogo className={"w-[2rem] ml-[1.8rem]"} />
       </Link>
       {/* Desktop menu */}
       <div className="hidden md:flex flex-row items-center justify-between max-w-[600px] w-full">
-        <Link href={"/#about"}>o projektu</Link>
-        <Link href={"/#how"}>jak se zapojit</Link>
+        <Link href={"/#about-target"}>o projektu</Link>
+        <Link href={"/#how-target"}>jak se zapojit</Link>
         <Link href={"/mapa"}>mapa</Link>
-        <Link href={"/#sponsors"}>podporují</Link>
+        <Link href={"/#sponsors-target"}>podporují</Link>
       </div>
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className={`absolute top-14 text-2xl flex flex-col ${getHeaderClassName()} items-center w-full h-[100vh] md:hidden`}>
-          <Link href={"/#about"} onClick={toggleMenu} className="block my-4">
+        <div
+          className={`absolute top-14 text-2xl flex flex-col ${getHeaderClassName()} items-center w-full h-[100vh] md:hidden`}
+        >
+          <Link
+            href={"/#about-target"}
+            onClick={toggleMenu}
+            className="block my-4"
+          >
             o projektu
           </Link>
-          <Link href={"/#how"} onClick={toggleMenu} className="block my-4">
+          <Link
+            href={"/#how-target"}
+            onClick={toggleMenu}
+            className="block my-4"
+          >
             jak se zapojit
           </Link>
-          <Link href={"/mapa"} onClick={toggleMenu} className="block my-4">
+          <Link
+            href={"/mapa-target"}
+            onClick={toggleMenu}
+            className="block my-4"
+          >
             mapa
           </Link>
-          <Link href={"/#sponsors"} onClick={toggleMenu} className="block my-4">
+          <Link
+            href={"/#sponsors-target"}
+            onClick={toggleMenu}
+            className="block my-4"
+          >
             podporují
           </Link>
         </div>
