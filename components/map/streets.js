@@ -35,7 +35,7 @@ export default function Streets() {
       closeButton: false,
       className: "font-brother1816",
     }).setContent(
-      `<h3 class="title">${street.street_name}</h3><p class="subtitle">${street.borough_name}</p><p class="details">Za tuto ulici se modlil ${street.name}.</p>`
+      `<h3 class="title">${street.street_name}</h3><p class="subtitle">${street.borough_name}</p><p class="details">Za ulici se už modlil ${street.name}</p>`
     );
 
     if (street.date !== "") {

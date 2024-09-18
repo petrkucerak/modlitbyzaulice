@@ -53,91 +53,128 @@ body {
 }
 
 @font-face {
-  font-family: "Eigerdals";
-  src: url("../fonts/EigerdalsW00-BoldItalic.woff2") format("woff2"),
-    url("../fonts/EigerdalsW00-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-Hea.woff2') format('woff2'),
+      url('../fonts/Eigerdals-Hea.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Eigerdals Norm 2";
-  src: url("../fonts/Eigerdals-NorReg.woff2") format("woff2"),
-    url("../fonts/Eigerdals-NorReg.woff") format("woff");
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-Reg.woff2') format('woff2'),
+      url('../fonts/Eigerdals-Reg.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Eigerdals";
-  src: url("../fonts/EigerdalsW00-ThinItalic.woff2") format("woff2"),
-    url("../fonts/EigerdalsW00-ThinItalic.woff") format("woff");
-  font-weight: 100;
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-HeaIta.woff2') format('woff2'),
+      url('../fonts/Eigerdals-HeaIta.woff') format('woff');
+  font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Eigerdals";
-  src: url("../fonts/EigerdalsW00-Light.woff2") format("woff2"),
-    url("../fonts/EigerdalsW00-Light.woff") format("woff");
-  font-weight: 300;
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-Thi.woff2') format('woff2'),
+      url('../fonts/Eigerdals-Thi.woff') format('woff');
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Eigerdals";
-  src: url("../fonts/EigerdalsW00-Medium.woff2") format("woff2"),
-    url("../fonts/EigerdalsW00-Medium.woff") format("woff");
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-Bol.woff2') format('woff2'),
+      url('../fonts/Eigerdals-Bol.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-BolIta.woff2') format('woff2'),
+      url('../fonts/Eigerdals-BolIta.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-Med.woff2') format('woff2'),
+      url('../fonts/Eigerdals-Med.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Eigerdals";
-  src: url("../fonts/EigerdalsW00-Heavy.woff2") format("woff2"),
-    url("../fonts/EigerdalsW00-Heavy.woff") format("woff");
-  font-weight: 900;
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-Lig.woff2') format('woff2'),
+      url('../fonts/Eigerdals-Lig.woff') format('woff');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Eigerdals";
-  src: url("../fonts/EigerdalsW00-Bold.woff2") format("woff2"),
-    url("../fonts/EigerdalsW00-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-LigIta.woff2') format('woff2'),
+      url('../fonts/Eigerdals-LigIta.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Eigerdals";
-  src: url("../fonts/EigerdalsW00-Thin.woff2") format("woff2"),
-    url("../fonts/EigerdalsW00-Thin.woff") format("woff");
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-ThiIta.woff2') format('woff2'),
+      url('../fonts/Eigerdals-ThiIta.woff') format('woff');
   font-weight: 100;
-  font-style: normal;
+  font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Eigerdals";
-  src: url("../fonts/EigerdalsW00-Black.woff2") format("woff2"),
-    url("../fonts/EigerdalsW00-Black.woff") format("woff");
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-MedIta.woff2') format('woff2'),
+      url('../fonts/Eigerdals-MedIta.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-Bla.woff2') format('woff2'),
+      url('../fonts/Eigerdals-Bla.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Eigerdals";
-  src: url("../fonts/EigerdalsW00-Regular.woff2") format("woff2"),
-    url("../fonts/EigerdalsW00-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-BlaIta.woff2') format('woff2'),
+      url('../fonts/Eigerdals-BlaIta.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Eigerdals';
+  src: url('../fonts/Eigerdals-RegIta.woff2') format('woff2'),
+      url('../fonts/Eigerdals-RegIta.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
