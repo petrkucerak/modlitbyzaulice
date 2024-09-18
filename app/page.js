@@ -210,7 +210,7 @@ export default function Home() {
         </div>
       </Section>
       <Section
-        id={"staff"}
+        id={"sponsors"}
         className={"bg-olive text-white w-[90vw] min-h-[50vh]"}
       >
         <TitleWithBirds className={"mt-[8rem] mb-8"}>
