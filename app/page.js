@@ -71,11 +71,11 @@ export default function Home() {
       >
         <IconCustomAboutTitle
           classNameName={
-            "w-[90vw] max-w-[500px] mt-[8rem] mb-10 xl:max-w-[600px] 2xl:max-w-[700px]"
+            "w-[90vw] max-w-[500px] mt-[8rem] xl:mt-[10rem] mb-10 xl:max-w-[600px] 2xl:max-w-[700px]"
           }
         />
 
-        <div className="font-eigerdals tracking-tighter w-[90vw] max-w-[900px] mb-[8rem] flex flex-col md:flex-row">
+        <div className="font-eigerdals tracking-tighter w-[90vw] max-w-[900px] mb-[8rem] xl:mb-[10rem] flex flex-col md:flex-row">
           <p className="my-2 md:my-0 md:mr-2">
             <strong>„Modlitby za ulice“</strong> je misijní projekt, který
             propojuje obyvatele Pardubic a okolí skrze modlitbu za své sousedy a
@@ -104,7 +104,7 @@ export default function Home() {
         id={"motivate"}
         className={"bg-red text-white min-h-[100vh] xl:text-lg 2xl:text-xl"}
       >
-        <h2 className="text-xl w-[90vw] max-w-[500px] xl:max-w-[600px] 2xl:max-w-[700px] mb-4 mt-[8rem] font-semibold xl:text-2xl 2xl:text-3xl">
+        <h2 className="text-xl w-[90vw] max-w-[500px] xl:max-w-[600px] 2xl:max-w-[700px] mb-4 mt-[8rem] xl:mt-[10rem] font-semibold xl:text-2xl 2xl:text-3xl">
           Slovo P. Jendy Uhlíře
         </h2>
         <YoutubeVideo
@@ -125,7 +125,7 @@ export default function Home() {
         id={"how"}
         className={"bg-blue text-white min-h-[100vh] xl:text-lg 2xl:text-xl"}
       >
-        <h2 className="text-xl md:text-2xl uppercase font-semibold mt-[8rem] max-w-[90vw] text-center">
+        <h2 className="text-xl md:text-2xl uppercase font-semibold mt-[8rem] xl:mt-[10rem] max-w-[90vw] text-center">
           Jak se mohu zapojit?
         </h2>
         <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] mb-10 flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 xl:flex xl:flex-row xl:justify-between">
@@ -136,11 +136,12 @@ export default function Home() {
             <h3 className="uppercase font-semibold leading-5 2xl:leading-6 mb-2 mt-6">
               Vytáhněte si ulici
             </h3>
-            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
-              Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
-              náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
-              vykonávaných jim považována užitého za nesou užitých v přesahují
-              opakované výlučné přihlédnutím náhradu.
+            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[140px]">
+              Zajdi do jednoho z pardubických kostelů a{" "}
+              <strong>vytáhni si ulici</strong> či místo, za které se budeš
+              modlit. Ideální je přijít <strong>při nedělní mši</strong>,
+              lístečky budou i připraveny i kdykoliv jindy. Doporučujeme nechat
+              jméno spíše na náhodě, uvidíš, třeba poznáš novou část Pardubic.
             </p>
           </Card>
           <Card>
@@ -150,11 +151,12 @@ export default function Home() {
             <h3 className="uppercase font-semibold leading-5 2xl:leading-6 mb-2 mt-6">
               Pomodlete se za ni
             </h3>
-            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
-              Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
-              náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
-              vykonávaných jim považována užitého za nesou užitých v přesahují
-              opakované výlučné přihlédnutím náhradu.
+            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[140px]">
+              Pokud místo či ulici neznáš, zjistit si, kde je. Způsob modlitby
+              je plně na tobě. Pokud bys nevěděl, jak na to, jako inspirace ti
+              může posloužit druhá strana kartičky, na které je{" "}
+              <strong>společná modlitba</strong>. Tip od nás je si na místo
+              zajít a zjistit, co v dané ulici vlastně všechno je a kdo tu žije.
             </p>
           </Card>
           <Card>
@@ -166,11 +168,27 @@ export default function Home() {
               <br />
               do obětního průvodu
             </h3>
-            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
-              Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
-              náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
-              vykonávaných jim považována užitého za nesou užitých v přesahují
-              opakované.
+            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[120px]">
+              Na kartičku napiš svoje jméno a{" "}
+              <strong>přines ji v neděli</strong> na mši svatou do jakéhokoliv
+              pardubického kostela, kde se v obětním průvodu přinesou před
+              oltář. Nevíš, kdy je mše svatá? Nevadí, podívej se na{" "}
+              <Link
+                href={"https://farnost-pardubice.cz/"}
+                target="_blank"
+                className="italic"
+              >
+                web farnosti
+              </Link>{" "}
+              či{" "}
+              <Link
+                href={"https://salesianipardubice.cz/"}
+                target="_blank"
+                className="italic"
+              >
+                salesiánů
+              </Link>
+              .
             </p>
           </Card>
           <Card>
@@ -182,24 +200,34 @@ export default function Home() {
               <br />
               mašli
             </h3>
-            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
-              Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
-              náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
-              vykonávaných jim považována užitého za nesou užitých v přesahují
-              opakované.
+            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[120px]">
+              Po skončení mše svaté <strong>uvaž</strong> za promodlené místo{" "}
+              <strong>mašli</strong>. Můžeš na ni napsat, co budeš chtít: vzkaz,
+              jméno, přání místu nebo ulici nebo nakreslit co ti zrovna přijde
+              na mysl. Jen pamatuj, že to co je na mšli si bude moci přečíst
+              kdokoli.
             </p>
           </Card>
         </div>
-        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mb-[8rem] mt-10">
-          <div className="md:max-w-[500px]">
-            <h3 className="uppercase font-semibold">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mb-[8rem] xl:mb-[10rem] mt-10">
+          <div className="md:max-w-[700px]">
+            <h3 className="uppercase font-semibold mb-2">
               Sledujte, jak modlitba proměňuje Pardubice
             </h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
-              Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
-              náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
-              vykonávaných jim považována užitého za nesou užitých v přesahují
-              opakované výlučné přihlédnutím náhradu.
+              Věříme, že modlitba může proměnit naše město a naše vesnice.
+              Abychom všichni viděli, jak naše výzva postupuje, připravili jsme{" "}
+              <strong>interaktivní mapu</strong>, na které si můžete
+              prohlédnout, za jaké ulice a významné objekty se již někdo modlil.
+              Nenašel jsi svoju ulici nebo významný objet na mapě? Dej nám vědět
+              na mail{" "}
+              <Link
+                href={"mailto:info@modlitbyzapardubice.cz"}
+                className="underline"
+              >
+                info@modlitbyzapardubice.cz
+              </Link>
+              , pokud to bude v našich silách, rádi ho doplníme.
             </p>
           </div>
           <div className="my-10 md:my-0">
@@ -213,7 +241,7 @@ export default function Home() {
         id={"sponsors"}
         className={"bg-olive text-white w-[90vw] min-h-[50vh]"}
       >
-        <TitleWithBirds className={"mt-[8rem] mb-8"}>
+        <TitleWithBirds className={"mt-[8rem] xl:mt-[10rem] mb-8"}>
           Projekt připravili
         </TitleWithBirds>
         <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 mb-[4rem]">
@@ -251,7 +279,7 @@ export default function Home() {
           </ProfileCard>
         </div>
         <TitleWithBirds className={"mt-[4rem] mb-8"}>Za podpory</TitleWithBirds>
-        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 mb-[7rem]">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 mb-[8rem] xl:mb-[10rem]">
           <ProfileCard>
             <Link
               href={"https://farnost-pardubice.cz/"}
