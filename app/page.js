@@ -75,8 +75,20 @@ export default function Home() {
           }
         />
 
-        <div className="font-eigerdals tracking-tighter w-[90vw] max-w-[900px] mb-[8rem] xl:mb-[10rem] flex flex-col md:flex-row">
-          <p className="my-2 md:my-0 md:mr-2">
+        <div className="font-eigerdals tracking-tighter w-[90vw] max-w-[1000px] mb-[8rem] xl:mb-[10rem] flex flex-col md:flex-row justify-between items-center md:items-start">
+          <p className="my-2 md:my-0 md:mr-2 max-w-[450px]">
+            Chceš se zapojit do něčeho, co tě osloví na hlubší úrovni? Přemýšlel
+            jsi někdy o svém poslání? O tom, co to vlastně znamená zažít
+            „missio“? Nemusíš hned balit kufry a vyrážet do exotických zemí,
+            abys něco změnil. Můžeš začít tady a teď – třeba na ulici, kterou
+            dobře znáš. Připravujeme projekt Modlitby za ulice v Pardubicích,
+            který startuje 20. října 2024. Je to tvá příležitost propojit víru s
+            každodenním životem a zažít něco, co má smysl. Jak? Jednoduše.
+            Vybereš si ulici, za kterou se budeš modlit, možná ji navštívíš, a
+            kdo ví – třeba se setkáš s někým, kdo potřebuje slyšet právě tvé
+            svědectví.
+          </p>
+          <p className="my-2 md:my-0 md:ml-2 max-w-[450px]">
             <strong>„Modlitby za ulice“</strong> je misijní projekt, který
             propojuje obyvatele Pardubic a okolí skrze modlitbu za své sousedy a
             jejich ulice. Do projektu se může zapojit každý, ať už chodí do
@@ -86,17 +98,6 @@ export default function Home() {
             interaktivní mapě pak můžete sledovat, jak modlitby postupně
             pokrývají celé Pardubice. Připojte se i vy – modlitbou, nápadem nebo
             konkrétní pomocí!
-          </p>
-          <p className="my-2 md:my-0 md:ml-2">
-            V Česku nadále vytrvale silně prší, podle Českého
-            hydrometeorologického ústavu (ČHMÚ) se situace vyvíjí velmi
-            dramaticky. Nejvýraznější srážky jsou i během odpoledne hlášené z
-            Jesenicka a Ostravska, do noci na pondělí dosáhnou celkové úhrny za
-            čtyřdenní období na návětří Jeseníků přes 500 milimetrů, na
-            hřebenech Krkonoš přes 400 milimetrů. Meteorologové oproti sobotnímu
-            dopoledni přidali povodňové ohrožení (3. SPA) pro Dvůr Králové nad
-            Labem a extrémní povodňové ohrožení pro Bílovec, Nový Jičín a
-            Kopřivnici.
           </p>
         </div>
       </Section>
