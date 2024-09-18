@@ -210,7 +210,7 @@ export default function Home() {
             </p>
           </Card>
         </div>
-        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mb-[8rem] xl:mb-[10rem] mt-10">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mb-[8rem] xl:mb-[10rem] mt-10 xl:mt-[5rem]">
           <div className="md:max-w-[700px]">
             <h3 className="uppercase font-semibold mb-2">
               Sledujte, jak modlitba proměňuje Pardubice
