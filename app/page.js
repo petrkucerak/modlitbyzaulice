@@ -50,8 +50,8 @@ export default function Home() {
           <h1 className="uppercase font-brother1816 font-bold text-2xl">
             Modlitby za&nbsp;Pardubice
           </h1>
-          <p className="mb-6">{conf.description}</p>
-          <Button className={"bg-wine"} href={"/mapa"}>
+          <p className="mb-6 font-eigerdals">{conf.description}</p>
+          <Button className={"bg-wine "} href={"/mapa"}>
             mapa
           </Button>
         </div>
@@ -61,7 +61,7 @@ export default function Home() {
           classNameName={"w-[90vw] max-w-[450px] mt-[8rem] mb-10"}
         />
 
-        <div className="font-brother1816 tracking-tighter w-[90vw] max-w-[900px] mb-[8rem] flex flex-col md:flex-row">
+        <div className="font-eigerdals tracking-tighter w-[90vw] max-w-[900px] mb-[8rem] flex flex-col md:flex-row">
           <p className="my-2 md:my-0 md:mr-2">
             <strong>„Modlitby za ulice“</strong> je misijní projekt, který
             propojuje obyvatele Pardubic a okolí skrze modlitbu za své sousedy a
@@ -110,7 +110,7 @@ export default function Home() {
             <h3 className="uppercase font-semibold leading-5 mb-2 mt-6">
               Vytáhněte si ulici
             </h3>
-            <p className="text-wine tracking-tighter leading-5">
+            <p className="text-wine tracking-tighter leading-5 font-eigerdals">
               Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
               náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
               vykonávaných jim považována užitého za nesou užitých v přesahují
@@ -124,7 +124,7 @@ export default function Home() {
             <h3 className="uppercase font-semibold leading-5 mb-2 mt-6">
               Pomodlete se za ni
             </h3>
-            <p className="text-wine tracking-tighter leading-5">
+            <p className="text-wine tracking-tighter leading-5 font-eigerdals">
               Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
               náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
               vykonávaných jim považována užitého za nesou užitých v přesahují
@@ -140,7 +140,7 @@ export default function Home() {
               <br />
               do obětního průvodu
             </h3>
-            <p className="text-wine tracking-tighter leading-5">
+            <p className="text-wine tracking-tighter leading-5 font-eigerdals">
               Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
               náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
               vykonávaných jim považována užitého za nesou užitých v přesahují
@@ -156,7 +156,7 @@ export default function Home() {
               <br />
               mašli
             </h3>
-            <p className="text-wine tracking-tighter leading-5">
+            <p className="text-wine tracking-tighter leading-5 font-eigerdals">
               Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
               náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
               vykonávaných jim považována užitého za nesou užitých v přesahují
@@ -169,7 +169,7 @@ export default function Home() {
             <h3 className="uppercase font-semibold">
               Sledujte, jak modlitba proměňuje Pardubice
             </h3>
-            <p className="text-wine tracking-tighter leading-5">
+            <p className="text-wine tracking-tighter leading-5 font-eigerdals">
               Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
               náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
               vykonávaných jim považována užitého za nesou užitých v přesahují
@@ -190,35 +190,35 @@ export default function Home() {
         <div className="w-[90vw] max-w-[1000px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 mb-[4rem]">
           <ProfileCard>
             <img
-              className="w-[200px] rounded-sm border-[12px] border-pink"
+              className="w-[200px] h-[250px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/tomas.webp"
               alt="Profilová fotka Tomáše"
             />
-            <h3 className="mt-2">Tomáš</h3>
+            <h3 className="mt-2 font-eigerdals">Tomáš</h3>
           </ProfileCard>
           <ProfileCard>
             <img
-              className="w-[200px] rounded-sm border-[12px] border-pink"
+              className="w-[200px] h-[250px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/iva.webp"
               alt="Profilová fotka Ivy"
             />
-            <h3 className="mt-2">Iva</h3>
+            <h3 className="mt-2 font-eigerdals">Iva</h3>
           </ProfileCard>
           <ProfileCard>
             <img
-              className="w-[200px] rounded-sm border-[12px] border-pink"
+              className="w-[200px] h-[250px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/david.webp"
               alt="Profilová fotka Davida"
             />
-            <h3 className="mt-2">David</h3>
+            <h3 className="mt-2 font-eigerdals">David</h3>
           </ProfileCard>
           <ProfileCard>
             <img
-              className="w-[200px] rounded-sm border-[12px] border-pink"
+              className="w-[200px] h-[250px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/jenda.webp"
               alt="Profilová fotka Jendy"
             />
-            <h3 className="mt-2">P. Jenda</h3>
+            <h3 className="mt-2 font-eigerdals">P. Jenda</h3>
           </ProfileCard>
         </div>
       </Section>
@@ -235,7 +235,7 @@ export default function Home() {
           >
             <ProfileCard>
               <img
-                className="w-[200px] h-[200px] bg-white"
+                className="w-[200px] h-[200px]"
                 src="/assets/logo_farnost.svg"
                 alt="Logo farnosti Pardubice"
               />
@@ -277,7 +277,7 @@ export default function Home() {
           >
             <ProfileCard>
               <img
-                className="w-[200px] h-[200px] bg-white"
+                className="w-[200px] h-[200px]"
                 src="/assets/logo_kraj.svg"
                 alt="Logo Pardubického kraje"
               />

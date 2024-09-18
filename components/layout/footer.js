@@ -8,10 +8,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col items-center justify-between bg-teal text-white">
+    <footer className="w-full flex flex-col items-center justify-between bg-teal text-white ">
       <div className="text-xs flex md:flex-row-reverse flex-col items-center md:justify-between justify-centers w-[90vw] max-w-[1200px] mt-[2rem]">
         <div className="flex flex-col items-center justify-between w-full md:max-w-[600px]">
-          <p className="md:text-right mb-8 md:mb-0">
+          <p className="md:text-right mb-8 md:mb-0 font-eigerdals">
             Rádi byste projekt podpořit finančně nebo dobrovolickou pomocí?
             Napište nám na{" "}
             <Link
@@ -77,7 +77,7 @@ export default function Footer() {
             rel="nofollow noreferrer"
             className=""
           >
-            Káťa Šislerová
+            Kateřina Šislerová
           </Link>
           , vývoj{" "}
           <Link
