@@ -6,9 +6,9 @@ export default function TitleWithBirds({ children, className, color }) {
     <div
       className={`${className} flex flex-row items-center justify-center uppercase font-semibold`}
     >
-      <IconCustomBirdLeft color={color} className={"w-10 mr-5"} />
+      <IconCustomBirdLeft color={color} className={"w-6 sm:w-10 mr-5"} />
       <h2 className="text-xl">{children}</h2>
-      <IconCustomBirdRight color={color} className={"w-10 ml-5"} />
+      <IconCustomBirdRight color={color} className={"w-6 sm:w-10 ml-5"} />
     </div>
   );
 }
