@@ -1,7 +1,7 @@
 export default function Card({ children, className, id }) {
   return (
     <div
-      className={`${className} flex flex-col items-start justify-end sm:h-[400px] max-w-[350px] sm:w-[210px] my-10`}
+      className={`${className} flex flex-col my-10 max-w-[280px] sm:h-[440px] xl:h-[500px] justify-end`}
       id={id}
     >
       {children}

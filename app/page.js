@@ -45,7 +45,12 @@ export default function Home() {
   return (
     <Main>
       <Header activeSection={activeSection} />
-      <Section id={"home"} className={"bg-darkBlue text-white min-h-[100vh]"}>
+      <Section
+        id={"home"}
+        className={
+          "bg-darkBlue text-white min-h-[100vh] xl:text-lg 2xl:text-xl"
+        }
+      >
         <div className="w-[90vw] max-w-[900px]">
           <h1 className="uppercase font-brother1816 font-bold text-2xl">
             Modlitby za&nbsp;Pardubice
@@ -56,9 +61,16 @@ export default function Home() {
           </Button>
         </div>
       </Section>
-      <Section id={"about"} className={"bg-yellow text-darkBlue min-h-[100vh]"}>
+      <Section
+        id={"about"}
+        className={
+          "bg-yellow text-darkBlue min-h-[100vh] xl:text-lg 2xl:text-xl"
+        }
+      >
         <IconCustomAboutTitle
-          classNameName={"w-[90vw] max-w-[450px] mt-[8rem] mb-10"}
+          classNameName={
+            "w-[90vw] max-w-[500px] mt-[8rem] mb-10 xl:max-w-[600px] 2xl:max-w-[700px]"
+          }
         />
 
         <div className="font-eigerdals tracking-tighter w-[90vw] max-w-[900px] mb-[8rem] flex flex-col md:flex-row">
@@ -86,15 +98,18 @@ export default function Home() {
           </p>
         </div>
       </Section>
-      <Section id={"motivate"} className={"bg-red text-white min-h-[100vh]"}>
-        <h2 className="text-xl w-[90vw] max-w-[500px] mb-1 mt-[8rem] font-semibold">
+      <Section
+        id={"motivate"}
+        className={"bg-red text-white min-h-[100vh] xl:text-lg 2xl:text-xl"}
+      >
+        <h2 className="text-xl w-[90vw] max-w-[500px] xl:max-w-[600px] 2xl:max-w-[700px] mb-4 mt-[8rem] font-semibold xl:text-2xl 2xl:text-3xl">
           Slovo P. Jendy Uhlíře
         </h2>
         <YoutubeVideo
           source={
             "https://www.youtube-nocookie.com/embed/GcPbTUNziJY?si=8VdyL5FzVQrK3MkR&amp;controls=0"
           }
-          className={"mb-[12rem]"}
+          className={"mb-[4rem]"}
         />
         <TitleWithBirds
           color={"#516ba8"}
@@ -104,19 +119,22 @@ export default function Home() {
         </TitleWithBirds>
       </Section>
 
-      <Section id={"how"} className={"bg-blue text-white min-h-[100vh]"}>
+      <Section
+        id={"how"}
+        className={"bg-blue text-white min-h-[100vh] xl:text-lg 2xl:text-xl"}
+      >
         <h2 className="text-xl md:text-2xl uppercase font-semibold mt-[8rem] max-w-[90vw] text-center">
           Jak se mohu zapojit?
         </h2>
-        <div className="w-[90vw] max-w-[1000px] mb-10 flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] mb-10 flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 xl:flex xl:flex-row xl:justify-between">
           <Card>
             <Center>
               <IconCustomTutorial1 className={"w-[60px]"} />
             </Center>
-            <h3 className="uppercase font-semibold leading-5 mb-2 mt-6">
+            <h3 className="uppercase font-semibold leading-5 2xl:leading-6 mb-2 mt-6">
               Vytáhněte si ulici
             </h3>
-            <p className="text-wine tracking-tighter leading-5 font-eigerdals">
+            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
               Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
               náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
               vykonávaných jim považována užitého za nesou užitých v přesahují
@@ -125,12 +143,12 @@ export default function Home() {
           </Card>
           <Card>
             <Center>
-              <IconCustomTutorial2 className={"w-[300px]"} />
+              <IconCustomTutorial2 className={"w-[280px]"} />
             </Center>
-            <h3 className="uppercase font-semibold leading-5 mb-2 mt-6">
+            <h3 className="uppercase font-semibold leading-5 2xl:leading-6 mb-2 mt-6">
               Pomodlete se za ni
             </h3>
-            <p className="text-wine tracking-tighter leading-5 font-eigerdals">
+            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
               Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
               náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
               vykonávaných jim považována užitého za nesou užitých v přesahují
@@ -139,14 +157,14 @@ export default function Home() {
           </Card>
           <Card>
             <Center>
-              <IconCustomTutorial3 className={"w-[180px]"} />
+              <IconCustomTutorial3 className={"w-[240px]"} />
             </Center>
-            <h3 className="uppercase font-semibold leading-5 mb-2 mt-6">
+            <h3 className="uppercase font-semibold leading-5 2xl:leading-6 mb-2 mt-6">
               Přineste své modlitby
               <br />
               do obětního průvodu
             </h3>
-            <p className="text-wine tracking-tighter leading-5 font-eigerdals">
+            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
               Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
               náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
               vykonávaných jim považována užitého za nesou užitých v přesahují
@@ -157,12 +175,12 @@ export default function Home() {
             <Center>
               <IconCustomTutorial4 className={"w-[150px]"} />
             </Center>
-            <h3 className="uppercase font-semibold leading-5 mb-2 mt-6">
+            <h3 className="uppercase font-semibold leading-5 2xl:leading-6 mb-2 mt-6">
               Uvažte pro ni
               <br />
               mašli
             </h3>
-            <p className="text-wine tracking-tighter leading-5 font-eigerdals">
+            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
               Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
               náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
               vykonávaných jim považována užitého za nesou užitých v přesahují
@@ -170,12 +188,12 @@ export default function Home() {
             </p>
           </Card>
         </div>
-        <div className="w-[90vw] max-w-[1000px] flex flex-col md:flex-row items-center justify-start mb-[8rem] mt-10">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mb-[8rem] mt-10">
           <div className="md:max-w-[500px]">
             <h3 className="uppercase font-semibold">
               Sledujte, jak modlitba proměňuje Pardubice
             </h3>
-            <p className="text-wine tracking-tighter leading-5 font-eigerdals">
+            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
               Veřejné s autorská počítačové vyhotovení, popis vzorec výjimky
               náhodnou rejstříku z poskytnuta 19 začaly příjmu veletrhu
               vykonávaných jim považována užitého za nesou užitých v přesahují
@@ -196,10 +214,10 @@ export default function Home() {
         <TitleWithBirds className={"mt-[8rem] mb-8"}>
           Projekt připravili
         </TitleWithBirds>
-        <div className="w-[90vw] max-w-[1000px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 mb-[4rem]">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 mb-[4rem]">
           <ProfileCard>
             <img
-              className="w-[200px] h-[250px] object-cover rounded-sm border-[12px] border-pink"
+              className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/tomas.webp"
               alt="Profilová fotka Tomáše"
             />
@@ -207,7 +225,7 @@ export default function Home() {
           </ProfileCard>
           <ProfileCard>
             <img
-              className="w-[200px] h-[250px] object-cover rounded-sm border-[12px] border-pink"
+              className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/iva.webp"
               alt="Profilová fotka Ivy"
             />
@@ -215,7 +233,7 @@ export default function Home() {
           </ProfileCard>
           <ProfileCard>
             <img
-              className="w-[200px] h-[250px] object-cover rounded-sm border-[12px] border-pink"
+              className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/david.webp"
               alt="Profilová fotka Davida"
             />
@@ -223,81 +241,74 @@ export default function Home() {
           </ProfileCard>
           <ProfileCard>
             <img
-              className="w-[200px] h-[250px] object-cover rounded-sm border-[12px] border-pink"
+              className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/jenda.webp"
               alt="Profilová fotka Jendy"
             />
             <h3 className="mt-2 font-eigerdals">P. Jenda</h3>
           </ProfileCard>
         </div>
-      </Section>
-      <Section
-        id={"sponsors"}
-        className={"bg-white text-wine w-[90vw] min-h-[50vh]"}
-      >
-        <TitleWithBirds
-          color={"#516ba8"}
-          className={"mt-[4rem] mb-8 fill-[#516ba8]"}
-        >
-          Za podpory
-        </TitleWithBirds>
-        <div className="w-[90vw] max-w-[1000px] rounded-sm flex flex-col md:flex-row flex-wrap items-center justify-between px-4 mb-[4rem]">
-          <Link
-            href={"https://farnost-pardubice.cz/"}
-            target="_blank"
-            rel="noreferrer"
-            title="Farnost Pardubice"
-          >
-            <ProfileCard>
+        <TitleWithBirds className={"mt-[4rem] mb-8"}>Za podpory</TitleWithBirds>
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 mb-[7rem]">
+          <ProfileCard>
+            <Link
+              href={"https://farnost-pardubice.cz/"}
+              target="_blank"
+              rel="noreferrer"
+              title="Farnost Pardubice"
+            >
               <img
-                className="w-[200px] h-[200px]"
+                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] border-pink bg-white"
                 src="/assets/logo_farnost.svg"
                 alt="Logo farnosti Pardubice"
               />
-            </ProfileCard>
-          </Link>
-          <Link
-            href={"https://salesianipardubice.cz/"}
-            target="_blank"
-            rel="noreferrer"
-            title="Salesiáni Pardubice"
-          >
-            <ProfileCard>
+            </Link>
+          </ProfileCard>
+
+          <ProfileCard>
+            <Link
+              href={"https://salesianipardubice.cz/"}
+              target="_blank"
+              rel="noreferrer"
+              title="Salesiáni Pardubice"
+            >
               <img
-                className="w-[200px] h-[200px]"
+                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] border-pink bg-white"
                 src="/assets/logo_skm.svg"
                 alt="Logo Salesiánského klubu Pardubice"
               />
-            </ProfileCard>
-          </Link>
-          <Link
-            href={"https://pardubice.eu/"}
-            target="_blank"
-            rel="noreferrer"
-            title="Město Pardubice"
-          >
-            <ProfileCard>
+            </Link>
+          </ProfileCard>
+
+          <ProfileCard>
+            <Link
+              href={"https://pardubice.eu/"}
+              target="_blank"
+              rel="noreferrer"
+              title="Město Pardubice"
+            >
               <img
-                className="w-[200px] h-[200px]"
+                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] border-pink bg-white"
                 src="/assets/logo_pardubice.svg"
                 alt="Logo Pardubic"
               />
-            </ProfileCard>
-          </Link>
-          <Link
-            href={"https://www.pardubickykraj.cz/"}
-            target="_blank"
-            rel="noreferrer"
-            title="Pardubický kraj"
-          >
-            <ProfileCard>
+            </Link>
+          </ProfileCard>
+
+          <ProfileCard>
+            <Link
+              href={"https://www.pardubickykraj.cz/"}
+              target="_blank"
+              rel="noreferrer"
+              title="Pardubický kraj"
+            >
               <img
-                className="w-[200px] h-[200px]"
+                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] border-pink bg-white"
                 src="/assets/logo_kraj.svg"
                 alt="Logo Pardubického kraje"
               />
-            </ProfileCard>
-          </Link>
+            </Link>
+          </ProfileCard>
         </div>
       </Section>
       <Footer />

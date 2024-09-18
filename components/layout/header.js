@@ -32,7 +32,7 @@ export default function Header({ activeSection }) {
 
   return (
     <header
-      className={`z-[10000] w-[100vw] flex flex-row items-center justify-between ${getHeaderClassName()} text-wine fixed transition-colors duration-200`}
+      className={`z-[10000] w-[100vw] flex flex-row items-center justify-between ${getHeaderClassName()} text-wine fixed transition-colors duration-200 xl:text-lg 2xl:text-xl`}
     >
       <Link href={"/#home"} className="my-4">
         <IconCustomLogo className={"w-[2rem] ml-[1.8rem]"} />
@@ -64,11 +64,7 @@ export default function Header({ activeSection }) {
           >
             jak se zapojit
           </Link>
-          <Link
-            href={"/mapa"}
-            onClick={toggleMenu}
-            className="block my-4"
-          >
+          <Link href={"/mapa"} onClick={toggleMenu} className="block my-4">
             mapa
           </Link>
           <Link
