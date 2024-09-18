@@ -8,6 +8,7 @@ import IconCustomTutorial4 from "@/components/icons/tutorial4";
 import Button from "@/components/layout/button";
 import Card from "@/components/layout/card";
 import Center from "@/components/layout/center";
+import CoverAnimation from "@/components/layout/cover-animation";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import Main from "@/components/layout/main";
@@ -51,7 +52,8 @@ export default function Home() {
           "bg-darkBlue text-white min-h-[100vh] xl:text-lg 2xl:text-xl"
         }
       >
-        <div className="w-[90vw] max-w-[900px]">
+        <CoverAnimation />
+        {/* <div className="w-[90vw] max-w-[900px]">
           <h1 className="uppercase font-brother1816 font-bold text-2xl">
             Modlitby za&nbsp;Pardubice
           </h1>
@@ -59,7 +61,7 @@ export default function Home() {
           <Button className={"bg-wine "} href={"/mapa"}>
             mapa
           </Button>
-        </div>
+        </div> */}
       </Section>
       <Section
         id={"about"}

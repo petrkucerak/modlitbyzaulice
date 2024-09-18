@@ -8,7 +8,7 @@ export const conf = {
   // start of the manifest
   name: "Modlitby za Pardubice",
   short_name: "Modlitby za Pardubice",
-  description: "Proměňme město Pardubice skrze modlitbu",
+  description: "Proměňme město Pardubice modlitbou",
   start_url: "/",
   display: "standalone",
   orientation: "portrait-primary",
