@@ -56,7 +56,7 @@ export default function Home() {
           </Button>
         </div>
       </Section>
-      <Section id={"about"} className={"bg-yellow text-darkBlue"}>
+      <Section id={"about"} className={"bg-yellow text-darkBlue min-h-[100vh]"}>
         <IconCustomAboutTitle
           classNameName={"w-[90vw] max-w-[450px] mt-[8rem] mb-10"}
         />
@@ -86,7 +86,7 @@ export default function Home() {
           </p>
         </div>
       </Section>
-      <Section id={"motivate"} className={"bg-red text-white"}>
+      <Section id={"motivate"} className={"bg-red text-white min-h-[100vh]"}>
         <h2 className="text-xl w-[90vw] max-w-[500px] mb-1 mt-[8rem] font-semibold">
           Slovo P. Jendy Uhlíře
         </h2>
@@ -94,11 +94,17 @@ export default function Home() {
           source={
             "https://www.youtube-nocookie.com/embed/GcPbTUNziJY?si=8VdyL5FzVQrK3MkR&amp;controls=0"
           }
-          className={"mb-[8rem]"}
+          className={"mb-[12rem]"}
         />
+        <TitleWithBirds
+          color={"#516ba8"}
+          className={"mt-[4rem] mb-8 fill-[#516ba8]"}
+        >
+          Jak se mohu zapojit?
+        </TitleWithBirds>
       </Section>
 
-      <Section id={"how"} className={"bg-blue text-white"}>
+      <Section id={"how"} className={"bg-blue text-white min-h-[100vh]"}>
         <h2 className="text-xl md:text-2xl uppercase font-semibold mt-[8rem] max-w-[90vw] text-center">
           Jak se mohu zapojit?
         </h2>
@@ -183,7 +189,10 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <Section id={"staff"} className={"bg-olive text-white w-[90vw]"}>
+      <Section
+        id={"staff"}
+        className={"bg-olive text-white w-[90vw] min-h-[50vh]"}
+      >
         <TitleWithBirds className={"mt-[8rem] mb-8"}>
           Projekt připravili
         </TitleWithBirds>
@@ -222,8 +231,14 @@ export default function Home() {
           </ProfileCard>
         </div>
       </Section>
-      <Section id={"sponsors"} className={"bg-white text-wine w-[90vw]"}>
-        <TitleWithBirds color={"#516ba8"} className={"mt-[4rem] mb-8 fill-[#516ba8]"}>
+      <Section
+        id={"sponsors"}
+        className={"bg-white text-wine w-[90vw] min-h-[50vh]"}
+      >
+        <TitleWithBirds
+          color={"#516ba8"}
+          className={"mt-[4rem] mb-8 fill-[#516ba8]"}
+        >
           Za podpory
         </TitleWithBirds>
         <div className="w-[90vw] max-w-[1000px] rounded-sm flex flex-col md:flex-row flex-wrap items-center justify-between px-4 mb-[4rem]">
