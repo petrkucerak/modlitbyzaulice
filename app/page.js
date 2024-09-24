@@ -52,8 +52,8 @@ export default function Home() {
           "bg-darkBlue text-white min-h-[100vh] xl:text-lg 2xl:text-xl"
         }
       >
-        <CoverAnimation />
-        <div className="w-[90vw] max-w-[900px] absolute">
+        <CoverAnimation className="absolute w-full h-full" />
+        <div className="w-[90vw] max-w-[900px] z-10">
           <h1 className="uppercase font-brother1816 font-bold text-2xl">
             Modlitby za&nbsp;Pardubice
           </h1>
