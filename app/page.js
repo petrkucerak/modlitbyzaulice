@@ -53,7 +53,7 @@ export default function Home() {
         }
       >
         <CoverAnimation />
-        {/* <div className="w-[90vw] max-w-[900px]">
+        <div className="w-[90vw] max-w-[900px] absolute">
           <h1 className="uppercase font-brother1816 font-bold text-2xl">
             Modlitby za&nbsp;Pardubice
           </h1>
@@ -61,7 +61,7 @@ export default function Home() {
           <Button className={"bg-wine "} href={"/mapa"}>
             mapa
           </Button>
-        </div> */}
+        </div>
       </Section>
       <Section
         id={"about"}
