@@ -49,7 +49,7 @@ export default function Home() {
       <Section
         id={"home"}
         className={
-          "bg-darkBlue text-white min-h-[100vh] xl:text-lg 2xl:text-xl"
+          "bg-darkBlue text-white xl:text-lg 2xl:text-xl"
         }
       >
         <CoverAnimation />

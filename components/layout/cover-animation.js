@@ -1,7 +1,7 @@
 import Lottie from "lottie-web";
 import { useEffect, useRef } from "react";
 
-export default function CoverAnimation() {
+export default function CoverAnimation({className}) {
   const animationContainer = useRef(null);
   useEffect(() => {
     Lottie.loadAnimation({
@@ -17,5 +17,5 @@ export default function CoverAnimation() {
       },
     });
   }, []);
-  return <div ref={animationContainer}></div>;
+  return <div className={`${className}`} ref={animationContainer}></div>;
 }
