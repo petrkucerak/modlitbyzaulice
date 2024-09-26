@@ -15,10 +15,10 @@ export default function Footer() {
             Rádi byste projekt podpořit finančně nebo dobrovolickou pomocí?
             Napište nám na{" "}
             <Link
-              href={"mailto:info@modlitbyzapardubice.cz"}
+              href={"mailto:info@modlitbyzaulice.cz"}
               className="underline"
             >
-              info@modlitbyzapardubice.cz
+              info@modlitbyzaulice.cz
             </Link>
             , rádi vás do díla zapojíme .
           </p>

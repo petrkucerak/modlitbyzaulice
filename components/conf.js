@@ -1,9 +1,10 @@
 export const conf = {
   // start of dev
+  // TODO: set API restriction
   MAPY_API_KEY: "PdNRjVdq8YVAgaBNnxiTAsfhy-qbG6lMxuQKg3W02gk",
   // end of dev
 
-  url: "https://modlitbazaulice.cz",
+  url: "https://modlitbyzaulice.cz",
 
   // start of the manifest
   name: "Modlitby za ulice",
@@ -28,6 +29,7 @@ export const conf = {
     "Modlitba",
     "Pardubice",
     "Modlitba za ulice",
+    "Modlitby za ulice",
     "ulice",
     "Modlitby za Pardubice",
     "Modlitba v Pardubicích",

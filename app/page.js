@@ -223,10 +223,10 @@ export default function Home() {
               Nenašel jsi svoju ulici nebo významný objet na mapě? Dej nám vědět
               na mail{" "}
               <Link
-                href={"mailto:info@modlitbyzapardubice.cz"}
+                href={"mailto:info@modlitbyzaulice.cz"}
                 className="underline"
               >
-                info@modlitbyzapardubice.cz
+                info@modlitbyzaulice.cz
               </Link>
               , pokud to bude v našich silách, rádi ho doplníme.
             </p>
