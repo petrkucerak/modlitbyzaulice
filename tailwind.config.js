@@ -23,6 +23,9 @@ module.exports = {
         teal: "#00846d", // Teal
         yellow: "#f8e447", // Yellow
       },
+      transitionDelay: {
+        1000: "1000ms",
+      },
     },
   },
   plugins: [],

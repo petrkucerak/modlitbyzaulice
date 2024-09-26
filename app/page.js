@@ -21,6 +21,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +44,15 @@ export default function Home() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 6000); // Delay of 1 second
+
+    return () => clearTimeout(timer); // Cleanup on unmount
+  }, []);
+
   return (
     <Main>
       <Header activeSection={activeSection} />
@@ -54,11 +64,13 @@ export default function Home() {
       >
         <CoverAnimation className="absolute w-full h-full" />
         <div className="w-[90vw] max-w-[900px] z-10">
-          <h1 className="uppercase font-brother1816 font-bold text-2xl">
+          <h1 className="font-brother1816 tracking-wide font-bold text-2xl sm:text-5xl mb-2">
             Modlitby za&nbsp;ulice
           </h1>
-          <p className="mb-6 font-eigerdals">{conf.description}</p>
-          <Button className={"bg-wine "} href={"/mapa"}>
+          <p className="mb-10 font-eigerdals sm:text-4xl font-light tracking-wide">
+            proměňme město modlitbou
+          </p>
+          <Button className={`bg-wine transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`} href={"/mapa"}>
             mapa
           </Button>
         </div>
