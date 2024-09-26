@@ -4,7 +4,6 @@ import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet/dist/leaflet.css";
 import { conf } from "../conf";
-import { isMobile } from "react-device-detect";
 import Locale from "./locale";
 import Streets from "./streets";
 
