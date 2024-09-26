@@ -4,6 +4,7 @@ import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet/dist/leaflet.css";
 import { conf } from "../conf";
+import { isMobile } from "react-device-detect";
 import Locale from "./locale";
 import Streets from "./streets";
 
@@ -17,7 +18,7 @@ export default function Map({ className }) {
       center={position}
       zoom={13}
       scrollWheelZoom={true}
-      className="h-[100vh] md:h-[70vh] w-full md:mt-[5rem] md:w-[90vw] md:max-w-[1000px]"
+      className="h-[100vh] md:h-[70vh] w-full md:mt-[5rem] md:w-[90vw] md:max-w-[1000px] md:mb-4"
     >
       <TileLayer
         url={`https://api.mapy.cz/v1/maptiles/basic/${tileSize}/{z}/{x}/{y}?apikey=${conf.MAPY_API_KEY}`}
