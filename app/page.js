@@ -20,7 +20,6 @@ import TitleWithBirds from "@/components/layout/title-bird";
 import YoutubeVideo from "@/components/layout/video";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { isMobile, isMobileOnly, isTablet } from "react-device-detect";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
