@@ -20,6 +20,7 @@ import TitleWithBirds from "@/components/layout/title-bird";
 import YoutubeVideo from "@/components/layout/video";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { isMobile } from "react-device-detect";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -48,9 +49,10 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    let delay = isMobile ? 1000 : 6000;
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 6000); // Delay of 1 second
+    }, delay); // Delay of 1 second
 
     return () => clearTimeout(timer); // Cleanup on unmount
   }, []);
@@ -195,8 +197,8 @@ export default function Home() {
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[120px]">
               Na kartičku napiš svoje jméno a{" "}
               <strong>přines ji v neděli</strong> na mši svatou do jakéhokoliv
-              pardubického kostela, kde se v obětním průvodu přinese před
-              oltář. Nevíš, kdy je mše svatá? Nevadí, podívej se na{" "}
+              pardubického kostela, kde se v obětním průvodu přinese před oltář.
+              Nevíš, kdy je mše svatá? Nevadí, podívej se na{" "}
               <Link
                 href={"https://farnost-pardubice.cz/"}
                 target="_blank"
