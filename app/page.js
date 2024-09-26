@@ -164,7 +164,7 @@ export default function Home() {
               Zajdi do jednoho z pardubických kostelů a{" "}
               <strong>vytáhni si ulici</strong> či místo, za které se budeš
               modlit. Ideální je přijít <strong>při nedělní mši</strong>,
-              lístečky budou i připraveny i kdykoliv jindy. Doporučujeme nechat
+              lístečky budou připraveny i kdykoliv jindy. Doporučujeme nechat
               jméno spíše na náhodě, uvidíš, třeba poznáš novou část Pardubic.
             </p>
           </Card>
@@ -195,7 +195,7 @@ export default function Home() {
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[120px]">
               Na kartičku napiš svoje jméno a{" "}
               <strong>přines ji v neděli</strong> na mši svatou do jakéhokoliv
-              pardubického kostela, kde se v obětním průvodu přinesou před
+              pardubického kostela, kde se v obětním průvodu přinese před
               oltář. Nevíš, kdy je mše svatá? Nevadí, podívej se na{" "}
               <Link
                 href={"https://farnost-pardubice.cz/"}
@@ -228,7 +228,7 @@ export default function Home() {
               Po skončení mše svaté <strong>uvaž</strong> za promodlené místo{" "}
               <strong>mašli</strong>. Můžeš na ni napsat, co budeš chtít: vzkaz,
               jméno, přání místu nebo ulici nebo nakreslit co ti zrovna přijde
-              na mysl. Jen pamatuj, že to co je na mšli si bude moci přečíst
+              na mysl. Jen pamatuj, že to co je na mašli si bude moci přečíst
               kdokoli.
             </p>
           </Card>
