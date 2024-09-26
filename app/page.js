@@ -72,7 +72,7 @@ export default function Home() {
           </p>
           <Button
             className={`bg-wine transition-opacity duration-500 ${
-              isVisible ? "opacity-100" : "opacity-0"
+              isVisible ? "opacity-100 cursor-pointer" : "opacity-0 cursor-default"
             }`}
             href={"/mapa"}
           >

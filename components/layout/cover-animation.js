@@ -13,8 +13,8 @@ export default function CoverAnimation({ className }) {
       autoplay: true,
       path: "cover-animation.json",
       rendererSettings: {
-        title: conf.name,
-        description: conf.description,
+        // title: conf.name,
+        // description: conf.description,
         progressiveLoad: true,
         // className: ""
       },
