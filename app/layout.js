@@ -1,12 +1,5 @@
-import { Titillium_Web } from "next/font/google";
 import "./globals.css";
 import { conf } from "@/components/conf";
-
-const font = Titillium_Web({
-  weight: ["200", "300", "400", "600", "700", "900"],
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata = {
   title: conf.name,
@@ -34,8 +27,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="cs">
-      <body className={`${font.className}`}>{children}</body>
+    <html lang="cs" className="scroll-smooth">
+      <body className={`font-brother1816 bg-white`}>{children}</body>
     </html>
   );
 }

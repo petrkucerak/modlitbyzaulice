@@ -33,11 +33,9 @@ export default function Streets() {
     const streetPopup = L.popup({
       keepInView: true,
       closeButton: false,
-      className: "",
+      className: "font-brother1816",
     }).setContent(
-      `<h3 class="text-xl">${
-        street.street_name
-      }</h3><p>Za tuto ulici se ${getDate(date)} modlil ${street.name}.</p>`
+      `<h3 class="title">${street.street_name}</h3><p class="subtitle">${street.borough_name}</p><p class="details">Za ulici se už modlil ${street.name}</p>`
     );
 
     if (street.date !== "") {
