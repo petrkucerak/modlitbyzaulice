@@ -36,4 +36,5 @@ yarn-error.log*
 next-env.d.ts
 
 
-*.mp4
+video/*.mp4
+video/*.mp3
