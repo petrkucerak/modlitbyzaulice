@@ -105,12 +105,12 @@ export default function Home() {
         id={"motivate"}
         className={"bg-red text-white min-h-[100vh] xl:text-lg 2xl:text-xl"}
       >
-        <h2 className="text-xl w-[90vw] max-w-[500px] xl:max-w-[600px] 2xl:max-w-[700px] mb-4 mt-[8rem] xl:mt-[10rem] font-semibold xl:text-2xl 2xl:text-3xl">
+        <h2 className="text-xl w-[90vw] max-w-[500px] xl:max-w-[800px] 2xl:max-w-[1000px] mb-4 mt-[8rem] xl:mt-[10rem] font-semibold xl:text-2xl 2xl:text-3xl">
           Slovo P. Jendy Uhlíře
         </h2>
         <YoutubeVideo
           source={
-            "https://www.youtube-nocookie.com/embed/GcPbTUNziJY?si=8VdyL5FzVQrK3MkR&amp;controls=0"
+            "https://www.youtube-nocookie.com/embed/yBp_l9rxt2k?si=m3E5SoiZPvZ7xXUf&amp;controls=0"
           }
           className={"mb-[4rem]"}
         />
