@@ -48,22 +48,14 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  if (isMobile)
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 1000); // Delay of 1 second
+  useEffect(() => {
+    let delay = isMobile ? 1000 : 6000;
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, delay); // Delay of 1 second
 
-      return () => clearTimeout(timer); // Cleanup on unmount
-    }, []);
-  else
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 6000); // Delay of 1 second
-
-      return () => clearTimeout(timer); // Cleanup on unmount
-    }, []);
+    return () => clearTimeout(timer); // Cleanup on unmount
+  }, []);
 
   return (
     <Main>
