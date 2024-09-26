@@ -55,7 +55,7 @@ export default function Home() {
         <CoverAnimation className="absolute w-full h-full" />
         <div className="w-[90vw] max-w-[900px] z-10">
           <h1 className="uppercase font-brother1816 font-bold text-2xl">
-            Modlitby za&nbsp;Pardubice
+            Modlitby za&nbsp;ulice
           </h1>
           <p className="mb-6 font-eigerdals">{conf.description}</p>
           <Button className={"bg-wine "} href={"/mapa"}>
