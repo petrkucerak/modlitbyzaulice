@@ -63,7 +63,7 @@ export default function Home() {
         }
       >
         <CoverAnimation className="min-h-[100%] w-full flex flex-col justify-end" />
-        <div className="w-[90vw] max-w-[900px] z-10 absolute">
+        <div className="w-[90vw] max-w-[900px] xl:max-w-[1200px] z-10 absolute">
           <h1 className="font-brother1816 tracking-wide font-bold text-2xl sm:text-5xl mb-2">
             Modlitby za&nbsp;ulice
           </h1>
