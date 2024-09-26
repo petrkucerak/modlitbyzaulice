@@ -16,19 +16,9 @@ export default function CoverAnimation({ className }) {
         title: conf.name,
         description: conf.description,
         progressiveLoad: true,
+        // className: ""
       },
     });
-
-    // animation.addEventListener("complete", () => {
-    //   animation.playSegments(
-    //     [animation.totalFrames, animation.totalFrames - 20],
-    //     true
-    //   );
-    // });
-
-    // return () => {
-    //   animation.destroy(); // Cleanup on component unmount
-    // };
   }, []);
 
   return <div className={`${className}`} ref={animationContainer}></div>;

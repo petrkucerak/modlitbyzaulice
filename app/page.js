@@ -62,15 +62,20 @@ export default function Home() {
           "bg-darkBlue text-white min-h-[100vh] xl:text-lg 2xl:text-xl"
         }
       >
-        <CoverAnimation className="absolute w-full h-full" />
-        <div className="w-[90vw] max-w-[900px] z-10">
+        <CoverAnimation className="min-h-[100vh] w-full flex flex-col justify-end" />
+        <div className="w-[90vw] max-w-[900px] z-10 absolute">
           <h1 className="font-brother1816 tracking-wide font-bold text-2xl sm:text-5xl mb-2">
             Modlitby za&nbsp;ulice
           </h1>
           <p className="mb-10 font-eigerdals sm:text-4xl font-light tracking-wide">
             proměňme město modlitbou
           </p>
-          <Button className={`bg-wine transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`} href={"/mapa"}>
+          <Button
+            className={`bg-wine transition-opacity duration-500 ${
+              isVisible ? "opacity-100" : "opacity-0"
+            }`}
+            href={"/mapa"}
+          >
             mapa
           </Button>
         </div>
