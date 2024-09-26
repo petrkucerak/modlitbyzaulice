@@ -312,7 +312,7 @@ export default function Home() {
               title="Farnost Pardubice"
             >
               <img
-                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] border-pink bg-white"
+                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_farnost.svg"
                 alt="Logo farnosti Pardubice"
               />
@@ -327,7 +327,7 @@ export default function Home() {
               title="Salesiáni Pardubice"
             >
               <img
-                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] border-pink bg-white"
+                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_skm.svg"
                 alt="Logo Salesiánského klubu Pardubice"
               />
@@ -342,7 +342,7 @@ export default function Home() {
               title="Město Pardubice"
             >
               <img
-                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] border-pink bg-white"
+                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_pardubice.svg"
                 alt="Logo Pardubic"
               />
@@ -357,7 +357,7 @@ export default function Home() {
               title="Pardubický kraj"
             >
               <img
-                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] border-pink bg-white"
+                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_kraj.svg"
                 alt="Logo Pardubického kraje"
               />
