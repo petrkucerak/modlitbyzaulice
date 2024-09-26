@@ -20,7 +20,7 @@ import TitleWithBirds from "@/components/layout/title-bird";
 import YoutubeVideo from "@/components/layout/video";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { isMobile, isMobileOnly, isTablet } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -65,9 +65,11 @@ export default function Home() {
           "bg-darkBlue text-white min-h-[100vh] xl:text-lg 2xl:text-xl"
         }
       >
-        <CoverAnimationPhone className="sm:hidden h-[100vh] w-full flex flex-col justify-end" />
-        <CoverAnimationTablet className="hidden min-h-[100vh] w-full sm:flex md:hidden flex-col justify-end" />
-        <CoverAnimation className="hidden min-h-[100vh] w-full md:flex flex-col justify-end" />
+        {isMobile ? (
+          <CoverAnimationTablet className="min-h-[100vh] w-full flex flex-col justify-end" />
+        ) : (
+          <CoverAnimation className="min-h-[100vh] w-full flex flex-col justify-end" />
+        )}
         <div className="w-[90vw] max-w-[900px] xl:max-w-[1200px] z-10 absolute">
           <h1 className="font-brother1816 tracking-wide font-bold text-4xl sm:text-5xl mb-1 sm:mb-2">
             Modlitby za&nbsp;ulice
