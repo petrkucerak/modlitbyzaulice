@@ -110,7 +110,7 @@ export default function Home() {
         </h2>
         <YoutubeVideo
           source={
-            "https://www.youtube-nocookie.com/embed/yBp_l9rxt2k?si=m3E5SoiZPvZ7xXUf&amp;controls=0"
+            "https://www.youtube-nocookie.com/embed/yBp_l9rxt2k?cc_load_policy=1&cc_lang_pref=cs"
           }
           className={"mb-[4rem]"}
         />
