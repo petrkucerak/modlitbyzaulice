@@ -1,5 +1,6 @@
 import Lottie from "lottie-web";
 import { useEffect, useRef } from "react";
+import { conf } from "../conf";
 
 export default function CoverAnimation({ className }) {
   const animationContainer = useRef(null);
@@ -12,8 +13,8 @@ export default function CoverAnimation({ className }) {
       autoplay: true,
       path: "cover-animation.json",
       rendererSettings: {
-        title: "Modlitby za Pardubice",
-        description: "Proměňme město Pardubice modlitbou",
+        title: conf.name,
+        description: conf.description,
         progressiveLoad: true,
       },
     });

@@ -1,6 +1,6 @@
-# Modlitby za Pardubice
+# Modlitby za ulice
 
-Web application for project `Modlitby za Pardubice`.
+Web application for project `Modlitby za ulice`.
 
 Projekt není hotovým řešením, jedná se pouze o DEMO.
 

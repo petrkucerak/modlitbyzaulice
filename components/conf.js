@@ -3,12 +3,12 @@ export const conf = {
   MAPY_API_KEY: "PdNRjVdq8YVAgaBNnxiTAsfhy-qbG6lMxuQKg3W02gk",
   // end of dev
 
-  url: "https://modlitbazapardubice.cz",
+  url: "https://modlitbazaulice.cz",
 
   // start of the manifest
-  name: "Modlitby za Pardubice",
-  short_name: "Modlitby za Pardubice",
-  description: "Proměňme Pardubice modlitbou",
+  name: "Modlitby za ulice",
+  short_name: "Modlitby za ulice",
+  description: "Proměňme Pardubice a okolí modlitbou",
   start_url: "/",
   display: "standalone",
   orientation: "portrait-primary",
@@ -27,6 +27,8 @@ export const conf = {
   keywords: [
     "Modlitba",
     "Pardubice",
+    "Modlitba za ulice",
+    "ulice",
     "Modlitby za Pardubice",
     "Modlitba v Pardubicích",
     "Pardubice se modlí",
