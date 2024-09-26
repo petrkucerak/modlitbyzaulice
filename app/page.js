@@ -9,6 +9,7 @@ import Button from "@/components/layout/button";
 import Card from "@/components/layout/card";
 import Center from "@/components/layout/center";
 import CoverAnimation from "@/components/layout/cover-animation";
+import CoverAnimationPhone from "@/components/layout/cover-animation-phone";
 import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import Main from "@/components/layout/main";
@@ -18,6 +19,7 @@ import TitleWithBirds from "@/components/layout/title-bird";
 import YoutubeVideo from "@/components/layout/video";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { isMobile } from "react-device-detect";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -62,7 +64,11 @@ export default function Home() {
           "bg-darkBlue text-white min-h-[100vh] xl:text-lg 2xl:text-xl"
         }
       >
-        <CoverAnimation className="min-h-[100vh] w-full flex flex-col justify-end" />
+        {isMobile ? (
+          <CoverAnimationPhone className="min-h-[100vh] w-full flex flex-col justify-end" />
+        ) : (
+          <CoverAnimation className="min-h-[100vh] w-full flex flex-col justify-end" />
+        )}
         <div className="w-[90vw] max-w-[900px] xl:max-w-[1200px] z-10 absolute">
           <h1 className="font-brother1816 tracking-wide font-bold text-4xl sm:text-5xl mb-1 sm:mb-2">
             Modlitby za&nbsp;ulice
