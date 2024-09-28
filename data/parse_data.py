@@ -105,8 +105,13 @@ def save_to_json(data, output_file):
 
 if __name__ == "__main__":
     # Array of XML file paths to process
-    xml_files = ['20240831_OB_574198_UKSH.xml',
-                 '20240831_OB_555134_UKSH.xml']  # Add your XML files here
+    xml_files = ['20240831_OB_555134_UKSH.xml',
+                 '20240831_OB_574198_UKSH.xml',
+                 '20240831_OB_574741_UKSH.xml',
+                 '20240831_OB_575372_UKSH.xml',
+                 '20240831_OB_575534_UKSH.xml',
+                 '20240831_OB_575593_UKSH.xml',
+                 ]  # Add your XML files here
 
     # Initialize the Transformer
     transformer = Transformer.from_crs("EPSG:5514", "EPSG:4326")
