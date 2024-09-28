@@ -39,9 +39,12 @@ def colorize_data(data):
     used_numbers = set()
 
     for street in data:
-        if street["district_name"] not in pairs:
-            pairs[street["district_name"]] = random.choice(colors)
-        street["color"] = pairs[street["district_name"]]
+        if (street["district_name"] == ""):
+            street["color"] = random.choice(colors)
+        else:
+            if street["district_name"] not in pairs:
+                pairs[street["district_name"]] = random.choice(colors)
+            street["color"] = pairs[street["district_name"]]
 
         # Generate and assign a unique 4-digit number to the street
         street["unique_number"] = generate_unique_number(used_numbers)
@@ -107,11 +110,6 @@ def process_street_element(street_data, transformer, obec_name, district_data):
     key = (street_name, obec_name)
     district_info_list = district_data.get(key, [])
 
-    # if len(district_info_list) > 1:
-    #     # Street belongs to multiple districts, mark it as a special district
-    #     district_name = "Special District"
-    # else:
-    # Single district
     district_info = district_info_list[0] if district_info_list else {}
     district_name = district_info.get('district_name', "")
 
