@@ -41,7 +41,7 @@ def process_street_element(street_data, proj_epsg_5514, proj_epsg_4326, obec_nam
             # Convert the coordinates from EPSG:5514 to EPSG:4326
             lon, lat = transform(
                 proj_epsg_5514, proj_epsg_4326, float(x), float(y))
-            subgroup.append([lat, lon])
+            subgroup.append([lon, lat])  # Swap lat and lon here
 
         # Append each subgroup of coordinates
         subgroups.append(subgroup)
@@ -110,18 +110,23 @@ def save_to_json(data, output_file):
 
 
 if __name__ == "__main__":
-   #  xml_file = '20240831_OB_574198_UKSH.xml'  # Replace with your XML file path
-    xml_file = '20240831_OB_555134_UKSH.xml'  # Replace with your XML file path
-    # The name of the JSON file to save
-    output_json_file = 'streets_data.json'
+    # Array of XML file paths to process
+    xml_files = ['20240831_OB_574198_UKSH.xml',
+                 '20240831_OB_555134_UKSH.xml']  # Add your XML files here
 
-    # Extract the name of the municipality (Nazev obce)
-    obec_name = extract_obec_name(xml_file)
+    # Combine all results into a single JSON file
+    combined_data = []
+    for xml_file in xml_files:
+        # Extract the name of the municipality (Nazev obce)
+        obec_name = extract_obec_name(xml_file)
 
-    # Extract and convert street data with parallel processing
-    streets_data = extract_streets_with_coordinates(xml_file, obec_name)
+        # Extract and convert street data with parallel processing
+        streets_data = extract_streets_with_coordinates(xml_file, obec_name)
 
-    # Save the data to a JSON file
-    save_to_json(streets_data, output_json_file)
+        # Add the data to the combined list
+        combined_data.extend(streets_data)
 
-    print(f"Data successfully saved to {output_json_file}")
+    # Save the combined data to a single JSON file
+    output_json_file = 'combined_streets_data.json'
+    save_to_json(combined_data, output_json_file)
+    print(f"Combined data successfully saved to {output_json_file}")
