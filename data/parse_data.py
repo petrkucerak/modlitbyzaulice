@@ -2,6 +2,7 @@ import json
 from lxml import etree
 from pyproj import Transformer
 from concurrent.futures import ProcessPoolExecutor, as_completed
+import os
 
 
 def extract_obec_name(xml_file):
@@ -104,14 +105,10 @@ def save_to_json(data, output_file):
 
 
 if __name__ == "__main__":
+
+    directory = "./"
     # Array of XML file paths to process
-    xml_files = ['20240831_OB_555134_UKSH.xml',
-                 '20240831_OB_574198_UKSH.xml',
-                 '20240831_OB_574741_UKSH.xml',
-                 '20240831_OB_575372_UKSH.xml',
-                 '20240831_OB_575534_UKSH.xml',
-                 '20240831_OB_575593_UKSH.xml',
-                 ]  # Add your XML files here
+    xml_files = [f for f in os.listdir(directory) if f.endswith('.xml')] # Add your XML files here
 
     # Initialize the Transformer
     transformer = Transformer.from_crs("EPSG:5514", "EPSG:4326")
@@ -133,3 +130,15 @@ if __name__ == "__main__":
     output_json_file = 'streets_data.json'
     save_to_json(combined_data, output_json_file)
     print(f"Data successfully saved to {output_json_file}")
+
+    # Save the results to a JS file
+    output_json = 'streets_with_coordinates.js'
+
+    with open(output_json, mode='w', encoding='utf-8') as file:
+        json.dump(combined_data, file, ensure_ascii=False, indent=4)
+    with open(output_json, mode='r+', encoding='utf-8') as file:
+        content = file.read()
+        file.seek(0,0)
+        file.write("export const streets = " + content)
+
+    print(f"Data has been successfully saved to {output_json}")
