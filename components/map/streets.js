@@ -38,7 +38,7 @@ export default function Streets() {
       `<h3 class="title">${street.street_name}</h3><p class="subtitle">${street.borough_name}</p><p class="details">Za ulici se už modlil ${street.name}</p>`
     );
 
-    if (street.date !== "") {
+    // if (street.date !== "") {
       setTimeout(() => {
         const polyline = L.polyline(coords, {
           color: street.color,
@@ -51,16 +51,15 @@ export default function Streets() {
           .addTo(map)
           .bindPopup(streetPopup);
       }, Math.floor(Math.random() * 4000));
-    } else {
-      const polyline = L.polyline(coords, {
-        // color: GREY_COLOR, // TODO
-        color: "#ff0000", // TODO
-        opacity: 0.3,
-        weight: 10,
-        interactive: false,
-        smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
-      }).addTo(map);
-    }
+    // } else {
+    //   const polyline = L.polyline(coords, {
+    //     color: GREY_COLOR,
+    //     opacity: 0.3,
+    //     weight: 10,
+    //     interactive: false,
+    //     smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+    //   }).addTo(map);
+    // }
   });
   return null;
 }
