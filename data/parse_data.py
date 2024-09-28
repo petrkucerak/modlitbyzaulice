@@ -10,9 +10,19 @@ import random
 colors = ["#3d8bc9", "#516ba8", "#ba003d", "#ea4756",
           "#eb8fc2", "#789d3d", "#00846d", "#f8e447"]
 
+
+def colorize_data(data):
+
+    pairs = {}
+    for street in data:
+        if street["district_name"] not in pairs:
+            pairs[street["district_name"]] = random.choice(colors)
+        street["color"] = pairs[street["district_name"]]
+
+    return data
+
+
 # Function to extract the name of the "obec" (municipality)
-
-
 def extract_obec_name(xml_file):
     tree = etree.parse(xml_file)
     root = tree.getroot()
@@ -61,9 +71,6 @@ def process_street_element(street_data, transformer, obec_name, district_data):
         district_info = district_info_list[0] if district_info_list else {}
         district_name = district_info.get('district_name', "")
 
-    # Assign a random color from the colors array
-    color = random.choice(colors)
-
     subgroups = []
 
     for coords in coordinates_list:
@@ -82,7 +89,7 @@ def process_street_element(street_data, transformer, obec_name, district_data):
             'street_name': street_name,
             'city_name': obec_name,
             'district_name': district_name,
-            'color': color,
+            'color': "",
             'coordinates': subgroups
         }
     else:
@@ -92,7 +99,7 @@ def process_street_element(street_data, transformer, obec_name, district_data):
             'street_name': street_name,
             'city_name': obec_name,
             'district_name': obec_name,
-            'color': color,
+            'color': "",
             'coordinates': subgroups
         }
 
@@ -159,6 +166,9 @@ if __name__ == "__main__":
             xml_file, transformer, obec_name, district_data)
 
         combined_data.extend(streets_data)
+
+    # colorize data by districts
+    combined_data = colorize_data(combined_data)
 
     output_json_file = 'streets_data.json'
     save_to_json(combined_data, output_json_file)
