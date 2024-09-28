@@ -7,22 +7,50 @@ import csv
 import random
 
 # Define the colors array
-colors = ["#3d8bc9", "#516ba8", "#ba003d", "#ea4756",
-          "#eb8fc2", "#789d3d", "#00846d", "#f8e447"]
+colors = ["#3d8bc9",  # sky
+          "#516ba8",  # water
+          "#ba003d",  # vine
+          "#ea4756",  # red
+          "#eb8fc2",  # pink
+          "#789d3d",  # olive
+          "#00846d",  # green
+          "#f8e447"  # yellow
+          ]
+
+# Function to generate a unique 4-digit number for each street
 
 
-# Colorize data by districts
+def generate_unique_number(used_numbers):
+    while True:
+        number = f"{random.randint(1000, 9999)}"
+        if number not in used_numbers:
+            used_numbers.add(number)
+            return number
+
+# Colorize data by districts and assign a unique number to each street
+
+
 def colorize_data(data):
-    pairs = {}
+    pairs = {
+        "Polabiny": "#3d8bc9",
+        "Zelené Předměstí": "#f8e447",
+        "Bílé Předměstí": "#eb8fc2",
+    }
+    used_numbers = set()
+
     for street in data:
         if street["district_name"] not in pairs:
             pairs[street["district_name"]] = random.choice(colors)
         street["color"] = pairs[street["district_name"]]
 
+        # Generate and assign a unique 4-digit number to the street
+        street["unique_number"] = generate_unique_number(used_numbers)
+
     return data
 
-
 # Function to extract the name of the "obec" (municipality)
+
+
 def extract_obec_name(xml_file):
     tree = etree.parse(xml_file)
     root = tree.getroot()
@@ -36,8 +64,9 @@ def extract_obec_name(xml_file):
         './/vf:Obce/vf:Obec/obi:Nazev', namespaces=ns)
     return obec_name_element.text if obec_name_element is not None else ""
 
-
 # Function to load district data from the CSV file
+
+
 def load_district_data(csv_file):
     district_data = {}
     with open(csv_file, mode='r', encoding='utf-8') as file:
@@ -53,21 +82,22 @@ def load_district_data(csv_file):
             })
     return district_data
 
-
 # Function to process each street element
+
+
 def process_street_element(street_data, transformer, obec_name, district_data):
     street_name, coordinates_list = street_data
 
     key = (street_name, obec_name)
     district_info_list = district_data.get(key, [])
 
-    if len(district_info_list) > 1:
-        # Street belongs to multiple districts, mark it as a special district
-        district_name = "Special District"
-    else:
-        # Single district
-        district_info = district_info_list[0] if district_info_list else {}
-        district_name = district_info.get('district_name', "")
+    # if len(district_info_list) > 1:
+    #     # Street belongs to multiple districts, mark it as a special district
+    #     district_name = "Special District"
+    # else:
+    # Single district
+    district_info = district_info_list[0] if district_info_list else {}
+    district_name = district_info.get('district_name', "")
 
     subgroups = []
 
@@ -82,27 +112,28 @@ def process_street_element(street_data, transformer, obec_name, district_data):
     # Conditional logic based on the obec_name
     if obec_name == "Pardubice":
         return {
-            'date': "",  # Placeholder for date if available
             'name': "",
             'street_name': street_name,
             'city_name': obec_name,
             'district_name': district_name,
             'color': "",
+            'unique_number': "",
             'coordinates': subgroups
         }
     else:
         return {
-            'date': "",  # Placeholder for date if available
             'name': "",
             'street_name': street_name,
             'city_name': obec_name,
             'district_name': obec_name,
             'color': "",
+            'unique_number': "",
             'coordinates': subgroups
         }
 
-
 # Function to extract streets with their coordinates from the XML file
+
+
 def extract_streets_with_coordinates(xml_file, transformer, obec_name, district_data):
     tree = etree.parse(xml_file)
     root = tree.getroot()
@@ -137,8 +168,9 @@ def extract_streets_with_coordinates(xml_file, transformer, obec_name, district_
 
     return street_data
 
-
 # Function to save the final data to a JSON file
+
+
 def save_to_json(data, output_file):
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
@@ -163,7 +195,7 @@ if __name__ == "__main__":
 
         combined_data.extend(streets_data)
 
-    # colorize data by districts
+    # Colorize data by districts and assign unique numbers
     combined_data = colorize_data(combined_data)
 
     output_json_file = 'streets_data.json'
