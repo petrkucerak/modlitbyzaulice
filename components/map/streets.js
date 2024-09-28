@@ -25,20 +25,19 @@ function getDate(date) {
 export default function Streets() {
   const map = useMap();
   streets.map((street) => {
-    const coords = street.coordinates;
-    // options: https://leafletjs.com/reference.html#polyline
+    if (street.coordinates !== undefined) {
+      const coords = street.coordinates;
+      // options: https://leafletjs.com/reference.html#polyline
 
-    const date = new Date(street.date);
+      const streetPopup = L.popup({
+        keepInView: true,
+        closeButton: false,
+        className: "font-brother1816",
+      }).setContent(
+        `<h3 class="title">${street.street_name}</h3><p class="subtitle">${street.district_name}</p><p class="details">Za ulici se modlil ${street.name}</p>`
+      );
 
-    const streetPopup = L.popup({
-      keepInView: true,
-      closeButton: false,
-      className: "font-brother1816",
-    }).setContent(
-      `<h3 class="title">${street.street_name}</h3><p class="subtitle">${street.borough_name}</p><p class="details">Za ulici se už modlil ${street.name}</p>`
-    );
-
-    if (street.date !== "") {
+      // if (street.name !== "") {
       setTimeout(() => {
         const polyline = L.polyline(coords, {
           color: street.color,
@@ -51,14 +50,49 @@ export default function Streets() {
           .addTo(map)
           .bindPopup(streetPopup);
       }, Math.floor(Math.random() * 4000));
-    } else {
-      const polyline = L.polyline(coords, {
-        color: GREY_COLOR,
-        opacity: 0.3,
-        weight: 10,
-        interactive: false,
-        smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
-      }).addTo(map);
+      // } else {
+      //   const polyline = L.polyline(coords, {
+      //     color: GREY_COLOR,
+      //     opacity: 0.3,
+      //     weight: 10,
+      //     interactive: false,
+      //     smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+      //   }).addTo(map);
+      // }
+    } else if (street.polygon !== undefined) {
+      const coords = street.polygon;
+      // options: https://leafletjs.com/reference.html#polyline
+
+      const streetPopup = L.popup({
+        keepInView: true,
+        closeButton: false,
+        className: "font-brother1816",
+      }).setContent(
+        `<h3 class="title">${street.street_name}</h3><p class="subtitle">${street.district_name}</p><p class="details">Za místo se modlil ${street.name}</p>`
+      );
+
+      // if (street.name !== "") {
+      setTimeout(() => {
+        const polyline = L.polygon(coords, {
+          color: street.color,
+          opacity: 0.8,
+          weight: 4,
+          interactive: true,
+          smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+          className: "map-select",
+        })
+          .addTo(map)
+          .bindPopup(streetPopup);
+      }, Math.floor(Math.random() * 4000));
+      // } else {
+      //   const polyline = L.polygon(coords, {
+      //     color: GREY_COLOR,
+      //     opacity: 0.3,
+      //     weight: 4,
+      //     interactive: false,
+      //     smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+      //   }).addTo(map);
+      // }
     }
   });
   return null;

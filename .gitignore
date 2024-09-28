@@ -35,6 +35,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-
 video/*.mp4
 video/*.mp3
+
+data/*.xml
+data/*.json
+!data/manual_data.json
