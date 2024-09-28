@@ -20,7 +20,7 @@ export default function Footer() {
             >
               info@modlitbyzaulice.cz
             </Link>
-            , rádi vás do díla zapojíme .
+            , rádi vás do díla zapojíme.
           </p>
         </div>
 

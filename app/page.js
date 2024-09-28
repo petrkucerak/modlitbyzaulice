@@ -163,8 +163,25 @@ export default function Home() {
               Vytáhněte si ulici
             </h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[140px]">
-              Zajdi do jednoho z pardubických kostelů a{" "}
-              <strong>vytáhni si ulici</strong> či místo, za které se budeš
+              Zajdi do jednoho z pardubických kostelů,{" "}
+              <Link
+                href={
+                  "https://farnost-pardubice.cz/bohosluzby/aktualni-bohosluzby/"
+                }
+                target="_blank"
+                className="italic"
+              >
+                farnosti
+              </Link>{" "}
+              či{" "}
+              <Link
+                href={"https://salesianipardubice.cz/kostel/"}
+                target="_blank"
+                className="italic"
+              >
+                salesiánů
+              </Link>{", "}
+              a <strong>vytáhni si ulici</strong> či místo, za které se budeš
               modlit. Ideální je přijít <strong>při nedělní mši</strong>,
               lístečky budou připraveny i kdykoliv jindy. Doporučujeme nechat
               jméno spíše na náhodě, uvidíš, třeba poznáš novou část Pardubic.
@@ -235,7 +252,7 @@ export default function Home() {
             </p>
           </Card>
         </div>
-        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mb-[8rem] xl:mb-[10rem] mt-10 xl:mt-[5rem]">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mb-[8rem] xl:mb-[10rem] mt-10 xl:mt-[3.5rem]">
           <div className="md:max-w-[700px]">
             <h3 className="uppercase font-semibold mb-2">
               Sledujte, jak modlitba proměňuje Pardubice
@@ -243,10 +260,12 @@ export default function Home() {
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
               Věříme, že modlitba může proměnit naše město a naše vesnice.
               Abychom všichni viděli, jak naše výzva postupuje, připravili jsme{" "}
-              <strong>interaktivní mapu</strong>, na které si můžete
-              prohlédnout, za jaké ulice a významné objekty se již někdo modlil.
-              Nenašel jsi svoju ulici nebo významný objet na mapě? Dej nám vědět
-              na mail{" "}
+              <Link href="/mapa">
+                <strong>interaktivní mapu</strong>
+              </Link>
+              , na které si můžete prohlédnout, za jaké ulice a významné objekty
+              se již někdo modlil. Nenašel jsi svoju ulici nebo významný objet
+              na mapě? Dej nám vědět na mail{" "}
               <Link
                 href={"mailto:info@modlitbyzaulice.cz"}
                 className="underline"
@@ -277,7 +296,7 @@ export default function Home() {
               src="/assets/tomas.webp"
               alt="Profilová fotka Tomáše"
             />
-            <h3 className="mt-2 font-eigerdals">Tomáš</h3>
+            <h3 className="mt-2 font-eigerdals text-xl">Tomáš</h3>
           </ProfileCard>
           <ProfileCard>
             <img
@@ -285,7 +304,7 @@ export default function Home() {
               src="/assets/iva.webp"
               alt="Profilová fotka Ivy"
             />
-            <h3 className="mt-2 font-eigerdals">Iva</h3>
+            <h3 className="mt-2 font-eigerdals text-xl">Iva</h3>
           </ProfileCard>
           <ProfileCard>
             <img
@@ -293,7 +312,7 @@ export default function Home() {
               src="/assets/david.webp"
               alt="Profilová fotka Davida"
             />
-            <h3 className="mt-2 font-eigerdals">David</h3>
+            <h3 className="mt-2 font-eigerdals text-xl">David</h3>
           </ProfileCard>
           <ProfileCard>
             <img
@@ -301,7 +320,7 @@ export default function Home() {
               src="/assets/jenda.webp"
               alt="Profilová fotka Jendy"
             />
-            <h3 className="mt-2 font-eigerdals">P. Jenda</h3>
+            <h3 className="mt-2 font-eigerdals text-xl">P. Jenda</h3>
           </ProfileCard>
         </div>
         <TitleWithBirds className={"mt-[4rem] mb-8"}>Za podpory</TitleWithBirds>
@@ -359,7 +378,7 @@ export default function Home() {
               title="Pardubický kraj"
             >
               <img
-                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
+                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 pr-5 border-pink bg-white"
                 src="/assets/logo_kraj.svg"
                 alt="Logo Pardubického kraje"
               />
