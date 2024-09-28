@@ -1,6 +1,6 @@
 import json
 from lxml import etree
-from pyproj import Proj, transform
+from pyproj import Transformer
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
 
@@ -21,7 +21,7 @@ def extract_obec_name(xml_file):
     return obec_name_element.text if obec_name_element is not None else ""
 
 
-def process_street_element(street_data, proj_epsg_5514, proj_epsg_4326, obec_name):
+def process_street_element(street_data, transformer, obec_name):
     street_name, coordinates_list = street_data
 
     # Placeholder for district and borough names
@@ -38,9 +38,8 @@ def process_street_element(street_data, proj_epsg_5514, proj_epsg_4326, obec_nam
         subgroup = []
         # Group coordinates into pairs and convert them
         for x, y in zip(coords[::2], coords[1::2]):
-            # Convert the coordinates from EPSG:5514 to EPSG:4326
-            lon, lat = transform(
-                proj_epsg_5514, proj_epsg_4326, float(x), float(y))
+            # Convert the coordinates using the Transformer
+            lon, lat = transformer.transform(float(x), float(y))
             subgroup.append([lon, lat])  # Swap lat and lon here
 
         # Append each subgroup of coordinates
@@ -59,7 +58,7 @@ def process_street_element(street_data, proj_epsg_5514, proj_epsg_4326, obec_nam
     }
 
 
-def extract_streets_with_coordinates(xml_file, obec_name):
+def extract_streets_with_coordinates(xml_file, transformer, obec_name):
     # Parse the XML file
     tree = etree.parse(xml_file)
     root = tree.getroot()
@@ -70,11 +69,6 @@ def extract_streets_with_coordinates(xml_file, obec_name):
         'uli': 'urn:cz:isvs:ruian:schemas:UliceIntTypy:v1',
         'gml': 'http://www.opengis.net/gml/3.2'
     }
-
-    # Set up the projections
-    # Original S-JTSK / Krovak East North projection
-    proj_epsg_5514 = Proj('epsg:5514')
-    proj_epsg_4326 = Proj('epsg:4326')  # WGS84 GPS coordinate system
 
     # Find all street elements and extract necessary data
     streets = root.xpath('//vf:Ulice[not(.//vf:Ulice)]', namespaces=ns)
@@ -94,8 +88,8 @@ def extract_streets_with_coordinates(xml_file, obec_name):
 
     # Parallelize the processing of street elements
     with ProcessPoolExecutor() as executor:
-        futures = [executor.submit(process_street_element, street_data, proj_epsg_5514,
-                                   proj_epsg_4326, obec_name) for street_data in street_data_list]
+        futures = [executor.submit(process_street_element, street_data,
+                                   transformer, obec_name) for street_data in street_data_list]
 
         street_data = []
         for future in as_completed(futures):
@@ -114,6 +108,9 @@ if __name__ == "__main__":
     xml_files = ['20240831_OB_574198_UKSH.xml',
                  '20240831_OB_555134_UKSH.xml']  # Add your XML files here
 
+    # Initialize the Transformer
+    transformer = Transformer.from_crs("EPSG:5514", "EPSG:4326")
+
     # Combine all results into a single JSON file
     combined_data = []
     for xml_file in xml_files:
@@ -121,12 +118,13 @@ if __name__ == "__main__":
         obec_name = extract_obec_name(xml_file)
 
         # Extract and convert street data with parallel processing
-        streets_data = extract_streets_with_coordinates(xml_file, obec_name)
+        streets_data = extract_streets_with_coordinates(
+            xml_file, transformer, obec_name)
 
         # Add the data to the combined list
         combined_data.extend(streets_data)
 
     # Save the combined data to a single JSON file
-    output_json_file = 'combined_streets_data.json'
+    output_json_file = 'streets_data.json'
     save_to_json(combined_data, output_json_file)
-    print(f"Combined data successfully saved to {output_json_file}")
+    print(f"Data successfully saved to {output_json_file}")
