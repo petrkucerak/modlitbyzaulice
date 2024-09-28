@@ -4,6 +4,13 @@ from pyproj import Transformer
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import os
 import csv
+import random
+
+# Define the colors array
+colors = ["#3d8bc9", "#516ba8", "#ba003d", "#ea4756",
+          "#eb8fc2", "#789d3d", "#00846d", "#f8e447"]
+
+# Function to extract the name of the "obec" (municipality)
 
 
 def extract_obec_name(xml_file):
@@ -18,6 +25,8 @@ def extract_obec_name(xml_file):
     obec_name_element = root.find(
         './/vf:Obce/vf:Obec/obi:Nazev', namespaces=ns)
     return obec_name_element.text if obec_name_element is not None else ""
+
+# Function to load district data from the CSV file
 
 
 def load_district_data(csv_file):
@@ -35,6 +44,8 @@ def load_district_data(csv_file):
             })
     return district_data
 
+# Function to process each street element
+
 
 def process_street_element(street_data, transformer, obec_name, district_data):
     street_name, coordinates_list = street_data
@@ -50,7 +61,8 @@ def process_street_element(street_data, transformer, obec_name, district_data):
         district_info = district_info_list[0] if district_info_list else {}
         district_name = district_info.get('district_name', "")
 
-    color = "#00ff00"  # Default color
+    # Assign a random color from the colors array
+    color = random.choice(colors)
 
     subgroups = []
 
@@ -61,8 +73,9 @@ def process_street_element(street_data, transformer, obec_name, district_data):
             subgroup.append([lon, lat])
 
         subgroups.append(subgroup)
-    
-    if(obec_name == "Pardubice"):
+
+    # Conditional logic based on the obec_name
+    if obec_name == "Pardubice":
         return {
             'date': "",  # Placeholder for date if available
             'name': "",
@@ -82,6 +95,8 @@ def process_street_element(street_data, transformer, obec_name, district_data):
             'color': color,
             'coordinates': subgroups
         }
+
+# Function to extract streets with their coordinates from the XML file
 
 
 def extract_streets_with_coordinates(xml_file, transformer, obec_name, district_data):
@@ -118,12 +133,15 @@ def extract_streets_with_coordinates(xml_file, transformer, obec_name, district_
 
     return street_data
 
+# Function to save the final data to a JSON file
+
 
 def save_to_json(data, output_file):
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 
+# Main script execution
 if __name__ == "__main__":
     directory = "./"
     xml_files = [f for f in os.listdir(directory) if f.endswith('.xml')]
