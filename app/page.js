@@ -49,7 +49,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    let delay = isMobile ? 1000 : 6000;
+    let delay = isMobile ? 1000 : 5200;
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, delay); // Delay of 1 second
