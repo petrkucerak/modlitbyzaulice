@@ -53,7 +53,8 @@ export default function Streets() {
       }, Math.floor(Math.random() * 4000));
     } else {
       const polyline = L.polyline(coords, {
-        color: GREY_COLOR,
+        // color: GREY_COLOR, // TODO
+        color: "#ff0000", // TODO
         opacity: 0.3,
         weight: 10,
         interactive: false,
