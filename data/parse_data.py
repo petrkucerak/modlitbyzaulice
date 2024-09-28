@@ -25,9 +25,8 @@ def extract_obec_name(xml_file):
 def process_street_element(street_data, transformer, obec_name):
     street_name, coordinates_list = street_data
 
-    # Placeholder for district and borough names
+    # Placeholder for district names
     district_name = ""  # Set appropriately if data is available
-    borough_name = ""  # Set appropriately if data is available
 
     # Define a color (this is a placeholder; adjust logic if needed)
     color = "#00ff00"  # Default color, can be customized based on data or conditions
@@ -53,7 +52,6 @@ def process_street_element(street_data, transformer, obec_name):
         'street_name': street_name,
         'city_name': obec_name,
         'district_name': district_name,
-        'borough_name': borough_name,
         'color': color,
         'coordinates': subgroups
     }
