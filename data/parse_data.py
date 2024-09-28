@@ -1,6 +1,7 @@
 from lxml import etree
 from pyproj import Proj, transform
 
+
 def extract_streets_with_coordinates(xml_file):
     # Parse the XML file
     tree = etree.parse(xml_file)
@@ -14,7 +15,8 @@ def extract_streets_with_coordinates(xml_file):
     }
 
     # Set up the projections
-    proj_epsg_5514 = Proj(init='epsg:5514')  # Original S-JTSK / Krovak East North projection
+    # Original S-JTSK / Krovak East North projection
+    proj_epsg_5514 = Proj(init='epsg:5514')
     proj_epsg_4326 = Proj(init='epsg:4326')  # WGS84 GPS coordinate system
 
     # Find all street elements
@@ -26,24 +28,30 @@ def extract_streets_with_coordinates(xml_file):
     for street in streets:
         name_element = street.find('uli:Nazev', namespaces=ns)
         name = name_element.text if name_element is not None else "Unnamed Street"
-        coordinates = []
+        subgroups = []
 
-        # Extract coordinates from gml:posList inside gml:LineString
+        # Extract coordinates from each gml:posList inside gml:LineString
         for posList in street.xpath('.//gml:posList', namespaces=ns):
             coords = posList.text.strip().split()
+            subgroup = []
             # Group coordinates into pairs and convert them
             for x, y in zip(coords[::2], coords[1::2]):
                 # Convert the coordinates from EPSG:5514 to EPSG:4326
-                lon, lat = transform(proj_epsg_5514, proj_epsg_4326, float(x), float(y))
-                coordinates.append((lat, lon))
+                lon, lat = transform(
+                    proj_epsg_5514, proj_epsg_4326, float(x), float(y))
+                subgroup.append((lat, lon))
 
-        # Append the street name and converted coordinates to the list
+            # Append each subgroup of coordinates
+            subgroups.append(subgroup)
+
+        # Append the street name and the list of subgroups to the list
         street_data.append({
             'name': name,
-            'coordinates': coordinates
+            'subgroups': subgroups
         })
 
     return street_data
+
 
 if __name__ == "__main__":
     xml_file = '20240831_OB_574198_UKSH.xml'  # Replace with your XML file path
@@ -52,6 +60,8 @@ if __name__ == "__main__":
     # Print out the results
     for street in streets:
         print(f"Street: {street['name']}")
-        print("GPS Coordinates (lat, lon):")
-        for coord in street['coordinates']:
-            print(f"    {coord}")
+        print("GPS Coordinate Subgroups:")
+        for subgroup_index, subgroup in enumerate(street['subgroups']):
+            print(f"  Subgroup {subgroup_index + 1}:")
+            for coord in subgroup:
+                print(f"    {coord}")
