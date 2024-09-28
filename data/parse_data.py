@@ -195,6 +195,8 @@ if __name__ == "__main__":
     directory = "./"
     xml_files = [f for f in os.listdir(directory) if f.endswith('.xml')]
 
+    # Note: XML data downloaded from: https://vdp.cuzk.cz/vdp/ruian/ulice?kodOb=555134&nazevUl=Leteck%C3%A1&sort=NAZEV&search=
+
     csv_file = 'streets.csv'
     district_data = load_district_data(csv_file)
 
