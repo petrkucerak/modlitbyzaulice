@@ -1,6 +1,7 @@
 import json
 from lxml import etree
 from pyproj import Proj, transform
+from concurrent.futures import ProcessPoolExecutor, as_completed
 
 
 def extract_obec_name(xml_file):
@@ -20,6 +21,44 @@ def extract_obec_name(xml_file):
     return obec_name_element.text if obec_name_element is not None else ""
 
 
+def process_street_element(street_data, proj_epsg_5514, proj_epsg_4326, obec_name):
+    street_name, coordinates_list = street_data
+
+    # Placeholder for district and borough names
+    district_name = ""  # Set appropriately if data is available
+    borough_name = ""  # Set appropriately if data is available
+
+    # Define a color (this is a placeholder; adjust logic if needed)
+    color = "#00ff00"  # Default color, can be customized based on data or conditions
+
+    subgroups = []
+
+    # Process the coordinates
+    for coords in coordinates_list:
+        subgroup = []
+        # Group coordinates into pairs and convert them
+        for x, y in zip(coords[::2], coords[1::2]):
+            # Convert the coordinates from EPSG:5514 to EPSG:4326
+            lon, lat = transform(
+                proj_epsg_5514, proj_epsg_4326, float(x), float(y))
+            subgroup.append([lat, lon])
+
+        # Append each subgroup of coordinates
+        subgroups.append(subgroup)
+
+    # Return the processed street data
+    return {
+        'date': "",  # Placeholder for date if available
+        'name': "",  # Placeholder for additional name information if available
+        'street_name': street_name,
+        'city_name': obec_name,
+        'district_name': district_name,
+        'borough_name': borough_name,
+        'color': color,
+        'coordinates': subgroups
+    }
+
+
 def extract_streets_with_coordinates(xml_file, obec_name):
     # Parse the XML file
     tree = etree.parse(xml_file)
@@ -34,50 +73,33 @@ def extract_streets_with_coordinates(xml_file, obec_name):
 
     # Set up the projections
     # Original S-JTSK / Krovak East North projection
-    proj_epsg_5514 = Proj(init='epsg:5514')
-    proj_epsg_4326 = Proj(init='epsg:4326')  # WGS84 GPS coordinate system
+    proj_epsg_5514 = Proj('epsg:5514')
+    proj_epsg_4326 = Proj('epsg:4326')  # WGS84 GPS coordinate system
 
-    street_data = []
+    # Find all street elements and extract necessary data
+    streets = root.xpath('//vf:Ulice[not(.//vf:Ulice)]', namespaces=ns)
 
-    # Find all street elements and iterate through them
-    for street in root.xpath('//vf:Ulice[not(.//vf:Ulice)]', namespaces=ns):
+    # Prepare the data to be passed to the parallel process
+    street_data_list = []
+    for street in streets:
         name_element = street.find('uli:Nazev', namespaces=ns)
         street_name = name_element.text if name_element is not None else ""
 
-        # Placeholder for district and borough names
-        district_name = ""  # Set appropriately if data is available
-        borough_name = ""  # Set appropriately if data is available
-
-        # Define a color (this is a placeholder; adjust logic if needed)
-        color = "#00ff00"  # Default color, can be customized based on data or conditions
-
-        subgroups = []
-
-        # Extract coordinates from each gml:posList inside gml:LineString
+        coordinates_list = []
         for posList in street.xpath('.//gml:posList', namespaces=ns):
             coords = posList.text.strip().split()
-            subgroup = []
-            # Group coordinates into pairs and convert them
-            for x, y in zip(coords[::2], coords[1::2]):
-                # Convert the coordinates from EPSG:5514 to EPSG:4326
-                lon, lat = transform(
-                    proj_epsg_5514, proj_epsg_4326, float(x), float(y))
-                subgroup.append([lat, lon])
+            coordinates_list.append(coords)
 
-            # Append each subgroup of coordinates
-            subgroups.append(subgroup)
+        street_data_list.append((street_name, coordinates_list))
 
-        # Append the street data to the list
-        street_data.append({
-            'date': "",  # Placeholder for date if available
-            'name': "",  # Placeholder for additional name information if available
-            'street_name': street_name,
-            'city_name': obec_name,
-            'district_name': district_name,
-            'borough_name': borough_name,
-            'color': color,
-            'coordinates': subgroups
-        })
+    # Parallelize the processing of street elements
+    with ProcessPoolExecutor() as executor:
+        futures = [executor.submit(process_street_element, street_data, proj_epsg_5514,
+                                   proj_epsg_4326, obec_name) for street_data in street_data_list]
+
+        street_data = []
+        for future in as_completed(futures):
+            street_data.append(future.result())
 
     return street_data
 
@@ -88,14 +110,15 @@ def save_to_json(data, output_file):
 
 
 if __name__ == "__main__":
-    xml_file = '20240831_OB_574198_UKSH.xml'  # Replace with your XML file path
+   #  xml_file = '20240831_OB_574198_UKSH.xml'  # Replace with your XML file path
+    xml_file = '20240831_OB_555134_UKSH.xml'  # Replace with your XML file path
     # The name of the JSON file to save
     output_json_file = 'streets_data.json'
 
     # Extract the name of the municipality (Nazev obce)
     obec_name = extract_obec_name(xml_file)
 
-    # Extract and convert street data
+    # Extract and convert street data with parallel processing
     streets_data = extract_streets_with_coordinates(xml_file, obec_name)
 
     # Save the data to a JSON file
