@@ -64,9 +64,25 @@ def extract_obec_name(xml_file):
         './/vf:Obce/vf:Obec/obi:Nazev', namespaces=ns)
     return obec_name_element.text if obec_name_element is not None else ""
 
+
+# Function to load manual data from a JSON file
+def get_manual_data():
+    manual_data_file = 'manual_data.json'  # Replace with the actual filename
+
+    if not os.path.exists(manual_data_file):
+        print(f"Manual data file '{manual_data_file}' does not exist.")
+        return []
+
+    with open(manual_data_file, 'r', encoding='utf-8') as file:
+        try:
+            manual_data = json.load(file)
+            return manual_data
+        except json.JSONDecodeError:
+            print(f"Error decoding JSON from file '{manual_data_file}'.")
+            return []
+
+
 # Function to load district data from the CSV file
-
-
 def load_district_data(csv_file):
     district_data = {}
     with open(csv_file, mode='r', encoding='utf-8') as file:
@@ -194,6 +210,10 @@ if __name__ == "__main__":
             xml_file, transformer, obec_name, district_data)
 
         combined_data.extend(streets_data)
+
+    # Add manual data
+    manual_data = get_manual_data()
+    combined_data.extend(manual_data)
 
     # Colorize data by districts and assign unique numbers
     combined_data = colorize_data(combined_data)
