@@ -115,14 +115,13 @@ export default function Home() {
           </p>
           <p className="my-2 md:my-0 md:ml-2 max-w-[450px]">
             <strong>„Modlitby za ulice“</strong> je misijní projekt, který
-            propojuje obyvatele Pardubic a okolí skrze modlitbu za své sousedy a
-            jejich ulice. Do projektu se může zapojit každý, ať už chodí do
-            kostela, nebo ne. Každý týden si v kostele můžete vylosovat kartičku
-            s názvem konkrétní ulice, za kterou se budete modlit, a pokud
-            chcete, můžete ji také navštívit a poznat nová místa ve městě. Na
-            interaktivní mapě pak můžete sledovat, jak modlitby postupně
-            pokrývají celé Pardubice. Připojte se i vy – modlitbou, nápadem nebo
-            konkrétní pomocí!
+            propojuje obyvatele Pardubic a okolí skrze modlitbu. Do projektu se
+            může zapojit každý, ať už chodí do kostela, nebo ne. Každý týden si
+            v kostele můžete vylosovat kartičku s názvem konkrétní ulice, za
+            kterou se budete modlit, a pokud chcete, můžete ji také navštívit a
+            poznat nová místa ve městě. Na interaktivní mapě pak můžete
+            sledovat, jak modlitby postupně pokrývají celé Pardubice. Připojte
+            se i vy – modlitbou, nápadem nebo konkrétní pomocí!
           </p>
         </div>
       </Section>
@@ -180,9 +179,9 @@ export default function Home() {
                 className="italic"
               >
                 salesiánů
-              </Link>{", "}
-              a <strong>vytáhni si ulici</strong> či místo, za které se budeš
-              modlit. Ideální je přijít <strong>při nedělní mši</strong>,
+              </Link>
+              {", "}a <strong>vytáhni si ulici</strong> či místo, za které se
+              budeš modlit. Ideální je přijít <strong>při nedělní mši</strong>,
               lístečky budou připraveny i kdykoliv jindy. Doporučujeme nechat
               jméno spíše na náhodě, uvidíš, třeba poznáš novou část Pardubic.
             </p>

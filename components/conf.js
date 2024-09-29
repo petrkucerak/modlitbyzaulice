@@ -9,7 +9,8 @@ export const conf = {
   // start of the manifest
   name: "Modlitby za ulice",
   short_name: "Modlitby za ulice",
-  description: "Proměňme Pardubice a okolí modlitbou",
+  description:
+    "Modlitby za ulice je misijní projekt, který propojuje obyvatele Pardubic a okolí skrze modlitbu.",
   start_url: "/",
   display: "standalone",
   orientation: "portrait-primary",
