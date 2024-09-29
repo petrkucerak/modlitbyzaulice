@@ -14,7 +14,7 @@ export const metadata = {
     description: conf.description,
     images: [
       {
-        url: `${conf.url}/opengraph-image.jpg`,
+        url: `${conf.url}/opengraph-image.png`,
         width: 1920,
         height: 1080,
         alt: conf.name,
