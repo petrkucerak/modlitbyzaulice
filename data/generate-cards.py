@@ -62,8 +62,8 @@ def draw_card_front(c, svg_file, street_name, district_name):
     c.drawCentredString(CARD_WIDTH / 2, CARD_HEIGHT / 2 - 10, district_name)
 
     # Optionally draw borders
-    c.setStrokeColor(colors.black)
-    c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
+    # c.setStrokeColor(colors.black)
+    # c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
 
 # Function to draw the back of the card
 
@@ -75,9 +75,9 @@ def draw_card_back(c, svg_file, unique_number):
     renderPDF.draw(svg, c, 0, 0)
 
     # Set custom font and render unique number
-    c.setFont("EigerdalsFont", 12)
+    c.setFont("EigerdalsFont", 6)
     c.setFillColor(color_blue)
-    c.drawCentredString(CARD_WIDTH / 2, CARD_HEIGHT / 2, f"#{unique_number}")
+    c.drawCentredString(CARD_WIDTH - 18, 12, f"#{unique_number}")
 
     # Optionally draw borders
     # c.setStrokeColor(colors.black)
@@ -106,8 +106,9 @@ def load_json(json_file):
 
 # Usage example
 json_file_path = "streets_data_test.json"  # Path to your JSON file
-brother_font_path = "fonts/Brother-1816-Regular.ttf"  # Path to your custom font file
-eigerdals_font_path = "/fonts/Eigerdals-Reg.ttf"
+# Path to your custom font file
+brother_font_path = "fonts/Brother-1816-Regular.ttf"
+eigerdals_font_path = "fonts/Eigerdals-Bol.ttf"
 json_data = load_json(json_file_path)
 
 # Create the cards PDF with individual SVGs for front and back
