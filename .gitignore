@@ -41,3 +41,6 @@ video/*.mp3
 data/*.xml
 data/*.json
 !data/manual_data.json
+
+
+cards.pdf

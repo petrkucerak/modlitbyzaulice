@@ -1,86 +1,58 @@
 from reportlab.lib.pagesizes import mm
 from reportlab.pdfgen import canvas
 from reportlab.lib import colors
-from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.pdfbase import pdfmetrics
-import svgwrite
-import os
 from reportlab.lib.units import inch
-from PyPDF2 import PdfMerger
-from PIL import ImageFont
 
-# Constants
-CARD_WIDTH, CARD_HEIGHT = 85.60 * mm, 53.98 * mm
-FONT_PATH = "path/to/your/font.ttf"
-OUTPUT_PDF = "output_cards.pdf"
-SVG_FOLDER = "svg_elements"
-BACKGROUND_IMAGES = ["bg1.png", "bg2.png"]  # Add paths to background images
+# Credit card dimensions in mm (85.60 x 53.98)
+CARD_WIDTH = 53.98 * mm
+CARD_HEIGHT = 85.60 * mm
 
-# Helper: Create a SVG Element
+# Function to create a double-sided card PDF
 
 
-def create_svg_element(card_number):
-    dwg = svgwrite.Drawing(
-        f"{SVG_FOLDER}/card_{card_number}.svg", size=(CARD_WIDTH, CARD_HEIGHT))
-    dwg.add(dwg.text(f"Card {card_number}", insert=(
-        20, 20), fill='black', font_size="20"))
-    dwg.save()
+def create_double_sided_card(filename):
+    # Create a PDF canvas
+    c = canvas.Canvas(filename, pagesize=(CARD_WIDTH, CARD_HEIGHT))
 
-# Helper: Add custom text and SVG to PDF
+    # Front side of the card
+    draw_card_front(c)
 
+    # Save the page (Front side)
+    c.showPage()
 
-def add_card_to_canvas(c, card_number, background_image=None):
-    # Set background image if provided
-    if background_image and os.path.exists(background_image):
-        c.drawImage(background_image, 0, 0, CARD_WIDTH, CARD_HEIGHT)
+    # Back side of the card
+    draw_card_back(c)
 
-    # Draw SVG (example element)
-    svg_path = f"{SVG_FOLDER}/card_{card_number}.svg"
-    if os.path.exists(svg_path):
-        c.drawImage(svg_path, 10, 20, CARD_WIDTH / 2, CARD_HEIGHT / 2)
+    # Save the page (Back side)
+    c.showPage()
 
-    # Dynamic text
-    c.setFont("CustomFont", 12)
-    c.drawString(10, CARD_HEIGHT - 20, f"Dynamic Text for Card {card_number}")
+    # Save the PDF
+    c.save()
 
-# Main PDF Generation
+# Function to draw the front of the card
 
 
-def generate_pdf_cards(num_cards):
-    # Create folder for SVG if not exists
-    if not os.path.exists(SVG_FOLDER):
-        os.makedirs(SVG_FOLDER)
+def draw_card_front(c):
+    c.setFont("Helvetica-Bold", 12)
+    c.setFillColor(colors.black)
+    c.drawCentredString(CARD_WIDTH / 2, CARD_HEIGHT / 2, "Front Side Text")
 
-    # Register Custom Font
-    pdfmetrics.registerFont(TTFont('CustomFont', FONT_PATH))
+    # Optionally draw borders
+    c.setStrokeColor(colors.black)
+    c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
 
-    merger = PdfMerger()
-
-    for card_number in range(1, num_cards + 1):
-        pdf_filename = f"card_{card_number}.pdf"
-        c = canvas.Canvas(pdf_filename, pagesize=(CARD_WIDTH, CARD_HEIGHT))
-
-        # Generate SVG elements
-        create_svg_element(card_number)
-
-        # Front Side (dynamic background)
-        add_card_to_canvas(
-            c, card_number, background_image=BACKGROUND_IMAGES[0])
-        c.showPage()
-
-        # Back Side (different background)
-        add_card_to_canvas(
-            c, card_number, background_image=BACKGROUND_IMAGES[1])
-        c.showPage()
-
-        # Save PDF for this card
-        c.save()
-        merger.append(pdf_filename)
-
-    # Merge all cards into one final PDF
-    merger.write(OUTPUT_PDF)
-    merger.close()
+# Function to draw the back of the card
 
 
-# Example: Create 5 double-sided cards
-generate_pdf_cards(5)
+def draw_card_back(c):
+    c.setFont("Helvetica", 10)
+    c.setFillColor(colors.black)
+    c.drawCentredString(CARD_WIDTH / 2, CARD_HEIGHT / 2, "Back Side Text")
+
+    # Optionally draw borders
+    c.setStrokeColor(colors.black)
+    c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
+
+
+# Create the card PDF
+create_double_sided_card("cards.pdf")
