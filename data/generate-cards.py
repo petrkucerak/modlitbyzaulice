@@ -119,8 +119,6 @@ def split_text_to_fit(text, font_name, font_size, line_spacing, max_width, min_f
     if current_line:
         lines.append(current_line)
 
-    print(lines, font_size, line_spacing)
-
     return lines, font_size, line_spacing
 
 # Function to draw the back of the card
@@ -163,8 +161,8 @@ def load_json(json_file):
 
 
 # Usage example
-json_file_path = "streets_data_test.json"  # Path to your JSON file
-# json_file_path = "streets_data.json"  # Path to your JSON file
+# json_file_path = "streets_data_test.json"  # Path to your JSON file
+json_file_path = "streets_data.json"  # Path to your JSON file
 # Path to your custom font file
 brother_font_path = "fonts/Brother1816Printed-Bold.ttf"
 eigerdals_sub_font_path = "fonts/Eigerdals-Med.ttf"
