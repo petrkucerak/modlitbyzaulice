@@ -6,6 +6,7 @@ from reportlab.graphics import renderPDF
 from svglib.svglib import svg2rlg
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.pdfmetrics import stringWidth
 
 # Credit card dimensions in mm (85.60 x 53.98)
 CARD_WIDTH = 53.98 * mm
@@ -50,27 +51,77 @@ def create_multiple_double_sided_cards(filename, front_svg, back_svg, data, brot
 # Function to draw the front of the card
 
 
+# Updated function to draw the front of the card with dynamic text fitting
 def draw_card_front(c, svg_file, street_name, district_name):
     # Load and draw the front SVG
     svg = svg2rlg(svg_file)
     scale_svg_to_fit(svg)
     renderPDF.draw(svg, c, 0, 0)
 
-    reduction = 0
+    reduction = -6
 
-    # Set custom font and render street name
-    c.setFont("BrotherFont", 24)
+    # Set font and initial text position
+    font_name = "BrotherFont"
+    font_size = 24
+    line_spacing = 26  # Adjust line spacing
+    available_width = CARD_WIDTH - 22  # Adjust based on margins
+    min_font_size = 12  # Minimum font size
+
+    # Split street name if necessary
+    street_name_lines, tmp_font_size, tmp_line_spacing = split_text_to_fit(
+        street_name, font_name, font_size, line_spacing, available_width, min_font_size)
+
+    # Calculate text height based on number of lines and adjust reduction
+    total_text_height = len(street_name_lines) * (line_spacing if tmp_line_spacing ==
+                                                  line_spacing else tmp_line_spacing) if len(street_name_lines) > 1 else 0
+    text_y_position = CARD_HEIGHT / 3 + reduction + 9 + total_text_height / 2
+
+    # Render street name
+    c.setFont(font_name, font_size if tmp_font_size ==
+              font_size else tmp_font_size)
     c.setFillColor(color_vine)
-    c.drawString(11, CARD_HEIGHT / 3 + reduction + 7, street_name)
+    for line in street_name_lines:
+        c.drawString(11, text_y_position, line)
+        text_y_position -= (line_spacing if tmp_line_spacing ==
+                            line_spacing else tmp_line_spacing)
 
     # Render district name
-    c.setFont("EigerdalsFontSub", 10)
+    c.setFont("EigerdalsFontSub", 12)
     c.setFillColor(color_vine)
-    c.drawString(11, CARD_HEIGHT / 3 + reduction - 7, district_name)
+    c.drawString(11, CARD_HEIGHT / 3 + reduction - 9, district_name)
 
     # Optionally draw borders
     # c.setStrokeColor(colors.black)
     # c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
+
+# Helper function to split text to fit the card width
+
+
+def split_text_to_fit(text, font_name, font_size, line_spacing, max_width, min_font_size):
+    words = text.split()
+    lines = []
+    current_line = ""
+
+    for word in words:
+        if stringWidth(current_line + " " + word, font_name, font_size) < max_width:
+            if current_line:
+                current_line += " " + word
+            else:
+                current_line = word
+        else:
+            # Adjust font size if necessary to fit the street name within the available width
+            while stringWidth(word, font_name, font_size) > max_width and font_size > min_font_size:
+                font_size -= 1  # Reduce font size until it fits
+                line_spacing -= 1
+            lines.append(current_line) if current_line != "" else None
+            current_line = word
+
+    if current_line:
+        lines.append(current_line)
+
+    print(lines, font_size, line_spacing)
+
+    return lines, font_size, line_spacing
 
 # Function to draw the back of the card
 
