@@ -7,6 +7,8 @@ from svglib.svglib import svg2rlg
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.pdfmetrics import stringWidth
+import re
+
 
 # Credit card dimensions in mm (85.60 x 53.98)
 CARD_WIDTH = 53.98 * mm
@@ -15,6 +17,21 @@ CARD_HEIGHT = 85.60 * mm
 color_vine = "#5a003d"
 color_blue = "#516ba8"
 
+# List of common Czech one-letter prepositions
+prepositions = ["v", "z", "k", "s", "u",
+                "V", "Z", "K", "S", "U", "9."]
+
+
+def custom_split(text):
+    for preposition in prepositions:
+        # text = text.replace(f"{preposition} ", f"{preposition}*")
+        text = re.sub(fr"^{preposition} ", f"{preposition}*", text)
+        text = re.sub(fr" {preposition} ", f" {preposition}*", text)
+    words = text.split()
+    patterns = []
+    for word in words:
+        patterns.append(word.replace("*", " "))
+    return patterns
 # Function to create multiple double-sided cards PDF based on JSON data
 
 
@@ -74,7 +91,8 @@ def draw_card_front(c, svg_file, street_name, district_name):
     # Calculate text height based on number of lines and adjust reduction
     total_text_height = len(street_name_lines) * (line_spacing if tmp_line_spacing ==
                                                   line_spacing else tmp_line_spacing) if len(street_name_lines) > 1 else 0
-    text_y_position = CARD_HEIGHT / 3 + reduction + 9 + total_text_height / 2
+    text_y_position = CARD_HEIGHT / 3 + reduction + 9 + \
+        total_text_height / 2 + (10 if len(street_name_lines) == 3 else 0)
 
     # Render street name
     c.setFont(font_name, font_size if tmp_font_size ==
@@ -88,7 +106,8 @@ def draw_card_front(c, svg_file, street_name, district_name):
     # Render district name
     c.setFont("EigerdalsFontSub", 12)
     c.setFillColor(color_vine)
-    c.drawString(11, CARD_HEIGHT / 3 + reduction - 9, district_name)
+    c.drawString(11, CARD_HEIGHT / 3 + reduction - 9 -
+                 (6 if len(street_name_lines) == 3 else 0), district_name)
 
     # Optionally draw borders
     # c.setStrokeColor(colors.black)
@@ -98,7 +117,7 @@ def draw_card_front(c, svg_file, street_name, district_name):
 
 
 def split_text_to_fit(text, font_name, font_size, line_spacing, max_width, min_font_size):
-    words = text.split()
+    words = custom_split(text)
     lines = []
     current_line = ""
 
