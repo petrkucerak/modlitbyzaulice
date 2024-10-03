@@ -56,17 +56,17 @@ def draw_card_front(c, svg_file, street_name, district_name):
     scale_svg_to_fit(svg)
     renderPDF.draw(svg, c, 0, 0)
 
-    reduction = 10
+    reduction = 0
 
     # Set custom font and render street name
-    c.setFont("BrotherFont", 20)
+    c.setFont("BrotherFont", 24)
     c.setFillColor(color_vine)
-    c.drawString(11, CARD_HEIGHT / 3 + reduction + 10, street_name)
+    c.drawString(11, CARD_HEIGHT / 3 + reduction + 7, street_name)
 
     # Render district name
     c.setFont("EigerdalsFontSub", 10)
     c.setFillColor(color_vine)
-    c.drawString(11, CARD_HEIGHT / 3 + reduction - 10, district_name)
+    c.drawString(11, CARD_HEIGHT / 3 + reduction - 7, district_name)
 
     # Optionally draw borders
     # c.setStrokeColor(colors.black)
@@ -115,7 +115,7 @@ def load_json(json_file):
 json_file_path = "streets_data_test.json"  # Path to your JSON file
 # json_file_path = "streets_data.json"  # Path to your JSON file
 # Path to your custom font file
-brother_font_path = "fonts/Eigerdals-Bol.ttf"
+brother_font_path = "fonts/Brother1816Printed-Bold.ttf"
 eigerdals_sub_font_path = "fonts/Eigerdals-Med.ttf"
 eigerdals_num_font_path = "fonts/Eigerdals-Reg.ttf"
 json_data = load_json(json_file_path)
