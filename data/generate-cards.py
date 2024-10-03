@@ -19,7 +19,9 @@ color_blue = "#516ba8"
 
 # List of common Czech one-letter prepositions
 prepositions = ["v", "z", "k", "s", "u",
-                "V", "Z", "K", "S", "U", "9."]
+                "V", "Z", "K", "S", "U",
+                "9.", "28.", "Čs."  # specific
+                ]
 
 
 def custom_split(text):
