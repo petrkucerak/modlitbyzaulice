@@ -10,6 +10,11 @@ from reportlab.pdfbase.pdfmetrics import stringWidth
 import re
 
 
+# USER CONFIGURATION
+BORDERS = False  # export pdf with borders
+PRINT_LAYOUT = False
+
+
 # Credit card dimensions in mm (85.60 x 53.98)
 CARD_WIDTH = 53.98 * mm
 CARD_HEIGHT = 85.60 * mm
@@ -112,8 +117,9 @@ def draw_card_front(c, svg_file, street_name, district_name):
                  (6 if len(street_name_lines) == 3 else 0), district_name)
 
     # Optionally draw borders
-    # c.setStrokeColor(colors.black)
-    # c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
+    if BORDERS:
+        c.setStrokeColor(colors.black)
+        c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
 
 # Helper function to split text to fit the card width
 
@@ -157,8 +163,9 @@ def draw_card_back(c, svg_file, unique_number):
     c.drawRightString(CARD_WIDTH - 10, 12, f"#{unique_number}")
 
     # Optionally draw borders
-    # c.setStrokeColor(colors.black)
-    # c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
+    if BORDERS:
+        c.setStrokeColor(colors.black)
+        c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
 
 # Function to scale the SVG to fit within the card dimensions
 
