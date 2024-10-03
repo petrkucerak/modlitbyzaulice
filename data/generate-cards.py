@@ -8,16 +8,33 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.pdfmetrics import stringWidth
 import re
+from PyPDF2 import PdfReader, PdfWriter
 
 
 # USER CONFIGURATION
-BORDERS = False  # export pdf with borders
+BORDERS = True  # export pdf with borders
 PRINT_LAYOUT = False
+OUTPUT_PDF = "cards.pdf"
+PRINT_OUTPUT_PDF = "cards-print.pdf"
 
+SVG_BACKGROUND_FRONT = "svg_elements/ulice_karticky_V1-01.svg"
+SVG_BACKGROUND_BACK = "svg_elements/ulice_karticky_V1-02.svg"
+
+# JSON_INPUT_FILE = "streets_data_test.json"  # Path to your JSON file
+JSON_INPUT_FILE = "streets_data.json"  # Path to your JSON file
+
+# Print configuration
+PAGES_ON_PAGE = 9
 
 # Credit card dimensions in mm (85.60 x 53.98)
 CARD_WIDTH = 53.98 * mm
 CARD_HEIGHT = 85.60 * mm
+
+
+# Path to your custom font file
+brother_font_path = "fonts/Brother1816Printed-Bold.ttf"
+eigerdals_sub_font_path = "fonts/Eigerdals-Med.ttf"
+eigerdals_num_font_path = "fonts/Eigerdals-Reg.ttf"
 
 color_vine = "#5a003d"
 color_blue = "#516ba8"
@@ -31,7 +48,6 @@ prepositions = ["v", "z", "k", "s", "u",
 
 def custom_split(text):
     for preposition in prepositions:
-        # text = text.replace(f"{preposition} ", f"{preposition}*")
         text = re.sub(fr"^{preposition} ", f"{preposition}*", text)
         text = re.sub(fr" {preposition} ", f" {preposition}*", text)
     words = text.split()
@@ -187,22 +203,58 @@ def load_json(json_file):
     with open(json_file, 'r', encoding='utf-8') as f:
         return json.load(f)
 
+def shuffle_pdf_pages(input_pdf_path, output_pdf_path):
+    # Load the PDF
+    reader = PdfReader(input_pdf_path)
+    total_pages = len(reader.pages)
 
-# Usage example
-# json_file_path = "streets_data_test.json"  # Path to your JSON file
-json_file_path = "streets_data.json"  # Path to your JSON file
-# Path to your custom font file
-brother_font_path = "fonts/Brother1816Printed-Bold.ttf"
-eigerdals_sub_font_path = "fonts/Eigerdals-Med.ttf"
-eigerdals_num_font_path = "fonts/Eigerdals-Reg.ttf"
-json_data = load_json(json_file_path)
+    # Ensure total_pages is even for front/back matching
+    if total_pages % 2 != 0:
+        raise ValueError("The PDF must have an even number of pages to match front and back.")
 
-# Create the cards PDF with individual SVGs for front and back
+    # Create a PDF writer for the output
+    writer = PdfWriter()
+
+    # Shuffle the pages by arranging front and back to match correctly
+    for i in range(0, total_pages, 2 * PAGES_ON_PAGE):  # 9 pairs per A4 page
+        front_pages = []
+        back_pages = []
+        for j in range (i, 2*PAGES_ON_PAGE, 2):
+            front_pages.append(reader.pages[j])
+        for j in range (i+1, 2*PAGES_ON_PAGE, 2):
+            back_pages.append(reader.pages[j])
+
+        # Add front pages first
+        for front_page in front_pages:
+            writer.add_page(front_page)
+
+        # Add back pages next
+        # expect flip on long edge
+        for back_page in back_pages:
+            writer.add_page(back_page)
+
+    # Save the shuffled PDF to the output file
+    with open(output_pdf_path, 'wb') as output_pdf:
+        writer.write(output_pdf)
+
+    print(f"PDF pages have been shuffled and saved to: {output_pdf_path}")
+
+
+
+json_data = load_json(JSON_INPUT_FILE)
+
 create_multiple_double_sided_cards(
-    "cards.pdf",
-    "svg_elements/ulice_karticky_V1-01.svg",
-    "svg_elements/ulice_karticky_V1-02.svg",
+    OUTPUT_PDF,
+    SVG_BACKGROUND_FRONT,
+    SVG_BACKGROUND_BACK,
     json_data,
     brother_font_path,
     eigerdals_sub_font_path, eigerdals_num_font_path
 )
+
+if PRINT_LAYOUT:
+    print("TODO")
+    shuffle_pdf_pages(OUTPUT_PDF, PRINT_OUTPUT_PDF)
+
+
+# prekladani po dlouhe strane
