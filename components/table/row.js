@@ -1,101 +1,30 @@
 "use client";
 import { useState } from "react";
-export default function Row({ newData, street }) {
-  function updateDate(key, date) {
-    // find element
-    let index = newData.findIndex(
-      (street) =>
-        street.street_name === key.street_name &&
-        street.borough_name === key.borough_name &&
-        street.district_name === key.district_name
-    );
-    // set new value
-    newData[index].date = date;
-  }
+export default function Row({ newData, street, id, handleKeyDown }) {
   function updateName(key, name) {
     // find element
-    let index = newData.findIndex(
-      (street) =>
-        street.street_name === key.street_name &&
-        street.borough_name === key.borough_name &&
-        street.district_name === key.district_name
-    );
+    let index = newData.findIndex((street) => street.unique_number === key);
     // set new value
     newData[index].name = name;
   }
 
-  function updateColor(key, color) {
-    // find element
-    let index = newData.findIndex(
-      (street) =>
-        street.street_name === key.street_name &&
-        street.borough_name === key.borough_name &&
-        street.district_name === key.district_name
-    );
-    // set new value
-    newData[index].color = color;
-  }
-
   const [name, setName] = useState(street.name);
-  const [date, setDate] = useState(street.date);
-  const [color, setColor] = useState(street.color);
   return (
-    <tr>
-      <td>{street.street_name}</td>
-      <td>{street.district_name}</td>
-      <td>{street.borough_name}</td>
-      <td>
-        <input
-          type="color"
-          className="border-2 rounded-lg px-2"
-          value={color}
-          onChange={(e) => {
-            setColor(e.target.value),
-              updateColor(
-                {
-                  street_name: street.street_name,
-                  borough_name: street.borough_name,
-                  district_name: street.district_name,
-                },
-                e.target.value
-              );
-          }}
-        />
-      </td>
-      <td>
-        <input
-          type="date"
-          className="border-2 rounded-lg px-2"
-          value={date}
-          onChange={(e) => (
-            setDate(e.target.value),
-            updateDate(
-              {
-                street_name: street.street_name,
-                borough_name: street.borough_name,
-                district_name: street.district_name,
-              },
-              e.target.value
-            )
-          )}
-        />
-      </td>
-      <td>
+    <tr className="border-y border-olive text-wine" key={street.unique_number}>
+      <td className="py-2">#{street.unique_number}</td>
+      <td className="py-2">{street.street_name}</td>
+      <td className="py-2 hidden md:flex">{street.district_name}</td>
+      <td className="py-2">
         <input
           type="text"
-          className="border-2 rounded-lg px-2"
+          className="border border-black rounded-sm px-2 w-full"
           value={name}
+          id={id}
           onChange={(e) => (
             setName(e.target.value),
-            updateName(
-              {
-                street_name: street.street_name,
-                borough_name: street.borough_name,
-                district_name: street.district_name,
-              },
-              e.target.value
-            )
+            updateName(street.unique_number, e.target.value)
           )}
+          onKeyDown={handleKeyDown} // Handle ENTER key press
         />
       </td>
     </tr>
