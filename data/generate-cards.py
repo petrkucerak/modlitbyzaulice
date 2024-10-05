@@ -1,5 +1,6 @@
+from reportlab.lib.pagesizes import landscape, A4
 import json
-from reportlab.lib.pagesizes import mm
+from reportlab.lib.pagesizes import mm, landscape, A4
 from reportlab.pdfgen import canvas
 from reportlab.lib import colors
 from reportlab.graphics import renderPDF
@@ -8,12 +9,12 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.pdfmetrics import stringWidth
 import re
-from PyPDF2 import PdfReader, PdfWriter
 
 
 # USER CONFIGURATION
 BORDERS = True  # export pdf with borders
-PRINT_LAYOUT = False
+CARD_LAYOUT = False
+PRINT_LAYOUT = True
 OUTPUT_PDF = "cards.pdf"
 PRINT_OUTPUT_PDF = "cards-print.pdf"
 
@@ -55,10 +56,10 @@ def custom_split(text):
     for word in words:
         patterns.append(word.replace("*", " "))
     return patterns
-# Function to create multiple double-sided cards PDF based on JSON data
 
 
 def create_multiple_double_sided_cards(filename, front_svg, back_svg, data, brother_font_path, eigerdals_sub_font_path, eigerdals_num_font_path):
+    '''Function to create multiple double-sided cards PDF based on JSON data'''
     # Register the custom font
     pdfmetrics.registerFont(TTFont('BrotherFont', brother_font_path))
     pdfmetrics.registerFont(
@@ -88,11 +89,13 @@ def create_multiple_double_sided_cards(filename, front_svg, back_svg, data, brot
     # Save the PDF
     c.save()
 
-# Function to draw the front of the card
 
-
-# Updated function to draw the front of the card with dynamic text fitting
 def draw_card_front(c, svg_file, street_name, district_name):
+    '''
+    Function to draw the front of the card.
+
+    *Updated function to draw the front of the card with dynamic text fitting*
+    '''
     # Load and draw the front SVG
     svg = svg2rlg(svg_file)
     scale_svg_to_fit(svg)
@@ -137,10 +140,9 @@ def draw_card_front(c, svg_file, street_name, district_name):
         c.setStrokeColor(colors.black)
         c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
 
-# Helper function to split text to fit the card width
-
 
 def split_text_to_fit(text, font_name, font_size, line_spacing, max_width, min_font_size):
+    '''Helper function to split text to fit the card width'''
     words = custom_split(text)
     lines = []
     current_line = ""
@@ -164,10 +166,9 @@ def split_text_to_fit(text, font_name, font_size, line_spacing, max_width, min_f
 
     return lines, font_size, line_spacing
 
-# Function to draw the back of the card
-
 
 def draw_card_back(c, svg_file, unique_number):
+    '''Function to draw the back of the card'''
     # Load and draw the back SVG
     svg = svg2rlg(svg_file)
     scale_svg_to_fit(svg)
@@ -183,10 +184,9 @@ def draw_card_back(c, svg_file, unique_number):
         c.setStrokeColor(colors.black)
         c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
 
-# Function to scale the SVG to fit within the card dimensions
-
 
 def scale_svg_to_fit(drawing):
+    '''Function to scale the SVG to fit within the card dimensions'''
     svg_width = drawing.width
     svg_height = drawing.height
     scale_x = CARD_WIDTH / svg_width
@@ -196,65 +196,94 @@ def scale_svg_to_fit(drawing):
     drawing.height *= scale
     drawing.scale(scale, scale)
 
-# Function to load JSON data from a file
+
+def create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
+                      SVG_BACKGROUND_BACK,
+                      json_data,
+                      brother_font_path,
+                      eigerdals_sub_font_path, eigerdals_num_font_path):
+    # Register custom fonts
+    pdfmetrics.registerFont(TTFont('BrotherFont', brother_font_path))
+    pdfmetrics.registerFont(
+        TTFont('EigerdalsFontSub', eigerdals_sub_font_path))
+    pdfmetrics.registerFont(
+        TTFont('EigerdalsFontNum', eigerdals_num_font_path))
+
+    # Create the PDF canvas for an A4 landscape page
+    c = canvas.Canvas(PRINT_OUTPUT_PDF, pagesize=landscape(A4))
+
+    # Dimensions of the A4 page in landscape (width, height)
+    A4_WIDTH, A4_HEIGHT = landscape(A4)
+
+    # Define the number of columns and rows (2x5 layout)
+    COLUMNS = 2
+    ROWS = 5
+
+    # Calculate card positions based on A4 dimensions
+    card_width = CARD_WIDTH
+    card_height = CARD_HEIGHT
+
+    # Horizontal and vertical gaps between cards
+    horizontal_gap = (A4_WIDTH - (COLUMNS * card_width)) / (COLUMNS + 1)
+    vertical_gap = (A4_HEIGHT - (ROWS * card_height)) / (ROWS + 1)
+
+    def get_card_position(column, row):
+        x = horizontal_gap + (column * (card_width + horizontal_gap))
+        y = A4_HEIGHT - (vertical_gap + ((row + 1) *
+                         (card_height + vertical_gap)))
+        return x, y
+
+    # Iterate over the data and place the cards on the page
+    card_count = 0
+    for card in json_data:
+        column = card_count % COLUMNS
+        row = card_count // COLUMNS
+
+        if row >= ROWS:
+            # We've filled this page, save and start a new one
+            c.showPage()
+            card_count = 0
+            column = 0
+            row = 0
+
+        # Calculate the position for this card
+        x, y = get_card_position(column, row)
+
+        # Draw the front side of the card
+        c.saveState()  # Save canvas state before translation
+        c.translate(x, y)
+        draw_card_front(c, SVG_BACKGROUND_FRONT,
+                        card["street_name"], card["district_name"])
+        c.restoreState()  # Restore canvas state after translation
+
+        card_count += 1
+
+    # Save the final PDF page
+    c.save()
 
 
 def load_json(json_file):
+    '''Function to load JSON data from a file'''
+
     with open(json_file, 'r', encoding='utf-8') as f:
         return json.load(f)
-
-def shuffle_pdf_pages(input_pdf_path, output_pdf_path):
-    # Load the PDF
-    reader = PdfReader(input_pdf_path)
-    total_pages = len(reader.pages)
-
-    # Ensure total_pages is even for front/back matching
-    if total_pages % 2 != 0:
-        raise ValueError("The PDF must have an even number of pages to match front and back.")
-
-    # Create a PDF writer for the output
-    writer = PdfWriter()
-
-    # Shuffle the pages by arranging front and back to match correctly
-    for i in range(0, total_pages, 2 * PAGES_ON_PAGE):  # 9 pairs per A4 page
-        front_pages = []
-        back_pages = []
-        for j in range (i, 2*PAGES_ON_PAGE, 2):
-            front_pages.append(reader.pages[j])
-        for j in range (i+1, 2*PAGES_ON_PAGE, 2):
-            back_pages.append(reader.pages[j])
-
-        # Add front pages first
-        for front_page in front_pages:
-            writer.add_page(front_page)
-
-        # Add back pages next
-        # expect flip on long edge
-        for back_page in back_pages:
-            writer.add_page(back_page)
-
-    # Save the shuffled PDF to the output file
-    with open(output_pdf_path, 'wb') as output_pdf:
-        writer.write(output_pdf)
-
-    print(f"PDF pages have been shuffled and saved to: {output_pdf_path}")
-
 
 
 json_data = load_json(JSON_INPUT_FILE)
 
-create_multiple_double_sided_cards(
-    OUTPUT_PDF,
-    SVG_BACKGROUND_FRONT,
-    SVG_BACKGROUND_BACK,
-    json_data,
-    brother_font_path,
-    eigerdals_sub_font_path, eigerdals_num_font_path
-)
+if CARD_LAYOUT:
+    create_multiple_double_sided_cards(
+        OUTPUT_PDF,
+        SVG_BACKGROUND_FRONT,
+        SVG_BACKGROUND_BACK,
+        json_data,
+        brother_font_path,
+        eigerdals_sub_font_path, eigerdals_num_font_path
+    )
 
 if PRINT_LAYOUT:
-    print("TODO")
-    shuffle_pdf_pages(OUTPUT_PDF, PRINT_OUTPUT_PDF)
-
-
-# prekladani po dlouhe strane
+    create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
+                      SVG_BACKGROUND_BACK,
+                      json_data,
+                      brother_font_path,
+                      eigerdals_sub_font_path, eigerdals_num_font_path)
