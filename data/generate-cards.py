@@ -255,7 +255,8 @@ def create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
         return x, y
 
     def get_back_card_position(column, row):
-        x = horizontal_gap + (column * (card_width + horizontal_gap)) - 70 + reducer
+        x = horizontal_gap + \
+            (column * (card_width + horizontal_gap)) - 70 + reducer
         y = A4_HEIGHT - (vertical_gap + ((row + 1) *
                          (card_height + vertical_gap))) + 45
         return x, y
@@ -288,6 +289,17 @@ def create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
                 c.restoreState()  # Restore canvas state after translation
 
                 card_count += 1
+
+            # Render x helping lines
+            for i in range(6):
+                x, y = get_front_card_position(i, 0)
+                c.line(x-0.5, 0, x-0.5, A4_HEIGHT)
+
+
+            # Render y helping lines
+            for i in range(-1, 2):
+                x, y = get_front_card_position(0, i)
+                c.line(0, y-0.5, A4_WIDTH, y-0.5)
 
             # We've filled this page, save and start a new one
             c.showPage()
