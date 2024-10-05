@@ -4,7 +4,6 @@ import Row from "./row";
 import { useState } from "react";
 
 export default function Table() {
-  const [usingAddingTool, setUsingAddingTool] = useState(false);
   const [searchTerm, setSearchTerm] = useState(""); // Add search term state
   let newData = streets;
 
@@ -54,8 +53,6 @@ export default function Table() {
 
       {/* Add a search input */}
       <div className="w-full flex justify-center my-4"></div>
-
-      {usingAddingTool ? <AddingTool street={streets} newData={newData} /> : ""}
       <table className="w-full my-8">
         <thead>
           <tr className="text-left font-brother1816 uppercase text-darkBlue">
