@@ -10,14 +10,14 @@ export default function Row({ newData, street }) {
 
   const [name, setName] = useState(street.name);
   return (
-    <tr>
-      <td>#{street.unique_number}</td>
-      <td>{street.street_name}</td>
-      <td>{street.district_name}</td>
-      <td>
+    <tr className="border-y border-olive text-wine">
+      <td className="py-2">#{street.unique_number}</td>
+      <td className="py-2">{street.street_name}</td>
+      <td className="py-2 hidden md:flex">{street.district_name}</td>
+      <td className="py-2">
         <input
           type="text"
-          className="border-2 rounded-lg px-2"
+          className="border border-black rounded-sm px-2 w-full"
           value={name}
           onChange={(e) => (
             setName(e.target.value),

@@ -18,13 +18,33 @@ export default function Table() {
   }
   return (
     <div className="flex flex-col items-center justify-between w-full">
-      <table className="w-full mt-8">
+      <div className="mt-10 w-full flex flex-row justify-around">
+        <button
+          className="border border-olive text-olive hover:bg-olive transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
+          onClick={() => alert("TODO")}
+        >
+          Přidávat
+        </button>
+        <button
+          className="border border-stone-800 hover:bg-stone-800 transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
+          onClick={() => downloadFile()}
+        >
+          Stáhnout soubor
+        </button>
+        <button
+          className="border border-darkBlue text-blue hover:bg-darkBlue transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
+          onClick={() => alert("TODO")}
+        >
+          Vytvořit request
+        </button>
+      </div>
+      <table className="w-full my-8">
         <thead>
-          <tr className="text-left">
-            <th>ID</th>
-            <th>Ulice</th>
-            <th>Část obce</th>
-            <th>Jména</th>
+          <tr className="text-left font-brother1816 uppercase text-darkBlue">
+            <th className="py-4">ID</th>
+            <th className="py-4">Ulice</th>
+            <th className="py-4 hidden md:flex">Část obce</th>
+            <th className="py-4">Jména</th>
           </tr>
         </thead>
         <tbody>
@@ -39,12 +59,6 @@ export default function Table() {
           })}{" "}
         </tbody>
       </table>
-      <button
-        className="my-8 border border-stone-800 hover:bg-stone-800 transition hover:text-white p-2 px-4 rounded-2xl w-fit cursor-pointer"
-        onClick={() => downloadFile()}
-      >
-        Stáhnout soubor
-      </button>
     </div>
   );
 }
