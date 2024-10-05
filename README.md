@@ -1,8 +1,6 @@
 # Modlitby za ulice
 
-Web application for project `Modlitby za ulice`.
-
-Projekt není hotovým řešením, jedná se pouze o DEMO.
+Jednoduchá webová aplikace, která slouží k zobrazování promodlených ulic v Pardubicích.
 
 ## O projektu
 
@@ -32,15 +30,13 @@ Samotná prezentace, která by měla:
 
 ### Mapa
 
-Mapa slouží k vizualizaci toho, za jaké ulice se již někdo modlil. Souřadnice ulic jsou získána pomocí overpass api, které běží na OpenStreetMaps. Kvůli ušetření výpočetní náročnosti a finančních nákladů jsou data předpočítána (viz python skript ve složce data) a uložena přímo v kódu.
-
-Pro zvýšení iteraci se promodlené ulice vykreslují se zpožděním. Po rozkliknutí promodlené ulice se zobrazí její název, datum, kdy byla promodlena a přezdívka toho, kdo se za ni modlil.
+Mapa slouží k vizualizaci toho, za jaké ulice se již někdo modlil. Popis způsobu získání dat je více popsán v sekci [Dataset](#dataset).
 
 Mapa běží na mapovém podkladu mapy.cz díky open-source API pricing option.
 
 ### Redakční prostředí
 
-Kvůli ušetření finančních prostředků běží celý systém staticky bez jakékoliv databáze. Editace tedy probíhá v prohlížeči administrátora. Ten si pak upravený soubor musí stáhnout a nahrát do repozitáře.
+Kvůli ušetření finančních prostředků běží celý systém staticky bez jakékoliv databáze. TODO
 
 ## Dataset
 
