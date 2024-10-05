@@ -60,6 +60,7 @@ Dataset je generován pomocí skriptu `parse_data.py`, který je umístěný ve 
   > **Pozor**: ne všechny obce (zvláště malé) mají ulice. V takové případě vám tento soubor a skript nijako nepomůže a je je třeba zadat manuálně.
 
 - JSON soubor s názvem `manual_data.json`, který musí být umístěn v složce `/data`. Struktura souboru je stejná jako u výstupu dat. Navíc je možnost místo objektu `coordinates` (vykresluje přímku znázorňující ulici včetně přerušení ulice) použít objekt `polygon`, který ohraničí daný objet do polygonu.
+- CSV souboru s názvy částí města. V souboru `streets.csv` jsou obsaženy názvy ulic i s částmy jim příslušících.
 
 Výstupem skriptu jsou 2 soubory:
 
@@ -92,4 +93,3 @@ Skript umí generovat kartičky ve dvou formátech:
 Skript na grafický podklad (svg křivkách) nageneruje dynamický text s hodnotami.
 
 > **Pozor:** Generování obsahuje ne náročné ale pro jednoduché zachování konzistence není proces paralelizovaný. Export může tedy trvat delší v závislosti na výpočetním výkonu a počtu záznamů.
-
