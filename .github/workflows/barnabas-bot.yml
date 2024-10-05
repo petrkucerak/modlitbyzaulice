@@ -1,4 +1,4 @@
-name: 🧐 Barnabáš Bot
+name: 🗺️ Barnabáš Bot
 on:
   workflow_dispatch:
     inputs:
