@@ -70,7 +70,7 @@ export default function Home() {
         <CoverAnimationTablet className="hidden min-h-[100vh] w-full sm:flex md:hidden flex-col justify-end" />
         <CoverAnimation className="hidden min-h-[100vh] w-full md:flex flex-col justify-end" />
         <div className="w-[90vw] max-w-[900px] xl:max-w-[1200px] z-10 absolute">
-          <h1 className="font-brother1816 tracking-wide font-bold text-4xl sm:text-5xl mb-1 sm:mb-2">
+          <h1 className="font-brother1816 tracking-wide font-semibold text-4xl sm:text-5xl mb-1 sm:mb-2">
             Modlitby za&nbsp;ulice
           </h1>
           <p className="mb-10 font-eigerdals text-3xl sm:text-4xl font-light tracking-wide">
