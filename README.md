@@ -93,3 +93,11 @@ Skript umí generovat kartičky ve dvou formátech:
 Skript na grafický podklad (svg křivkách) nageneruje dynamický text s hodnotami.
 
 > **Pozor:** Generování obsahuje ne náročné ale pro jednoduché zachování konzistence není proces paralelizovaný. Export může tedy trvat delší v závislosti na výpočetním výkonu a počtu záznamů.
+
+## Kontakt
+
+Máte dotaz, poznámku, rádi byste projekt rozjeli u vás či byste nás jakkoliv rádi kontaktovali? Napiště nám na info@modlitbyzaulice.cz.
+
+## Licence
+
+Consent is required for any usage.
