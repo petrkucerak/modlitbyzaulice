@@ -55,7 +55,7 @@ Dataset je generován pomocí skriptu `parse_data.py`, který je umístěný ve 
   | Výběr z údajů | `Gen. hranice` `Originální hranice` `Vlajky a znaky` |
   | Územní omezení | Obec _vyhledávejte konrkétní obce_ |
 
-  Tyto soubory umistě do složky `/data`. Skript si je automaticky vyhledá.
+  Tyto soubory um9stě do složky `/data`. Skript si je automaticky vyhledá.
 
   > **Pozor**: ne všechny obce (zvláště malé) mají ulice. V takové případě vám tento soubor a skript nijako nepomůže a je je třeba zadat manuálně.
 
@@ -63,19 +63,33 @@ Dataset je generován pomocí skriptu `parse_data.py`, který je umístěný ve 
 
 Výstupem skriptu jsou 2 soubory:
 
-- `streets_data.json` exportovaná data
-- `streets_with_coordinates.js` exportovaná data přirazená do proměnné urychlující kompilaci
+- `streets_data.json` - exportovaná data
+- `streets_with_coordinates.js` - exportovaná data přirazená do proměnné urychlující kompilaci
 
 Výstupní JSON soubor má strukturu:
 
 | název                     | typ                                                   | popis                                                                                                                                                                                                                                                                                                                |
 | ------------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`                    | `string`                                              | Jména těch, kteří se modlili za danou ulici. Tota data se naplňují dynamicky přes redakční formulář v průběhu akce.                                                                                                                                                                                                  |
-| `street_name`             | `string`                                              | Název ulice či významného objetku. Zobrazuje se na kartičkách a na webu jako hlavní identifikátor. Každý obkjekt musí mít tuto hodnotu vyplněnou.                                                                                                                                                                    |
+| `name`                    | `string`                                              | Jména těch, kteří se modlili za danou ulici. Tata data se naplňují dynamicky přes redakční formulář v průběhu akce.                                                                                                                                                                                                  |
+| `street_name`             | `string`                                              | Název ulice či významného objekt. Zobrazuje se na kartičkách a na webu jako hlavní identifikátor. Každý objekt musí mít tuto hodnotu vyplněnou.                                                                                                                                                                      |
 | `city_name`               | `string`                                              | Název města. Jedná se o nepovidnný údaj, který nemá žádné funkční využití v momentální implementaci. Slouží pouze pro lepší konzistenci dat.                                                                                                                                                                         |
 | `district_name`           | `string`                                              | Název části obce je povinnou položkou, pokud existuje. Zobrazuje se na webu i na kartičkách a pomáhá identifikovat přesněji daný objekt. _Pokud ulice leží ve více částech, skript dá přednost té první._                                                                                                            |
 | `color`                   | `string`                                              | Kód pro barvu je povinný. Po promodlení, tedy pokud není proměnná `name` prázdná, zobrazuje danou barvu na webu. Barva je vždy společná pro danou část obce `district_name`. Je možné nastavit fixní barvy, jinak budou přiřazeny náhodně při spuštění skriptu z barvné nabídky, která vychází z grafického manuálu. |
 | `unique_number`           | `number`                                              | Generované sekvenčně automaticky a slouží k identifikaci kartičky. Číslo je vždy 4 místné a začíná od hodnoty _1100_.                                                                                                                                                                                                |
 | `coordinates` / `polygon` | `array` of `arrays` of `coords` / `array` of `coords` | Obsahuje údaje, které vykreslí na mapě čáru či polygon. Pro čáru je nutné zadat pole polí souřadnic a to z toho důvodu, že ulice může být přerušena. Pro polygon pole souřadnic. **Souřadnice** (`coords`) je pole o dvou prvcích. Tato hodnota je povinná, resp. bez ní se nevykreslí daný objekt na mapě.          |
 
+> **Pozor**: Pro zrychlení procesu generování tento proces běží paralelně a proto není zajištěna konzistence dat, reps. pořadí může být při každém běhu rozdílná.
+
 ## Generování kartiček
+
+Kartičky jsou generovaný pomocí skriptu `generate_cards.py`, který se nachází ve složce `/data`. Skript jako vstup bere json soubor `streets_data.json`, který lze vygenerovat skriptem `parse_data.py`.
+
+Skript umí generovat kartičky ve dvou formátech:
+
+- Ve formátu pro **zobrazení**. Pro tento mód musí být konstata `CARD_LAYOUT` v hodně `True`.
+- Ve formátu pro **tisk**. Pro tento mód musí být konstanta `PRINT_LAYOUT` v hodnotě `True`.
+
+Skript na grafický podklad (svg křivkách) nageneruje dynamický text s hodnotami.
+
+> **Pozor:** Generování obsahuje ne náročné ale pro jednoduché zachování konzistence není proces paralelizovaný. Export může tedy trvat delší v závislosti na výpočetním výkonu a počtu záznamů.
+
