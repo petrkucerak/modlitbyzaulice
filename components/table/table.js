@@ -1,9 +1,20 @@
 "use client";
 import { streets } from "@/data/streets_with_coordinates";
 import Row from "./row";
+import { useState } from "react";
 
 export default function Table() {
+  const [usingAddingTool, setUsingAddingTool] = useState(false);
+  const [searchTerm, setSearchTerm] = useState(""); // Add search term state
   let newData = streets;
+
+  // Filter streets based on search term
+  const filteredStreets = streets.filter(
+    (street) =>
+      street.street_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      street.district_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      street.unique_number.toString().includes(searchTerm)
+  );
 
   function downloadFile() {
     const data =
@@ -16,28 +27,35 @@ export default function Table() {
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
   }
+
   return (
     <div className="flex flex-col items-center justify-between w-full">
-      <div className="mt-10 w-full flex flex-row justify-around">
+      <div className="mt-10 w-full flex flex-row justify-between">
         <button
           className="border border-olive text-olive hover:bg-olive transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
           onClick={() => alert("TODO")}
         >
-          Přidávat
+          Vytvořit request
         </button>
+        <input
+          type="text"
+          className="border border-gray-400 p-2 w-full max-w-[500px] rounded-sm font-eigerdals"
+          placeholder="Vyhledej dle názvu ulice, části obce či ID..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
         <button
-          className="border border-stone-800 hover:bg-stone-800 transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
+          className="border border-darkBlue text-blue hover:bg-darkBlue transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
           onClick={() => downloadFile()}
         >
           Stáhnout soubor
         </button>
-        <button
-          className="border border-darkBlue text-blue hover:bg-darkBlue transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
-          onClick={() => alert("TODO")}
-        >
-          Vytvořit request
-        </button>
       </div>
+
+      {/* Add a search input */}
+      <div className="w-full flex justify-center my-4"></div>
+
+      {usingAddingTool ? <AddingTool street={streets} newData={newData} /> : ""}
       <table className="w-full my-8">
         <thead>
           <tr className="text-left font-brother1816 uppercase text-darkBlue">
@@ -48,7 +66,8 @@ export default function Table() {
           </tr>
         </thead>
         <tbody>
-          {streets.map((street) => {
+          {/* Use filtered data for displaying rows */}
+          {filteredStreets.map((street) => {
             return (
               <Row
                 key={`${street.unique_number}`}
@@ -56,7 +75,7 @@ export default function Table() {
                 street={street}
               />
             );
-          })}{" "}
+          })}
         </tbody>
       </table>
     </div>
