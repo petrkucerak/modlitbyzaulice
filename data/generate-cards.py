@@ -216,8 +216,8 @@ def create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
     A4_WIDTH, A4_HEIGHT = landscape(A4)
 
     # Define the number of columns and rows (2x5 layout)
-    COLUMNS = 2
-    ROWS = 5
+    COLUMNS = 5
+    ROWS = 2
 
     # Calculate card positions based on A4 dimensions
     card_width = CARD_WIDTH
