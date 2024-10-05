@@ -73,7 +73,10 @@ export default function Table() {
           Stáhnout soubor
         </button>
       </div>
-
+      <p className="mt-2 text-sm">
+        <strong className="font-medium">TIP:</strong> Napiš ID a&nbsp;zmáčkni
+        ENTER, napiš jméno a&nbsp;opět zmáčkni ENTER.
+      </p>
       <table className="w-full my-8">
         <thead>
           <tr className="text-left font-brother1816 uppercase text-darkBlue">
