@@ -15,7 +15,7 @@ import math
 # USER CONFIGURATION
 BORDERS = True  # export pdf with borders
 CARD_LAYOUT = True
-PRINT_LAYOUT = False
+PRINT_LAYOUT = True
 OUTPUT_PDF = "cards.pdf"
 PRINT_OUTPUT_PDF = "cards-print.pdf"
 
@@ -86,7 +86,7 @@ def create_multiple_double_sided_cards(filename, front_svg, back_svg, data, brot
     c = canvas.Canvas(filename, pagesize=(CARD_WIDTH, CARD_HEIGHT))
 
     for card in data:
-        print(f"{card["street_name"]} ({card["district_name"]})")
+        # print(f"{card["street_name"]} ({card["district_name"]})")
 
         # Front side of the card
         draw_card_front(
@@ -342,6 +342,7 @@ def load_json(json_file):
 json_data = load_json(JSON_INPUT_FILE)
 
 if CARD_LAYOUT:
+    print("Start building card.pdf")
     create_multiple_double_sided_cards(
         OUTPUT_PDF,
         SVG_BACKGROUND_FRONT_PRINT,
@@ -350,10 +351,13 @@ if CARD_LAYOUT:
         brother_font_path,
         eigerdals_sub_font_path, eigerdals_num_font_path
     )
+    print("Script for building card.pdf ends.\n~~~~~~~~~~~~~~\n")
 
 if PRINT_LAYOUT:
+    print("Start building cards-print.pdf")
     create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT_PRINT,
                       SVG_BACKGROUND_BACK_PRINT,
                       json_data,
                       brother_font_path,
                       eigerdals_sub_font_path, eigerdals_num_font_path)
+    print("Script for building cards-print.pdf ends.\n~~~~~~~~~~~~~~\n")
