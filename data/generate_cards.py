@@ -43,7 +43,7 @@ color_blue = "#516ba8"
 # List of common Czech one-letter prepositions
 prepositions = ["v", "z", "k", "s", "u",
                 "V", "Z", "K", "S", "U",
-                "9.", "28.", "Čs.", "17.", "28.", "Dr.", "24."  # specific
+                "9.", "28.", "Čs.", "17.", "22.", "Dr.", "24."  # specific
                 ]
 
 back_side_map = {
