@@ -14,8 +14,8 @@ import math
 
 # USER CONFIGURATION
 BORDERS = True  # export pdf with borders
-CARD_LAYOUT = False
-PRINT_LAYOUT = True
+CARD_LAYOUT = True
+PRINT_LAYOUT = False
 OUTPUT_PDF = "cards.pdf"
 PRINT_OUTPUT_PDF = "cards-print.pdf"
 
@@ -43,7 +43,7 @@ color_blue = "#516ba8"
 # List of common Czech one-letter prepositions
 prepositions = ["v", "z", "k", "s", "u",
                 "V", "Z", "K", "S", "U",
-                "9.", "28.", "Čs."  # specific
+                "9.", "28.", "Čs.", "17.", "28.", "Dr.", "24."  # specific
                 ]
 
 back_side_map = {
@@ -294,7 +294,6 @@ def create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
             for i in range(6):
                 x, y = get_front_card_position(i, 0)
                 c.line(x-0.5, 0, x-0.5, A4_HEIGHT)
-
 
             # Render y helping lines
             for i in range(-1, 2):
