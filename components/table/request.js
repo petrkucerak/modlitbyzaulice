@@ -1,6 +1,12 @@
 import Swal from "sweetalert2";
 
 export async function createRequest(exportObj, userName) {
+  let content = [];
+  exportObj.map((street) => {
+    content.push({ unique_number: street.unique_number, name: street.name });
+  });
+  console.log(content);
+
   const body = `
    {
      "content": ${JSON.stringify(exportObj)},

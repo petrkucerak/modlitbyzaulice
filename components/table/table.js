@@ -82,12 +82,7 @@ export default function Table() {
         {displayUsername ? (
           <button
             className="border border-wine text-wine hover:bg-wine transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
-            onClick={() =>
-              createRequest(
-                "export const streets = " + JSON.stringify(newData),
-                username
-              )
-            }
+            onClick={() => createRequest(newData, username)}
           >
             Odeslat request
           </button>
