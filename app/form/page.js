@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Main>
       <Header />
-      <div className="flex flex-col w-[90vw] max-w-[900px]">
+      <div className="flex flex-col w-[90vw] max-w-[900px] mt-12">
         <Table />
       </div>
       <Footer />

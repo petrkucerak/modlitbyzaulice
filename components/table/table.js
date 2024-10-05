@@ -21,19 +21,17 @@ export default function Table() {
       <table className="w-full mt-8">
         <thead>
           <tr className="text-left">
+            <th>ID</th>
             <th>Ulice</th>
             <th>Část obce</th>
-            <th>Městský obvod</th>
-            <th>Barva</th>
-            <th>Datum</th>
-            <th>Jméno</th>
+            <th>Jména</th>
           </tr>
         </thead>
         <tbody>
           {streets.map((street) => {
             return (
               <Row
-                key={`${street.street_name}-${street.borough_name}-${street.district_name}`}
+                key={`${street.unique_number}`}
                 newData={newData}
                 street={street}
               />
