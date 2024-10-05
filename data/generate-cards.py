@@ -222,8 +222,8 @@ def create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
     ROWS = 2
 
     # Calculate card positions based on A4 dimensions
-    card_width = CARD_WIDTH
-    card_height = CARD_HEIGHT
+    card_width = CARD_WIDTH - 70
+    card_height = CARD_HEIGHT - 107
 
     # Horizontal and vertical gaps between cards
     horizontal_gap = (A4_WIDTH - (COLUMNS * card_width)) / (COLUMNS + 1)
@@ -232,7 +232,7 @@ def create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
     def get_card_position(column, row):
         x = horizontal_gap + (column * (card_width + horizontal_gap))
         y = A4_HEIGHT - (vertical_gap + ((row + 1) *
-                         (card_height + vertical_gap)))
+                         (card_height + vertical_gap))) + 45
         return x, y
 
     # Iterate over the data and place the cards on the page
