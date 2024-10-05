@@ -1,0 +1,51 @@
+name: 🧐 Barnabáš Bot
+on:
+  workflow_dispatch:
+    inputs:
+      content:
+        description: 'Content (JSON data)'
+        required: true
+        default: ''
+      username:
+        description: 'Username'
+        required: true
+        default: ''
+
+jobs:
+  create_json:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v4
+
+    - name: 🔐 Generate a token
+      id: generate_token
+      uses: tibdex/github-app-token@v2
+      with:
+        app_id: ${{ secrets.BARNABAS_ID }}
+        private_key: ${{ secrets.BARNABAS_PRIVATE_KEY }}
+    
+    - name: Create a json file
+      run: |
+        cd data
+        echo '${{ github.event.inputs.content }}' > streets_with_coordinates.js
+
+    - name: Get current date
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        
+    - name: Create a pull request
+      uses: peter-evans/create-pull-request@v6
+      with:
+        token: ${{steps.generate_token.outputs.token}}
+        commit-message: Map update ${{ github.event.inputs.username }} request change
+        signoff: false
+        branch: map-update-${{ steps.date.outputs.date }}-${{ github.event.inputs.username }}
+        delete-branch: true
+        title: '${{ github.event.inputs.username }} is requesting the addition new records to the map from date ${{ steps.date.outputs.date }}'
+        body: |
+          ${{ github.event.inputs.username }} is requesting the addition new records to the map from date ${{ steps.date.outputs.date }}
+        labels: |
+          map
+        reviewers: petrkucerak
+        draft: false
