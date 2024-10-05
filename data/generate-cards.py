@@ -190,14 +190,18 @@ def draw_card_back(c, svg_file, unique_number):
     renderPDF.draw(svg, c, 0, 0)
 
     # Set custom font and render unique number
-    c.setFont("EigerdalsFontNum", 6)
+    c.setFont("EigerdalsFontNum", 8)
     c.setFillColor(color_blue)
     c.drawRightString(CARD_WIDTH - 10, 12, f"#{unique_number}")
 
     # Optionally draw borders
     if BORDERS:
-        c.setStrokeColor(colors.black)
-        c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
+        if PRINT_LAYOUT:
+            c.setStrokeColor(colors.white)
+            c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
+        else:
+            c.setStrokeColor(colors.black)
+            c.rect(0, 0, CARD_WIDTH, CARD_HEIGHT)
 
 
 def scale_svg_to_fit(drawing):
@@ -242,14 +246,16 @@ def create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
     horizontal_gap = (A4_WIDTH - (COLUMNS * card_width)) / (COLUMNS + 1)
     vertical_gap = (A4_HEIGHT - (ROWS * card_height)) / (ROWS + 1)
 
+    reducer = 13.5 * mm
+
     def get_front_card_position(column, row):
-        x = horizontal_gap + (column * (card_width + horizontal_gap))
+        x = horizontal_gap + (column * (card_width + horizontal_gap)) - reducer
         y = A4_HEIGHT - (vertical_gap + ((row + 1) *
                          (card_height + vertical_gap))) + 45
         return x, y
 
     def get_back_card_position(column, row):
-        x = horizontal_gap + (column * (card_width + horizontal_gap)) - 70
+        x = horizontal_gap + (column * (card_width + horizontal_gap)) - 70 + reducer
         y = A4_HEIGHT - (vertical_gap + ((row + 1) *
                          (card_height + vertical_gap))) + 45
         return x, y
@@ -327,8 +333,8 @@ json_data = load_json(JSON_INPUT_FILE)
 if CARD_LAYOUT:
     create_multiple_double_sided_cards(
         OUTPUT_PDF,
-        SVG_BACKGROUND_FRONT,
-        SVG_BACKGROUND_BACK,
+        SVG_BACKGROUND_FRONT_PRINT,
+        SVG_BACKGROUND_BACK_PRINT,
         json_data,
         brother_font_path,
         eigerdals_sub_font_path, eigerdals_num_font_path
