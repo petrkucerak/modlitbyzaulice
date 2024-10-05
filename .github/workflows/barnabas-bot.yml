@@ -28,7 +28,7 @@ jobs:
     - name: Create a json file
       run: |
         cd data
-        echo '${{ github.event.inputs.content }}' > streets_with_coordinates.js
+        echo '${{ github.event.inputs.content }}' > streets_names.json
 
     - name: Get current date
       id: date
