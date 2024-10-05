@@ -2,10 +2,13 @@
 import { streets } from "@/data/streets_with_coordinates";
 import Row from "./row";
 import { useState, useRef } from "react";
+import { createRequest } from "./request";
 
 export default function Table() {
   const [searchTerm, setSearchTerm] = useState(""); // Search term state
   const [selectedResult, setSelectedResult] = useState(null); // Track selected result
+  const [username, setUsername] = useState("");
+  const [displayUsername, setDisplayUsername] = useState(false);
   const searchInputRef = useRef(null); // Reference to search input
 
   let newData = streets;
@@ -53,26 +56,56 @@ export default function Table() {
       <div className="mt-10 w-full flex flex-row justify-between">
         <button
           className="border border-olive text-olive hover:bg-olive transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
-          onClick={() => alert("TODO")}
+          onClick={() => setDisplayUsername(displayUsername ? false : true)}
         >
-          Vytvořit request
+          {displayUsername ? "Zrušit request" : "Vytvořit request"}
         </button>
-        <input
-          type="text"
-          ref={searchInputRef} // Attach ref to search input
-          className="border border-gray-400 p-2 w-full max-w-[500px] rounded-sm font-eigerdals"
-          placeholder="Vyhledej dle názvu ulice, části obce či ID..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          onKeyDown={handleKeyDown} // Handle ENTER key press
-        />
-        <button
-          className="border border-darkBlue text-blue hover:bg-darkBlue transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
-          onClick={() => downloadFile()}
-        >
-          Stáhnout soubor
-        </button>
+        {displayUsername ? (
+          <input
+            type="text"
+            className="border border-gray-400 p-2 w-full max-w-[500px] rounded-sm font-eigerdals"
+            placeholder="Vepiš svoji přezdívku"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        ) : (
+          <input
+            type="text"
+            ref={searchInputRef} // Attach ref to search input
+            className="border border-gray-400 p-2 w-full max-w-[500px] rounded-sm font-eigerdals"
+            placeholder="Vyhledej dle názvu ulice, části obce či ID..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyDown={handleKeyDown} // Handle ENTER key press
+          />
+        )}
+        {displayUsername ? (
+          <button
+            className="border border-wine text-wine hover:bg-wine transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
+            onClick={() =>
+              createRequest(
+                "export const streets = " + JSON.stringify(newData),
+                username
+              )
+            }
+          >
+            Odeslat request
+          </button>
+        ) : (
+          <button
+            className="border border-darkBlue text-blue hover:bg-darkBlue transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
+            onClick={() => downloadFile()}
+          >
+            Stáhnout soubor
+          </button>
+        )}
       </div>
+      {displayUsername ? (
+        <div className="w-full mt-2 flex flex-row justify-between"></div>
+      ) : (
+        ""
+      )}
+
       <p className="mt-2 text-sm">
         <strong className="font-medium">TIP:</strong> Napiš ID a&nbsp;zmáčkni
         ENTER, napiš jméno a&nbsp;opět zmáčkni ENTER.
