@@ -6,6 +6,8 @@ import os
 import csv
 import random
 
+RANDOM_UNIQUE_NUMBERS = False
+
 # Define the colors array
 colors = ["#3d8bc9",  # sky
           "#516ba8",  # water
@@ -36,7 +38,11 @@ def colorize_data(data):
         "Zelené Předměstí": "#f8e447",
         "Bílé Předměstí": "#eb8fc2",
     }
-    used_numbers = set()
+
+    if RANDOM_UNIQUE_NUMBERS:
+        used_numbers = set()
+    else:
+        unique_number = 1100
 
     for street in data:
         if (street["district_name"] == ""):
@@ -47,7 +53,11 @@ def colorize_data(data):
             street["color"] = pairs[street["district_name"]]
 
         # Generate and assign a unique 4-digit number to the street
-        street["unique_number"] = generate_unique_number(used_numbers)
+        if RANDOM_UNIQUE_NUMBERS:
+            street["unique_number"] = generate_unique_number(used_numbers)
+        else:
+            street["unique_number"] = unique_number
+            unique_number += 1
 
     return data
 
