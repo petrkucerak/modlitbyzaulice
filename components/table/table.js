@@ -1,10 +1,13 @@
 "use client";
 import { streets } from "@/data/streets_with_coordinates";
 import Row from "./row";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function Table() {
-  const [searchTerm, setSearchTerm] = useState(""); // Add search term state
+  const [searchTerm, setSearchTerm] = useState(""); // Search term state
+  const [selectedResult, setSelectedResult] = useState(null); // Track selected result
+  const searchInputRef = useRef(null); // Reference to search input
+
   let newData = streets;
 
   // Filter streets based on search term
@@ -27,6 +30,24 @@ export default function Table() {
     downloadAnchorNode.remove();
   }
 
+  // Handle ENTER key press
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      if (selectedResult === null && filteredStreets.length > 0) {
+        // Jump to the first result
+        setSelectedResult(filteredStreets[0].unique_number);
+        document
+          .getElementById(`row-${filteredStreets[0].unique_number}`)
+          .focus();
+      } else {
+        // Return to search form and clear input
+        setSelectedResult(null);
+        setSearchTerm("");
+        searchInputRef.current.focus();
+      }
+    }
+  };
+
   return (
     <div className="flex flex-col items-center justify-between w-full">
       <div className="mt-10 w-full flex flex-row justify-between">
@@ -38,10 +59,12 @@ export default function Table() {
         </button>
         <input
           type="text"
+          ref={searchInputRef} // Attach ref to search input
           className="border border-gray-400 p-2 w-full max-w-[500px] rounded-sm font-eigerdals"
           placeholder="Vyhledej dle názvu ulice, části obce či ID..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          onKeyDown={handleKeyDown} // Handle ENTER key press
         />
         <button
           className="border border-darkBlue text-blue hover:bg-darkBlue transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
@@ -51,8 +74,6 @@ export default function Table() {
         </button>
       </div>
 
-      {/* Add a search input */}
-      <div className="w-full flex justify-center my-4"></div>
       <table className="w-full my-8">
         <thead>
           <tr className="text-left font-brother1816 uppercase text-darkBlue">
@@ -70,6 +91,8 @@ export default function Table() {
                 key={`${street.unique_number}`}
                 newData={newData}
                 street={street}
+                id={`row-${street.unique_number}`} // Set an ID for the row
+                handleKeyDown={handleKeyDown}
               />
             );
           })}
