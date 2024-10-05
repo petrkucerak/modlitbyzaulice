@@ -20,6 +20,8 @@ PRINT_OUTPUT_PDF = "cards-print.pdf"
 
 SVG_BACKGROUND_FRONT = "svg_elements/ulice_karticky_V1-01.svg"
 SVG_BACKGROUND_BACK = "svg_elements/ulice_karticky_V1-02.svg"
+SVG_BACKGROUND_FRONT_PRINT = "svg_elements/ulice_karticky_V1-01-print.svg"
+SVG_BACKGROUND_BACK_PRINT = "svg_elements/ulice_karticky_V1-02-print.svg"
 
 # JSON_INPUT_FILE = "streets_data_test.json"  # Path to your JSON file
 JSON_INPUT_FILE = "streets_data.json"  # Path to your JSON file
@@ -282,8 +284,8 @@ if CARD_LAYOUT:
     )
 
 if PRINT_LAYOUT:
-    create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
-                      SVG_BACKGROUND_BACK,
+    create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT_PRINT,
+                      SVG_BACKGROUND_BACK_PRINT,
                       json_data,
                       brother_font_path,
                       eigerdals_sub_font_path, eigerdals_num_font_path)
