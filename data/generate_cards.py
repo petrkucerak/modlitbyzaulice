@@ -14,7 +14,7 @@ import math
 
 # USER CONFIGURATION
 BORDERS = True  # export pdf with borders
-CARD_LAYOUT = False
+CARD_LAYOUT = True
 PRINT_LAYOUT = True
 OUTPUT_PDF = "cards.pdf"
 PRINT_OUTPUT_PDF = "cards-print.pdf"
@@ -43,7 +43,7 @@ color_blue = "#516ba8"
 # List of common Czech one-letter prepositions
 prepositions = ["v", "z", "k", "s", "u",
                 "V", "Z", "K", "S", "U",
-                "9.", "28.", "Čs."  # specific
+                "9.", "28.", "Čs.", "17.", "22.", "Dr.", "24."  # specific
                 ]
 
 back_side_map = {
@@ -86,7 +86,7 @@ def create_multiple_double_sided_cards(filename, front_svg, back_svg, data, brot
     c = canvas.Canvas(filename, pagesize=(CARD_WIDTH, CARD_HEIGHT))
 
     for card in data:
-        print(f"{card["street_name"]} ({card["district_name"]})")
+        # print(f"{card["street_name"]} ({card["district_name"]})")
 
         # Front side of the card
         draw_card_front(
@@ -295,7 +295,6 @@ def create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
                 x, y = get_front_card_position(i, 0)
                 c.line(x-0.5, 0, x-0.5, A4_HEIGHT)
 
-
             # Render y helping lines
             for i in range(-1, 2):
                 x, y = get_front_card_position(0, i)
@@ -343,6 +342,7 @@ def load_json(json_file):
 json_data = load_json(JSON_INPUT_FILE)
 
 if CARD_LAYOUT:
+    print("Start building card.pdf")
     create_multiple_double_sided_cards(
         OUTPUT_PDF,
         SVG_BACKGROUND_FRONT_PRINT,
@@ -351,10 +351,13 @@ if CARD_LAYOUT:
         brother_font_path,
         eigerdals_sub_font_path, eigerdals_num_font_path
     )
+    print("Script for building card.pdf ends.\n~~~~~~~~~~~~~~\n")
 
 if PRINT_LAYOUT:
+    print("Start building cards-print.pdf")
     create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT_PRINT,
                       SVG_BACKGROUND_BACK_PRINT,
                       json_data,
                       brother_font_path,
                       eigerdals_sub_font_path, eigerdals_num_font_path)
+    print("Script for building cards-print.pdf ends.\n~~~~~~~~~~~~~~\n")
