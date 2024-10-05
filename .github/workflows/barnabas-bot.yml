@@ -32,7 +32,7 @@ jobs:
 
     - name: Get current date
       id: date
-      run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d-%H:%M:%S')"
         
     - name: Create a pull request
       uses: peter-evans/create-pull-request@v6
@@ -40,7 +40,7 @@ jobs:
         token: ${{steps.generate_token.outputs.token}}
         commit-message: Map update ${{ github.event.inputs.username }} request change
         signoff: false
-        branch: map-update-${{ steps.date.outputs.date }}-${{ github.event.inputs.username }}
+        branch: map-update-${{ steps.date.outputs.date }}
         delete-branch: true
         title: '${{ github.event.inputs.username }} is requesting the addition new records to the map from date ${{ steps.date.outputs.date }}'
         body: |
