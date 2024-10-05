@@ -27,9 +27,6 @@ SVG_BACKGROUND_BACK_PRINT = "svg_elements/ulice_karticky_V1-02-print.svg"
 # JSON_INPUT_FILE = "streets_data_test.json"  # Path to your JSON file
 JSON_INPUT_FILE = "streets_data.json"  # Path to your JSON file
 
-# Print configuration
-PAGES_ON_PAGE = 9
-
 # Credit card dimensions in mm (85.60 x 53.98)
 CARD_WIDTH = 53.98 * mm
 CARD_HEIGHT = 85.60 * mm
