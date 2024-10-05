@@ -9,6 +9,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.pdfmetrics import stringWidth
 import re
+import math
 
 
 # USER CONFIGURATION
@@ -47,6 +48,21 @@ prepositions = ["v", "z", "k", "s", "u",
                 "V", "Z", "K", "S", "U",
                 "9.", "28.", "Čs."  # specific
                 ]
+
+back_side_map = {
+    # first line
+    0: 4,
+    1: 3,
+    2: 2,
+    3: 1,
+    4: 0,
+    # second line
+    5: 9,
+    6: 8,
+    7: 7,
+    8: 6,
+    9: 5
+}
 
 
 def custom_split(text):
@@ -229,36 +245,74 @@ def create_print_file(PRINT_OUTPUT_PDF, SVG_BACKGROUND_FRONT,
     horizontal_gap = (A4_WIDTH - (COLUMNS * card_width)) / (COLUMNS + 1)
     vertical_gap = (A4_HEIGHT - (ROWS * card_height)) / (ROWS + 1)
 
-    def get_card_position(column, row):
+    def get_front_card_position(column, row):
         x = horizontal_gap + (column * (card_width + horizontal_gap))
         y = A4_HEIGHT - (vertical_gap + ((row + 1) *
                          (card_height + vertical_gap))) + 45
         return x, y
 
-    # Iterate over the data and place the cards on the page
-    card_count = 0
-    for card in json_data:
-        column = card_count % COLUMNS
-        row = card_count // COLUMNS
+    def get_back_card_position(column, row):
+        x = horizontal_gap + (column * (card_width + horizontal_gap)) - 70
+        y = A4_HEIGHT - (vertical_gap + ((row + 1) *
+                         (card_height + vertical_gap))) + 45
+        return x, y
 
-        if row >= ROWS:
+    # Iterate over the data and place the cards on the page
+    front_pages = []
+    back_pages = [None] * COLUMNS * ROWS
+    card_count = 0
+    for i in range(len(json_data)):
+        # back page
+        index = i % (ROWS * COLUMNS)
+        back_pages[back_side_map[index]] = json_data[i]
+        # front page
+        front_pages.append(json_data[i])
+
+        # Print pages
+        if len(front_pages) == 10:
+            for card in front_pages:
+                column = card_count % COLUMNS
+                row = card_count // COLUMNS
+
+                # Calculate the position for this card
+                x, y = get_front_card_position(column, row)
+
+                # Draw the front side of the card
+                c.saveState()  # Save canvas state before translation
+                c.translate(x, y)
+                draw_card_front(c, SVG_BACKGROUND_FRONT,
+                                card["street_name"], card["district_name"])
+                c.restoreState()  # Restore canvas state after translation
+
+                card_count += 1
+
             # We've filled this page, save and start a new one
             c.showPage()
             card_count = 0
             column = 0
             row = 0
+            front_pages.clear()
 
-        # Calculate the position for this card
-        x, y = get_card_position(column, row)
+            for card in back_pages:
+                column = card_count % COLUMNS
+                row = card_count // COLUMNS
 
-        # Draw the front side of the card
-        c.saveState()  # Save canvas state before translation
-        c.translate(x, y)
-        draw_card_front(c, SVG_BACKGROUND_FRONT,
-                        card["street_name"], card["district_name"])
-        c.restoreState()  # Restore canvas state after translation
+                # Calculate the position for this card
+                x, y = get_back_card_position(column, row)
 
-        card_count += 1
+                # Draw the back side of the card
+                c.saveState()  # Save canvas state before translation
+                c.translate(x, y)
+                draw_card_back(c, SVG_BACKGROUND_BACK,
+                               card["unique_number"])
+                c.restoreState()  # Restore canvas state after translation
+
+                card_count += 1
+            c.showPage()
+            card_count = 0
+            column = 0
+            row = 0
+            back_pages = [None] * COLUMNS * ROWS
 
     # Save the final PDF page
     c.save()
