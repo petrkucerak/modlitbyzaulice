@@ -2,13 +2,12 @@
 import { streets } from "@/data/streets_with_coordinates";
 import Row from "./row";
 import { useState, useRef } from "react";
-import { createRequest } from "./request";
+import Tutorial from "./tutorial";
 
 export default function Table() {
   const [searchTerm, setSearchTerm] = useState(""); // Search term state
   const [selectedResult, setSelectedResult] = useState(null); // Track selected result
-  const [username, setUsername] = useState("");
-  const [displayUsername, setDisplayUsername] = useState(false);
+  const [displayTutorial, setDisplayTutorial] = useState(false);
   const searchInputRef = useRef(null); // Reference to search input
 
   let newData = streets;
@@ -55,51 +54,30 @@ export default function Table() {
     <div className="flex flex-col items-center justify-between w-full">
       <div className="mt-10 w-full flex flex-row justify-between">
         <button
-          className="border border-olive text-olive hover:bg-olive transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
-          onClick={() => setDisplayUsername(displayUsername ? false : true)}
+          className="border w-40 border-olive text-olive hover:bg-olive transition hover:text-white p-2 px-4 rounded-sm cursor-pointer"
+          onClick={() => setDisplayTutorial(displayTutorial ? false : true)}
         >
-          {displayUsername ? "Zrušit request" : "Vytvořit request"}
+          {displayTutorial ? "Skrýt návod" : "Zobrazit návod"}
         </button>
-        {displayUsername ? (
-          <input
-            type="text"
-            className="border border-gray-400 p-2 w-full max-w-[500px] rounded-sm font-eigerdals"
-            placeholder="Vepiš svoji přezdívku"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-        ) : (
-          <input
-            type="text"
-            ref={searchInputRef} // Attach ref to search input
-            className="border border-gray-400 p-2 w-full max-w-[500px] rounded-sm font-eigerdals"
-            placeholder="Vyhledej dle názvu ulice, části obce či ID..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            onKeyDown={handleKeyDown} // Handle ENTER key press
-          />
-        )}
-        {displayUsername ? (
-          <button
-            className="border border-wine text-wine hover:bg-wine transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
-            onClick={() => createRequest(newData, username)}
-          >
-            Odeslat request
-          </button>
-        ) : (
-          <button
-            className="border border-darkBlue text-blue hover:bg-darkBlue transition hover:text-white p-2 px-4 rounded-sm w-fit cursor-pointer"
-            onClick={() => downloadFile()}
-          >
-            Stáhnout soubor
-          </button>
-        )}
+
+        <input
+          type="text"
+          ref={searchInputRef} // Attach ref to search input
+          className="border border-gray-400 p-2 w-full max-w-[500px] rounded-sm font-eigerdals"
+          placeholder="Vyhledej dle názvu ulice, části obce či ID..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          onKeyDown={handleKeyDown} // Handle ENTER key press
+        />
+
+        <button
+          className="border w-40 border-darkBlue text-blue hover:bg-darkBlue transition hover:text-white p-2 px-4 rounded-sm cursor-pointer"
+          onClick={() => downloadFile()}
+        >
+          Stáhnout soubor
+        </button>
       </div>
-      {displayUsername ? (
-        <div className="w-full mt-2 flex flex-row justify-between"></div>
-      ) : (
-        ""
-      )}
+      {displayTutorial ? <Tutorial className={"my-8"} /> : ""}
 
       <p className="mt-2 text-sm">
         <strong className="font-medium">TIP:</strong> Napiš ID a&nbsp;zmáčkni
