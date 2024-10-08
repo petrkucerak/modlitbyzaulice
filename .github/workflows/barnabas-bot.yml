@@ -10,6 +10,10 @@ on:
         description: 'Username'
         required: true
         default: ''
+      branch_name:
+        description: 'Branch name for the request'
+        required: true
+        default: ''
 
 jobs:
   create_json:
@@ -17,6 +21,8 @@ jobs:
     steps:
     - name: Checkout the repo
       uses: actions/checkout@v4
+      with:
+        ref: ${{ github.event.inputs.branch_name }} # Check out the existing branch or create a new one
 
     - name: 🔐 Generate a token
       id: generate_token
@@ -25,26 +31,50 @@ jobs:
         app_id: ${{ secrets.BARNABAS_ID }}
         private_key: ${{ secrets.BARNABAS_PRIVATE_KEY }}
     
-    - name: Create a json file
+    - name: Append to JSON file
       run: |
         cd data
-        echo '${{ github.event.inputs.content }}' > streets_names.json
+        if [ -f streets_names.json ]; then
+          # Append new data to the existing JSON file
+          jq '. + ${{ github.event.inputs.content }}' streets_names.json > tmp.json && mv tmp.json streets_names.json
+        else
+          # Create the JSON file if it doesn't exist
+          echo '${{ github.event.inputs.content }}' > streets_names.json
 
     - name: Get current date
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d-%H:%M:%S')"
-        
-    - name: Create a pull request
+
+    - name: Create or update branch and push changes
+      run: |
+        # Get APP ID
+        # URL of the JSON endpoint
+        json_url="https://api.github.com/users/barnabasbot%5Bbot%5D"
+        # Use curl to fetch the JSON data from the URL
+        json_data=$(curl -s "$json_url")
+        # Use jq to extract the "id" field from the JSON data
+        id_value=$(echo "$json_data" | jq -r ".id")
+        # Print the extracted ID value
+        echo "ID: $id_value"
+        git config user.name "barnabasbot[bot]"
+        git config user.email "$id_value+barnabasbot[bot]@users.noreply.github.com"
+
+        git checkout -B ${{ github.event.inputs.branch_name }}
+        git add .
+        git commit -m "Update map data by ${{ github.event.inputs.username }} at ${{ steps.date.outputs.date }}"
+        git push origin ${{ github.event.inputs.branch_name }}
+
+    - name: Create a pull request (if new branch)
       uses: peter-evans/create-pull-request@v6
       with:
         token: ${{steps.generate_token.outputs.token}}
         commit-message: Map update ${{ github.event.inputs.username }} request change
         signoff: false
-        branch: map-update-${{ steps.date.outputs.date }}
-        delete-branch: true
-        title: '${{ github.event.inputs.username }} is requesting the addition new records to the map from date ${{ steps.date.outputs.date }}'
+        branch: ${{ github.event.inputs.branch_name }}
+        delete-branch: false
+        title: '${{ github.event.inputs.username }} is requesting the addition of new records to the map from date ${{ steps.date.outputs.date }}'
         body: |
-          ${{ github.event.inputs.username }} is requesting the addition new records to the map from date ${{ steps.date.outputs.date }}
+          ${{ github.event.inputs.username }} is requesting the addition of new records to the map from date ${{ steps.date.outputs.date }}
         labels: |
           map
         reviewers: petrkucerak
