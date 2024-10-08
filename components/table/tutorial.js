@@ -1,4 +1,5 @@
 import Link from "next/link";
+import YoutubeVideo from "../layout/video";
 
 export default function Tutorial({ className }) {
   return (
@@ -75,6 +76,11 @@ export default function Tutorial({ className }) {
           nahrajte ho do produkční verze.
         </li>
       </ol>
+      <YoutubeVideo
+        source={
+          "https://www.youtube-nocookie.com/embed/ytQhZhqKAkw?cc_load_policy=1&cc_lang_pref=cs"
+        }
+      />
     </div>
   );
 }
