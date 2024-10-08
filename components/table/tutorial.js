@@ -55,7 +55,9 @@ export default function Tutorial({ className }) {
           Přihlaste se ke svému účtu na Githubu a{" "}
           <strong className="font-medium">nahrajte soubor</strong> do složky{" "}
           <Link
-            href={""}
+            href={
+              "https://github.com/petrkucerak/modlitbyzaulice/tree/main/data"
+            }
             target="_blank"
             className="font-medium text-stone-700 underline"
           >
