@@ -19,7 +19,7 @@ export async function createRequest(exportObj, userName) {
       username: userName,
     });
 
-    const response = await fetch("https://api.modlitbyzaulice.cz/", {
+    const response = await fetch("https://api.modlitbyzaulice.cz", {
       method: "POST",
       headers: {
         Accept: "application/json",
