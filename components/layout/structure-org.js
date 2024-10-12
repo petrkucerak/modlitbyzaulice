@@ -22,6 +22,7 @@ export default function StructureOrg() {
   return (
     <>
       <Script
+        id="structure-org"
         strategy="lazyOnload"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemeData) }}
