@@ -14,10 +14,7 @@ export default function Footer() {
           <p className="md:text-right mb-8 md:mb-0 font-eigerdals">
             Rádi byste projekt podpořit finančně nebo dobrovolickou pomocí?
             Napište nám na{" "}
-            <Link
-              href={"mailto:info@modlitbyzaulice.cz"}
-              className="underline"
-            >
+            <Link href={"mailto:info@modlitbyzaulice.cz"} className="underline">
               info@modlitbyzaulice.cz
             </Link>
             , rádi vás do díla zapojíme.
@@ -38,7 +35,9 @@ export default function Footer() {
               Římskokatolická farnost Pardubice
             </Link>
           </li>
-          <li className="text-xs xl:text-sm 2xl:base">Kostelní 92, 530 02 Pardubice</li>
+          <li className="text-xs xl:text-sm 2xl:base">
+            Kostelní 92, 530 02 Pardubice
+          </li>
           <li className="flex flex-row items-end mt-2">
             <Link
               href={"https://www.facebook.com/farnostPardubice/"}
@@ -91,8 +90,15 @@ export default function Footer() {
           .
         </p>
         <p>
-          <Link href={""} target="_blank" className="underline">
-            Pravidla akce
+          <Link
+            href={
+              "https://github.com/petrkucerak/modlitbyzaulice/issues/new?assignees=petrkucerak&labels=bug&projects=&template=%C4%8Desk%C3%BD-issues-template.md&title=Stru%C4%8Dn%C3%BD+popis+probl%C3%A9mu+%5BBUG%5D"
+            }
+            target="_blank"
+            className="underline"
+            title="Nahlásit chybu na Githubu - vyžaduje přihlášení"
+          >
+            Nahlásit chybu
           </Link>{" "}
           a{" "}
           <Link href={""} target="_blank" className="underline">
