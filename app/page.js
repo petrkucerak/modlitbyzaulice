@@ -1,5 +1,4 @@
 "use client";
-import { conf } from "@/components/conf";
 import IconCustomAboutTitle from "@/components/icons/about";
 import IconCustomTutorial1 from "@/components/icons/tutorial1";
 import IconCustomTutorial2 from "@/components/icons/tutorial2";
@@ -21,7 +20,7 @@ import YoutubeVideo from "@/components/layout/video";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
-import EventPray from "@/components/layout/event-pray";
+import StructureOrg from "@/components/layout/structure-org";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -108,12 +107,12 @@ export default function Home() {
             jsi někdy o svém poslání? O tom, co to vlastně znamená zažít
             „missio“? Nemusíš hned balit kufry a vyrážet do exotických zemí,
             abys něco změnil. Můžeš začít tady a teď – třeba na ulici, kterou
-            dobře znáš. Připravujeme projekt Modlitby za ulice v Pardubicích,
-            který startuje 20. října 2024. Je to tvá příležitost propojit víru s
-            každodenním životem a zažít něco, co má smysl. Jak? Jednoduše.
-            Vybereš si ulici, za kterou se budeš modlit, možná ji navštívíš, a
-            kdo ví – třeba se setkáš s někým, kdo potřebuje slyšet právě tvé
-            svědectví.
+            dobře znáš. Připravili jsme projekt Modlitby za ulice v Pardubicích,
+            do kterého se můžeš zapojit od 20. října 2024. Je to tvá příležitost
+            propojit víru s každodenním životem a zažít něco, co má smysl. Jak?
+            Jednoduše. Vybereš si ulici, za kterou se budeš modlit, možná ji
+            navštívíš, a kdo ví – třeba se setkáš s někým, kdo potřebuje slyšet
+            právě tvé svědectví.
           </p>
           <p className="my-2 md:my-0 md:ml-2 max-w-[450px]">
             <strong>„Modlitby za ulice“</strong> je misijní projekt, který
@@ -140,12 +139,6 @@ export default function Home() {
           }
           className={"mb-[8rem]"}
         />
-        {/* <TitleWithBirds
-          color={"#516ba8"}
-          className={"mt-[4rem] mb-8 fill-[#516ba8]"}
-        >
-          Jak se mohu zapojit?
-        </TitleWithBirds> */}
       </Section>
 
       <Section
@@ -309,9 +302,6 @@ export default function Home() {
           </div>
 
           <div className="my-10 md:my-0">
-            {/* <EventPray
-              className={"text-wine leading-tighter font-medium lg:ml-16"}
-            /> */}
             <Button
               href={"/modlitba.jpg"}
               target={"_blank"}
@@ -442,6 +432,7 @@ export default function Home() {
         </div>
       </Section>
       <Footer />
+      <StructureOrg />
     </Main>
   );
 }

@@ -93,14 +93,13 @@ export default function Table() {
           </tr>
         </thead>
         <tbody>
-          {/* Use filtered data for displaying rows */}
           {filteredStreets.map((street) => {
             return (
               <Row
                 key={`${street.unique_number}`}
                 newData={newData}
                 street={street}
-                id={`row-${street.unique_number}`} // Set an ID for the row
+                id={`row-${street.unique_number}`}
                 handleKeyDown={handleKeyDown}
               />
             );
