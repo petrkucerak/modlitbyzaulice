@@ -34,7 +34,7 @@ export default function Map({ className }) {
       <a
         href="http://mapy.cz/"
         target="_blank"
-        rel="noreferrer"
+        rel="noreferrer nofollow"
         className="absolute z-[1000] bottom-0"
       >
         <img alt="Mapy.cz logo" src="https://api.mapy.cz/img/api/logo.svg" />
