@@ -37,7 +37,7 @@ export default function Streets() {
         `<h3 class="title">${street.street_name}</h3><p class="subtitle">${street.district_name}</p><p class="details">Za ulici se modlil ${street.name}</p>`
       );
 
-      // if (street.name !== "") {
+      if (street.name !== "") {
         setTimeout(() => {
           const polyline = L.polyline(coords, {
             color: street.color,
@@ -50,15 +50,15 @@ export default function Streets() {
             .addTo(map)
             .bindPopup(streetPopup);
         }, Math.floor(Math.random() * 4000));
-      // } else {
-      //   const polyline = L.polyline(coords, {
-      //     color: GREY_COLOR,
-      //     opacity: 0.3,
-      //     weight: 10,
-      //     interactive: false,
-      //     smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
-      //   }).addTo(map);
-      // }
+      } else {
+        const polyline = L.polyline(coords, {
+          color: GREY_COLOR,
+          opacity: 0.3,
+          weight: 10,
+          interactive: false,
+          smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+        }).addTo(map);
+      }
     } else if (street.polygon !== undefined) {
       const coords = street.polygon;
       // options: https://leafletjs.com/reference.html#polyline
@@ -71,7 +71,7 @@ export default function Streets() {
         `<h3 class="title">${street.street_name}</h3><p class="subtitle">${street.district_name}</p><p class="details">Za místo se modlil ${street.name}</p>`
       );
 
-      // if (street.name !== "") {
+      if (street.name !== "") {
         setTimeout(() => {
           const polyline = L.polygon(coords, {
             color: street.color,
@@ -84,15 +84,15 @@ export default function Streets() {
             .addTo(map)
             .bindPopup(streetPopup);
         }, Math.floor(Math.random() * 4000));
-      // } else {
-      //   const polyline = L.polygon(coords, {
-      //     color: GREY_COLOR,
-      //     opacity: 0.3,
-      //     weight: 4,
-      //     interactive: false,
-      //     smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
-      //   }).addTo(map);
-      // }
+      } else {
+        const polyline = L.polygon(coords, {
+          color: GREY_COLOR,
+          opacity: 0.3,
+          weight: 4,
+          interactive: false,
+          smoothFactor: 1.0, // How much to simplify the polyline on each zoom level. More means better performance and smoother look, and less means more accurate representation.
+        }).addTo(map);
+      }
     }
   });
   return null;
