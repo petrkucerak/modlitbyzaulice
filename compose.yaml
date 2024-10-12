@@ -9,4 +9,4 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
-    command: yarn dev
+    command: sh -c "yarn && yarn dev"
