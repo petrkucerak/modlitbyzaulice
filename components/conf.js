@@ -5,6 +5,8 @@ export const conf = {
 
   url: "https://modlitbyzaulice.cz",
 
+  email: "info@modlitbyzaulice.cz",
+
   // start of the manifest
   name: "Modlitby za ulice - proměňme město modlitbou",
   short_name: "Modlitby za ulice",
