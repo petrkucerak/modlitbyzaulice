@@ -21,6 +21,7 @@ import YoutubeVideo from "@/components/layout/video";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
+import EventPray from "@/components/layout/event-pray";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -251,7 +252,7 @@ export default function Home() {
             </p>
           </Card>
         </div>
-        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mb-[8rem] xl:mb-[10rem] mt-10 xl:mt-[3.5rem]">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mt-10 xl:mt-[3.5rem]">
           <div className="md:max-w-[700px]">
             <h3 className="uppercase font-semibold mb-2">
               Sledujte, jak modlitba proměňuje Pardubice
@@ -274,9 +275,35 @@ export default function Home() {
               , pokud to bude v našich silách, rádi ho doplníme.
             </p>
           </div>
+
           <div className="my-10 md:my-0">
             <Button href={"/mapa"} className={"bg-pink md:ml-16"}>
               mapa
+            </Button>
+          </div>
+        </div>
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mb-[8rem] xl:mb-[10rem] mt-10 xl:mt-[3.5rem]">
+          <div className="md:max-w-[700px]">
+            <h3 className="uppercase font-semibold mb-2">Společná modlitba</h3>
+            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals mb-8">
+              Způsobů, jak se modlit je mnoho. Podstatou ale není forma ale
+              obsah a úmysl. Proto nabízíme <strong>společnou modlitbu</strong>,
+              kterou kromě zadní strany kartiček najdete i zde. Pokud chcete,
+              můžete si ji stáhnout jako obrázek do mobilu a vracet se k ní i
+              když nebudete připojeni na internet.
+            </p>
+          </div>
+
+          <div className="my-10 md:my-0">
+            {/* <EventPray
+              className={"text-wine leading-tighter font-medium lg:ml-16"}
+            /> */}
+            <Button
+              href={"/modlitba.jpg"}
+              target={"_blank"}
+              className={"bg-pink md:ml-16"}
+            >
+              modlitba
             </Button>
           </div>
         </div>
