@@ -140,12 +140,6 @@ export default function Home() {
           }
           className={"mb-[8rem]"}
         />
-        {/* <TitleWithBirds
-          color={"#516ba8"}
-          className={"mt-[4rem] mb-8 fill-[#516ba8]"}
-        >
-          Jak se mohu zapojit?
-        </TitleWithBirds> */}
       </Section>
 
       <Section
@@ -309,9 +303,6 @@ export default function Home() {
           </div>
 
           <div className="my-10 md:my-0">
-            {/* <EventPray
-              className={"text-wine leading-tighter font-medium lg:ml-16"}
-            /> */}
             <Button
               href={"/modlitba.jpg"}
               target={"_blank"}

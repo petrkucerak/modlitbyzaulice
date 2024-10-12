@@ -35,7 +35,6 @@ export default function Header({ activeSection }) {
       <Link href={"/#home"} className="my-4" title="hlavní strana projektu">
         <IconCustomLogo className={"w-[2rem] ml-[1.8rem]"} />
       </Link>
-      {/* Desktop menu */}
       <div className="hidden md:flex flex-row items-center justify-between max-w-[600px] w-full">
         <Link href={"/#about-target"} title="o projektu">
           o projektu
@@ -50,8 +49,6 @@ export default function Header({ activeSection }) {
           podporují
         </Link>
       </div>
-
-      {/* Mobile menu */}
       {isOpen && (
         <div
           className={`absolute top-14 text-2xl flex flex-col ${getHeaderClassName()} items-center w-full h-[100vh] md:hidden`}
@@ -91,7 +88,6 @@ export default function Header({ activeSection }) {
         </div>
       )}
       <div>
-        {/* Burger menu icon */}
         <div className="flex items-center md:hidden">
           <button
             onClick={toggleMenu}
