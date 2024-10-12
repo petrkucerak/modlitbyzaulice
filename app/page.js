@@ -137,14 +137,14 @@ export default function Home() {
           source={
             "https://www.youtube-nocookie.com/embed/wPc3QchI3XM?cc_load_policy=1&cc_lang_pref=cs"
           }
-          className={"mb-[4rem]"}
+          className={"mb-[8rem]"}
         />
-        <TitleWithBirds
+        {/* <TitleWithBirds
           color={"#516ba8"}
           className={"mt-[4rem] mb-8 fill-[#516ba8]"}
         >
           Jak se mohu zapojit?
-        </TitleWithBirds>
+        </TitleWithBirds> */}
       </Section>
 
       <Section
