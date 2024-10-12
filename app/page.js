@@ -108,12 +108,12 @@ export default function Home() {
             jsi někdy o svém poslání? O tom, co to vlastně znamená zažít
             „missio“? Nemusíš hned balit kufry a vyrážet do exotických zemí,
             abys něco změnil. Můžeš začít tady a teď – třeba na ulici, kterou
-            dobře znáš. Připravujeme projekt Modlitby za ulice v Pardubicích,
-            který startuje 20. října 2024. Je to tvá příležitost propojit víru s
-            každodenním životem a zažít něco, co má smysl. Jak? Jednoduše.
-            Vybereš si ulici, za kterou se budeš modlit, možná ji navštívíš, a
-            kdo ví – třeba se setkáš s někým, kdo potřebuje slyšet právě tvé
-            svědectví.
+            dobře znáš. Připravili jsme projekt Modlitby za ulice v Pardubicích,
+            do kterého se můžeš zapojit od 20. října 2024. Je to tvá příležitost
+            propojit víru s každodenním životem a zažít něco, co má smysl. Jak?
+            Jednoduše. Vybereš si ulici, za kterou se budeš modlit, možná ji
+            navštívíš, a kdo ví – třeba se setkáš s někým, kdo potřebuje slyšet
+            právě tvé svědectví.
           </p>
           <p className="my-2 md:my-0 md:ml-2 max-w-[450px]">
             <strong>„Modlitby za ulice“</strong> je misijní projekt, který
