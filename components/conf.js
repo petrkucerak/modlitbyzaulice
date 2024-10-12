@@ -1,6 +1,5 @@
 export const conf = {
   // start of dev
-  // TODO: set API restriction
   MAPY_API_KEY: "PdNRjVdq8YVAgaBNnxiTAsfhy-qbG6lMxuQKg3W02gk",
   // end of dev
 
