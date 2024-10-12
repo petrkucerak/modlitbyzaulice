@@ -14,7 +14,11 @@ export default function Footer() {
           <p className="md:text-right mb-8 md:mb-0 font-eigerdals">
             Rádi byste projekt podpořit finančně nebo dobrovolickou pomocí?
             Napište nám na{" "}
-            <Link href={"mailto:info@modlitbyzaulice.cz"} className="underline">
+            <Link
+              href={"mailto:info@modlitbyzaulice.cz"}
+              className="underline"
+              title="kontaktní email"
+            >
               info@modlitbyzaulice.cz
             </Link>
             , rádi vás do díla zapojíme.
@@ -31,6 +35,7 @@ export default function Footer() {
               target="_blank"
               rel={"noreferrer"}
               className="underline"
+              title="web franosti Pardubice"
             >
               Římskokatolická farnost Pardubice
             </Link>
@@ -75,6 +80,7 @@ export default function Footer() {
             target="_blank"
             rel="nofollow noreferrer"
             className=""
+            title="Portofólio Kateřiny Šislerové"
           >
             Kateřina Šislerová
           </Link>
@@ -83,6 +89,7 @@ export default function Footer() {
             href={"https://petrkucerak.cz/"}
             target="_blank"
             rel="noreferrer"
+            title="Vizitka Petra Kučery"
             className=""
           >
             Petr Kučera
@@ -101,7 +108,12 @@ export default function Footer() {
             Nahlásit chybu
           </Link>{" "}
           a{" "}
-          <Link href={""} target="_blank" className="underline">
+          <Link
+            href={""}
+            target="_blank"
+            className="underline"
+            title="Zásayd ochrany osobních údajů"
+          >
             Zásady ochrany osobních údaju
           </Link>
         </p>

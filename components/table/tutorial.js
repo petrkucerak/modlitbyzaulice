@@ -61,6 +61,7 @@ export default function Tutorial({ className }) {
             }
             target="_blank"
             className="font-medium text-stone-700 underline"
+            title="repositář projektu"
           >
             data
           </Link>

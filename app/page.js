@@ -171,6 +171,7 @@ export default function Home() {
                 }
                 target="_blank"
                 className="italic"
+                title="Farní kostely"
               >
                 farnosti
               </Link>{" "}
@@ -179,6 +180,7 @@ export default function Home() {
                 href={"https://salesianipardubice.cz/kostel/"}
                 target="_blank"
                 className="italic"
+                title="kostel salesiánů"
               >
                 salesiánů
               </Link>
@@ -221,6 +223,7 @@ export default function Home() {
                 href={"https://farnost-pardubice.cz/"}
                 target="_blank"
                 className="italic"
+                title="web farnosti"
               >
                 web farnosti
               </Link>{" "}
@@ -229,6 +232,7 @@ export default function Home() {
                 href={"https://salesianipardubice.cz/"}
                 target="_blank"
                 className="italic"
+                title="web salesiánů"
               >
                 salesiánů
               </Link>
@@ -261,13 +265,14 @@ export default function Home() {
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
               Věříme, že modlitba může proměnit naše město a naše vesnice.
               Abychom všichni viděli, jak naše výzva postupuje, připravili jsme{" "}
-              <Link href="/mapa">
+              <Link href="/mapa" title="interaktivní mapa">
                 <strong>interaktivní mapu</strong>
               </Link>
               , na které si můžete prohlédnout, za jaké ulice a významné objekty
               se již někdo modlil. Nenašel jsi svoju ulici nebo významný objet
               na mapě? Dej nám vědět na mail{" "}
               <Link
+                title="kontaktní email"
                 href={"mailto:info@modlitbyzaulice.cz"}
                 className="underline"
               >
