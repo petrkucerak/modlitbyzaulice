@@ -6,7 +6,7 @@ export const conf = {
   url: "https://modlitbyzaulice.cz",
 
   // start of the manifest
-  name: "Modlitby za ulice",
+  name: "Modlitby za ulice - proměňme město modlitbou",
   short_name: "Modlitby za ulice",
   description:
     "Modlitby za ulice je misijní projekt, který propojuje obyvatele Pardubic a okolí skrze modlitbu.",
