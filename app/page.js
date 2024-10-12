@@ -321,6 +321,7 @@ export default function Home() {
               className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/tomas.webp"
               alt="Profilová fotka Tomáše"
+              title="Profilová fotka Tomáše"
             />
             <h3 className="mt-2 font-eigerdals text-xl">Tomáš</h3>
           </ProfileCard>
@@ -329,6 +330,7 @@ export default function Home() {
               className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/iva.webp"
               alt="Profilová fotka Ivy"
+              title="Profilová fotka Ivy"
             />
             <h3 className="mt-2 font-eigerdals text-xl">Iva</h3>
           </ProfileCard>
@@ -337,6 +339,7 @@ export default function Home() {
               className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/david.webp"
               alt="Profilová fotka Davida"
+              title="Profilová fotka Davida"
             />
             <h3 className="mt-2 font-eigerdals text-xl">David</h3>
           </ProfileCard>
@@ -345,6 +348,7 @@ export default function Home() {
               className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/jenda.webp"
               alt="Profilová fotka Jendy"
+              title="Profilová fotka Jendy"
             />
             <h3 className="mt-2 font-eigerdals text-xl">P. Jenda</h3>
           </ProfileCard>
