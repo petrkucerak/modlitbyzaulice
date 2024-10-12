@@ -296,11 +296,11 @@ export default function Home() {
           <div className="md:max-w-[700px]">
             <h3 className="uppercase font-semibold mb-2">Společná modlitba</h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals mb-8">
-              Způsobů, jak se modlit je mnoho. Podstatou ale není forma ale
-              obsah a úmysl. Proto nabízíme <strong>společnou modlitbu</strong>,
-              kterou kromě zadní strany kartiček najdete i zde. Pokud chcete,
-              můžete si ji stáhnout jako obrázek do mobilu a vracet se k ní i
-              když nebudete připojeni na internet.
+              Způsobů, jak se modlit je mnoho. Podstatou není forma ale obsah a
+              úmysl. Proto nabízíme <strong>společnou modlitbu</strong>, kterou
+              kromě zadní strany kartiček najdete i zde. Pokud chcete, můžete si
+              ji stáhnout jako obrázek do mobilu a vracet se k ní i když
+              nebudete připojeni na internet.
             </p>
           </div>
 
