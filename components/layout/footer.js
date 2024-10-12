@@ -33,7 +33,7 @@ export default function Footer() {
             <Link
               href={"https://farnost-pardubice.cz/"}
               target="_blank"
-              rel={"noreferrer"}
+              rel={"noopener"}
               className="underline"
               title="web franosti Pardubice"
             >
@@ -47,7 +47,7 @@ export default function Footer() {
             <Link
               href={"https://www.facebook.com/farnostPardubice/"}
               target="_blank"
-              rel="noreferrer nofollow"
+              rel="noreferrer"
               title="Facebookový profil farnosti Pardubice"
             >
               <IconBrandFacebook className="mr-2" />
@@ -55,7 +55,7 @@ export default function Footer() {
             <Link
               href={"https://www.instagram.com/pardubicefarnost/"}
               target="_blank"
-              rel="noreferrer nofollow"
+              rel="noreferrer"
               title="Instagram farnosti Pardubice"
             >
               <IconBrandInstagram className="mr-2" />
@@ -63,7 +63,7 @@ export default function Footer() {
             <Link
               href={"https://www.youtube.com/@farnostpardubice5403/"}
               target="_blank"
-              rel="noreferrer nofollow"
+              rel="noreferrer"
               title="Youtube pardubické farnosti"
             >
               <IconBrandYoutube className="mr-2" />
@@ -78,7 +78,7 @@ export default function Footer() {
           <Link
             href={"https://www.figma.com/proto/14PCVeCuWJVd3k7DZnb43n/"}
             target="_blank"
-            rel="nofollow noreferrer"
+            rel="noreferrer"
             className=""
             title="Portofólio Kateřiny Šislerové"
           >
@@ -88,7 +88,7 @@ export default function Footer() {
           <Link
             href={"https://petrkucerak.cz/"}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener"
             title="Vizitka Petra Kučery"
             className=""
           >
@@ -102,6 +102,7 @@ export default function Footer() {
               "https://github.com/petrkucerak/modlitbyzaulice/issues/new?assignees=petrkucerak&labels=bug&projects=&template=%C4%8Desk%C3%BD-issues-template.md&title=Stru%C4%8Dn%C3%BD+popis+probl%C3%A9mu+%5BBUG%5D"
             }
             target="_blank"
+            rel="noreferrer"
             className="underline"
             title="Nahlásit chybu na Githubu - vyžaduje přihlášení"
           >
@@ -111,6 +112,7 @@ export default function Footer() {
           <Link
             href={""}
             target="_blank"
+            rel="noreferrer nofollow"
             className="underline"
             title="Zásayd ochrany osobních údajů"
           >

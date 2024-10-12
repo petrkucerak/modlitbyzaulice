@@ -172,6 +172,7 @@ export default function Home() {
                 target="_blank"
                 className="italic"
                 title="Farní kostely"
+                rel="noopener"
               >
                 farnosti
               </Link>{" "}
@@ -181,6 +182,7 @@ export default function Home() {
                 target="_blank"
                 className="italic"
                 title="kostel salesiánů"
+                rel="noopener"
               >
                 salesiánů
               </Link>
@@ -224,6 +226,7 @@ export default function Home() {
                 target="_blank"
                 className="italic"
                 title="web farnosti"
+                rel="noopener"
               >
                 web farnosti
               </Link>{" "}
@@ -233,6 +236,7 @@ export default function Home() {
                 target="_blank"
                 className="italic"
                 title="web salesiánů"
+                rel="noopener"
               >
                 salesiánů
               </Link>
@@ -313,6 +317,7 @@ export default function Home() {
               target={"_blank"}
               className={"bg-pink md:ml-16"}
               title="Společná modlitba"
+              rel="noopener"
             >
               modlitba
             </Button>
@@ -374,7 +379,7 @@ export default function Home() {
             <Link
               href={"https://farnost-pardubice.cz/"}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               title="Farnost Pardubice"
             >
               <img
@@ -390,7 +395,7 @@ export default function Home() {
             <Link
               href={"https://salesianipardubice.cz/"}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               title="Salesiáni Pardubice"
               loading="lazy"
             >
@@ -407,7 +412,7 @@ export default function Home() {
             <Link
               href={"https://pardubice.eu/"}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               title="Město Pardubice"
             >
               <img
@@ -423,7 +428,7 @@ export default function Home() {
             <Link
               href={"https://www.pardubickykraj.cz/"}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               title="Pardubický kraj"
             >
               <img

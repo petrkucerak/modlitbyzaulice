@@ -60,6 +60,7 @@ export default function Tutorial({ className }) {
               "https://github.com/petrkucerak/modlitbyzaulice/tree/main/data"
             }
             target="_blank"
+            rel="noreferrer"
             className="font-medium text-stone-700 underline"
             title="repositář projektu"
           >
