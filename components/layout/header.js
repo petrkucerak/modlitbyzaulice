@@ -77,7 +77,10 @@ export default function Header({ activeSection }) {
       <div>
         {/* Burger menu icon */}
         <div className="flex items-center md:hidden">
-          <button onClick={toggleMenu}>
+          <button
+            onClick={toggleMenu}
+            title={isOpen ? "Zavřít menu" : "Otevřít menu"}
+          >
             {isOpen ? (
               <IconX className="w-7 h-7 mr-5" />
             ) : (

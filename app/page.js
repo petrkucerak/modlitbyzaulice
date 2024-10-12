@@ -78,6 +78,7 @@ export default function Home() {
             proměňme město modlitbou
           </p>
           <Button
+            title="Interativní mapa"
             className={`bg-wine transition-opacity duration-500 ${
               isVisible
                 ? "opacity-100 cursor-pointer"
@@ -277,7 +278,11 @@ export default function Home() {
           </div>
 
           <div className="my-10 md:my-0">
-            <Button href={"/mapa"} className={"bg-pink md:ml-16"}>
+            <Button
+              href={"/mapa"}
+              className={"bg-pink md:ml-16"}
+              title="Interativní mapa"
+            >
               mapa
             </Button>
           </div>
@@ -302,6 +307,7 @@ export default function Home() {
               href={"/modlitba.jpg"}
               target={"_blank"}
               className={"bg-pink md:ml-16"}
+              title="Společná modlitba"
             >
               modlitba
             </Button>
