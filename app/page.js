@@ -333,6 +333,7 @@ export default function Home() {
               src="/assets/tomas.webp"
               alt="Profilová fotka Tomáše"
               title="Profilová fotka Tomáše"
+              loading="lazy"
             />
             <h3 className="mt-2 font-eigerdals text-xl">Tomáš</h3>
           </ProfileCard>
@@ -342,6 +343,7 @@ export default function Home() {
               src="/assets/iva.webp"
               alt="Profilová fotka Ivy"
               title="Profilová fotka Ivy"
+              loading="lazy"
             />
             <h3 className="mt-2 font-eigerdals text-xl">Iva</h3>
           </ProfileCard>
@@ -351,6 +353,7 @@ export default function Home() {
               src="/assets/david.webp"
               alt="Profilová fotka Davida"
               title="Profilová fotka Davida"
+              loading="lazy"
             />
             <h3 className="mt-2 font-eigerdals text-xl">David</h3>
           </ProfileCard>
@@ -360,6 +363,7 @@ export default function Home() {
               src="/assets/jenda.webp"
               alt="Profilová fotka Jendy"
               title="Profilová fotka Jendy"
+              loading="lazy"
             />
             <h3 className="mt-2 font-eigerdals text-xl">P. Jenda</h3>
           </ProfileCard>
@@ -377,6 +381,7 @@ export default function Home() {
                 className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_farnost.svg"
                 alt="Logo farnosti Pardubice"
+                loading="lazy"
               />
             </Link>
           </ProfileCard>
@@ -387,11 +392,13 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
               title="Salesiáni Pardubice"
+              loading="lazy"
             >
               <img
                 className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_skm.svg"
                 alt="Logo Salesiánského klubu Pardubice"
+                loading="lazy"
               />
             </Link>
           </ProfileCard>
@@ -407,6 +414,7 @@ export default function Home() {
                 className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_pardubice.svg"
                 alt="Logo Pardubic"
+                loading="lazy"
               />
             </Link>
           </ProfileCard>
@@ -422,6 +430,7 @@ export default function Home() {
                 className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 pr-5 border-pink bg-white"
                 src="/assets/logo_kraj.svg"
                 alt="Logo Pardubického kraje"
+                loading="lazy"
               />
             </Link>
           </ProfileCard>
