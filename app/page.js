@@ -1,5 +1,4 @@
 "use client";
-import { conf } from "@/components/conf";
 import IconCustomAboutTitle from "@/components/icons/about";
 import IconCustomTutorial1 from "@/components/icons/tutorial1";
 import IconCustomTutorial2 from "@/components/icons/tutorial2";
@@ -21,6 +20,7 @@ import YoutubeVideo from "@/components/layout/video";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
+import StructureOrg from "@/components/layout/structure-org";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -432,6 +432,7 @@ export default function Home() {
         </div>
       </Section>
       <Footer />
+      <StructureOrg />
     </Main>
   );
 }
