@@ -9,7 +9,7 @@ export const conf = {
   name: "Modlitby za ulice - proměňme město modlitbou",
   short_name: "Modlitby za ulice",
   description:
-    "Modlitby za ulice je misijní projekt, který propojuje obyvatele Pardubic a okolí skrze modlitbu.",
+    "Modlitby za ulice je misijní projekt, který propojuje obyvatele Pardubic a okolí skrze modlitbu. Do projektu se může zapojit každý. Každý týden si v kostele vylouje kartičku s názvem ulice, za kterou se bude modlit.",
   start_url: "/",
   display: "standalone",
   orientation: "portrait-primary",
