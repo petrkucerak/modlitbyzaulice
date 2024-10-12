@@ -32,15 +32,23 @@ export default function Header({ activeSection }) {
     <header
       className={`z-[10000] w-[100vw] flex flex-row items-center justify-between ${getHeaderClassName()} text-wine fixed transition-colors duration-200 xl:text-lg 2xl:text-xl`}
     >
-      <Link href={"/#home"} className="my-4">
+      <Link href={"/#home"} className="my-4" title="hlavní strana projektu">
         <IconCustomLogo className={"w-[2rem] ml-[1.8rem]"} />
       </Link>
       {/* Desktop menu */}
       <div className="hidden md:flex flex-row items-center justify-between max-w-[600px] w-full">
-        <Link href={"/#about-target"}>o projektu</Link>
-        <Link href={"/#how-target"}>jak se zapojit</Link>
-        <Link href={"/mapa"}>mapa</Link>
-        <Link href={"/#sponsors-target"}>podporují</Link>
+        <Link href={"/#about-target"} title="o projektu">
+          o projektu
+        </Link>
+        <Link href={"/#how-target"} title="jak se zapojit">
+          jak se zapojit
+        </Link>
+        <Link href={"/mapa"} title="interaktivní mapa">
+          mapa
+        </Link>
+        <Link href={"/#sponsors-target"} title="projekt podporují">
+          podporují
+        </Link>
       </div>
 
       {/* Mobile menu */}
@@ -52,6 +60,7 @@ export default function Header({ activeSection }) {
             href={"/#about-target"}
             onClick={toggleMenu}
             className="block my-4"
+            title="o projektu"
           >
             o projektu
           </Link>
@@ -59,16 +68,23 @@ export default function Header({ activeSection }) {
             href={"/#how-target"}
             onClick={toggleMenu}
             className="block my-4"
+            title="jak se zapojit"
           >
             jak se zapojit
           </Link>
-          <Link href={"/mapa"} onClick={toggleMenu} className="block my-4">
+          <Link
+            href={"/mapa"}
+            onClick={toggleMenu}
+            className="block my-4"
+            title="interaktivní mapa"
+          >
             mapa
           </Link>
           <Link
             href={"/#sponsors-target"}
             onClick={toggleMenu}
             className="block my-4"
+            title="projekt podporují"
           >
             podporují
           </Link>
@@ -77,7 +93,10 @@ export default function Header({ activeSection }) {
       <div>
         {/* Burger menu icon */}
         <div className="flex items-center md:hidden">
-          <button onClick={toggleMenu}>
+          <button
+            onClick={toggleMenu}
+            title={isOpen ? "Zavřít menu" : "Otevřít menu"}
+          >
             {isOpen ? (
               <IconX className="w-7 h-7 mr-5" />
             ) : (

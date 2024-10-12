@@ -17,6 +17,7 @@ export default function Footer() {
             <Link
               href={"mailto:info@modlitbyzaulice.cz"}
               className="underline"
+              title="kontaktní email"
             >
               info@modlitbyzaulice.cz
             </Link>
@@ -34,11 +35,14 @@ export default function Footer() {
               target="_blank"
               rel={"noreferrer"}
               className="underline"
+              title="web franosti Pardubice"
             >
               Římskokatolická farnost Pardubice
             </Link>
           </li>
-          <li className="text-xs xl:text-sm 2xl:base">Kostelní 92, 530 02 Pardubice</li>
+          <li className="text-xs xl:text-sm 2xl:base">
+            Kostelní 92, 530 02 Pardubice
+          </li>
           <li className="flex flex-row items-end mt-2">
             <Link
               href={"https://www.facebook.com/farnostPardubice/"}
@@ -76,6 +80,7 @@ export default function Footer() {
             target="_blank"
             rel="nofollow noreferrer"
             className=""
+            title="Portofólio Kateřiny Šislerové"
           >
             Kateřina Šislerová
           </Link>
@@ -84,6 +89,7 @@ export default function Footer() {
             href={"https://petrkucerak.cz/"}
             target="_blank"
             rel="noreferrer"
+            title="Vizitka Petra Kučery"
             className=""
           >
             Petr Kučera
@@ -91,11 +97,23 @@ export default function Footer() {
           .
         </p>
         <p>
-          <Link href={""} target="_blank" className="underline">
-            Pravidla akce
+          <Link
+            href={
+              "https://github.com/petrkucerak/modlitbyzaulice/issues/new?assignees=petrkucerak&labels=bug&projects=&template=%C4%8Desk%C3%BD-issues-template.md&title=Stru%C4%8Dn%C3%BD+popis+probl%C3%A9mu+%5BBUG%5D"
+            }
+            target="_blank"
+            className="underline"
+            title="Nahlásit chybu na Githubu - vyžaduje přihlášení"
+          >
+            Nahlásit chybu
           </Link>{" "}
           a{" "}
-          <Link href={""} target="_blank" className="underline">
+          <Link
+            href={""}
+            target="_blank"
+            className="underline"
+            title="Zásayd ochrany osobních údajů"
+          >
             Zásady ochrany osobních údaju
           </Link>
         </p>

@@ -1,16 +1,15 @@
 export const conf = {
   // start of dev
-  // TODO: set API restriction
   MAPY_API_KEY: "PdNRjVdq8YVAgaBNnxiTAsfhy-qbG6lMxuQKg3W02gk",
   // end of dev
 
   url: "https://modlitbyzaulice.cz",
 
   // start of the manifest
-  name: "Modlitby za ulice",
+  name: "Modlitby za ulice - proměňme město modlitbou",
   short_name: "Modlitby za ulice",
   description:
-    "Modlitby za ulice je misijní projekt, který propojuje obyvatele Pardubic a okolí skrze modlitbu.",
+    "Modlitby za ulice je misijní projekt, který propojuje obyvatele Pardubic a okolí skrze modlitbu. Do projektu se může zapojit každý. Každý týden si v kostele vylouje kartičku s názvem ulice, za kterou se bude modlit.",
   start_url: "/",
   display: "standalone",
   orientation: "portrait-primary",

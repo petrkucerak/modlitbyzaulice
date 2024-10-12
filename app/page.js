@@ -21,6 +21,7 @@ import YoutubeVideo from "@/components/layout/video";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
+import EventPray from "@/components/layout/event-pray";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");
@@ -77,6 +78,7 @@ export default function Home() {
             proměňme město modlitbou
           </p>
           <Button
+            title="Interativní mapa"
             className={`bg-wine transition-opacity duration-500 ${
               isVisible
                 ? "opacity-100 cursor-pointer"
@@ -136,14 +138,14 @@ export default function Home() {
           source={
             "https://www.youtube-nocookie.com/embed/wPc3QchI3XM?cc_load_policy=1&cc_lang_pref=cs"
           }
-          className={"mb-[4rem]"}
+          className={"mb-[8rem]"}
         />
-        <TitleWithBirds
+        {/* <TitleWithBirds
           color={"#516ba8"}
           className={"mt-[4rem] mb-8 fill-[#516ba8]"}
         >
           Jak se mohu zapojit?
-        </TitleWithBirds>
+        </TitleWithBirds> */}
       </Section>
 
       <Section
@@ -169,6 +171,7 @@ export default function Home() {
                 }
                 target="_blank"
                 className="italic"
+                title="Farní kostely"
               >
                 farnosti
               </Link>{" "}
@@ -177,6 +180,7 @@ export default function Home() {
                 href={"https://salesianipardubice.cz/kostel/"}
                 target="_blank"
                 className="italic"
+                title="kostel salesiánů"
               >
                 salesiánů
               </Link>
@@ -219,6 +223,7 @@ export default function Home() {
                 href={"https://farnost-pardubice.cz/"}
                 target="_blank"
                 className="italic"
+                title="web farnosti"
               >
                 web farnosti
               </Link>{" "}
@@ -227,6 +232,7 @@ export default function Home() {
                 href={"https://salesianipardubice.cz/"}
                 target="_blank"
                 className="italic"
+                title="web salesiánů"
               >
                 salesiánů
               </Link>
@@ -251,7 +257,7 @@ export default function Home() {
             </p>
           </Card>
         </div>
-        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mb-[8rem] xl:mb-[10rem] mt-10 xl:mt-[3.5rem]">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mt-10 xl:mt-[3.5rem]">
           <div className="md:max-w-[700px]">
             <h3 className="uppercase font-semibold mb-2">
               Sledujte, jak modlitba proměňuje Pardubice
@@ -259,13 +265,14 @@ export default function Home() {
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
               Věříme, že modlitba může proměnit naše město a naše vesnice.
               Abychom všichni viděli, jak naše výzva postupuje, připravili jsme{" "}
-              <Link href="/mapa">
+              <Link href="/mapa" title="interaktivní mapa">
                 <strong>interaktivní mapu</strong>
               </Link>
               , na které si můžete prohlédnout, za jaké ulice a významné objekty
               se již někdo modlil. Nenašel jsi svoju ulici nebo významný objet
               na mapě? Dej nám vědět na mail{" "}
               <Link
+                title="kontaktní email"
                 href={"mailto:info@modlitbyzaulice.cz"}
                 className="underline"
               >
@@ -274,9 +281,40 @@ export default function Home() {
               , pokud to bude v našich silách, rádi ho doplníme.
             </p>
           </div>
+
           <div className="my-10 md:my-0">
-            <Button href={"/mapa"} className={"bg-pink md:ml-16"}>
+            <Button
+              href={"/mapa"}
+              className={"bg-pink md:ml-16"}
+              title="Interativní mapa"
+            >
               mapa
+            </Button>
+          </div>
+        </div>
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mb-[8rem] xl:mb-[10rem] mt-10 xl:mt-[3.5rem]">
+          <div className="md:max-w-[700px]">
+            <h3 className="uppercase font-semibold mb-2">Společná modlitba</h3>
+            <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals mb-8">
+              Způsobů, jak se modlit je mnoho. Podstatou není forma ale obsah a
+              úmysl. Proto nabízíme <strong>společnou modlitbu</strong>, kterou
+              kromě zadní strany kartiček najdete i zde. Pokud chcete, můžete si
+              ji stáhnout jako obrázek do mobilu a vracet se k ní i když
+              nebudete připojeni na internet.
+            </p>
+          </div>
+
+          <div className="my-10 md:my-0">
+            {/* <EventPray
+              className={"text-wine leading-tighter font-medium lg:ml-16"}
+            /> */}
+            <Button
+              href={"/modlitba.jpg"}
+              target={"_blank"}
+              className={"bg-pink md:ml-16"}
+              title="Společná modlitba"
+            >
+              modlitba
             </Button>
           </div>
         </div>
@@ -294,6 +332,8 @@ export default function Home() {
               className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/tomas.webp"
               alt="Profilová fotka Tomáše"
+              title="Profilová fotka Tomáše"
+              loading="lazy"
             />
             <h3 className="mt-2 font-eigerdals text-xl">Tomáš</h3>
           </ProfileCard>
@@ -302,6 +342,8 @@ export default function Home() {
               className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/iva.webp"
               alt="Profilová fotka Ivy"
+              title="Profilová fotka Ivy"
+              loading="lazy"
             />
             <h3 className="mt-2 font-eigerdals text-xl">Iva</h3>
           </ProfileCard>
@@ -310,6 +352,8 @@ export default function Home() {
               className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/david.webp"
               alt="Profilová fotka Davida"
+              title="Profilová fotka Davida"
+              loading="lazy"
             />
             <h3 className="mt-2 font-eigerdals text-xl">David</h3>
           </ProfileCard>
@@ -318,6 +362,8 @@ export default function Home() {
               className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] object-cover rounded-sm border-[12px] border-pink"
               src="/assets/jenda.webp"
               alt="Profilová fotka Jendy"
+              title="Profilová fotka Jendy"
+              loading="lazy"
             />
             <h3 className="mt-2 font-eigerdals text-xl">P. Jenda</h3>
           </ProfileCard>
@@ -335,6 +381,7 @@ export default function Home() {
                 className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_farnost.svg"
                 alt="Logo farnosti Pardubice"
+                loading="lazy"
               />
             </Link>
           </ProfileCard>
@@ -345,11 +392,13 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
               title="Salesiáni Pardubice"
+              loading="lazy"
             >
               <img
                 className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_skm.svg"
                 alt="Logo Salesiánského klubu Pardubice"
+                loading="lazy"
               />
             </Link>
           </ProfileCard>
@@ -365,6 +414,7 @@ export default function Home() {
                 className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_pardubice.svg"
                 alt="Logo Pardubic"
+                loading="lazy"
               />
             </Link>
           </ProfileCard>
@@ -380,6 +430,7 @@ export default function Home() {
                 className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 pr-5 border-pink bg-white"
                 src="/assets/logo_kraj.svg"
                 alt="Logo Pardubického kraje"
+                loading="lazy"
               />
             </Link>
           </ProfileCard>
