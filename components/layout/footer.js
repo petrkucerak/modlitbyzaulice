@@ -98,13 +98,11 @@ export default function Footer() {
         </p>
         <p>
           <Link
-            href={
-              "https://github.com/petrkucerak/modlitbyzaulice/issues/new?assignees=petrkucerak&labels=bug&projects=&template=%C4%8Desk%C3%BD-issues-template.md&title=Stru%C4%8Dn%C3%BD+popis+probl%C3%A9mu+%5BBUG%5D"
-            }
+            href={"mailto:info@modlitbyzaulice.cz"}
             target="_blank"
             rel="noreferrer"
             className="underline"
-            title="Nahlásit chybu na Githubu - vyžaduje přihlášení"
+            title="Nahlásit chybu na email info@modlitbyzaulice.cz"
           >
             Nahlásit chybu
           </Link>{" "}
