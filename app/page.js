@@ -21,7 +21,6 @@ import YoutubeVideo from "@/components/layout/video";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
-import EventPray from "@/components/layout/event-pray";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("home");

@@ -6,6 +6,7 @@ export const conf = {
   url: "https://modlitbyzaulice.cz",
 
   email: "info@modlitbyzaulice.cz",
+  image: "https://modlitbyzaulice.cz/opengraph-image.png",
 
   // start of the manifest
   name: "Modlitby za ulice - proměňme město modlitbou",
