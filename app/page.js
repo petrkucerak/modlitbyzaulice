@@ -374,7 +374,7 @@ export default function Home() {
           </ProfileCard>
         </div>
         <TitleWithBirds className={"mt-[4rem] mb-8"}>Za podpory</TitleWithBirds>
-        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 mb-[8rem] xl:mb-[10rem]">
+        <div className="w-[90vw] max-w-[1000px]  flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-2 sm:gap-10 mb-[8rem] xl:mb-[10rem]">
           <ProfileCard>
             <Link
               href={"https://farnost-pardubice.cz/"}
@@ -403,38 +403,6 @@ export default function Home() {
                 className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_skm.svg"
                 alt="Logo Salesiánského klubu Pardubice"
-                loading="lazy"
-              />
-            </Link>
-          </ProfileCard>
-
-          <ProfileCard>
-            <Link
-              href={"https://pardubice.eu/"}
-              target="_blank"
-              rel="noopener"
-              title="Město Pardubice"
-            >
-              <img
-                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
-                src="/assets/logo_pardubice.svg"
-                alt="Logo Pardubic"
-                loading="lazy"
-              />
-            </Link>
-          </ProfileCard>
-
-          <ProfileCard>
-            <Link
-              href={"https://www.pardubickykraj.cz/"}
-              target="_blank"
-              rel="noopener"
-              title="Pardubický kraj"
-            >
-              <img
-                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 pr-5 border-pink bg-white"
-                src="/assets/logo_kraj.svg"
-                alt="Logo Pardubického kraje"
                 loading="lazy"
               />
             </Link>
