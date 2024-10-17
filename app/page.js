@@ -157,7 +157,7 @@ export default function Home() {
               Vytáhněte si ulici
             </h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[140px]">
-              Zajdi do jednoho z pardubických kostelů*,{" "}
+              Zajdi do jednoho z pardubických kostelů*{" "}
               <Link
                 href={
                   "https://farnost-pardubice.cz/bohosluzby/aktualni-bohosluzby/"
@@ -257,7 +257,7 @@ export default function Home() {
           </Card>
         </div>
         <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] 2xl:mt-8">
-          <p className="text-wine text-base tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
+          <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
             <em>
               * sv. Bartoloměj, Klášterní, sv. Jiljí, Rosice, Mikulovice, sv.
               Václav
