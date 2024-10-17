@@ -157,7 +157,7 @@ export default function Home() {
               Vytáhněte si ulici
             </h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[140px]">
-              Zajdi do jednoho z pardubických kostelů,{"* "}
+              Zajdi do jednoho z pardubických kostelů*,{" "}
               <Link
                 href={
                   "https://farnost-pardubice.cz/bohosluzby/aktualni-bohosluzby/"
@@ -211,7 +211,7 @@ export default function Home() {
             </h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[120px]">
               Na kartičku napiš svoje jméno a{" "}
-              <strong>přines ji v neděli</strong> na mši svatou do kostela,* kde
+              <strong>přines ji v neděli</strong> na mši svatou do kostela*, kde
               se v obětním průvodu přinese před oltář. Nevíš, kdy je mše svatá?
               Nevadí, podívej se na{" "}
               <Link
