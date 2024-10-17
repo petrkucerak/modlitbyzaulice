@@ -78,7 +78,7 @@ export default function Home() {
           </p>
           <Button
             title="Interativní mapa"
-            className={`bg-wine transition-opacity duration-500 ${
+            className={`bg-wine transition-opacity w-fit duration-500 ${
               isVisible
                 ? "opacity-100 cursor-pointer"
                 : "opacity-0 cursor-default"
@@ -292,7 +292,7 @@ export default function Home() {
           <div className="my-10 md:my-0">
             <Button
               href={"/mapa"}
-              className={"bg-pink md:ml-16"}
+              className={"bg-pink md:ml-16 w-[180px]"}
               title="Interativní mapa"
             >
               mapa
@@ -315,7 +315,7 @@ export default function Home() {
             <Button
               href={"/modlitba.jpg"}
               target={"_blank"}
-              className={"bg-pink md:ml-16"}
+              className={"bg-pink md:ml-16 w-[180px]"}
               title="Společná modlitba"
               rel="noopener"
             >
