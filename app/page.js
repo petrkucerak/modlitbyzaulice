@@ -148,7 +148,7 @@ export default function Home() {
         <h2 className="text-xl md:text-2xl uppercase font-semibold mt-[8rem] xl:mt-[10rem] max-w-[90vw] text-center">
           Jak se mohu zapojit?
         </h2>
-        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] mb-10 flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 xl:flex xl:flex-row xl:justify-between">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] mb-0 md:lg:mb-4 lg:mb-6 xl:mb-10 flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 xl:flex xl:flex-row xl:justify-between">
           <Card>
             <Center>
               <IconCustomTutorial1 className={"w-[60px]"} />
@@ -256,7 +256,7 @@ export default function Home() {
             </p>
           </Card>
         </div>
-        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] 2xl:mt-8">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] 2xl:mt-4">
           <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
             <em>
               * sv. Bartoloměj, Klášterní, sv. Jiljí, Rosice, Mikulovice, sv.
