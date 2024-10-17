@@ -157,14 +157,14 @@ export default function Home() {
               Vytáhněte si ulici
             </h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[140px]">
-              Zajdi do jednoho z pardubických kostelů,{" "}
+              Zajdi do jednoho z pardubických kostelů,{"* "}
               <Link
                 href={
                   "https://farnost-pardubice.cz/bohosluzby/aktualni-bohosluzby/"
                 }
                 target="_blank"
                 className="italic"
-                title="Farní kostely"
+                title="bohoslužby ve farních kostelech"
                 rel="noopener"
               >
                 farnosti
@@ -174,7 +174,7 @@ export default function Home() {
                 href={"https://salesianipardubice.cz/kostel/"}
                 target="_blank"
                 className="italic"
-                title="kostel salesiánů"
+                title="bohosluby u salesiánů"
                 rel="noopener"
               >
                 salesiánů
@@ -211,24 +211,26 @@ export default function Home() {
             </h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[120px]">
               Na kartičku napiš svoje jméno a{" "}
-              <strong>přines ji v neděli</strong> na mši svatou do jakéhokoliv
-              pardubického kostela, kde se v obětním průvodu přinese před oltář.
-              Nevíš, kdy je mše svatá? Nevadí, podívej se na{" "}
+              <strong>přines ji v neděli</strong> na mši svatou do kostela,* kde
+              se v obětním průvodu přinese před oltář. Nevíš, kdy je mše svatá?
+              Nevadí, podívej se na{" "}
               <Link
-                href={"https://farnost-pardubice.cz/"}
+                href={
+                  "https://farnost-pardubice.cz/bohosluzby/aktualni-bohosluzby/"
+                }
                 target="_blank"
                 className="italic"
-                title="web farnosti"
+                title="bohoslužby ve farních kostelech"
                 rel="noopener"
               >
                 web farnosti
               </Link>{" "}
               či{" "}
               <Link
-                href={"https://salesianipardubice.cz/"}
+                href={"https://salesianipardubice.cz/kostel/"}
                 target="_blank"
                 className="italic"
-                title="web salesiánů"
+                title="bohosluby u salesiánů"
                 rel="noopener"
               >
                 salesiánů
@@ -247,12 +249,20 @@ export default function Home() {
             </h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[120px]">
               Po skončení mše svaté <strong>uvaž</strong> za promodlené místo{" "}
-              <strong>mašli</strong>. Můžeš na ni napsat, co budeš chtít: vzkaz,
-              jméno, přání místu nebo ulici nebo nakreslit co ti zrovna přijde
-              na mysl. Jen pamatuj, že to co je na mašli si bude moci přečíst
-              kdokoli.
+              <strong>mašli</strong>. Můžeš na ni napsat, co budeš chtít: jméno
+              ulice, vzkaz nebo přání místu nebo ulici za kterou ses modlil,
+              nebo nakreslit co ti zrovna přijde na mysl. Jen pamatuj, že to co
+              je na mašli si bude moci přečíst kdokoli.
             </p>
           </Card>
+        </div>
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] 2xl:mt-8">
+          <p className="text-wine text-base tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
+            <em>
+              * sv. Bartoloměj, Klášterní, sv. Jiljí, Rosice, Mikulovice, sv.
+              Václav
+            </em>
+          </p>
         </div>
         <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mt-10 xl:mt-[3.5rem]">
           <div className="md:max-w-[700px]">
@@ -266,7 +276,7 @@ export default function Home() {
                 <strong>interaktivní mapu</strong>
               </Link>
               , na které si můžete prohlédnout, za jaké ulice a významné objekty
-              se již někdo modlil. Nenašel jsi svoju ulici nebo významný objet
+              se již někdo modlil. Nenašel jsi svoji ulici nebo významný objet
               na mapě? Dej nám vědět na mail{" "}
               <Link
                 title="kontaktní email"
