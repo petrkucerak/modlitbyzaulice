@@ -276,7 +276,7 @@ export default function Home() {
                 <strong>interaktivní mapu</strong>
               </Link>
               , na které si můžete prohlédnout, za jaké ulice a významné objekty
-              se již někdo modlil. Nenašel jsi svoji ulici nebo významný objet
+              se již někdo modlil. Nenašel jsi svoji ulici nebo významný objekt
               na mapě? Dej nám vědět na mail{" "}
               <Link
                 title="kontaktní email"
