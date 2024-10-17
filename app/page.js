@@ -374,7 +374,8 @@ export default function Home() {
           </ProfileCard>
         </div>
         <TitleWithBirds className={"mt-[4rem] mb-8"}>Za podpory</TitleWithBirds>
-        <div className="w-[90vw] max-w-[1000px]  flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-2 sm:gap-10 mb-[8rem] xl:mb-[10rem]">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 mb-[8rem] xl:mb-[10rem]">
+          <div className="hidden lg:flex"></div>
           <ProfileCard>
             <Link
               href={"https://farnost-pardubice.cz/"}
