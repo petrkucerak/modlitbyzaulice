@@ -108,7 +108,7 @@ export default function Footer() {
           </Link>{" "}
           a{" "}
           <Link
-            href={""}
+            href={"/assets/privacy.pdf"}
             target="_blank"
             rel="noreferrer nofollow"
             className="underline"

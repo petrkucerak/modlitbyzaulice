@@ -78,7 +78,7 @@ export default function Home() {
           </p>
           <Button
             title="Interativní mapa"
-            className={`bg-wine transition-opacity duration-500 ${
+            className={`bg-wine transition-opacity w-fit duration-500 ${
               isVisible
                 ? "opacity-100 cursor-pointer"
                 : "opacity-0 cursor-default"
@@ -148,7 +148,7 @@ export default function Home() {
         <h2 className="text-xl md:text-2xl uppercase font-semibold mt-[8rem] xl:mt-[10rem] max-w-[90vw] text-center">
           Jak se mohu zapojit?
         </h2>
-        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] mb-10 flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 xl:flex xl:flex-row xl:justify-between">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] mb-0 md:lg:mb-4 lg:mb-6 xl:mb-10 flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 xl:flex xl:flex-row xl:justify-between">
           <Card>
             <Center>
               <IconCustomTutorial1 className={"w-[60px]"} />
@@ -157,14 +157,14 @@ export default function Home() {
               Vytáhněte si ulici
             </h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[140px]">
-              Zajdi do jednoho z pardubických kostelů,{" "}
+              Zajdi do jednoho z pardubických kostelů*{" "}
               <Link
                 href={
                   "https://farnost-pardubice.cz/bohosluzby/aktualni-bohosluzby/"
                 }
                 target="_blank"
                 className="italic"
-                title="Farní kostely"
+                title="bohoslužby ve farních kostelech"
                 rel="noopener"
               >
                 farnosti
@@ -174,7 +174,7 @@ export default function Home() {
                 href={"https://salesianipardubice.cz/kostel/"}
                 target="_blank"
                 className="italic"
-                title="kostel salesiánů"
+                title="bohosluby u salesiánů"
                 rel="noopener"
               >
                 salesiánů
@@ -211,24 +211,26 @@ export default function Home() {
             </h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[120px]">
               Na kartičku napiš svoje jméno a{" "}
-              <strong>přines ji v neděli</strong> na mši svatou do jakéhokoliv
-              pardubického kostela, kde se v obětním průvodu přinese před oltář.
-              Nevíš, kdy je mše svatá? Nevadí, podívej se na{" "}
+              <strong>přines ji v neděli</strong> na mši svatou do kostela*, kde
+              se v obětním průvodu přinese před oltář. Nevíš, kdy je mše svatá?
+              Nevadí, podívej se na{" "}
               <Link
-                href={"https://farnost-pardubice.cz/"}
+                href={
+                  "https://farnost-pardubice.cz/bohosluzby/aktualni-bohosluzby/"
+                }
                 target="_blank"
                 className="italic"
-                title="web farnosti"
+                title="bohoslužby ve farních kostelech"
                 rel="noopener"
               >
                 web farnosti
               </Link>{" "}
               či{" "}
               <Link
-                href={"https://salesianipardubice.cz/"}
+                href={"https://salesianipardubice.cz/kostel/"}
                 target="_blank"
                 className="italic"
-                title="web salesiánů"
+                title="bohosluby u salesiánů"
                 rel="noopener"
               >
                 salesiánů
@@ -247,12 +249,20 @@ export default function Home() {
             </h3>
             <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals lg:h-[120px]">
               Po skončení mše svaté <strong>uvaž</strong> za promodlené místo{" "}
-              <strong>mašli</strong>. Můžeš na ni napsat, co budeš chtít: vzkaz,
-              jméno, přání místu nebo ulici nebo nakreslit co ti zrovna přijde
-              na mysl. Jen pamatuj, že to co je na mašli si bude moci přečíst
-              kdokoli.
+              <strong>mašli</strong>. Můžeš na ni napsat, co budeš chtít: jméno
+              ulice, vzkaz nebo přání místu nebo ulici za kterou ses modlil,
+              nebo nakreslit co ti zrovna přijde na mysl. Jen pamatuj, že to co
+              je na mašli si bude moci přečíst kdokoli.
             </p>
           </Card>
+        </div>
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] 2xl:mt-4">
+          <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
+            <em>
+              * sv. Bartoloměj, Klášterní, sv. Jiljí, Rosice, Mikulovice, sv.
+              Václav
+            </em>
+          </p>
         </div>
         <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col md:flex-row items-center justify-start mt-10 xl:mt-[3.5rem]">
           <div className="md:max-w-[700px]">
@@ -266,7 +276,7 @@ export default function Home() {
                 <strong>interaktivní mapu</strong>
               </Link>
               , na které si můžete prohlédnout, za jaké ulice a významné objekty
-              se již někdo modlil. Nenašel jsi svoju ulici nebo významný objet
+              se již někdo modlil. Nenašel jsi svoji ulici nebo významný objekt
               na mapě? Dej nám vědět na mail{" "}
               <Link
                 title="kontaktní email"
@@ -282,7 +292,7 @@ export default function Home() {
           <div className="my-10 md:my-0">
             <Button
               href={"/mapa"}
-              className={"bg-pink md:ml-16"}
+              className={"bg-pink md:ml-16 w-[180px]"}
               title="Interativní mapa"
             >
               mapa
@@ -305,7 +315,7 @@ export default function Home() {
             <Button
               href={"/modlitba.jpg"}
               target={"_blank"}
-              className={"bg-pink md:ml-16"}
+              className={"bg-pink md:ml-16 w-[180px]"}
               title="Společná modlitba"
               rel="noopener"
             >
@@ -365,6 +375,7 @@ export default function Home() {
         </div>
         <TitleWithBirds className={"mt-[4rem] mb-8"}>Za podpory</TitleWithBirds>
         <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col items-center justify-center sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-10 mb-[8rem] xl:mb-[10rem]">
+          <div className="hidden lg:flex"></div>
           <ProfileCard>
             <Link
               href={"https://farnost-pardubice.cz/"}
@@ -393,38 +404,6 @@ export default function Home() {
                 className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
                 src="/assets/logo_skm.svg"
                 alt="Logo Salesiánského klubu Pardubice"
-                loading="lazy"
-              />
-            </Link>
-          </ProfileCard>
-
-          <ProfileCard>
-            <Link
-              href={"https://pardubice.eu/"}
-              target="_blank"
-              rel="noopener"
-              title="Město Pardubice"
-            >
-              <img
-                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 border-pink bg-white"
-                src="/assets/logo_pardubice.svg"
-                alt="Logo Pardubic"
-                loading="lazy"
-              />
-            </Link>
-          </ProfileCard>
-
-          <ProfileCard>
-            <Link
-              href={"https://www.pardubickykraj.cz/"}
-              target="_blank"
-              rel="noopener"
-              title="Pardubický kraj"
-            >
-              <img
-                className="w-[200px] xl:w-[250px] h-[250px] xl:h-[300px] border-[12px] p-4 pr-5 border-pink bg-white"
-                src="/assets/logo_kraj.svg"
-                alt="Logo Pardubického kraje"
                 loading="lazy"
               />
             </Link>
