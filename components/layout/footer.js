@@ -5,6 +5,7 @@ import {
   IconWorld,
 } from "@tabler/icons";
 import Link from "next/link";
+import { mailto_bug_report } from "./mailto-bug-report";
 
 export default function Footer() {
   return (
@@ -98,7 +99,7 @@ export default function Footer() {
         </p>
         <p>
           <Link
-            href={"mailto:info@modlitbyzaulice.cz"}
+            href={mailto_bug_report}
             target="_blank"
             rel="noreferrer"
             className="underline"
