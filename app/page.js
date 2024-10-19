@@ -256,7 +256,7 @@ export default function Home() {
             </p>
           </Card>
         </div>
-        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] 2xl:mt-4">
+        <div className="w-[90vw] max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] md:-mt-4 2xl:mt-4">
           <p className="text-wine tracking-tighter leading-5 2xl:leading-6 font-eigerdals">
             <em>
               * sv. Bartoloměj, Klášterní, sv. Jiljí, Rosice, Mikulovice, sv.
