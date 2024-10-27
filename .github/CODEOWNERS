@@ -1,4 +1,4 @@
 # These owners will be the default owners for everything in
 # the repo. Unless a later match takes precedence,
 *       @petrkucerak
-# data/streets_with_coordinates.js  @petrkucerak # add more users
+data/streets_with_coordinates.js  @tomaskhome # add more users
