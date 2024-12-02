@@ -5,12 +5,13 @@ import { useState, useRef } from "react";
 import Tutorial from "./tutorial";
 
 export default function Table() {
+  let newData = streets;
+
   const [searchTerm, setSearchTerm] = useState(""); // Search term state
   const [selectedResult, setSelectedResult] = useState(null); // Track selected result
   const [displayTutorial, setDisplayTutorial] = useState(false);
+  const [fillStreets, setFillStreets] = useState(getCountOfStreets());
   const searchInputRef = useRef(null); // Reference to search input
-
-  let newData = streets;
 
   // Filter streets based on search term
   const filteredStreets = streets.filter(
@@ -19,6 +20,12 @@ export default function Table() {
       street.district_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       street.unique_number.toString().includes(searchTerm)
   );
+
+  function getCountOfStreets() {
+    let count = 0;
+    newData.map((s) => (s.name !== "" ? (count += 1) : (count += 0)));
+    return count;
+  }
 
   function downloadFile() {
     const data =
@@ -48,6 +55,7 @@ export default function Table() {
         searchInputRef.current.focus();
       }
     }
+    setFillStreets(getCountOfStreets());
   };
 
   return (
@@ -83,6 +91,14 @@ export default function Table() {
         <strong className="font-medium">TIP:</strong> Napiš ID a&nbsp;zmáčkni
         ENTER, napiš jméno a&nbsp;opět zmáčkni ENTER.
       </p>
+      <div className="w-full flex flex-col justify-around items-center mt-4">
+        {/* <h2 className="text-lg uppercase text-darkBlue font-bold">
+          Statistiky
+        </h2> */}
+        <p className="w-full">
+          Promodlených ulic: {fillStreets} z {streets.length}
+        </p>
+      </div>
       <table className="w-full my-8">
         <thead>
           <tr className="text-left font-brother1816 uppercase text-darkBlue">
