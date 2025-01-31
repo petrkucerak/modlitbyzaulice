@@ -18,6 +18,8 @@ export default function StreetQuiz() {
   const [gameOver, setGameOver] = useState(false);
   const [shuffledDistricts, setShuffledDistricts] = useState([]);
   const [selectedDistrict, setSelectedDistrict] = useState(null);
+  const [correctDistrict, setCorrectDistrict] = useState(null);
+  const [showCorrect, setShowCorrect] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -58,6 +60,8 @@ export default function StreetQuiz() {
   function nextQuestion() {
     setTimeLeft(20);
     setSelectedDistrict(null);
+    setCorrectDistrict(null);
+    setShowCorrect(false);
     let newStreet;
     do {
       newStreet = streets[Math.floor(Math.random() * streets.length)];
@@ -67,26 +71,30 @@ export default function StreetQuiz() {
     );
 
     setCurrentStreet(newStreet);
+    setCorrectDistrict(newStreet.district_name);
     setShuffledDistricts(getDistricts(5, newStreet.district_name));
   }
 
   function handleAnswer(selectedDistrict) {
     setSelectedDistrict(selectedDistrict);
     setTimeout(() => {
-      if (selectedDistrict === currentStreet.district_name) {
-        setScore((prev) => {
-          const newScore = prev + 1;
-          if (typeof window !== "undefined" && newScore > highScore) {
-            setHighScore(newScore);
-            localStorage.setItem("highScore", newScore);
-          }
-          return newScore;
-        });
-      } else {
-        handleWrongAnswer();
-      }
-      nextQuestion();
-    }, 1000);
+      setShowCorrect(true);
+      setTimeout(() => {
+        if (selectedDistrict === currentStreet.district_name) {
+          setScore((prev) => {
+            const newScore = prev + 1;
+            if (typeof window !== "undefined" && newScore > highScore) {
+              setHighScore(newScore);
+              localStorage.setItem("highScore", newScore);
+            }
+            return newScore;
+          });
+        } else {
+          handleWrongAnswer();
+        }
+        nextQuestion();
+      }, 2000);
+    }, 500);
   }
 
   function handleWrongAnswer() {
@@ -111,7 +119,7 @@ export default function StreetQuiz() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-between mb-12 min-h-[60vh] w-[90vw] max-w-[500px]  xl:max-w-[600px] 2xl:max-w-[700px]">
+    <div className="flex flex-col items-center justify-between mb-12 min-h-[60vh] w-[90vw] max-w-[500px] xl:max-w-[600px] 2xl:max-w-[700px]">
       {gameOver ? (
         <div className="text-center text-wine">
           <h1 className="text-2xl font-bold">Konec hry!</h1>
@@ -145,21 +153,16 @@ export default function StreetQuiz() {
               <button
                 key={district}
                 onClick={() => handleAnswer(district)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    handleAnswer(district);
-                  }
-                }}
-                aria-label={`Vybrat čtvrť ${district}`}
-                aria-pressed={selectedDistrict === district}
-                className={`px-4 py-2 rounded-sm min-h-20 bg-gray-300 ${
+                className={`px-4 py-2 rounded-sm min-h-20 ${
                   selectedDistrict === district
                     ? district === currentStreet.district_name
-                      ? "hover:bg-olive"
-                      : "hover:bg-red"
+                      ? "bg-olive"
+                      : "bg-red"
+                    : showCorrect && correctDistrict === district
+                    ? "bg-olive"
                     : "bg-gray-300"
                 }`}
-              >     
+              >
                 {district}
               </button>
             ))}
