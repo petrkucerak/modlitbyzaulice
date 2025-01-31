@@ -67,7 +67,6 @@ export default function StreetQuiz() {
     );
 
     setCurrentStreet(newStreet);
-    console.log(newStreet.street_name, newStreet.district_name);
     setShuffledDistricts(getDistricts(5, newStreet.district_name));
   }
 
@@ -146,6 +145,13 @@ export default function StreetQuiz() {
               <button
                 key={district}
                 onClick={() => handleAnswer(district)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    handleAnswer(district);
+                  }
+                }}
+                aria-label={`Vybrat čtvrť ${district}`}
+                aria-pressed={selectedDistrict === district}
                 className={`px-4 py-2 rounded-sm min-h-20 bg-gray-300 ${
                   selectedDistrict === district
                     ? district === currentStreet.district_name
@@ -153,7 +159,7 @@ export default function StreetQuiz() {
                       : "hover:bg-red"
                     : "bg-gray-300"
                 }`}
-              >
+              >     
                 {district}
               </button>
             ))}
