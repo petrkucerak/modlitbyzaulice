@@ -45,6 +45,9 @@ export default function Header({ activeSection }) {
         <Link href={"/mapa"} title="interaktivní mapa">
           mapa
         </Link>
+        <Link href={"/hra"} title="znalostní hra">
+          hra
+        </Link>
         <Link href={"/#sponsors-target"} title="projekt podporují">
           podporují
         </Link>
@@ -76,6 +79,14 @@ export default function Header({ activeSection }) {
             title="interaktivní mapa"
           >
             mapa
+          </Link>
+          <Link
+            href={"/hra"}
+            onClick={toggleMenu}
+            className="block my-4"
+            title="znalostní hra"
+          >
+            hra
           </Link>
           <Link
             href={"/#sponsors-target"}
