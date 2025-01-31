@@ -1,41 +1,29 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
-const streets = [
-  { name: "Jungmannova", district: "Polabiny" },
-  { name: "Bělehradská", district: "Zelené Předměstí" },
-  { name: "Dašická", district: "Studánka" },
-  { name: "Štefánikova", district: "Karlovina" },
-  { name: "Husova", district: "Centrum" },
-  { name: "Javorová", district: "Dubina" },
-];
-
-const districts = [
-  "Polabiny",
-  "Zelené Předměstí",
-  "Studánka",
-  "Karlovina",
-  "Centrum",
-  "Dubina",
-];
+import { streets } from "@/data/streets_with_coordinates";
 
 function shuffleArray(array) {
   return array.sort(() => Math.random() - 0.5);
 }
 
+const startLives = 5;
+
 export default function StreetQuiz() {
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
-  const [lives, setLives] = useState(3);
+  const [lives, setLives] = useState(startLives);
   const [timeLeft, setTimeLeft] = useState(20);
   const [currentStreet, setCurrentStreet] = useState(null);
   const [gameOver, setGameOver] = useState(false);
   const [shuffledDistricts, setShuffledDistricts] = useState([]);
+  const [selectedDistrict, setSelectedDistrict] = useState(null);
 
   useEffect(() => {
-    const savedHighScore = localStorage.getItem("highScore");
-    if (savedHighScore) setHighScore(parseInt(savedHighScore));
+    if (typeof window !== "undefined") {
+      const savedHighScore = localStorage.getItem("highScore");
+      if (savedHighScore) setHighScore(parseInt(savedHighScore));
+    }
     nextQuestion();
   }, []);
 
@@ -54,20 +42,52 @@ export default function StreetQuiz() {
     }
   }, [gameOver]);
 
+  function getDistricts(count, not_used) {
+    const districts = new Set();
+    streets.forEach((street) => {
+      if (street.district_name && street.district_name !== not_used) {
+        districts.add(street.district_name);
+      }
+    });
+    const districtArray = Array.from(districts);
+    let tmp = shuffleArray(districtArray).slice(0, count);
+    tmp.push(not_used);
+    return shuffleArray(tmp);
+  }
+
   function nextQuestion() {
     setTimeLeft(20);
-    const newStreet = streets[Math.floor(Math.random() * streets.length)];
+    setSelectedDistrict(null);
+    let newStreet;
+    do {
+      newStreet = streets[Math.floor(Math.random() * streets.length)];
+    } while (
+      newStreet.district_name === undefined ||
+      newStreet.district_name === ""
+    );
+
     setCurrentStreet(newStreet);
-    setShuffledDistricts(shuffleArray([...districts]));
+    console.log(newStreet.street_name, newStreet.district_name);
+    setShuffledDistricts(getDistricts(5, newStreet.district_name));
   }
 
   function handleAnswer(selectedDistrict) {
-    if (selectedDistrict === currentStreet.district) {
-      setScore((prev) => prev + 1);
-    } else {
-      handleWrongAnswer();
-    }
-    nextQuestion();
+    setSelectedDistrict(selectedDistrict);
+    setTimeout(() => {
+      if (selectedDistrict === currentStreet.district_name) {
+        setScore((prev) => {
+          const newScore = prev + 1;
+          if (typeof window !== "undefined" && newScore > highScore) {
+            setHighScore(newScore);
+            localStorage.setItem("highScore", newScore);
+          }
+          return newScore;
+        });
+      } else {
+        handleWrongAnswer();
+      }
+      nextQuestion();
+    }, 1000);
   }
 
   function handleWrongAnswer() {
@@ -82,10 +102,6 @@ export default function StreetQuiz() {
 
   function endGame() {
     setGameOver(true);
-    if (score > highScore) {
-      setHighScore(score);
-      localStorage.setItem("highScore", score);
-    }
   }
 
   function restartGame() {
@@ -96,12 +112,12 @@ export default function StreetQuiz() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex flex-col items-center justify-between mb-12 min-h-[60vh] w-[90vw] max-w-[500px]  xl:max-w-[600px] 2xl:max-w-[700px]">
       {gameOver ? (
-        <div className="text-center">
-          <h1 className="text-2xl font-bold">Game Over!</h1>
-          <p className="text-lg">Tvé skóre: {score}</p>
-          <p className="text-lg">Nejvyšší skóre: {highScore}</p>
+        <div className="text-center text-wine">
+          <h1 className="text-2xl font-bold">Konec hry!</h1>
+          <p className="text-lg mt-6">🪙 Tvé skóre: {score}</p>
+          <p className="text-lg">👑 Nejvyšší skóre: {highScore}</p>
           <button
             onClick={restartGame}
             className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg"
@@ -110,27 +126,37 @@ export default function StreetQuiz() {
           </button>
         </div>
       ) : (
-        <div className="w-full max-w-sm bg-white p-6 rounded-lg shadow-md text-center">
-          <h2 className="text-lg font-bold">Do jaké čtvrti patří?</h2>
-          <h1 className="text-2xl font-bold text-blue-600 my-4">
-            {currentStreet?.name}
+        <div className="w-full text-center flex flex-col items-center justify-between">
+          <div className="my-4 w-full text-lg flex flex-row justify-around">
+            <span className="w-16">
+              ❤️{lives}/{startLives}
+            </span>
+            <span className="w-16">🪙{score}</span>
+            <span className="w-16">👑{highScore}</span>
+            <span className="w-16">⏳{timeLeft}s</span>
+          </div>
+          <h2 className="text-xl mt-6 font-semibold text-wine">
+            Kam patří ulice?
+          </h2>
+          <h1 className="text-2xl font-semibold text-wine my-4">
+            {currentStreet?.street_name}
           </h1>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 w-full mt-6">
             {shuffledDistricts.map((district) => (
               <button
                 key={district}
                 onClick={() => handleAnswer(district)}
-                className="px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300"
+                className={`px-4 py-2 rounded-lg ${
+                  selectedDistrict === district
+                    ? district === currentStreet.district_name
+                      ? "hover:bg-green-400"
+                      : "hover:bg-red"
+                    : "bg-gray-300"
+                }`}
               >
                 {district}
               </button>
             ))}
-          </div>
-          <div className="mt-4 text-sm">
-            <p>Životy: ❤️ {lives}</p>
-            <p>Skóre: {score}</p>
-            <p>Nejvyšší skóre: {highScore}</p>
-            <p>Čas: ⏳ {timeLeft}s</p>
           </div>
         </div>
       )}
