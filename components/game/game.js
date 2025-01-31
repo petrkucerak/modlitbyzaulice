@@ -129,11 +129,11 @@ export default function StreetQuiz() {
         <div className="w-full text-center flex flex-col items-center justify-between">
           <div className="my-4 w-full text-lg flex flex-row justify-around">
             <span className="w-16">
-              ❤️{lives}/{startLives}
+              ❤️ {lives}/{startLives}
             </span>
-            <span className="w-16">🪙{score}</span>
-            <span className="w-16">👑{highScore}</span>
-            <span className="w-16">⏳{timeLeft}s</span>
+            <span className="w-16">🪙 {score}</span>
+            <span className="w-16">👑 {highScore}</span>
+            <span className="w-16">⏳ {timeLeft}s</span>
           </div>
           <h2 className="text-xl mt-6 font-semibold text-wine">
             Kam patří ulice?
