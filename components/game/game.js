@@ -20,17 +20,22 @@ export default function StreetQuiz() {
   const [selectedDistrict, setSelectedDistrict] = useState(null);
   const [correctDistrict, setCorrectDistrict] = useState(null);
   const [showCorrect, setShowCorrect] = useState(false);
+  const [showHelp, setShowHelp] = useState(true);
+  const [firstTime, setFirstTime] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const savedHighScore = localStorage.getItem("highScore");
       if (savedHighScore) setHighScore(parseInt(savedHighScore));
+      const firstTimePlayed = localStorage.getItem("firstTimePlayed");
+      if (firstTimePlayed) {
+        setFirstTime(false);
+      }
     }
-    nextQuestion();
   }, []);
 
   useEffect(() => {
-    if (!gameOver) {
+    if (!gameOver && !firstTime && !showHelp) {
       const timer = setInterval(() => {
         setTimeLeft((prev) => {
           if (prev <= 1) {
@@ -42,7 +47,7 @@ export default function StreetQuiz() {
       }, 1000);
       return () => clearInterval(timer);
     }
-  }, [gameOver]);
+  }, [gameOver, firstTime, showHelp]);
 
   function getDistricts(count, not_used) {
     const districts = new Set();
@@ -111,6 +116,14 @@ export default function StreetQuiz() {
     setGameOver(true);
   }
 
+  function startGame() {
+    restartGame();
+    setFirstTime(false);
+    setShowHelp(false);
+    localStorage.setItem("firstTimePlayed", "true");
+    nextQuestion();
+  }
+
   function restartGame() {
     setScore(0);
     setLives(startLives);
@@ -120,7 +133,22 @@ export default function StreetQuiz() {
 
   return (
     <div className="flex flex-col items-center justify-between mb-12 min-h-[60vh] w-[90vw] max-w-[500px] xl:max-w-[600px] 2xl:max-w-[700px]">
-      {gameOver ? (
+      {firstTime || showHelp ? (
+        <div className="text-center text-wine">
+          <h1 className="text-2xl font-bold">Vítej ve hře!</h1>
+          <p className="text-lg mt-6 mb-12">
+            Přiřadit správnou čtvrť nebo vesnici k ulici nebo místu a získej, co
+            nejvíce&nbsp;🪙&nbsp;penízků. Na odpověď máš
+            omezený&nbsp;⏳&nbsp;čas a&nbsp;omezený počet&nbsp;❤️&nbsp;životů!
+          </p>
+          <button
+            onClick={startGame}
+            className="mt-4 px-6 py-2 bg-wine text-white rounded-sm"
+          >
+            Začít hru
+          </button>
+        </div>
+      ) : gameOver ? (
         <div className="text-center text-wine">
           <h1 className="text-2xl font-bold">Konec hry!</h1>
           <p className="text-lg mt-6">🪙 Tvé skóre: {score}</p>
@@ -169,6 +197,14 @@ export default function StreetQuiz() {
           </div>
         </div>
       )}
+      <button
+        onClick={() => setShowHelp(true)}
+        className={`mb-4 px-4 py-2 bg-gray-500 text-white rounded-sm mt-16 ${
+          showHelp ? "hidden" : ""
+        }`}
+      >
+        Zobrazit pravidla
+      </button>
     </div>
   );
 }
