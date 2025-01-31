@@ -153,13 +153,13 @@ export default function StreetQuiz() {
               <button
                 key={district}
                 onClick={() => handleAnswer(district)}
-                className={`px-4 py-2 rounded-sm min-h-20 hover:bg-stone-400 transition ${
+                className={`px-4 py-2 rounded-sm min-h-20 lg:hover:bg-stone-400 transition ${
                   selectedDistrict === district
                     ? district === currentStreet.district_name
-                      ? "bg-olive scale-105 hover:!bg-olive"
-                      : "bg-red scale-105 hover:!bg-red"
+                      ? "bg-olive scale-105 lg:hover:!bg-olive"
+                      : "bg-red scale-105 lg:hover:!bg-red"
                     : showCorrect && correctDistrict === district
-                    ? "bg-olive scale-105 hover:!bg-olive"
+                    ? "bg-olive scale-105 lg:hover:!bg-olive"
                     : "bg-gray-300"
                 }`}
               >
