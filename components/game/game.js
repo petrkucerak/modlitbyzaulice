@@ -106,7 +106,7 @@ export default function StreetQuiz() {
 
   function restartGame() {
     setScore(0);
-    setLives(3);
+    setLives(startLives);
     setGameOver(false);
     nextQuestion();
   }
