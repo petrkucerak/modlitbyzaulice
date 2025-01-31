@@ -117,10 +117,10 @@ export default function StreetQuiz() {
         <div className="text-center text-wine">
           <h1 className="text-2xl font-bold">Konec hry!</h1>
           <p className="text-lg mt-6">🪙 Tvé skóre: {score}</p>
-          <p className="text-lg">👑 Nejvyšší skóre: {highScore}</p>
+          <p className="text-lg mb-10">👑 Nejvyšší skóre: {highScore}</p>
           <button
             onClick={restartGame}
-            className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg"
+            className="mt-4 px-6 py-2 bg-wine text-white rounded-sm"
           >
             Hrát znovu
           </button>
@@ -146,10 +146,10 @@ export default function StreetQuiz() {
               <button
                 key={district}
                 onClick={() => handleAnswer(district)}
-                className={`px-4 py-2 rounded-lg ${
+                className={`px-4 py-2 rounded-sm min-h-20 bg-gray-300 ${
                   selectedDistrict === district
                     ? district === currentStreet.district_name
-                      ? "hover:bg-green-400"
+                      ? "hover:bg-olive"
                       : "hover:bg-red"
                     : "bg-gray-300"
                 }`}
