@@ -136,7 +136,7 @@ export default function StreetQuiz() {
             <span className="w-16">⏳ {timeLeft}s</span>
           </div>
           <h2 className="text-xl mt-6 font-semibold text-wine">
-            Kam patří ulice?
+            Kam patří ulice či místo?
           </h2>
           <h1 className="text-2xl font-semibold text-wine my-4">
             {currentStreet?.street_name}
