@@ -137,7 +137,7 @@ export default function StreetQuiz() {
         <div className="text-center text-wine">
           <h1 className="text-2xl font-bold">Vítej ve hře!</h1>
           <p className="text-lg mt-6 mb-12">
-            Přiřadit správnou čtvrť nebo vesnici k&nbsp;ulici nebo místu
+            Přiřaď správnou čtvrť nebo obec k&nbsp;ulici nebo místu
             a&nbsp;získej, co nejvíce&nbsp;🪙&nbsp;penízků. Na odpověď máš
             omezený&nbsp;⏳&nbsp;čas a&nbsp;omezený počet&nbsp;❤️&nbsp;životů!
           </p>

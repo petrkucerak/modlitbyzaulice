@@ -15,11 +15,11 @@ export default function Home() {
         <p>
           Znáš Pardubice a&nbsp;okolí dobře? Zahraj si jednoduchou znalostní
           hru, která prověří tvoji znalost názvosloví. Hrát hru je jednoduché.
-          Cílem je získat, co největší 🪙 skóre a&nbsp;to tak, že musí
-          k&nbsp;názvu ulice přiřadit správný název čtvrti či vesnice,
-          v&nbsp;které se daná ulice nachází. Ve hře máš ❤️ 5&nbsp;životů
-          a&nbsp;na každou otázku ⏳&nbsp;20&nbsp;s. Tak hodně štěstí
-          a&nbsp;nezapomeň se podělit o&nbsp;svoje skóre!
+          Cílem je získat, co největší 🪙&nbsp;skóre a&nbsp;to tak, že musíš k
+          názvu ulice přiřadit správný název čtvrti či obce, ve které se daná
+          ulice nachází. Ve hře máš ❤️&nbsp;5 životů a&nbsp;na každou otázku
+          ⏳&nbsp;20&nbsp;s. Tak hodně štěstí a&nbsp;nezapomeň se
+          podělit o&nbsp;svoje skóre!
         </p>
       </div>
       <Footer />
