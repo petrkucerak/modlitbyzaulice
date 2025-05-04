@@ -45,3 +45,6 @@ data/*.json
 
 cards.pdf
 cards-print.pdf
+
+debug_log.txt
+analysis_log.csv
