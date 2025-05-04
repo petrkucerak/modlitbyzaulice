@@ -188,7 +188,7 @@ def main():
     # Analyze commits and generate CSV
     try:
         analyze_commits(repo_path, js_file_path)
-        print(f"CSV file 'analysis/name_changes.csv' generated successfully.")
+        print(f"CSV file 'analysis/analysis_log.csv' generated successfully.")
         print(f"Debug log saved to 'analysis/debug_log.txt'.")
     except Exception as e:
         print(f"Error analyzing commits: {e}")
