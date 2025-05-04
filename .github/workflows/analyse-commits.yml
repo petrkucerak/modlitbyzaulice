@@ -37,6 +37,6 @@ jobs:
         with:
           name: analysis-results
           path: |
-            analysis/name_changes.csv
-            analysis/debug_log.txt
+            analysis/analysis_log.csv
+            # analysis/debug_log.txt
           if-no-files-found: error
