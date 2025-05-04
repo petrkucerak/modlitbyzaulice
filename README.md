@@ -90,12 +90,31 @@ Skript na grafický podklad (svg křivkách) nageneruje dynamický text s hodnot
 
 > **Pozor:** Generování obsahuje ne náročné ale pro jednoduché zachování konzistence není proces paralelizovaný. Export může tedy trvat delší v závislosti na výpočetním výkonu a počtu záznamů.
 
+## Analýza průběhu přidávání dat
+
+Pro jednoduchou analýzu přidávání dat existuje Github Action v tomto repositáři, která vygeneruje .csv soubor, který pro každý commit obsahuje:
+
+- **datum** daného commitu (přidání souborů)
+- **počet nevyplněných ulic**
+- a **počet změněných ulic** od minulého přidání (zohledněno změnou textu).
+
+> [!WARNING]
+> Data nejsou filtrována, tj. vypíšou všechny commity i ty před nahráním dat a i commity v průběhu, které neovlivňovala data. Proto je třeba promazat.
+
+Pro export dat postupujte podle následujících těchto kroků.
+1. Přejděte na stránku dané action https://github.com/petrkucerak/modlitbyzaulice/actions/workflows/analyse-commits.yml.
+2. Spusťte Action pomocí tlačítka Run workflow.![tutorial screenshot](assets/image.png)
+3. Přejďte do vámi spuštěného běhu. ![tutorial screenshot](assets/image-1.png)
+4. Po doběhnutí stáhněte exportovaná data. ![tutorial screenshot](assets/image-2.png)
+
+
+
 ## Dev snippets
 
 ```sh
 docker compose up # use docker compose to install dev env
 
-# isntead of use docker, use local node.js and yarn instaltion
+# isntead of use docker, use loca`l node.js and yarn instaltion
 yarn
 yarn dev
 ```
